@@ -6,10 +6,10 @@ import urllib.parse, urllib.request
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-PROJECTS = {'CommitThenSample':'P1_CommitThenSample','CertiChain':'P2_CertiChain'}
+PROJECTS = {'CommitThenSample':'P1_CommitThenSample'}
 DEFAULT_REPO = 'LeoTTTPhat/CommitThenSample'
 DEFAULT_REMOTE = 'git@github-phat:LeoTTTPhat/CommitThenSample.git'
-DEFAULT_TAG = 'artifacts-2026-11-11'
+DEFAULT_TAG = 'committhensample-artifacts-2026-11-11'
 PART_BYTES = 1800 * 1024 * 1024
 IGNORE_DIRS = {'.git','.venv','.runtime','__pycache__','.pytest_cache','__MACOSX'}
 BAD_SUFFIX = {'.tex','.pdf','.bib','.bst','.sty','.cls','.aux','.pyc'}
