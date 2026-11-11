@@ -1,0 +1,5019 @@
+{
+ "exp": "X2",
+ "status": "exploratory (post-PREREG revision analysis X2, P2-X; not pre-registered)",
+ "prereg_blake3": "955c768e80f31f4040548e0e944c327605396eaedc80430597abfda5b8f610a6",
+ "updated": "2026-10-19T06:12:48+0700",
+ "definition": "task 6 (review R3-M4): Gotham TRAIN-pool devices split by the library episode's victim device into half A ['192.168.20.10'] (scorer S_GOTXA trained on 100 CF-GOTHAM-XA incidents) and half B ['192.168.17.10', '192.168.18.15'] (bank CF-GOTHAM-XB, 150 incidents, case-study templates); P2-E generator, P2-B 07, P2-F 08 / 11 code unchanged; lambda-hat from all 150 bank incidents; Gotham-real counts (n = 9 incidents); shared background capture remains (stated limitation)",
+ "rows": [
+  {
+   "cal": "cf_gotham_xb/S_GOTXA.stat",
+   "test": "gotham_real/S_GOTXA.stat",
+   "method": "crc_bh",
+   "alpha": 0.1,
+   "lam_idx": 45,
+   "cal_incidents_with_claims": 133,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 6,
+   "claimed_attack": 6,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.3333333333333333,
+   "frac_empty_attack": 0.14285714285714285,
+   "fdr_all": 0.36044973544973546,
+   "fdr_attack": 0.46343537414965985,
+   "cond_fdp": 0.5406746031746031,
+   "pooled_fdr": 0.821917808219178,
+   "sum_R": 73.0,
+   "sum_V": 60.0,
+   "sum_TP": 13.0,
+   "n_claims": 8.11111111111111,
+   "n_false": 6.666666666666667,
+   "fdx_020": 0.4444444444444444,
+   "fdx_030": 0.4444444444444444,
+   "cond_fdx_020": 0.6666666666666666,
+   "fdp_min_claimed": 0.0,
+   "fdp_max_claimed": 0.9047619047619048,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 8,
+     "V": 5,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 21,
+     "V": 19,
+     "TP": 2
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 1,
+     "V": 0,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 21,
+     "V": 18,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 21,
+     "V": 18,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 1,
+     "V": 0,
+     "TP": 1
+    }
+   ],
+   "setting": "S_GOTXA cross-fit: scorer half A, bank half B (CF-GOTHAM-XB)",
+   "tag": "xf"
+  },
+  {
+   "cal": "cf_gotham_xb/S_GOTXA.stat",
+   "test": "gotham_real/S_GOTXA.stat",
+   "method": "crc_bh",
+   "alpha": 0.2,
+   "lam_idx": 53,
+   "cal_incidents_with_claims": 136,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 6,
+   "claimed_attack": 6,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.3333333333333333,
+   "frac_empty_attack": 0.14285714285714285,
+   "fdr_all": 0.5686573616806174,
+   "fdr_attack": 0.7311308935893653,
+   "cond_fdp": 0.8529860425209262,
+   "pooled_fdr": 0.8758169934640523,
+   "sum_R": 153.0,
+   "sum_V": 134.0,
+   "sum_TP": 19.0,
+   "n_claims": 17.0,
+   "n_false": 14.88888888888889,
+   "fdx_020": 0.6666666666666666,
+   "fdx_030": 0.6666666666666666,
+   "cond_fdx_020": 1.0,
+   "fdp_min_claimed": 0.7,
+   "fdp_max_claimed": 0.9069767441860465,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 10,
+     "V": 7,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 21,
+     "V": 19,
+     "TP": 2
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 43,
+     "V": 39,
+     "TP": 4
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 21,
+     "V": 18,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 21,
+     "V": 18,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 37,
+     "V": 33,
+     "TP": 4
+    }
+   ],
+   "setting": "S_GOTXA cross-fit: scorer half A, bank half B (CF-GOTHAM-XB)",
+   "tag": "xf"
+  },
+  {
+   "cal": "cf_gotham_xb/S_GOTXA.stat",
+   "test": "gotham_real/S_GOTXA.stat",
+   "method": "crc_st",
+   "alpha": 0.1,
+   "lam_idx": 24,
+   "cal_incidents_with_claims": 136,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 4,
+   "claimed_attack": 4,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.5555555555555556,
+   "frac_empty_attack": 0.42857142857142855,
+   "fdr_all": 0.09259259259259259,
+   "fdr_attack": 0.11904761904761904,
+   "cond_fdp": 0.20833333333333331,
+   "pooled_fdr": 0.25,
+   "sum_R": 8.0,
+   "sum_V": 2.0,
+   "sum_TP": 6.0,
+   "n_claims": 0.8888888888888888,
+   "n_false": 0.2222222222222222,
+   "fdx_020": 0.2222222222222222,
+   "fdx_030": 0.2222222222222222,
+   "cond_fdx_020": 0.5,
+   "fdp_min_claimed": 0.0,
+   "fdp_max_claimed": 0.5,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 2,
+     "V": 0,
+     "TP": 2
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 3,
+     "V": 1,
+     "TP": 2
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 2,
+     "V": 1,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 1,
+     "V": 0,
+     "TP": 1
+    }
+   ],
+   "setting": "S_GOTXA cross-fit: scorer half A, bank half B (CF-GOTHAM-XB)",
+   "tag": "xf"
+  },
+  {
+   "cal": "cf_gotham_xb/S_GOTXA.stat",
+   "test": "gotham_real/S_GOTXA.stat",
+   "method": "crc_st",
+   "alpha": 0.2,
+   "lam_idx": 31,
+   "cal_incidents_with_claims": 136,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 7,
+   "claimed_attack": 7,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.2222222222222222,
+   "frac_empty_attack": 0.0,
+   "fdr_all": 0.5753086419753086,
+   "fdr_attack": 0.7396825396825396,
+   "cond_fdp": 0.7396825396825396,
+   "pooled_fdr": 0.7619047619047619,
+   "sum_R": 42.0,
+   "sum_V": 32.0,
+   "sum_TP": 10.0,
+   "n_claims": 4.666666666666667,
+   "n_false": 3.5555555555555554,
+   "fdx_020": 0.7777777777777778,
+   "fdx_030": 0.6666666666666666,
+   "cond_fdx_020": 1.0,
+   "fdp_min_claimed": 0.25,
+   "fdp_max_claimed": 1.0,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 5,
+     "V": 2,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 4,
+     "V": 1,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 7,
+     "V": 7,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 9,
+     "V": 7,
+     "TP": 2
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 3,
+     "V": 3,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 6,
+     "V": 6,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 8,
+     "V": 6,
+     "TP": 2
+    }
+   ],
+   "setting": "S_GOTXA cross-fit: scorer half A, bank half B (CF-GOTHAM-XB)",
+   "tag": "xf"
+  },
+  {
+   "cal": "cf_gotham_xb/S_GOTXA.stat",
+   "test": "gotham_real/S_GOTXA.stat",
+   "method": "crc_fdx020",
+   "alpha": 0.1,
+   "lam_idx": 39,
+   "cal_incidents_with_claims": 116,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 3,
+   "claimed_attack": 3,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.6666666666666666,
+   "frac_empty_attack": 0.5714285714285714,
+   "fdr_all": 0.05555555555555555,
+   "fdr_attack": 0.07142857142857142,
+   "cond_fdp": 0.16666666666666666,
+   "pooled_fdr": 0.25,
+   "sum_R": 4.0,
+   "sum_V": 1.0,
+   "sum_TP": 3.0,
+   "n_claims": 0.4444444444444444,
+   "n_false": 0.1111111111111111,
+   "fdx_020": 0.1111111111111111,
+   "fdx_030": 0.1111111111111111,
+   "cond_fdx_020": 0.3333333333333333,
+   "fdp_min_claimed": 0.0,
+   "fdp_max_claimed": 0.5,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 2,
+     "V": 1,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 1,
+     "V": 0,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 1,
+     "V": 0,
+     "TP": 1
+    }
+   ],
+   "setting": "S_GOTXA cross-fit: scorer half A, bank half B (CF-GOTHAM-XB)",
+   "tag": "xf"
+  },
+  {
+   "cal": "cf_gotham_xb/S_GOTXA.stat",
+   "test": "gotham_real/S_GOTXA.stat",
+   "method": "crc_fdx020",
+   "alpha": 0.2,
+   "lam_idx": 45,
+   "cal_incidents_with_claims": 133,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 6,
+   "claimed_attack": 6,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.3333333333333333,
+   "frac_empty_attack": 0.14285714285714285,
+   "fdr_all": 0.36044973544973546,
+   "fdr_attack": 0.46343537414965985,
+   "cond_fdp": 0.5406746031746031,
+   "pooled_fdr": 0.821917808219178,
+   "sum_R": 73.0,
+   "sum_V": 60.0,
+   "sum_TP": 13.0,
+   "n_claims": 8.11111111111111,
+   "n_false": 6.666666666666667,
+   "fdx_020": 0.4444444444444444,
+   "fdx_030": 0.4444444444444444,
+   "cond_fdx_020": 0.6666666666666666,
+   "fdp_min_claimed": 0.0,
+   "fdp_max_claimed": 0.9047619047619048,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 8,
+     "V": 5,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 21,
+     "V": 19,
+     "TP": 2
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 1,
+     "V": 0,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 21,
+     "V": 18,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 21,
+     "V": 18,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 1,
+     "V": 0,
+     "TP": 1
+    }
+   ],
+   "setting": "S_GOTXA cross-fit: scorer half A, bank half B (CF-GOTHAM-XB)",
+   "tag": "xf"
+  },
+  {
+   "cal": "cf_gotham_xb/S_GOTXA.stat",
+   "test": "gotham_real/S_GOTXA.stat",
+   "method": "crc_fdx030",
+   "alpha": 0.1,
+   "lam_idx": 42,
+   "cal_incidents_with_claims": 127,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 5,
+   "claimed_attack": 5,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.4444444444444444,
+   "frac_empty_attack": 0.2857142857142857,
+   "fdr_all": 0.23280423280423282,
+   "fdr_attack": 0.29931972789115646,
+   "cond_fdp": 0.41904761904761906,
+   "pooled_fdr": 0.8085106382978723,
+   "sum_R": 47.0,
+   "sum_V": 38.0,
+   "sum_TP": 9.0,
+   "n_claims": 5.222222222222222,
+   "n_false": 4.222222222222222,
+   "fdx_020": 0.3333333333333333,
+   "fdx_030": 0.3333333333333333,
+   "cond_fdx_020": 0.6,
+   "fdp_min_claimed": 0.0,
+   "fdp_max_claimed": 0.9047619047619048,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 3,
+     "V": 1,
+     "TP": 2
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 21,
+     "V": 19,
+     "TP": 2
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 1,
+     "V": 0,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 21,
+     "V": 18,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 1,
+     "V": 0,
+     "TP": 1
+    }
+   ],
+   "setting": "S_GOTXA cross-fit: scorer half A, bank half B (CF-GOTHAM-XB)",
+   "tag": "xf"
+  },
+  {
+   "cal": "cf_gotham_xb/S_GOTXA.stat",
+   "test": "gotham_real/S_GOTXA.stat",
+   "method": "crc_fdx030",
+   "alpha": 0.2,
+   "lam_idx": 48,
+   "cal_incidents_with_claims": 135,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 6,
+   "claimed_attack": 6,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.3333333333333333,
+   "frac_empty_attack": 0.14285714285714285,
+   "fdr_all": 0.4548941798941799,
+   "fdr_attack": 0.5848639455782313,
+   "cond_fdp": 0.6823412698412699,
+   "pooled_fdr": 0.8369565217391305,
+   "sum_R": 92.0,
+   "sum_V": 77.0,
+   "sum_TP": 15.0,
+   "n_claims": 10.222222222222221,
+   "n_false": 8.555555555555555,
+   "fdx_020": 0.5555555555555556,
+   "fdx_030": 0.5555555555555556,
+   "cond_fdx_020": 0.8333333333333334,
+   "fdp_min_claimed": 0.0,
+   "fdp_max_claimed": 0.9047619047619048,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 8,
+     "V": 5,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 21,
+     "V": 19,
+     "TP": 2
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 1,
+     "V": 0,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 21,
+     "V": 18,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 21,
+     "V": 18,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 20,
+     "V": 17,
+     "TP": 3
+    }
+   ],
+   "setting": "S_GOTXA cross-fit: scorer half A, bank half B (CF-GOTHAM-XB)",
+   "tag": "xf"
+  },
+  {
+   "cal": "cf_gotham_xb/S_GOTXA.stat",
+   "test": "gotham_real/S_GOTXA.stat",
+   "method": "ltt",
+   "alpha": 0.1,
+   "lam_idx": 41,
+   "cal_incidents_with_claims": 125,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 5,
+   "claimed_attack": 5,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.4444444444444444,
+   "frac_empty_attack": 0.2857142857142857,
+   "fdr_all": 0.2322751322751323,
+   "fdr_attack": 0.29863945578231293,
+   "cond_fdp": 0.41809523809523813,
+   "pooled_fdr": 0.8043478260869565,
+   "sum_R": 46.0,
+   "sum_V": 37.0,
+   "sum_TP": 9.0,
+   "n_claims": 5.111111111111111,
+   "n_false": 4.111111111111111,
+   "fdx_020": 0.3333333333333333,
+   "fdx_030": 0.3333333333333333,
+   "cond_fdx_020": 0.6,
+   "fdp_min_claimed": 0.0,
+   "fdp_max_claimed": 0.9,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 3,
+     "V": 1,
+     "TP": 2
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 20,
+     "V": 18,
+     "TP": 2
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 1,
+     "V": 0,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 21,
+     "V": 18,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 1,
+     "V": 0,
+     "TP": 1
+    }
+   ],
+   "setting": "S_GOTXA cross-fit: scorer half A, bank half B (CF-GOTHAM-XB)",
+   "tag": "xf"
+  },
+  {
+   "cal": "cf_gotham_xb/S_GOTXA.stat",
+   "test": "gotham_real/S_GOTXA.stat",
+   "method": "ltt",
+   "alpha": 0.2,
+   "lam_idx": 48,
+   "cal_incidents_with_claims": 135,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 6,
+   "claimed_attack": 6,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.3333333333333333,
+   "frac_empty_attack": 0.14285714285714285,
+   "fdr_all": 0.4548941798941799,
+   "fdr_attack": 0.5848639455782313,
+   "cond_fdp": 0.6823412698412699,
+   "pooled_fdr": 0.8369565217391305,
+   "sum_R": 92.0,
+   "sum_V": 77.0,
+   "sum_TP": 15.0,
+   "n_claims": 10.222222222222221,
+   "n_false": 8.555555555555555,
+   "fdx_020": 0.5555555555555556,
+   "fdx_030": 0.5555555555555556,
+   "cond_fdx_020": 0.8333333333333334,
+   "fdp_min_claimed": 0.0,
+   "fdp_max_claimed": 0.9047619047619048,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 8,
+     "V": 5,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 21,
+     "V": 19,
+     "TP": 2
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 1,
+     "V": 0,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 21,
+     "V": 18,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 21,
+     "V": 18,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 20,
+     "V": 17,
+     "TP": 3
+    }
+   ],
+   "setting": "S_GOTXA cross-fit: scorer half A, bank half B (CF-GOTHAM-XB)",
+   "tag": "xf"
+  },
+  {
+   "cal": "cf_gotham_xb/S_GOTXA.stat",
+   "test": "gotham_real/S_GOTXA.stat",
+   "method": "by_ref",
+   "alpha": 0.1,
+   "lam_idx": null,
+   "cal_incidents_with_claims": null,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 2,
+   "claimed_attack": 2,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.7777777777777778,
+   "frac_empty_attack": 0.7142857142857143,
+   "fdr_all": 0.0,
+   "fdr_attack": 0.0,
+   "cond_fdp": 0.0,
+   "pooled_fdr": 0.0,
+   "sum_R": 2.0,
+   "sum_V": 0.0,
+   "sum_TP": 2.0,
+   "n_claims": 0.2222222222222222,
+   "n_false": 0.0,
+   "fdx_020": 0.0,
+   "fdx_030": 0.0,
+   "cond_fdx_020": 0.0,
+   "fdp_min_claimed": 0.0,
+   "fdp_max_claimed": 0.0,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 1,
+     "V": 0,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 1,
+     "V": 0,
+     "TP": 1
+    }
+   ],
+   "setting": "S_GOTXA cross-fit: scorer half A, bank half B (CF-GOTHAM-XB)",
+   "tag": "xf"
+  },
+  {
+   "cal": "cf_gotham_xb/S_GOTXA.stat",
+   "test": "gotham_real/S_GOTXA.stat",
+   "method": "by_ref",
+   "alpha": 0.2,
+   "lam_idx": null,
+   "cal_incidents_with_claims": null,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 5,
+   "claimed_attack": 5,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.4444444444444444,
+   "frac_empty_attack": 0.2857142857142857,
+   "fdr_all": 0.23280423280423282,
+   "fdr_attack": 0.29931972789115646,
+   "cond_fdp": 0.41904761904761906,
+   "pooled_fdr": 0.8085106382978723,
+   "sum_R": 47.0,
+   "sum_V": 38.0,
+   "sum_TP": 9.0,
+   "n_claims": 5.222222222222222,
+   "n_false": 4.222222222222222,
+   "fdx_020": 0.3333333333333333,
+   "fdx_030": 0.3333333333333333,
+   "cond_fdx_020": 0.6,
+   "fdp_min_claimed": 0.0,
+   "fdp_max_claimed": 0.9047619047619048,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 3,
+     "V": 1,
+     "TP": 2
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 21,
+     "V": 19,
+     "TP": 2
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 1,
+     "V": 0,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 21,
+     "V": 18,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 1,
+     "V": 0,
+     "TP": 1
+    }
+   ],
+   "setting": "S_GOTXA cross-fit: scorer half A, bank half B (CF-GOTHAM-XB)",
+   "tag": "xf"
+  },
+  {
+   "cal": "cf_gotham_xb/S_GOTXA.stat",
+   "test": "gotham_real/S_GOTXA.stat",
+   "method": "bh_ref",
+   "alpha": 0.1,
+   "lam_idx": null,
+   "cal_incidents_with_claims": null,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 6,
+   "claimed_attack": 6,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.3333333333333333,
+   "frac_empty_attack": 0.14285714285714285,
+   "fdr_all": 0.36044973544973546,
+   "fdr_attack": 0.46343537414965985,
+   "cond_fdp": 0.5406746031746031,
+   "pooled_fdr": 0.821917808219178,
+   "sum_R": 73.0,
+   "sum_V": 60.0,
+   "sum_TP": 13.0,
+   "n_claims": 8.11111111111111,
+   "n_false": 6.666666666666667,
+   "fdx_020": 0.4444444444444444,
+   "fdx_030": 0.4444444444444444,
+   "cond_fdx_020": 0.6666666666666666,
+   "fdp_min_claimed": 0.0,
+   "fdp_max_claimed": 0.9047619047619048,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 8,
+     "V": 5,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 21,
+     "V": 19,
+     "TP": 2
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 1,
+     "V": 0,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 21,
+     "V": 18,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 21,
+     "V": 18,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 1,
+     "V": 0,
+     "TP": 1
+    }
+   ],
+   "setting": "S_GOTXA cross-fit: scorer half A, bank half B (CF-GOTHAM-XB)",
+   "tag": "xf"
+  },
+  {
+   "cal": "cf_gotham_xb/S_GOTXA.stat",
+   "test": "gotham_real/S_GOTXA.stat",
+   "method": "bh_ref",
+   "alpha": 0.2,
+   "lam_idx": null,
+   "cal_incidents_with_claims": null,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 6,
+   "claimed_attack": 6,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.3333333333333333,
+   "frac_empty_attack": 0.14285714285714285,
+   "fdr_all": 0.5644653821124409,
+   "fdr_attack": 0.7257412055731383,
+   "cond_fdp": 0.8466980731686613,
+   "pooled_fdr": 0.8642857142857143,
+   "sum_R": 140.0,
+   "sum_V": 121.0,
+   "sum_TP": 19.0,
+   "n_claims": 15.555555555555555,
+   "n_false": 13.444444444444445,
+   "fdx_020": 0.6666666666666666,
+   "fdx_030": 0.6666666666666666,
+   "cond_fdx_020": 1.0,
+   "fdp_min_claimed": 0.7,
+   "fdp_max_claimed": 0.9047619047619048,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 10,
+     "V": 7,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 21,
+     "V": 19,
+     "TP": 2
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 33,
+     "V": 29,
+     "TP": 4
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 21,
+     "V": 18,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 21,
+     "V": 18,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 34,
+     "V": 30,
+     "TP": 4
+    }
+   ],
+   "setting": "S_GOTXA cross-fit: scorer half A, bank half B (CF-GOTHAM-XB)",
+   "tag": "xf"
+  },
+  {
+   "cal": "cf_gotham_t_v2/S_TON.stat",
+   "test": "gotham_real/S_TON.stat",
+   "method": "crc_bh",
+   "alpha": 0.1,
+   "lam_idx": 56,
+   "cal_incidents_with_claims": 12,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 4,
+   "claimed_attack": 4,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.5555555555555556,
+   "frac_empty_attack": 0.42857142857142855,
+   "fdr_all": 0.42194643419031225,
+   "fdr_attack": 0.5425025582446873,
+   "cond_fdp": 0.9493794769282027,
+   "pooled_fdr": 0.9456521739130435,
+   "sum_R": 92.0,
+   "sum_V": 87.0,
+   "sum_TP": 5.0,
+   "n_claims": 10.222222222222221,
+   "n_false": 9.666666666666666,
+   "fdx_020": 0.4444444444444444,
+   "fdx_030": 0.4444444444444444,
+   "cond_fdx_020": 1.0,
+   "fdp_min_claimed": 0.896551724137931,
+   "fdp_max_claimed": 1.0,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 29,
+     "V": 26,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 22,
+     "V": 22,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 23,
+     "V": 22,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 18,
+     "V": 17,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    }
+   ],
+   "setting": "S_TON transfer, CF-GOTHAM-T v2 bank",
+   "tag": "v2"
+  },
+  {
+   "cal": "cf_gotham_t_v2/S_TON.stat",
+   "test": "gotham_real/S_TON.stat",
+   "method": "crc_bh",
+   "alpha": 0.2,
+   "lam_idx": 56,
+   "cal_incidents_with_claims": 12,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 4,
+   "claimed_attack": 4,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.5555555555555556,
+   "frac_empty_attack": 0.42857142857142855,
+   "fdr_all": 0.42194643419031225,
+   "fdr_attack": 0.5425025582446873,
+   "cond_fdp": 0.9493794769282027,
+   "pooled_fdr": 0.9456521739130435,
+   "sum_R": 92.0,
+   "sum_V": 87.0,
+   "sum_TP": 5.0,
+   "n_claims": 10.222222222222221,
+   "n_false": 9.666666666666666,
+   "fdx_020": 0.4444444444444444,
+   "fdx_030": 0.4444444444444444,
+   "cond_fdx_020": 1.0,
+   "fdp_min_claimed": 0.896551724137931,
+   "fdp_max_claimed": 1.0,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 29,
+     "V": 26,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 22,
+     "V": 22,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 23,
+     "V": 22,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 18,
+     "V": 17,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    }
+   ],
+   "setting": "S_TON transfer, CF-GOTHAM-T v2 bank",
+   "tag": "v2"
+  },
+  {
+   "cal": "cf_gotham_t_v2/S_TON.stat",
+   "test": "gotham_real/S_TON.stat",
+   "method": "crc_st",
+   "alpha": 0.1,
+   "lam_idx": 31,
+   "cal_incidents_with_claims": 15,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 1,
+   "claimed_attack": 1,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.8888888888888888,
+   "frac_empty_attack": 0.8571428571428571,
+   "fdr_all": 0.1111111111111111,
+   "fdr_attack": 0.14285714285714285,
+   "cond_fdp": 1.0,
+   "pooled_fdr": 1.0,
+   "sum_R": 1.0,
+   "sum_V": 1.0,
+   "sum_TP": 0.0,
+   "n_claims": 0.1111111111111111,
+   "n_false": 0.1111111111111111,
+   "fdx_020": 0.1111111111111111,
+   "fdx_030": 0.1111111111111111,
+   "cond_fdx_020": 1.0,
+   "fdp_min_claimed": 1.0,
+   "fdp_max_claimed": 1.0,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 1,
+     "V": 1,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    }
+   ],
+   "setting": "S_TON transfer, CF-GOTHAM-T v2 bank",
+   "tag": "v2"
+  },
+  {
+   "cal": "cf_gotham_t_v2/S_TON.stat",
+   "test": "gotham_real/S_TON.stat",
+   "method": "crc_st",
+   "alpha": 0.2,
+   "lam_idx": 32,
+   "cal_incidents_with_claims": 26,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 1,
+   "claimed_attack": 1,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.8888888888888888,
+   "frac_empty_attack": 0.8571428571428571,
+   "fdr_all": 0.1111111111111111,
+   "fdr_attack": 0.14285714285714285,
+   "cond_fdp": 1.0,
+   "pooled_fdr": 1.0,
+   "sum_R": 1.0,
+   "sum_V": 1.0,
+   "sum_TP": 0.0,
+   "n_claims": 0.1111111111111111,
+   "n_false": 0.1111111111111111,
+   "fdx_020": 0.1111111111111111,
+   "fdx_030": 0.1111111111111111,
+   "cond_fdx_020": 1.0,
+   "fdp_min_claimed": 1.0,
+   "fdp_max_claimed": 1.0,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 1,
+     "V": 1,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    }
+   ],
+   "setting": "S_TON transfer, CF-GOTHAM-T v2 bank",
+   "tag": "v2"
+  },
+  {
+   "cal": "cf_gotham_t_v2/S_TON.stat",
+   "test": "gotham_real/S_TON.stat",
+   "method": "crc_fdx020",
+   "alpha": 0.1,
+   "lam_idx": 56,
+   "cal_incidents_with_claims": 12,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 4,
+   "claimed_attack": 4,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.5555555555555556,
+   "frac_empty_attack": 0.42857142857142855,
+   "fdr_all": 0.42194643419031225,
+   "fdr_attack": 0.5425025582446873,
+   "cond_fdp": 0.9493794769282027,
+   "pooled_fdr": 0.9456521739130435,
+   "sum_R": 92.0,
+   "sum_V": 87.0,
+   "sum_TP": 5.0,
+   "n_claims": 10.222222222222221,
+   "n_false": 9.666666666666666,
+   "fdx_020": 0.4444444444444444,
+   "fdx_030": 0.4444444444444444,
+   "cond_fdx_020": 1.0,
+   "fdp_min_claimed": 0.896551724137931,
+   "fdp_max_claimed": 1.0,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 29,
+     "V": 26,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 22,
+     "V": 22,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 23,
+     "V": 22,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 18,
+     "V": 17,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    }
+   ],
+   "setting": "S_TON transfer, CF-GOTHAM-T v2 bank",
+   "tag": "v2"
+  },
+  {
+   "cal": "cf_gotham_t_v2/S_TON.stat",
+   "test": "gotham_real/S_TON.stat",
+   "method": "crc_fdx020",
+   "alpha": 0.2,
+   "lam_idx": 56,
+   "cal_incidents_with_claims": 12,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 4,
+   "claimed_attack": 4,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.5555555555555556,
+   "frac_empty_attack": 0.42857142857142855,
+   "fdr_all": 0.42194643419031225,
+   "fdr_attack": 0.5425025582446873,
+   "cond_fdp": 0.9493794769282027,
+   "pooled_fdr": 0.9456521739130435,
+   "sum_R": 92.0,
+   "sum_V": 87.0,
+   "sum_TP": 5.0,
+   "n_claims": 10.222222222222221,
+   "n_false": 9.666666666666666,
+   "fdx_020": 0.4444444444444444,
+   "fdx_030": 0.4444444444444444,
+   "cond_fdx_020": 1.0,
+   "fdp_min_claimed": 0.896551724137931,
+   "fdp_max_claimed": 1.0,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 29,
+     "V": 26,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 22,
+     "V": 22,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 23,
+     "V": 22,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 18,
+     "V": 17,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    }
+   ],
+   "setting": "S_TON transfer, CF-GOTHAM-T v2 bank",
+   "tag": "v2"
+  },
+  {
+   "cal": "cf_gotham_t_v2/S_TON.stat",
+   "test": "gotham_real/S_TON.stat",
+   "method": "crc_fdx030",
+   "alpha": 0.1,
+   "lam_idx": 56,
+   "cal_incidents_with_claims": 12,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 4,
+   "claimed_attack": 4,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.5555555555555556,
+   "frac_empty_attack": 0.42857142857142855,
+   "fdr_all": 0.42194643419031225,
+   "fdr_attack": 0.5425025582446873,
+   "cond_fdp": 0.9493794769282027,
+   "pooled_fdr": 0.9456521739130435,
+   "sum_R": 92.0,
+   "sum_V": 87.0,
+   "sum_TP": 5.0,
+   "n_claims": 10.222222222222221,
+   "n_false": 9.666666666666666,
+   "fdx_020": 0.4444444444444444,
+   "fdx_030": 0.4444444444444444,
+   "cond_fdx_020": 1.0,
+   "fdp_min_claimed": 0.896551724137931,
+   "fdp_max_claimed": 1.0,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 29,
+     "V": 26,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 22,
+     "V": 22,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 23,
+     "V": 22,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 18,
+     "V": 17,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    }
+   ],
+   "setting": "S_TON transfer, CF-GOTHAM-T v2 bank",
+   "tag": "v2"
+  },
+  {
+   "cal": "cf_gotham_t_v2/S_TON.stat",
+   "test": "gotham_real/S_TON.stat",
+   "method": "crc_fdx030",
+   "alpha": 0.2,
+   "lam_idx": 56,
+   "cal_incidents_with_claims": 12,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 4,
+   "claimed_attack": 4,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.5555555555555556,
+   "frac_empty_attack": 0.42857142857142855,
+   "fdr_all": 0.42194643419031225,
+   "fdr_attack": 0.5425025582446873,
+   "cond_fdp": 0.9493794769282027,
+   "pooled_fdr": 0.9456521739130435,
+   "sum_R": 92.0,
+   "sum_V": 87.0,
+   "sum_TP": 5.0,
+   "n_claims": 10.222222222222221,
+   "n_false": 9.666666666666666,
+   "fdx_020": 0.4444444444444444,
+   "fdx_030": 0.4444444444444444,
+   "cond_fdx_020": 1.0,
+   "fdp_min_claimed": 0.896551724137931,
+   "fdp_max_claimed": 1.0,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 29,
+     "V": 26,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 22,
+     "V": 22,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 23,
+     "V": 22,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 18,
+     "V": 17,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    }
+   ],
+   "setting": "S_TON transfer, CF-GOTHAM-T v2 bank",
+   "tag": "v2"
+  },
+  {
+   "cal": "cf_gotham_t_v2/S_TON.stat",
+   "test": "gotham_real/S_TON.stat",
+   "method": "ltt",
+   "alpha": 0.1,
+   "lam_idx": 55,
+   "cal_incidents_with_claims": 7,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 3,
+   "claimed_attack": 3,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.6666666666666666,
+   "frac_empty_attack": 0.5714285714285714,
+   "fdr_all": 0.32094943240454077,
+   "fdr_attack": 0.4126492702344095,
+   "cond_fdp": 0.9628482972136222,
+   "pooled_fdr": 0.9655172413793104,
+   "sum_R": 58.0,
+   "sum_V": 56.0,
+   "sum_TP": 2.0,
+   "n_claims": 6.444444444444445,
+   "n_false": 6.222222222222222,
+   "fdx_020": 0.3333333333333333,
+   "fdx_030": 0.3333333333333333,
+   "cond_fdx_020": 1.0,
+   "fdp_min_claimed": 0.9411764705882353,
+   "fdp_max_claimed": 1.0,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 22,
+     "V": 22,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 19,
+     "V": 18,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 17,
+     "V": 16,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    }
+   ],
+   "setting": "S_TON transfer, CF-GOTHAM-T v2 bank",
+   "tag": "v2"
+  },
+  {
+   "cal": "cf_gotham_t_v2/S_TON.stat",
+   "test": "gotham_real/S_TON.stat",
+   "method": "ltt",
+   "alpha": 0.2,
+   "lam_idx": 56,
+   "cal_incidents_with_claims": 12,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 4,
+   "claimed_attack": 4,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.5555555555555556,
+   "frac_empty_attack": 0.42857142857142855,
+   "fdr_all": 0.42194643419031225,
+   "fdr_attack": 0.5425025582446873,
+   "cond_fdp": 0.9493794769282027,
+   "pooled_fdr": 0.9456521739130435,
+   "sum_R": 92.0,
+   "sum_V": 87.0,
+   "sum_TP": 5.0,
+   "n_claims": 10.222222222222221,
+   "n_false": 9.666666666666666,
+   "fdx_020": 0.4444444444444444,
+   "fdx_030": 0.4444444444444444,
+   "cond_fdx_020": 1.0,
+   "fdp_min_claimed": 0.896551724137931,
+   "fdp_max_claimed": 1.0,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 29,
+     "V": 26,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 22,
+     "V": 22,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 23,
+     "V": 22,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 18,
+     "V": 17,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    }
+   ],
+   "setting": "S_TON transfer, CF-GOTHAM-T v2 bank",
+   "tag": "v2"
+  },
+  {
+   "cal": "cf_gotham_t_v2/S_TON.stat",
+   "test": "gotham_real/S_TON.stat",
+   "method": "by_ref",
+   "alpha": 0.1,
+   "lam_idx": null,
+   "cal_incidents_with_claims": null,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 0,
+   "claimed_attack": 0,
+   "claimed_benign": 0,
+   "frac_empty_all": 1.0,
+   "frac_empty_attack": 1.0,
+   "fdr_all": 0.0,
+   "fdr_attack": 0.0,
+   "cond_fdp": null,
+   "pooled_fdr": 0.0,
+   "sum_R": 0.0,
+   "sum_V": 0.0,
+   "sum_TP": 0.0,
+   "n_claims": 0.0,
+   "n_false": 0.0,
+   "fdx_020": 0.0,
+   "fdx_030": 0.0,
+   "cond_fdx_020": null,
+   "fdp_min_claimed": null,
+   "fdp_max_claimed": null,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    }
+   ],
+   "setting": "S_TON transfer, CF-GOTHAM-T v2 bank",
+   "tag": "v2"
+  },
+  {
+   "cal": "cf_gotham_t_v2/S_TON.stat",
+   "test": "gotham_real/S_TON.stat",
+   "method": "by_ref",
+   "alpha": 0.2,
+   "lam_idx": null,
+   "cal_incidents_with_claims": null,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 0,
+   "claimed_attack": 0,
+   "claimed_benign": 0,
+   "frac_empty_all": 1.0,
+   "frac_empty_attack": 1.0,
+   "fdr_all": 0.0,
+   "fdr_attack": 0.0,
+   "cond_fdp": null,
+   "pooled_fdr": 0.0,
+   "sum_R": 0.0,
+   "sum_V": 0.0,
+   "sum_TP": 0.0,
+   "n_claims": 0.0,
+   "n_false": 0.0,
+   "fdx_020": 0.0,
+   "fdx_030": 0.0,
+   "cond_fdx_020": null,
+   "fdp_min_claimed": null,
+   "fdp_max_claimed": null,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    }
+   ],
+   "setting": "S_TON transfer, CF-GOTHAM-T v2 bank",
+   "tag": "v2"
+  },
+  {
+   "cal": "cf_gotham_t_v2/S_TON.stat",
+   "test": "gotham_real/S_TON.stat",
+   "method": "bh_ref",
+   "alpha": 0.1,
+   "lam_idx": null,
+   "cal_incidents_with_claims": null,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 0,
+   "claimed_attack": 0,
+   "claimed_benign": 0,
+   "frac_empty_all": 1.0,
+   "frac_empty_attack": 1.0,
+   "fdr_all": 0.0,
+   "fdr_attack": 0.0,
+   "cond_fdp": null,
+   "pooled_fdr": 0.0,
+   "sum_R": 0.0,
+   "sum_V": 0.0,
+   "sum_TP": 0.0,
+   "n_claims": 0.0,
+   "n_false": 0.0,
+   "fdx_020": 0.0,
+   "fdx_030": 0.0,
+   "cond_fdx_020": null,
+   "fdp_min_claimed": null,
+   "fdp_max_claimed": null,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    }
+   ],
+   "setting": "S_TON transfer, CF-GOTHAM-T v2 bank",
+   "tag": "v2"
+  },
+  {
+   "cal": "cf_gotham_t_v2/S_TON.stat",
+   "test": "gotham_real/S_TON.stat",
+   "method": "bh_ref",
+   "alpha": 0.2,
+   "lam_idx": null,
+   "cal_incidents_with_claims": null,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 2,
+   "claimed_attack": 2,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.7777777777777778,
+   "frac_empty_attack": 0.7142857142857143,
+   "fdr_all": 0.21296296296296294,
+   "fdr_attack": 0.2738095238095238,
+   "cond_fdp": 0.9583333333333333,
+   "pooled_fdr": 0.9565217391304348,
+   "sum_R": 23.0,
+   "sum_V": 22.0,
+   "sum_TP": 1.0,
+   "n_claims": 2.5555555555555554,
+   "n_false": 2.4444444444444446,
+   "fdx_020": 0.2222222222222222,
+   "fdx_030": 0.2222222222222222,
+   "cond_fdx_020": 1.0,
+   "fdp_min_claimed": 0.9166666666666666,
+   "fdp_max_claimed": 1.0,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 11,
+     "V": 11,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 12,
+     "V": 11,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    }
+   ],
+   "setting": "S_TON transfer, CF-GOTHAM-T v2 bank",
+   "tag": "v2"
+  },
+  {
+   "cal": "cf_gotham_t/S_TON.stat",
+   "test": "gotham_real/S_TON.stat",
+   "method": "crc_bh",
+   "alpha": 0.1,
+   "lam_idx": 56,
+   "cal_incidents_with_claims": 13,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 4,
+   "claimed_attack": 4,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.5555555555555556,
+   "frac_empty_attack": 0.42857142857142855,
+   "fdr_all": 0.42194643419031225,
+   "fdr_attack": 0.5425025582446873,
+   "cond_fdp": 0.9493794769282027,
+   "pooled_fdr": 0.9456521739130435,
+   "sum_R": 92.0,
+   "sum_V": 87.0,
+   "sum_TP": 5.0,
+   "n_claims": 10.222222222222221,
+   "n_false": 9.666666666666666,
+   "fdx_020": 0.4444444444444444,
+   "fdx_030": 0.4444444444444444,
+   "cond_fdx_020": 1.0,
+   "fdp_min_claimed": 0.896551724137931,
+   "fdp_max_claimed": 1.0,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 29,
+     "V": 26,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 22,
+     "V": 22,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 23,
+     "V": 22,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 18,
+     "V": 17,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    }
+   ],
+   "setting": "S_TON transfer, CF-GOTHAM-T v1 bank",
+   "tag": "v1"
+  },
+  {
+   "cal": "cf_gotham_t/S_TON.stat",
+   "test": "gotham_real/S_TON.stat",
+   "method": "crc_bh",
+   "alpha": 0.2,
+   "lam_idx": 56,
+   "cal_incidents_with_claims": 13,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 4,
+   "claimed_attack": 4,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.5555555555555556,
+   "frac_empty_attack": 0.42857142857142855,
+   "fdr_all": 0.42194643419031225,
+   "fdr_attack": 0.5425025582446873,
+   "cond_fdp": 0.9493794769282027,
+   "pooled_fdr": 0.9456521739130435,
+   "sum_R": 92.0,
+   "sum_V": 87.0,
+   "sum_TP": 5.0,
+   "n_claims": 10.222222222222221,
+   "n_false": 9.666666666666666,
+   "fdx_020": 0.4444444444444444,
+   "fdx_030": 0.4444444444444444,
+   "cond_fdx_020": 1.0,
+   "fdp_min_claimed": 0.896551724137931,
+   "fdp_max_claimed": 1.0,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 29,
+     "V": 26,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 22,
+     "V": 22,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 23,
+     "V": 22,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 18,
+     "V": 17,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    }
+   ],
+   "setting": "S_TON transfer, CF-GOTHAM-T v1 bank",
+   "tag": "v1"
+  },
+  {
+   "cal": "cf_gotham_t/S_TON.stat",
+   "test": "gotham_real/S_TON.stat",
+   "method": "crc_st",
+   "alpha": 0.1,
+   "lam_idx": 31,
+   "cal_incidents_with_claims": 15,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 1,
+   "claimed_attack": 1,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.8888888888888888,
+   "frac_empty_attack": 0.8571428571428571,
+   "fdr_all": 0.1111111111111111,
+   "fdr_attack": 0.14285714285714285,
+   "cond_fdp": 1.0,
+   "pooled_fdr": 1.0,
+   "sum_R": 1.0,
+   "sum_V": 1.0,
+   "sum_TP": 0.0,
+   "n_claims": 0.1111111111111111,
+   "n_false": 0.1111111111111111,
+   "fdx_020": 0.1111111111111111,
+   "fdx_030": 0.1111111111111111,
+   "cond_fdx_020": 1.0,
+   "fdp_min_claimed": 1.0,
+   "fdp_max_claimed": 1.0,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 1,
+     "V": 1,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    }
+   ],
+   "setting": "S_TON transfer, CF-GOTHAM-T v1 bank",
+   "tag": "v1"
+  },
+  {
+   "cal": "cf_gotham_t/S_TON.stat",
+   "test": "gotham_real/S_TON.stat",
+   "method": "crc_st",
+   "alpha": 0.2,
+   "lam_idx": 32,
+   "cal_incidents_with_claims": 26,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 1,
+   "claimed_attack": 1,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.8888888888888888,
+   "frac_empty_attack": 0.8571428571428571,
+   "fdr_all": 0.1111111111111111,
+   "fdr_attack": 0.14285714285714285,
+   "cond_fdp": 1.0,
+   "pooled_fdr": 1.0,
+   "sum_R": 1.0,
+   "sum_V": 1.0,
+   "sum_TP": 0.0,
+   "n_claims": 0.1111111111111111,
+   "n_false": 0.1111111111111111,
+   "fdx_020": 0.1111111111111111,
+   "fdx_030": 0.1111111111111111,
+   "cond_fdx_020": 1.0,
+   "fdp_min_claimed": 1.0,
+   "fdp_max_claimed": 1.0,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 1,
+     "V": 1,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    }
+   ],
+   "setting": "S_TON transfer, CF-GOTHAM-T v1 bank",
+   "tag": "v1"
+  },
+  {
+   "cal": "cf_gotham_t/S_TON.stat",
+   "test": "gotham_real/S_TON.stat",
+   "method": "crc_fdx020",
+   "alpha": 0.1,
+   "lam_idx": 56,
+   "cal_incidents_with_claims": 13,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 4,
+   "claimed_attack": 4,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.5555555555555556,
+   "frac_empty_attack": 0.42857142857142855,
+   "fdr_all": 0.42194643419031225,
+   "fdr_attack": 0.5425025582446873,
+   "cond_fdp": 0.9493794769282027,
+   "pooled_fdr": 0.9456521739130435,
+   "sum_R": 92.0,
+   "sum_V": 87.0,
+   "sum_TP": 5.0,
+   "n_claims": 10.222222222222221,
+   "n_false": 9.666666666666666,
+   "fdx_020": 0.4444444444444444,
+   "fdx_030": 0.4444444444444444,
+   "cond_fdx_020": 1.0,
+   "fdp_min_claimed": 0.896551724137931,
+   "fdp_max_claimed": 1.0,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 29,
+     "V": 26,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 22,
+     "V": 22,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 23,
+     "V": 22,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 18,
+     "V": 17,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    }
+   ],
+   "setting": "S_TON transfer, CF-GOTHAM-T v1 bank",
+   "tag": "v1"
+  },
+  {
+   "cal": "cf_gotham_t/S_TON.stat",
+   "test": "gotham_real/S_TON.stat",
+   "method": "crc_fdx020",
+   "alpha": 0.2,
+   "lam_idx": 56,
+   "cal_incidents_with_claims": 13,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 4,
+   "claimed_attack": 4,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.5555555555555556,
+   "frac_empty_attack": 0.42857142857142855,
+   "fdr_all": 0.42194643419031225,
+   "fdr_attack": 0.5425025582446873,
+   "cond_fdp": 0.9493794769282027,
+   "pooled_fdr": 0.9456521739130435,
+   "sum_R": 92.0,
+   "sum_V": 87.0,
+   "sum_TP": 5.0,
+   "n_claims": 10.222222222222221,
+   "n_false": 9.666666666666666,
+   "fdx_020": 0.4444444444444444,
+   "fdx_030": 0.4444444444444444,
+   "cond_fdx_020": 1.0,
+   "fdp_min_claimed": 0.896551724137931,
+   "fdp_max_claimed": 1.0,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 29,
+     "V": 26,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 22,
+     "V": 22,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 23,
+     "V": 22,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 18,
+     "V": 17,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    }
+   ],
+   "setting": "S_TON transfer, CF-GOTHAM-T v1 bank",
+   "tag": "v1"
+  },
+  {
+   "cal": "cf_gotham_t/S_TON.stat",
+   "test": "gotham_real/S_TON.stat",
+   "method": "crc_fdx030",
+   "alpha": 0.1,
+   "lam_idx": 56,
+   "cal_incidents_with_claims": 13,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 4,
+   "claimed_attack": 4,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.5555555555555556,
+   "frac_empty_attack": 0.42857142857142855,
+   "fdr_all": 0.42194643419031225,
+   "fdr_attack": 0.5425025582446873,
+   "cond_fdp": 0.9493794769282027,
+   "pooled_fdr": 0.9456521739130435,
+   "sum_R": 92.0,
+   "sum_V": 87.0,
+   "sum_TP": 5.0,
+   "n_claims": 10.222222222222221,
+   "n_false": 9.666666666666666,
+   "fdx_020": 0.4444444444444444,
+   "fdx_030": 0.4444444444444444,
+   "cond_fdx_020": 1.0,
+   "fdp_min_claimed": 0.896551724137931,
+   "fdp_max_claimed": 1.0,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 29,
+     "V": 26,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 22,
+     "V": 22,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 23,
+     "V": 22,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 18,
+     "V": 17,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    }
+   ],
+   "setting": "S_TON transfer, CF-GOTHAM-T v1 bank",
+   "tag": "v1"
+  },
+  {
+   "cal": "cf_gotham_t/S_TON.stat",
+   "test": "gotham_real/S_TON.stat",
+   "method": "crc_fdx030",
+   "alpha": 0.2,
+   "lam_idx": 56,
+   "cal_incidents_with_claims": 13,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 4,
+   "claimed_attack": 4,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.5555555555555556,
+   "frac_empty_attack": 0.42857142857142855,
+   "fdr_all": 0.42194643419031225,
+   "fdr_attack": 0.5425025582446873,
+   "cond_fdp": 0.9493794769282027,
+   "pooled_fdr": 0.9456521739130435,
+   "sum_R": 92.0,
+   "sum_V": 87.0,
+   "sum_TP": 5.0,
+   "n_claims": 10.222222222222221,
+   "n_false": 9.666666666666666,
+   "fdx_020": 0.4444444444444444,
+   "fdx_030": 0.4444444444444444,
+   "cond_fdx_020": 1.0,
+   "fdp_min_claimed": 0.896551724137931,
+   "fdp_max_claimed": 1.0,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 29,
+     "V": 26,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 22,
+     "V": 22,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 23,
+     "V": 22,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 18,
+     "V": 17,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    }
+   ],
+   "setting": "S_TON transfer, CF-GOTHAM-T v1 bank",
+   "tag": "v1"
+  },
+  {
+   "cal": "cf_gotham_t/S_TON.stat",
+   "test": "gotham_real/S_TON.stat",
+   "method": "ltt",
+   "alpha": 0.1,
+   "lam_idx": 55,
+   "cal_incidents_with_claims": 8,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 3,
+   "claimed_attack": 3,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.6666666666666666,
+   "frac_empty_attack": 0.5714285714285714,
+   "fdr_all": 0.32094943240454077,
+   "fdr_attack": 0.4126492702344095,
+   "cond_fdp": 0.9628482972136222,
+   "pooled_fdr": 0.9655172413793104,
+   "sum_R": 58.0,
+   "sum_V": 56.0,
+   "sum_TP": 2.0,
+   "n_claims": 6.444444444444445,
+   "n_false": 6.222222222222222,
+   "fdx_020": 0.3333333333333333,
+   "fdx_030": 0.3333333333333333,
+   "cond_fdx_020": 1.0,
+   "fdp_min_claimed": 0.9411764705882353,
+   "fdp_max_claimed": 1.0,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 22,
+     "V": 22,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 19,
+     "V": 18,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 17,
+     "V": 16,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    }
+   ],
+   "setting": "S_TON transfer, CF-GOTHAM-T v1 bank",
+   "tag": "v1"
+  },
+  {
+   "cal": "cf_gotham_t/S_TON.stat",
+   "test": "gotham_real/S_TON.stat",
+   "method": "ltt",
+   "alpha": 0.2,
+   "lam_idx": 56,
+   "cal_incidents_with_claims": 13,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 4,
+   "claimed_attack": 4,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.5555555555555556,
+   "frac_empty_attack": 0.42857142857142855,
+   "fdr_all": 0.42194643419031225,
+   "fdr_attack": 0.5425025582446873,
+   "cond_fdp": 0.9493794769282027,
+   "pooled_fdr": 0.9456521739130435,
+   "sum_R": 92.0,
+   "sum_V": 87.0,
+   "sum_TP": 5.0,
+   "n_claims": 10.222222222222221,
+   "n_false": 9.666666666666666,
+   "fdx_020": 0.4444444444444444,
+   "fdx_030": 0.4444444444444444,
+   "cond_fdx_020": 1.0,
+   "fdp_min_claimed": 0.896551724137931,
+   "fdp_max_claimed": 1.0,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 29,
+     "V": 26,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 22,
+     "V": 22,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 23,
+     "V": 22,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 18,
+     "V": 17,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    }
+   ],
+   "setting": "S_TON transfer, CF-GOTHAM-T v1 bank",
+   "tag": "v1"
+  },
+  {
+   "cal": "cf_gotham_t/S_TON.stat",
+   "test": "gotham_real/S_TON.stat",
+   "method": "by_ref",
+   "alpha": 0.1,
+   "lam_idx": null,
+   "cal_incidents_with_claims": null,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 0,
+   "claimed_attack": 0,
+   "claimed_benign": 0,
+   "frac_empty_all": 1.0,
+   "frac_empty_attack": 1.0,
+   "fdr_all": 0.0,
+   "fdr_attack": 0.0,
+   "cond_fdp": null,
+   "pooled_fdr": 0.0,
+   "sum_R": 0.0,
+   "sum_V": 0.0,
+   "sum_TP": 0.0,
+   "n_claims": 0.0,
+   "n_false": 0.0,
+   "fdx_020": 0.0,
+   "fdx_030": 0.0,
+   "cond_fdx_020": null,
+   "fdp_min_claimed": null,
+   "fdp_max_claimed": null,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    }
+   ],
+   "setting": "S_TON transfer, CF-GOTHAM-T v1 bank",
+   "tag": "v1"
+  },
+  {
+   "cal": "cf_gotham_t/S_TON.stat",
+   "test": "gotham_real/S_TON.stat",
+   "method": "by_ref",
+   "alpha": 0.2,
+   "lam_idx": null,
+   "cal_incidents_with_claims": null,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 0,
+   "claimed_attack": 0,
+   "claimed_benign": 0,
+   "frac_empty_all": 1.0,
+   "frac_empty_attack": 1.0,
+   "fdr_all": 0.0,
+   "fdr_attack": 0.0,
+   "cond_fdp": null,
+   "pooled_fdr": 0.0,
+   "sum_R": 0.0,
+   "sum_V": 0.0,
+   "sum_TP": 0.0,
+   "n_claims": 0.0,
+   "n_false": 0.0,
+   "fdx_020": 0.0,
+   "fdx_030": 0.0,
+   "cond_fdx_020": null,
+   "fdp_min_claimed": null,
+   "fdp_max_claimed": null,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    }
+   ],
+   "setting": "S_TON transfer, CF-GOTHAM-T v1 bank",
+   "tag": "v1"
+  },
+  {
+   "cal": "cf_gotham_t/S_TON.stat",
+   "test": "gotham_real/S_TON.stat",
+   "method": "bh_ref",
+   "alpha": 0.1,
+   "lam_idx": null,
+   "cal_incidents_with_claims": null,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 0,
+   "claimed_attack": 0,
+   "claimed_benign": 0,
+   "frac_empty_all": 1.0,
+   "frac_empty_attack": 1.0,
+   "fdr_all": 0.0,
+   "fdr_attack": 0.0,
+   "cond_fdp": null,
+   "pooled_fdr": 0.0,
+   "sum_R": 0.0,
+   "sum_V": 0.0,
+   "sum_TP": 0.0,
+   "n_claims": 0.0,
+   "n_false": 0.0,
+   "fdx_020": 0.0,
+   "fdx_030": 0.0,
+   "cond_fdx_020": null,
+   "fdp_min_claimed": null,
+   "fdp_max_claimed": null,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    }
+   ],
+   "setting": "S_TON transfer, CF-GOTHAM-T v1 bank",
+   "tag": "v1"
+  },
+  {
+   "cal": "cf_gotham_t/S_TON.stat",
+   "test": "gotham_real/S_TON.stat",
+   "method": "bh_ref",
+   "alpha": 0.2,
+   "lam_idx": null,
+   "cal_incidents_with_claims": null,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 2,
+   "claimed_attack": 2,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.7777777777777778,
+   "frac_empty_attack": 0.7142857142857143,
+   "fdr_all": 0.21296296296296294,
+   "fdr_attack": 0.2738095238095238,
+   "cond_fdp": 0.9583333333333333,
+   "pooled_fdr": 0.9565217391304348,
+   "sum_R": 23.0,
+   "sum_V": 22.0,
+   "sum_TP": 1.0,
+   "n_claims": 2.5555555555555554,
+   "n_false": 2.4444444444444446,
+   "fdx_020": 0.2222222222222222,
+   "fdx_030": 0.2222222222222222,
+   "cond_fdx_020": 1.0,
+   "fdp_min_claimed": 0.9166666666666666,
+   "fdp_max_claimed": 1.0,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 11,
+     "V": 11,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 12,
+     "V": 11,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    }
+   ],
+   "setting": "S_TON transfer, CF-GOTHAM-T v1 bank",
+   "tag": "v1"
+  },
+  {
+   "cal": "cf_gotham_t_v2/S_GOT2.stat",
+   "test": "gotham_real/S_GOT2.stat",
+   "method": "crc_bh",
+   "alpha": 0.1,
+   "lam_idx": 42,
+   "cal_incidents_with_claims": 135,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 6,
+   "claimed_attack": 6,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.3333333333333333,
+   "frac_empty_attack": 0.14285714285714285,
+   "fdr_all": 0.3695045695045695,
+   "fdr_attack": 0.47507730364873224,
+   "cond_fdp": 0.5542568542568543,
+   "pooled_fdr": 0.8289473684210527,
+   "sum_R": 76.0,
+   "sum_V": 63.0,
+   "sum_TP": 13.0,
+   "n_claims": 8.444444444444445,
+   "n_false": 7.0,
+   "fdx_020": 0.4444444444444444,
+   "fdx_030": 0.4444444444444444,
+   "cond_fdx_020": 0.6666666666666666,
+   "fdp_min_claimed": 0.0,
+   "fdp_max_claimed": 0.9047619047619048,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 10,
+     "V": 7,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 21,
+     "V": 19,
+     "TP": 2
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 1,
+     "V": 0,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 22,
+     "V": 19,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 21,
+     "V": 18,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 1,
+     "V": 0,
+     "TP": 1
+    }
+   ],
+   "setting": "S_GOT2 in-domain (confounded: bank from the scorer's training pools)",
+   "tag": "v2_sgot2"
+  },
+  {
+   "cal": "cf_gotham_t_v2/S_GOT2.stat",
+   "test": "gotham_real/S_GOT2.stat",
+   "method": "crc_bh",
+   "alpha": 0.2,
+   "lam_idx": 47,
+   "cal_incidents_with_claims": 136,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 6,
+   "claimed_attack": 6,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.3333333333333333,
+   "frac_empty_attack": 0.14285714285714285,
+   "fdr_all": 0.5781012359959727,
+   "fdr_attack": 0.7432730177091079,
+   "cond_fdp": 0.8671518539939592,
+   "pooled_fdr": 0.8671328671328671,
+   "sum_R": 143.0,
+   "sum_V": 124.0,
+   "sum_TP": 19.0,
+   "n_claims": 15.88888888888889,
+   "n_false": 13.777777777777779,
+   "fdx_020": 0.6666666666666666,
+   "fdx_030": 0.6666666666666666,
+   "cond_fdx_020": 1.0,
+   "fdp_min_claimed": 0.8421052631578947,
+   "fdp_max_claimed": 0.9047619047619048,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 19,
+     "V": 16,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 21,
+     "V": 19,
+     "TP": 2
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 28,
+     "V": 24,
+     "TP": 4
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 26,
+     "V": 23,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 21,
+     "V": 18,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 28,
+     "V": 24,
+     "TP": 4
+    }
+   ],
+   "setting": "S_GOT2 in-domain (confounded: bank from the scorer's training pools)",
+   "tag": "v2_sgot2"
+  },
+  {
+   "cal": "cf_gotham_t_v2/S_GOT2.stat",
+   "test": "gotham_real/S_GOT2.stat",
+   "method": "crc_st",
+   "alpha": 0.1,
+   "lam_idx": 20,
+   "cal_incidents_with_claims": 135,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 4,
+   "claimed_attack": 4,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.5555555555555556,
+   "frac_empty_attack": 0.42857142857142855,
+   "fdr_all": 0.14814814814814814,
+   "fdr_attack": 0.19047619047619047,
+   "cond_fdp": 0.3333333333333333,
+   "pooled_fdr": 0.3076923076923077,
+   "sum_R": 13.0,
+   "sum_V": 4.0,
+   "sum_TP": 9.0,
+   "n_claims": 1.4444444444444444,
+   "n_false": 0.4444444444444444,
+   "fdx_020": 0.4444444444444444,
+   "fdx_030": 0.2222222222222222,
+   "cond_fdx_020": 1.0,
+   "fdp_min_claimed": 0.25,
+   "fdp_max_claimed": 0.5,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 4,
+     "V": 1,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 4,
+     "V": 1,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 3,
+     "V": 1,
+     "TP": 2
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 2,
+     "V": 1,
+     "TP": 1
+    }
+   ],
+   "setting": "S_GOT2 in-domain (confounded: bank from the scorer's training pools)",
+   "tag": "v2_sgot2"
+  },
+  {
+   "cal": "cf_gotham_t_v2/S_GOT2.stat",
+   "test": "gotham_real/S_GOT2.stat",
+   "method": "crc_st",
+   "alpha": 0.2,
+   "lam_idx": 29,
+   "cal_incidents_with_claims": 136,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 7,
+   "claimed_attack": 7,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.2222222222222222,
+   "frac_empty_attack": 0.0,
+   "fdr_all": 0.4844797178130512,
+   "fdr_attack": 0.6229024943310658,
+   "cond_fdp": 0.6229024943310658,
+   "pooled_fdr": 0.7083333333333334,
+   "sum_R": 48.0,
+   "sum_V": 34.0,
+   "sum_TP": 14.0,
+   "n_claims": 5.333333333333333,
+   "n_false": 3.7777777777777777,
+   "fdx_020": 0.7777777777777778,
+   "fdx_030": 0.6666666666666666,
+   "cond_fdx_020": 1.0,
+   "fdp_min_claimed": 0.25,
+   "fdp_max_claimed": 1.0,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 5,
+     "V": 2,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 4,
+     "V": 1,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 9,
+     "V": 9,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 7,
+     "V": 4,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 2,
+     "V": 1,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 9,
+     "V": 8,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 12,
+     "V": 9,
+     "TP": 3
+    }
+   ],
+   "setting": "S_GOT2 in-domain (confounded: bank from the scorer's training pools)",
+   "tag": "v2_sgot2"
+  },
+  {
+   "cal": "cf_gotham_t_v2/S_GOT2.stat",
+   "test": "gotham_real/S_GOT2.stat",
+   "method": "crc_fdx020",
+   "alpha": 0.1,
+   "lam_idx": 34,
+   "cal_incidents_with_claims": 130,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 3,
+   "claimed_attack": 3,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.6666666666666666,
+   "frac_empty_attack": 0.5714285714285714,
+   "fdr_all": 0.027777777777777776,
+   "fdr_attack": 0.03571428571428571,
+   "cond_fdp": 0.08333333333333333,
+   "pooled_fdr": 0.16666666666666666,
+   "sum_R": 6.0,
+   "sum_V": 1.0,
+   "sum_TP": 5.0,
+   "n_claims": 0.6666666666666666,
+   "n_false": 0.1111111111111111,
+   "fdx_020": 0.1111111111111111,
+   "fdx_030": 0.0,
+   "cond_fdx_020": 0.3333333333333333,
+   "fdp_min_claimed": 0.0,
+   "fdp_max_claimed": 0.25,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 4,
+     "V": 1,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 1,
+     "V": 0,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 1,
+     "V": 0,
+     "TP": 1
+    }
+   ],
+   "setting": "S_GOT2 in-domain (confounded: bank from the scorer's training pools)",
+   "tag": "v2_sgot2"
+  },
+  {
+   "cal": "cf_gotham_t_v2/S_GOT2.stat",
+   "test": "gotham_real/S_GOT2.stat",
+   "method": "crc_fdx020",
+   "alpha": 0.2,
+   "lam_idx": 42,
+   "cal_incidents_with_claims": 135,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 6,
+   "claimed_attack": 6,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.3333333333333333,
+   "frac_empty_attack": 0.14285714285714285,
+   "fdr_all": 0.3695045695045695,
+   "fdr_attack": 0.47507730364873224,
+   "cond_fdp": 0.5542568542568543,
+   "pooled_fdr": 0.8289473684210527,
+   "sum_R": 76.0,
+   "sum_V": 63.0,
+   "sum_TP": 13.0,
+   "n_claims": 8.444444444444445,
+   "n_false": 7.0,
+   "fdx_020": 0.4444444444444444,
+   "fdx_030": 0.4444444444444444,
+   "cond_fdx_020": 0.6666666666666666,
+   "fdp_min_claimed": 0.0,
+   "fdp_max_claimed": 0.9047619047619048,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 10,
+     "V": 7,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 21,
+     "V": 19,
+     "TP": 2
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 1,
+     "V": 0,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 22,
+     "V": 19,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 21,
+     "V": 18,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 1,
+     "V": 0,
+     "TP": 1
+    }
+   ],
+   "setting": "S_GOT2 in-domain (confounded: bank from the scorer's training pools)",
+   "tag": "v2_sgot2"
+  },
+  {
+   "cal": "cf_gotham_t_v2/S_GOT2.stat",
+   "test": "gotham_real/S_GOT2.stat",
+   "method": "crc_fdx030",
+   "alpha": 0.1,
+   "lam_idx": 39,
+   "cal_incidents_with_claims": 134,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 5,
+   "claimed_attack": 5,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.4444444444444444,
+   "frac_empty_attack": 0.2857142857142857,
+   "fdr_all": 0.22354497354497355,
+   "fdr_attack": 0.28741496598639454,
+   "cond_fdp": 0.4023809523809524,
+   "pooled_fdr": 0.7916666666666666,
+   "sum_R": 48.0,
+   "sum_V": 38.0,
+   "sum_TP": 10.0,
+   "n_claims": 5.333333333333333,
+   "n_false": 4.222222222222222,
+   "fdx_020": 0.3333333333333333,
+   "fdx_030": 0.2222222222222222,
+   "cond_fdx_020": 0.6,
+   "fdp_min_claimed": 0.0,
+   "fdp_max_claimed": 0.9047619047619048,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 4,
+     "V": 1,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 21,
+     "V": 19,
+     "TP": 2
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 1,
+     "V": 0,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 21,
+     "V": 18,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 1,
+     "V": 0,
+     "TP": 1
+    }
+   ],
+   "setting": "S_GOT2 in-domain (confounded: bank from the scorer's training pools)",
+   "tag": "v2_sgot2"
+  },
+  {
+   "cal": "cf_gotham_t_v2/S_GOT2.stat",
+   "test": "gotham_real/S_GOT2.stat",
+   "method": "crc_fdx030",
+   "alpha": 0.2,
+   "lam_idx": 44,
+   "cal_incidents_with_claims": 135,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 6,
+   "claimed_attack": 6,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.3333333333333333,
+   "frac_empty_attack": 0.14285714285714285,
+   "fdr_all": 0.38711222500696185,
+   "fdr_attack": 0.49771571786609375,
+   "cond_fdp": 0.5806683375104428,
+   "pooled_fdr": 0.8522727272727273,
+   "sum_R": 88.0,
+   "sum_V": 75.0,
+   "sum_TP": 13.0,
+   "n_claims": 9.777777777777779,
+   "n_false": 8.333333333333334,
+   "fdx_020": 0.4444444444444444,
+   "fdx_030": 0.4444444444444444,
+   "cond_fdx_020": 0.6666666666666666,
+   "fdp_min_claimed": 0.0,
+   "fdp_max_claimed": 0.9047619047619048,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 19,
+     "V": 16,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 21,
+     "V": 19,
+     "TP": 2
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 1,
+     "V": 0,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 25,
+     "V": 22,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 21,
+     "V": 18,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 1,
+     "V": 0,
+     "TP": 1
+    }
+   ],
+   "setting": "S_GOT2 in-domain (confounded: bank from the scorer's training pools)",
+   "tag": "v2_sgot2"
+  },
+  {
+   "cal": "cf_gotham_t_v2/S_GOT2.stat",
+   "test": "gotham_real/S_GOT2.stat",
+   "method": "ltt",
+   "alpha": 0.1,
+   "lam_idx": 35,
+   "cal_incidents_with_claims": 131,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 4,
+   "claimed_attack": 4,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.5555555555555556,
+   "frac_empty_attack": 0.42857142857142855,
+   "fdr_all": 0.12719298245614036,
+   "fdr_attack": 0.16353383458646617,
+   "cond_fdp": 0.2861842105263158,
+   "pooled_fdr": 0.72,
+   "sum_R": 25.0,
+   "sum_V": 18.0,
+   "sum_TP": 7.0,
+   "n_claims": 2.7777777777777777,
+   "n_false": 2.0,
+   "fdx_020": 0.2222222222222222,
+   "fdx_030": 0.1111111111111111,
+   "cond_fdx_020": 0.5,
+   "fdp_min_claimed": 0.0,
+   "fdp_max_claimed": 0.8947368421052632,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 4,
+     "V": 1,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 1,
+     "V": 0,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 19,
+     "V": 17,
+     "TP": 2
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 1,
+     "V": 0,
+     "TP": 1
+    }
+   ],
+   "setting": "S_GOT2 in-domain (confounded: bank from the scorer's training pools)",
+   "tag": "v2_sgot2"
+  },
+  {
+   "cal": "cf_gotham_t_v2/S_GOT2.stat",
+   "test": "gotham_real/S_GOT2.stat",
+   "method": "ltt",
+   "alpha": 0.2,
+   "lam_idx": 44,
+   "cal_incidents_with_claims": 135,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 6,
+   "claimed_attack": 6,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.3333333333333333,
+   "frac_empty_attack": 0.14285714285714285,
+   "fdr_all": 0.38711222500696185,
+   "fdr_attack": 0.49771571786609375,
+   "cond_fdp": 0.5806683375104428,
+   "pooled_fdr": 0.8522727272727273,
+   "sum_R": 88.0,
+   "sum_V": 75.0,
+   "sum_TP": 13.0,
+   "n_claims": 9.777777777777779,
+   "n_false": 8.333333333333334,
+   "fdx_020": 0.4444444444444444,
+   "fdx_030": 0.4444444444444444,
+   "cond_fdx_020": 0.6666666666666666,
+   "fdp_min_claimed": 0.0,
+   "fdp_max_claimed": 0.9047619047619048,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 19,
+     "V": 16,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 21,
+     "V": 19,
+     "TP": 2
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 1,
+     "V": 0,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 25,
+     "V": 22,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 21,
+     "V": 18,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 1,
+     "V": 0,
+     "TP": 1
+    }
+   ],
+   "setting": "S_GOT2 in-domain (confounded: bank from the scorer's training pools)",
+   "tag": "v2_sgot2"
+  },
+  {
+   "cal": "cf_gotham_t_v2/S_GOT2.stat",
+   "test": "gotham_real/S_GOT2.stat",
+   "method": "by_ref",
+   "alpha": 0.1,
+   "lam_idx": null,
+   "cal_incidents_with_claims": null,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 5,
+   "claimed_attack": 5,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.4444444444444444,
+   "frac_empty_attack": 0.2857142857142857,
+   "fdr_all": 0.223015873015873,
+   "fdr_attack": 0.286734693877551,
+   "cond_fdp": 0.4014285714285714,
+   "pooled_fdr": 0.7872340425531915,
+   "sum_R": 47.0,
+   "sum_V": 37.0,
+   "sum_TP": 10.0,
+   "n_claims": 5.222222222222222,
+   "n_false": 4.111111111111111,
+   "fdx_020": 0.3333333333333333,
+   "fdx_030": 0.2222222222222222,
+   "cond_fdx_020": 0.6,
+   "fdp_min_claimed": 0.0,
+   "fdp_max_claimed": 0.9,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 4,
+     "V": 1,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 20,
+     "V": 18,
+     "TP": 2
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 1,
+     "V": 0,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 21,
+     "V": 18,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 1,
+     "V": 0,
+     "TP": 1
+    }
+   ],
+   "setting": "S_GOT2 in-domain (confounded: bank from the scorer's training pools)",
+   "tag": "v2_sgot2"
+  },
+  {
+   "cal": "cf_gotham_t_v2/S_GOT2.stat",
+   "test": "gotham_real/S_GOT2.stat",
+   "method": "by_ref",
+   "alpha": 0.2,
+   "lam_idx": null,
+   "cal_incidents_with_claims": null,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 6,
+   "claimed_attack": 6,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.3333333333333333,
+   "frac_empty_attack": 0.14285714285714285,
+   "fdr_all": 0.36507936507936506,
+   "fdr_attack": 0.4693877551020408,
+   "cond_fdp": 0.5476190476190476,
+   "pooled_fdr": 0.8243243243243243,
+   "sum_R": 74.0,
+   "sum_V": 61.0,
+   "sum_TP": 13.0,
+   "n_claims": 8.222222222222221,
+   "n_false": 6.777777777777778,
+   "fdx_020": 0.4444444444444444,
+   "fdx_030": 0.4444444444444444,
+   "cond_fdx_020": 0.6666666666666666,
+   "fdp_min_claimed": 0.0,
+   "fdp_max_claimed": 0.9047619047619048,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 9,
+     "V": 6,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 21,
+     "V": 19,
+     "TP": 2
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 1,
+     "V": 0,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 21,
+     "V": 18,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 21,
+     "V": 18,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 1,
+     "V": 0,
+     "TP": 1
+    }
+   ],
+   "setting": "S_GOT2 in-domain (confounded: bank from the scorer's training pools)",
+   "tag": "v2_sgot2"
+  },
+  {
+   "cal": "cf_gotham_t_v2/S_GOT2.stat",
+   "test": "gotham_real/S_GOT2.stat",
+   "method": "bh_ref",
+   "alpha": 0.1,
+   "lam_idx": null,
+   "cal_incidents_with_claims": null,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 6,
+   "claimed_attack": 6,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.3333333333333333,
+   "frac_empty_attack": 0.14285714285714285,
+   "fdr_all": 0.4828631407578776,
+   "fdr_attack": 0.6208240381172712,
+   "cond_fdp": 0.7242947111368164,
+   "pooled_fdr": 0.8620689655172413,
+   "sum_R": 116.0,
+   "sum_V": 100.0,
+   "sum_TP": 16.0,
+   "n_claims": 12.88888888888889,
+   "n_false": 11.11111111111111,
+   "fdx_020": 0.5555555555555556,
+   "fdx_030": 0.5555555555555556,
+   "cond_fdx_020": 0.8333333333333334,
+   "fdp_min_claimed": 0.0,
+   "fdp_max_claimed": 0.9047619047619048,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 19,
+     "V": 16,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 21,
+     "V": 19,
+     "TP": 2
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 1,
+     "V": 0,
+     "TP": 1
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 26,
+     "V": 23,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 21,
+     "V": 18,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 28,
+     "V": 24,
+     "TP": 4
+    }
+   ],
+   "setting": "S_GOT2 in-domain (confounded: bank from the scorer's training pools)",
+   "tag": "v2_sgot2"
+  },
+  {
+   "cal": "cf_gotham_t_v2/S_GOT2.stat",
+   "test": "gotham_real/S_GOT2.stat",
+   "method": "bh_ref",
+   "alpha": 0.2,
+   "lam_idx": null,
+   "cal_incidents_with_claims": null,
+   "K": 150,
+   "n_incidents": 9,
+   "n_attack": 7,
+   "claimed_all": 7,
+   "claimed_attack": 7,
+   "claimed_benign": 0,
+   "frac_empty_all": 0.2222222222222222,
+   "frac_empty_attack": 0.0,
+   "fdr_all": 0.6150079614991895,
+   "fdr_attack": 0.7907245219275294,
+   "cond_fdp": 0.7907245219275294,
+   "pooled_fdr": 0.8698224852071006,
+   "sum_R": 169.0,
+   "sum_V": 147.0,
+   "sum_TP": 22.0,
+   "n_claims": 18.77777777777778,
+   "n_false": 16.333333333333332,
+   "fdx_020": 0.7777777777777778,
+   "fdx_030": 0.6666666666666666,
+   "cond_fdx_020": 1.0,
+   "fdp_min_claimed": 0.25,
+   "fdp_max_claimed": 0.9047619047619048,
+   "per_incident": [
+    {
+     "incident": "gotham_real/benign_18_17_mirai_dos",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/benign_20_19_merlin",
+     "R": 0,
+     "V": 0,
+     "TP": 0
+    },
+    {
+     "incident": "gotham_real/merlin_17_15",
+     "R": 4,
+     "V": 1,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_dos_17_15",
+     "R": 19,
+     "V": 16,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_17_15",
+     "R": 21,
+     "V": 19,
+     "TP": 2
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_10",
+     "R": 39,
+     "V": 35,
+     "TP": 4
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_17",
+     "R": 27,
+     "V": 24,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_18_18",
+     "R": 21,
+     "V": 18,
+     "TP": 3
+    },
+    {
+     "incident": "gotham_real/mirai_infection_20_19",
+     "R": 38,
+     "V": 34,
+     "TP": 4
+    }
+   ],
+   "setting": "S_GOT2 in-domain (confounded: bank from the scorer's training pools)",
+   "tag": "v2_sgot2"
+  }
+ ],
+ "within_incident_auc": {
+  "cf_gotham_xb|S_GOTXA.stat": {
+   "mean": 0.9978675097058215,
+   "n_incidents": 136
+  },
+  "gotham_real|S_GOTXA.stat": {
+   "mean": 0.8417109888227673,
+   "n_incidents": 7
+  },
+  "cf_gotham_t_v2|S_TON.stat": {
+   "mean": 0.7567564217868906,
+   "n_incidents": 135
+  },
+  "gotham_real|S_TON.stat": {
+   "mean": 0.5818496056175605,
+   "n_incidents": 7
+  },
+  "cf_gotham_t|S_TON.stat": {
+   "mean": 0.7569758375893826,
+   "n_incidents": 135
+  },
+  "cf_gotham_t_v2|S_GOT2.stat": {
+   "mean": 0.9970080824974704,
+   "n_incidents": 135
+  },
+  "gotham_real|S_GOT2.stat": {
+   "mean": 0.8842366267387398,
+   "n_incidents": 7
+  }
+ },
+ "two_sample_auc_xb_vs_gotham_real": {
+  "auc_obs": 0.8066666666666666,
+  "p_perm": 0.00399800099950025,
+  "null_mean": 0.49030222222222225,
+  "null_q95": 0.7015555555555555,
+  "null_q99": 0.7718592592592592,
+  "P": 2000,
+  "cv_seeds": [
+   0
+  ]
+ },
+ "episode_use": {
+  "cf_gotham_xa": {
+   "n_used": 34,
+   "in_A": 34,
+   "in_B": 0
+  },
+  "cf_gotham_xb": {
+   "n_used": 43,
+   "in_A": 0,
+   "in_B": 43
+  }
+ },
+ "scorer_meta": {
+  "oof_within_auc_strict": {
+   "mean": 0.9978231078135656,
+   "median": 1.0,
+   "n_incidents": 92
+  },
+  "final_rounds": 164,
+  "n_train_incidents": 100
+ },
+ "bank_descriptors": {
+  "n_incidents": 150,
+  "N_median": 207.0,
+  "N_mean": 331.88,
+  "N_total": 49782.0,
+  "N_over_r_pooled": 76.38065522620904,
+  "N_over_r_all": 77.66302652106084,
+  "N_over_r_median": 67.43333333333334,
+  "r_CT": 0.8324675324675325,
+  "rho_T": 0.33217692974848223,
+  "ceiling": 0.5559410234171726,
+  "n_T": 1153.0,
+  "n_T_obs": 770.0,
+  "n_T_hid": 383.0,
+  "n_T_obs_in_C": 641.0,
+  "n_true": 722.0,
+  "n_amb": 12520.0,
+  "amb_share": 0.25149652484833873,
+  "n_benign_only": 13
+ }
+}

@@ -1,0 +1,9 @@
+# IoT-23 ingest (DESIGN §5.1.1; scripts/01_ingest_iot23.py; owner P2-A)
+bin_s: 7200                    # 2-h windows tiling each capture from floor(min ts)
+max_mal_windows: 12            # cap on windows with >= 1 malicious record of the seed (uniform sample)
+max_benign_windows: 1          # plus <= 1 benign-only window (no malicious record of any host)
+benign_min_seed_records: 1     # a benign-only window must contain >= this many seed records
+honeypot_max_windows: 6        # honeypots: windows with >= 1 seed record (all benign), uniform cap
+rng_seed: 0                    # numpy default_rng(0) for the malicious cap, default_rng(1) for the benign pick
+drop_ipv6: true                # RECORD_SCHEMA is IPv4; IPv6 records are dropped (counted in windows.json)
+seeds_file: iot23_seeds.yaml

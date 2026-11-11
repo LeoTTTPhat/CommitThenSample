@@ -1,0 +1,35 @@
+# IoT-23 seed hosts = case metadata (DESIGN §5.1.1; owner P2-A).
+# Rule (label-free; paper data appendix): the README "Infected device"/"Infected host" IP;
+# if missing or inconsistent with the IP in the capture (pcap) file name, use the file-name
+# IP and log it. Never inferred from "most malicious flows".
+# Sources: data/iot23/pcap/<scenario>/README.md + pcap file names (17 local scenarios);
+# P2_CertiChain/notes/refs/iot23_remote_readmes.md (33-1, 35-1, 39-1, 43-1, 52-1, 60-1).
+# 01_ingest_iot23.py re-checks every local README / file name against this table and checks
+# that the seed occurs as a conn-log endpoint (presence check). `seed_candidates` (35-1) are
+# tried in order: the first one present as an endpoint is used.
+# code: fixed numeric id used in rec_id = code * 1e9 + physical line number.
+scenarios:
+  "1-1":   {dir: CTU-IoT-Malware-Capture-1-1,  code: 1,  kind: malicious, seed: 192.168.100.103, readme_ip: 192.168.100.103, filename_ip: 192.168.100.103, malware: Hide and Seek, source: readme=filename}
+  "3-1":   {dir: CTU-IoT-Malware-Capture-3-1,  code: 2,  kind: malicious, seed: 192.168.2.5,     readme_ip: 192.168.2.5,     filename_ip: null,            malware: Muhstik,       source: readme ("Infected host"; no "Infected device" line; pcap 2018-05-21_capture.pcap has no IP)}
+  "7-1":   {dir: CTU-IoT-Malware-Capture-7-1,  code: 3,  kind: malicious, seed: 192.168.100.108, readme_ip: 192.168.100.108, filename_ip: 192.168.100.108, malware: Linux.Mirai,   source: readme=filename}
+  "8-1":   {dir: CTU-IoT-Malware-Capture-8-1,  code: 4,  kind: malicious, seed: 192.168.100.113, readme_ip: 192.168.100.113, filename_ip: 192.168.100.113, malware: Hakai,         source: readme=filename}
+  "9-1":   {dir: CTU-IoT-Malware-Capture-9-1,  code: 5,  kind: malicious, seed: 192.168.100.111, readme_ip: 192.168.100.111, filename_ip: 192.168.100.111, malware: Linux.Hajime,  source: readme=filename}
+  "17-1":  {dir: CTU-IoT-Malware-Capture-17-1, code: 6,  kind: malicious, seed: 192.168.100.111, readme_ip: 192.168.100.xx,  filename_ip: 192.168.100.111, malware: Kenjiro,       source: filename (README gives the incomplete "192.168.100.xx"; pcap 2018-09-06-11-43-12-192.168.100.111.only15000000.pcap)}
+  "20-1":  {dir: CTU-IoT-Malware-Capture-20-1, code: 7,  kind: malicious, seed: 192.168.100.103, readme_ip: 192.168.100.103, filename_ip: 192.168.100.103, malware: Torii,         source: readme=filename}
+  "21-1":  {dir: CTU-IoT-Malware-Capture-21-1, code: 8,  kind: malicious, seed: 192.168.100.113, readme_ip: 192.168.100.113, filename_ip: 192.168.100.113, malware: Torii,         source: readme=filename}
+  "33-1":  {dir: CTU-IoT-Malware-Capture-33-1, code: 9,  kind: malicious, seed: 192.168.1.197,   readme_ip: 192.168.1.197,   filename_ip: 192.168.1.197,   malware: Kenjiro,       source: remote readme=filename (notes/refs/iot23_remote_readmes.md)}
+  "34-1":  {dir: CTU-IoT-Malware-Capture-34-1, code: 10, kind: malicious, seed: 192.168.1.195,   readme_ip: 192.168.1.195,   filename_ip: 192.168.1.195,   malware: Mirai,         source: readme=filename}
+  "35-1":  {dir: CTU-IoT-Malware-Capture-35-1, code: 11, kind: malicious, seed: 192.168.1.196,   readme_ip: 192.168.1.195,   filename_ip: 192.168.1.196,   malware: Mirai,         source: "filename (remote README says .195, pcap 2018-12-21-15-33-59-192.168.1.196.pcap says .196 -> file-name IP; presence-checked, fallback .195)", seed_candidates: [192.168.1.196, 192.168.1.195]}
+  "36-1":  {dir: CTU-IoT-Malware-Capture-36-1, code: 12, kind: malicious, seed: 192.168.1.198,   readme_ip: 192.168.1.198,   filename_ip: 192.168.1.198,   malware: Okiru,         source: readme=filename}
+  "39-1":  {dir: CTU-IoT-Malware-Capture-39-1, code: 13, kind: malicious, seed: 192.168.1.194,   readme_ip: 192.168.1.194,   filename_ip: 192.168.1.194,   malware: IRCBot,        source: remote readme=filename}
+  "42-1":  {dir: CTU-IoT-Malware-Capture-42-1, code: 14, kind: malicious, seed: 192.168.1.197,   readme_ip: 192.168.1.197,   filename_ip: 192.168.1.197,   malware: Trojan,        source: readme=filename}
+  "43-1":  {dir: CTU-IoT-Malware-Capture-43-1, code: 15, kind: malicious, seed: 192.168.1.198,   readme_ip: 192.168.1.198,   filename_ip: 192.168.1.198,   malware: Mirai,         source: remote readme=filename}
+  "44-1":  {dir: CTU-IoT-Malware-Capture-44-1, code: 16, kind: malicious, seed: 192.168.1.199,   readme_ip: 192.168.1.199,   filename_ip: 192.168.1.199,   malware: Mirai,         source: readme=filename}
+  "48-1":  {dir: CTU-IoT-Malware-Capture-48-1, code: 17, kind: malicious, seed: 192.168.1.200,   readme_ip: 192.168.1.200,   filename_ip: 192.168.1.200,   malware: Mirai,         source: readme=filename}
+  "49-1":  {dir: CTU-IoT-Malware-Capture-49-1, code: 18, kind: malicious, seed: 192.168.1.193,   readme_ip: 192.168.1.193,   filename_ip: 192.168.1.193,   malware: Mirai,         source: readme=filename}
+  "52-1":  {dir: CTU-IoT-Malware-Capture-52-1, code: 19, kind: malicious, seed: 192.168.1.197,   readme_ip: 192.168.1.197,   filename_ip: 192.168.1.197,   malware: Mirai,         source: remote readme=filename}
+  "60-1":  {dir: CTU-IoT-Malware-Capture-60-1, code: 20, kind: malicious, seed: 192.168.1.195,   readme_ip: 192.168.1.195,   filename_ip: 192.168.1.195,   malware: Gafgyt,        source: remote readme=filename}
+  # Honeypots: seed = the honeypot device IP (benign-only incidents)
+  "HP-4-1": {dir: CTU-Honeypot-Capture-4-1, code: 21, kind: honeypot, seed: 192.168.1.132, readme_ip: 192.168.1.132, filename_ip: 192.168.1.132, device: Philips Hue bridge, source: readme=filename}
+  "HP-5-1": {dir: CTU-Honeypot-Capture-5-1, code: 22, kind: honeypot, seed: 192.168.2.3,   readme_ip: 192.168.2.3,   filename_ip: null,          device: Amazon Echo Dot,    source: readme ("IP address"; pcap 2018-09-21-capture.pcap has no IP)}
+  "HP-7-1": {dir: CTU-Honeypot-Capture-7-1, code: 23, kind: honeypot, seed: 192.168.1.158, readme_ip: null,          filename_ip: 192.168.1.158, device: Somfy gateway,      conn_subdir: Somfy-01, source: "filename (no README; conn log only for Somfy-01 whose pcap name has no IP; sibling captures Somfy-02..06 are named ...-192.168.1.158.pcap; presence-checked)"}

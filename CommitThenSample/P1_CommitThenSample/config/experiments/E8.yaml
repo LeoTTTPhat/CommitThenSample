@@ -1,0 +1,28 @@
+# E8 — one forensic report end to end (DESIGN §6.1 row E8; paper §VIII-E8 inline box). Owner P1-G.
+# Chosen BEFORE running the protocol (from labels and metadata only, never from Z): LP-IoT23(48-1, 1 %), the
+# only LP-IoT23 stream whose infected host shows C&C, a download stage (ELF download S5, loader strings D3 / D13
+# at epoch 0) and attack stages (labels L4) with Telnet prompts (D1/D2), all in the first 35 epochs.
+experiment: E8
+stream: lp_iot23_48-1_p10000
+fold: "48-1"
+model_seed: 0
+p_key: p10000
+rho: 0.05
+design: U6tau0.2
+controller: realised
+master_key: "P1-G/E8/deployment/v1"
+ahead: 1
+p_loss: 0.001
+counter_seed: 200
+run_epochs: 60                  # causal prefix of the stream: the investigation window + tightening horizon
+window: [0, 35]                 # epochs [e1, e2) of the investigation (17.5 min)
+tighten_until: 60               # U+ of windows [e1, e'') for e'' ≤ 60 (retrospective tightening, DESIGN §3.9)
+alpha: 0.05                     # per statement; family-wise = Bonferroni over the report's statements
+queries:                        # device = the infected host (seed MAC of the recipe)
+  - {name: "Telnet password prompts", q: D1c, kind: count}
+  - {name: "Telnet login prompts", q: D2c, kind: count}
+  - {name: "Mirai loader strings", q: D3, kind: indicator}
+  - {name: "ELF download (Suricata policy-violation)", q: S5, kind: indicator}
+  - {name: "C&C connections (label)", q: L2, kind: indicator}
+  - {name: "attack segments (label)", q: L4, kind: indicator}
+mc_reps: 200

@@ -1,0 +1,37 @@
+{
+ "figure": "fig2_recall.pdf",
+ "rho": [
+  0.01,
+  0.02,
+  0.05,
+  0.1
+ ],
+ "incidents_per_panel": {
+  "LP-IoT23/k<=20": 39,
+  "LP-IoT23/k21-100": 7,
+  "LP-IoT23/k>100": 14,
+  "LP-Edge/k<=20": 2,
+  "LP-Edge/k21-100": 5,
+  "LP-Edge/k>100": 12
+ },
+ "streams": {
+  "LP-IoT23": "6 LOSO folds at target p = 1% (realised 0.41-1.05%)",
+  "LP-Edge": "realised prevalence 0.10%, 0.97%, 3.25% (zero-shot models)"
+ },
+ "recall": "P(at least one content-bearing unit of the incident retained whole); exact for static designs and deterministic baselines; CtS-AI (adaptive arm) = mean over R = 200 reps x 3 seeds of the exact full-unit simulation; budget-matched policies spend B-bar E exactly or in expectation",
+ "adaptive_spend_over_target": {
+  "LP-IoT23 1%": [
+   1.10320953544214,
+   1.0484917911949088,
+   1.0058634893986844,
+   0.9951962925369711
+  ],
+  "LP-Edge": [
+   9.098997649496464,
+   4.841344166516145,
+   2.1917546831118946,
+   1.260102603488872
+  ]
+ },
+ "text_for_caption": "E1: content-evidence recall vs budget rho by incident size k (content-bearing units), LP-IoT23 (6 LOSO folds, p = 1%, in-domain) and LP-Edge (zero-shot); analytic for static designs and baselines, R = 200 reps x 3 seeds for the adaptive CtS-AI arm. On LP-Edge the adaptive arm overspends (spend/target in the sidecar), the matched static design does not."
+}

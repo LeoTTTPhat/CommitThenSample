@@ -1,0 +1,128 @@
+{
+  "rows": [
+    {
+      "name": "LP-IoT23 (6 folds)",
+      "realised_prevalence": {
+        "1000": "0.03",
+        "10000": "0.41",
+        "50000": "0.41--4.96"
+      },
+      "payload_units_per_epoch": "161--192",
+      "phi0": "0.0170--0.0187",
+      "meta_over_pcap": "0.003--0.020",
+      "n_estimands": "26",
+      "auc_by_family": {
+        "D (detectors)": {
+          "lo": 0.4968319590176826,
+          "hi": 1.0,
+          "n": 56
+        },
+        "S (Suricata)": {
+          "lo": 0.4997094834195898,
+          "hi": 1.0,
+          "n": 5
+        },
+        "L (labels)": {
+          "lo": 0.9944719843414372,
+          "hi": 0.9999690558141376,
+          "n": 6
+        },
+        "g_mal": {
+          "lo": 0.9972699860052396,
+          "hi": 0.9999690558141376,
+          "n": 6
+        }
+      }
+    },
+    {
+      "name": "LP-Edge",
+      "realised_prevalence": {
+        "1000": "0.10",
+        "10000": "0.97",
+        "50000": "3.25"
+      },
+      "payload_units_per_epoch": "429--442",
+      "phi0": "0.0182",
+      "meta_over_pcap": "0.007",
+      "n_estimands": "31",
+      "auc_by_family": {
+        "D (detectors)": {
+          "lo": 0.4095730443237283,
+          "hi": 0.9999493084939792,
+          "n": 8
+        },
+        "L (labels)": {
+          "lo": 0.2691904466714214,
+          "hi": 0.2691904466714214,
+          "n": 1
+        },
+        "g_mal": {
+          "lo": 0.32268107854661404,
+          "hi": 0.32268107854661404,
+          "n": 1
+        }
+      }
+    },
+    {
+      "name": "LP-Gotham (nat.)",
+      "realised_prevalence": {
+        "1000": "--",
+        "10000": "--",
+        "50000": "--",
+        "nat": "15.3"
+      },
+      "payload_units_per_epoch": "276",
+      "phi0": "0.0182",
+      "meta_over_pcap": "0.001",
+      "n_estimands": "27",
+      "auc_by_family": {
+        "D (detectors)": {
+          "lo": 0.4999173908733437,
+          "hi": 1.0,
+          "n": 11
+        },
+        "S (Suricata)": {
+          "lo": 0.496363018835883,
+          "hi": 0.9974583586884225,
+          "n": 2
+        },
+        "L (labels)": {
+          "lo": 0.967991825348195,
+          "hi": 0.967991825348195,
+          "n": 1
+        },
+        "g_mal": {
+          "lo": 0.974450975066433,
+          "hi": 0.974450975066433,
+          "n": 1
+        }
+      }
+    }
+  ],
+  "auc_overall_incl_gmal": {
+    "D (detectors)": {
+      "lo": 0.4968319590176826,
+      "hi": 1.0,
+      "n": 56
+    },
+    "S (Suricata)": {
+      "lo": 0.4997094834195898,
+      "hi": 1.0,
+      "n": 5
+    },
+    "L (labels)": {
+      "lo": 0.9944719843414372,
+      "hi": 0.9999690558141376,
+      "n": 6
+    },
+    "g_mal": {
+      "lo": 0.9972699860052396,
+      "hi": 0.9999690558141376,
+      "n": 6
+    }
+  },
+  "caveat": "g_mal/L1 AUC is largely the CIC-vs-IoT-23 domain contrast, not within-domain predictability.",
+  "rho": 0.05,
+  "meta_over_pcap_codec": "zlib-9 proxy for zstd",
+  "full_capture_bytes": "Sum (caplen+16) = meta.extra.sum_s_all"
+}

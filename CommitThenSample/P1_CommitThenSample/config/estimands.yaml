@@ -1,0 +1,143 @@
+# Pre-registered estimand catalogue (DESIGN §5.4). Fields per estimand: {id, class, eligibility, opening, b, datasets}
+# plus documentation fields (source, rule, statements). Values per unit are in results/tables/<ds>/<src>.parquet as
+# f_<id>, elig_<id>, b_<id> (metadata estimands: m_* indicators or aggregates of the committed metadata).
+version: 1
+conventions:
+  T_s: 30                          # segment length; opening-based totals do not depend on T
+  pkt_cap: 4                       # per-packet cap of every count detector; b = 4 x packets in the relevant direction
+  case_insensitive: true           # regexes match payload.lower() (== (?i) on bytes)
+  directions: "server = endpoint whose port is in the detector's port set (the responder if both); s2c = server->client"
+  evaluation_rule: "a (stream, estimand) pair is evaluated iff the stream's committed metadata has >= 50 eligible units (independent of Z and f)"
+  strata_Q: ["{0}", "{1-20}", "{>20}"]
+  suricata_families: "S_k(i) = 1[unit i replayed alone triggers >= 1 kept sid (content.rules and rules/audit_all.json) with classtype in family k]"
+  labels_note: "L estimands assume an oracle analyst; reported separately; units with label 'unknown' are not eligible"
+datasets_all: &all [iot23, ciciot2023_benign, edgeiiot, gotham]
+
+estimands:
+  # ---------------------------------------------------------------- opening-based indicators: f = fps * 1[hit]
+  - {id: D1o, class: indicator_opening, source: detector, detector: D1, opening: true,
+     eligibility: "payload unit, TCP, port 23 or 2323 on either side, fps = 1", b: "1 if eligible else 0",
+     rule: "server->client: (?i)password\\s*:", statements: [L+, UCS], datasets: *all}
+  - {id: D2o, class: indicator_opening, source: detector, detector: D2, opening: true,
+     eligibility: "payload unit, TCP, port 23 or 2323, fps = 1", b: "1 if eligible else 0",
+     rule: "server->client: (?i)(login|username)\\s*:", statements: [L+, UCS], datasets: *all}
+  - {id: D11o, class: indicator_opening, source: detector, detector: D11, opening: true,
+     eligibility: "payload unit, TCP, port 22 or 2222, fps = 1", b: "1 if eligible else 0",
+     rule: "client->server, start of payload: ^SSH-[12]\\.", statements: [L+, UCS], datasets: *all}
+  # ---------------------------------------------------------------- per-segment indicators ("30-s activity windows")
+  - {id: D3, class: indicator_segment, source: detector, detector: D3, opening: false,
+     eligibility: "payload unit, TCP or UDP", b: "1 if eligible else 0",
+     rule: "/bin/busybox | busybox\\s+[A-Z]{4,} | wget\\s+http | tftp\\s+-[gr] | chmod\\s+(\\+x|7[0-7]{2}) | \\.(arm7?|mips|mpsl|x86|sh4|m68k|ppc)\\b | (ECCHI|MIRAI|GAYFGT|OKIRU|HAKAI)",
+     statements: [L+, UCS], datasets: *all}
+  - {id: D4, class: indicator_segment, source: detector, detector: D4, opening: false,
+     eligibility: "payload unit, TCP", b: "1 if eligible else 0",
+     rule: "SQLi (union\\s+select|\\bor\\s+1=1|sleep\\(|benchmark\\() | XSS (<script|javascript:|onerror=|onload=) | command (;|\\||&&)\\s*(cat|ls|id|wget|curl|nc|sh)\\b | traversal \\.\\./",
+     statements: [L+, UCS], datasets: *all}
+  - {id: D7, class: indicator_segment, source: detector, detector: D7, opening: false,
+     eligibility: "payload unit, TCP or UDP, port 53", b: "1 if eligible else 0",
+     rule: "DNS message with QR = 1 and rcode = 3 (dpkt.dns; TCP: 2-byte length framing)", statements: [L+, UCS], datasets: *all}
+  - {id: D8, class: indicator_segment, source: detector, detector: D8, opening: false,
+     eligibility: "payload unit, TCP, port 1883 or 8883", b: "1 if eligible else 0",
+     rule: "MQTT fixed header type 1 (CONNECT) with protocol name MQTT/MQIsdp", statements: [L+, UCS], datasets: *all}
+  - {id: D10, class: indicator_segment, source: detector, detector: D10, opening: false,
+     eligibility: "payload unit, TCP, port 502", b: "1 if eligible else 0",
+     rule: "Modbus MBAP (protocol id 0, length 2..254) with function code in {5, 6, 15, 16}", statements: [L+, UCS], datasets: *all}
+  - {id: D12, class: indicator_segment, source: detector, detector: D12, opening: false,
+     eligibility: "payload unit, TCP", b: "1 if eligible else 0",
+     rule: "line start (re.M): ^(PRIVMSG|JOIN|NICK|PING) ", statements: [L+, UCS], datasets: *all}
+  - {id: D13, class: indicator_segment, source: detector, detector: D13, opening: false,
+     eligibility: "payload unit, TCP", b: "1 if eligible else 0",
+     rule: "(?i)(<\\?php|system\\(|passthru\\(|shell_exec\\(|/bin/(ba)?sh\\b|whoami|uname\\s+-a|/etc/passwd)",
+     statements: [L+, UCS], datasets: *all}
+  # ---------------------------------------------------------------- counts (packet-additive), L+ only
+  - {id: D1c, class: count, source: detector, detector: D1, opening: false,
+     eligibility: "payload unit, TCP, port 23 or 2323", b: "4 x packets server->client",
+     rule: "number of (?i)password\\s*: matches per server->client packet, capped at 4", statements: [L+], datasets: *all}
+  - {id: D2c, class: count, source: detector, detector: D2, opening: false,
+     eligibility: "payload unit, TCP, port 23 or 2323", b: "4 x packets server->client",
+     rule: "number of (?i)(login|username)\\s*: matches per server->client packet, capped at 4", statements: [L+], datasets: *all}
+  - {id: D5, class: count, source: detector, detector: D5, opening: false,
+     eligibility: "payload unit, TCP", b: "4 x packets initiator->responder (dir 0)",
+     rule: "request lines ^(GET|POST|PUT|HEAD|DELETE|OPTIONS) \\S+ HTTP/1\\.[01] (re.M) per dir-0 packet, capped at 4",
+     statements: [L+], datasets: *all}
+  - {id: D6, class: count, source: detector, detector: D6, opening: false,
+     eligibility: "payload unit, TCP or UDP, port 53", b: "4 x packets client->server (towards port 53)",
+     rule: "questions of QR = 0 DNS messages (dpkt.dns) per client->server packet, capped at 4", statements: [L+], datasets: *all}
+  - {id: D9, class: count, source: detector, detector: D9, opening: false,
+     eligibility: "payload unit, TCP, port 1883 or 8883", b: "4 x packets (both directions)",
+     rule: "MQTT PUBLISH (type 3) packets per segment, capped at 4", statements: [L+], datasets: *all}
+  # ---------------------------------------------------------------- Suricata families (per segment, per-unit replay)
+  - {id: S1, class: indicator_segment, source: suricata, classtypes: [attempted-admin], opening: false,
+     eligibility: "payload unit", b: "1 if payload unit else 0", family: "Attempted Administrator Privilege Gain",
+     statements: [L+, UCS], datasets: *all}
+  - {id: S2, class: indicator_segment, source: suricata, classtypes: [trojan-activity], opening: false,
+     eligibility: "payload unit", b: "1 if payload unit else 0", family: "A Network Trojan was detected",
+     statements: [L+, UCS], datasets: *all}
+  - {id: S3, class: indicator_segment, source: suricata, classtypes: [attempted-recon, network-scan], opening: false,
+     eligibility: "payload unit", b: "1 if payload unit else 0", family: "Attempted Information Leak / Detection of a Network Scan",
+     statements: [L+, UCS], datasets: *all}
+  - {id: S4, class: indicator_segment, source: suricata, classtypes: [web-application-attack], opening: false,
+     eligibility: "payload unit", b: "1 if payload unit else 0", family: "Web Application Attack",
+     statements: [L+, UCS], datasets: *all}
+  - {id: S5, class: indicator_segment, source: suricata, classtypes: [policy-violation], opening: false,
+     eligibility: "payload unit", b: "1 if payload unit else 0", family: "Potential Corporate Privacy Violation / Policy",
+     statements: [L+, UCS], datasets: *all}
+  - {id: S6, class: indicator_segment, source: suricata, classtypes: [misc-activity, misc-attack], opening: false,
+     eligibility: "payload unit", b: "1 if payload unit else 0", family: "Misc activity / Misc Attack",
+     statements: [L+, UCS], datasets: *all}
+  # ---------------------------------------------------------------- oracle-analyst labels (secondary)
+  - {id: L1, class: label, source: labels, opening: false, eligibility: "payload unit with a known label",
+     b: "1 if eligible else 0", rule: "label == Malicious (content-bearing unit)", statements: [L+, UCS],
+     datasets: *all}
+  - {id: L2, class: label, source: labels, opening: false, eligibility: "payload unit with a known label",
+     b: "1 if eligible else 0", rule: "malicious, IoT-23 detailed-label C&C*", statements: [L+, UCS], datasets: [iot23]}
+  - {id: L3, class: label, source: labels, opening: false, eligibility: "payload unit with a known label",
+     b: "1 if eligible else 0", rule: "malicious, IoT-23 detailed-label FileDownload*", statements: [L+, UCS], datasets: [iot23]}
+  - {id: L4, class: label, source: labels, opening: false, eligibility: "payload unit with a known label",
+     b: "1 if eligible else 0", rule: "malicious, IoT-23 detailed-label Attack or DDoS*", statements: [L+, UCS], datasets: [iot23]}
+  - {id: L5, class: label, source: labels, opening: false, eligibility: "payload unit with a known label",
+     b: "1 if eligible else 0", rule: "malicious, IoT-23 detailed-label Okiru*", statements: [L+, UCS], datasets: [iot23]}
+  - {id: L_Backdoor, class: label, source: labels, opening: false, eligibility: "payload unit", b: "1 if payload unit else 0",
+     rule: "Edge attacker rule, class Backdoor", statements: [L+, UCS], datasets: [edgeiiot]}
+  - {id: L_OS_Fingerprinting, class: label, source: labels, opening: false, eligibility: "payload unit", b: "1 if payload unit else 0",
+     rule: "Edge attacker rule, class OS_Fingerprinting", statements: [L+, UCS], datasets: [edgeiiot]}
+  - {id: L_Password, class: label, source: labels, opening: false, eligibility: "payload unit", b: "1 if payload unit else 0",
+     rule: "Edge attacker rule, class Password", statements: [L+, UCS], datasets: [edgeiiot]}
+  - {id: L_Port_Scanning, class: label, source: labels, opening: false, eligibility: "payload unit", b: "1 if payload unit else 0",
+     rule: "Edge attacker rule, class Port_Scanning", statements: [L+, UCS], datasets: [edgeiiot]}
+  - {id: L_Ransomware, class: label, source: labels, opening: false, eligibility: "payload unit", b: "1 if payload unit else 0",
+     rule: "Edge attacker rule, class Ransomware", statements: [L+, UCS], datasets: [edgeiiot]}
+  - {id: L_SQL_injection, class: label, source: labels, opening: false, eligibility: "payload unit", b: "1 if payload unit else 0",
+     rule: "Edge attacker rule, class SQL_injection", statements: [L+, UCS], datasets: [edgeiiot]}
+  - {id: L_Uploading, class: label, source: labels, opening: false, eligibility: "payload unit", b: "1 if payload unit else 0",
+     rule: "Edge attacker rule, class Uploading", statements: [L+, UCS], datasets: [edgeiiot]}
+  - {id: L_Vulnerability_scanner, class: label, source: labels, opening: false, eligibility: "payload unit", b: "1 if payload unit else 0",
+     rule: "Edge attacker rule, class Vulnerability_scanner (pcap truncated at record 265,827)", statements: [L+, UCS], datasets: [edgeiiot]}
+  - {id: L_XSS, class: label, source: labels, opening: false, eligibility: "payload unit", b: "1 if payload unit else 0",
+     rule: "Edge attacker rule, class XSS", statements: [L+, UCS], datasets: [edgeiiot]}
+  - {id: L_Network_Scanning, class: label, source: labels, opening: false, eligibility: "payload unit with a known label",
+     b: "1 if eligible else 0", rule: "Gotham orchestration labels TCP/UDP Scan", statements: [L+, UCS], datasets: [gotham]}
+  - {id: L_Brute_Force, class: label, source: labels, opening: false, eligibility: "payload unit with a known label",
+     b: "1 if eligible else 0", rule: "Gotham Telnet Brute Force", statements: [L+, UCS], datasets: [gotham]}
+  - {id: L_Infection, class: label, source: labels, opening: false, eligibility: "payload unit with a known label",
+     b: "1 if eligible else 0", rule: "Gotham Ingress Tool Transfer, File Download", statements: [L+, UCS], datasets: [gotham]}
+  - {id: L_CC_Communication, class: label, source: labels, opening: false, eligibility: "payload unit with a known label",
+     b: "1 if eligible else 0", rule: "Gotham Mirai/Merlin C&C Communication, Reporting", statements: [L+, UCS], datasets: [gotham]}
+  - {id: L_DoS, class: label, source: labels, opening: false, eligibility: "payload unit with a known label",
+     b: "1 if eligible else 0", rule: "Gotham floods and CoAP amplification (not extracted: mirai-dos, merlin, coap)",
+     statements: [L+, UCS], datasets: [gotham]}
+  # ---------------------------------------------------------------- metadata estimands (exact from the committed store)
+  - {id: M1, class: metadata, source: metadata, opening: false, eligibility: "all units", b: null,
+     rule: "scan units per device: zero-payload TCP units with conn_state in {S0, REJ, RSTOS0, SH} (table column m_scan_unit)",
+     statements: [exact], datasets: *all}
+  - {id: M2, class: metadata, source: metadata+labels, opening: false, eligibility: "all units", b: null,
+     rule: "IoT-23 PartOfAHorizontalPortScan units per device (dropped from content estimands; column m_hpscan_label)",
+     statements: [exact], datasets: [iot23]}
+  - {id: M3, class: metadata, source: metadata, opening: false, eligibility: "all units", b: null,
+     rule: "bytes per device and port bucket: sum of frame0 + frame1 grouped by (device_id, dport bucket)",
+     statements: [exact], datasets: *all}
+  - {id: M4, class: metadata, source: metadata, opening: false, eligibility: "all units", b: null,
+     rule: "connections per device and port bucket: number of distinct flow_uid grouped by (device_id, dport bucket)",
+     statements: [exact], datasets: *all}
+  - {id: M5, class: metadata, source: metadata+labels, opening: false, eligibility: "all units", b: null,
+     rule: "Edge MITM: ARP units from the attacker MAC (zero-payload)", statements: [exact], datasets: [edgeiiot]}

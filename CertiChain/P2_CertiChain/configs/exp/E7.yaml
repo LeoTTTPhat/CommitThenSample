@@ -1,0 +1,18 @@
+# E7 -- minimal K (practitioner curve). Owner: P2-G. DESIGN §6.1 E7.
+exp: E7
+dataset: cf_ton
+scorer: stat
+n_test: 100                      # fixed test size so that K = 200 fits the 300-incident pool
+K_grid: [5, 10, 20, 50, 100, 200]
+alphas: [0.05, 0.1, 0.2]
+splits: 200
+methods: [crc_bh, bh_iid, lr_a2, lr_a2b]
+synthetic:                       # P2-C eval/synth.py, normal incident shift, mu = 3, tau = 0.5 (P2-C notes §5.2)
+  pools: 10
+  splits_per_pool: 20
+  pool_size: 300
+  n_test: 100
+  null_incidents: 200
+  generators:
+    decoy_free: {mu: 3.0, tau: 0.5, shift_df: .inf, decoy_rate: 0.0}
+    decoy_rich: {mu: 3.0, tau: 0.5, shift_df: .inf, decoy_rate: 1.0}

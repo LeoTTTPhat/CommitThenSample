@@ -1,0 +1,800 @@
+{
+  "mc": {
+    "queries": {
+      "D1c": {
+        "L_plus_q05_50_95": [
+          4.0,
+          6.0,
+          8.0
+        ],
+        "S_q05_50_95": [
+          4.0,
+          6.0,
+          8.0
+        ],
+        "U_plus_q05_50_95": null,
+        "kind": "count",
+        "lcs_cover": 1.0,
+        "name": "Telnet password prompts",
+        "truth": 8.0,
+        "ucs_cover": null,
+        "ucs_issued_share": 0.0
+      },
+      "D2c": {
+        "L_plus_q05_50_95": [
+          8.0,
+          12.0,
+          14.0
+        ],
+        "S_q05_50_95": [
+          8.0,
+          12.0,
+          14.0
+        ],
+        "U_plus_q05_50_95": null,
+        "kind": "count",
+        "lcs_cover": 1.0,
+        "name": "Telnet login prompts",
+        "truth": 14.0,
+        "ucs_cover": null,
+        "ucs_issued_share": 0.0
+      },
+      "D3": {
+        "L_plus_q05_50_95": [
+          7.0,
+          10.0,
+          12.0
+        ],
+        "S_q05_50_95": [
+          7.0,
+          10.0,
+          12.0
+        ],
+        "U_plus_q05_50_95": [
+          50.0,
+          54.0,
+          58.0
+        ],
+        "kind": "indicator",
+        "lcs_cover": 1.0,
+        "name": "Mirai loader strings",
+        "truth": 12.0,
+        "ucs_cover": 1.0,
+        "ucs_issued_share": 1.0
+      },
+      "L2": {
+        "L_plus_q05_50_95": [
+          20.0,
+          24.0,
+          27.0
+        ],
+        "S_q05_50_95": [
+          20.0,
+          24.0,
+          27.0
+        ],
+        "U_plus_q05_50_95": [
+          65.0,
+          68.0,
+          71.0
+        ],
+        "kind": "indicator",
+        "lcs_cover": 1.0,
+        "name": "C&C connections (label)",
+        "truth": 30.0,
+        "ucs_cover": 1.0,
+        "ucs_issued_share": 1.0
+      },
+      "L4": {
+        "L_plus_q05_50_95": [
+          8.0,
+          10.0,
+          12.0
+        ],
+        "S_q05_50_95": [
+          8.0,
+          10.0,
+          12.0
+        ],
+        "U_plus_q05_50_95": [
+          50.0,
+          54.0,
+          58.0
+        ],
+        "kind": "indicator",
+        "lcs_cover": 1.0,
+        "name": "attack segments (label)",
+        "truth": 12.0,
+        "ucs_cover": 1.0,
+        "ucs_issued_share": 1.0
+      },
+      "S5": {
+        "L_plus_q05_50_95": [
+          6.950000000000001,
+          9.0,
+          11.0
+        ],
+        "S_q05_50_95": [
+          6.950000000000001,
+          9.0,
+          11.0
+        ],
+        "U_plus_q05_50_95": [
+          49.0,
+          53.0,
+          57.0
+        ],
+        "kind": "indicator",
+        "lcs_cover": 1.0,
+        "name": "ELF download (Suricata policy-violation)",
+        "truth": 11.0,
+        "ucs_cover": 1.0,
+        "ucs_issued_share": 1.0
+      }
+    },
+    "reps": 200,
+    "truth": {
+      "D1c": 8.0,
+      "D2c": 14.0,
+      "D3": 12.0,
+      "L2": 30.0,
+      "L4": 12.0,
+      "S5": 11.0
+    },
+    "window": [
+      0,
+      35
+    ]
+  },
+  "report": {
+    "V_ref": {
+      "D1c": 4961.363853349554,
+      "D2c": 3876.6906009785566,
+      "D3": 322.58521486365265,
+      "L2": 2095.6718577604975,
+      "L4": 2533.4090045172047,
+      "S5": 16.120676135487543
+    },
+    "W_size": 0,
+    "alpha": 0.05,
+    "device": 6,
+    "device_mac": "02:00:00:00:00:05",
+    "disclosure_size": {
+      "epochs": 60,
+      "store_bytes": 15008940,
+      "total_bytes": 17459970,
+      "unit_bytes": 2382542
+    },
+    "epochs_disclosed": [
+      0,
+      59
+    ],
+    "fold": "48-1",
+    "metadata": {
+      "bytes": 32125576,
+      "packets": 405425,
+      "payload_units": 80,
+      "scan_units_M1": 61910,
+      "top_ports_by_bytes": [
+        {
+          "bytes": 29735926,
+          "port": 23,
+          "proto": 6
+        },
+        {
+          "bytes": 2357122,
+          "port": 80,
+          "proto": 6
+        },
+        {
+          "bytes": 15368,
+          "port": 0,
+          "proto": 1
+        },
+        {
+          "bytes": 12240,
+          "port": 123,
+          "proto": 17
+        },
+        {
+          "bytes": 4920,
+          "port": 0,
+          "proto": 0
+        }
+      ],
+      "units": 62119
+    },
+    "non_pass": [
+      "[FAIL] V7.cells e=0 flagged=[{'device_id': 0, 'committed_pkts': 818, 'counter_pkts': 665, 'd_pkts': 153, 'eps_pkts': 84.0, 'd_bytes': 142163, 'eps_bytes': 75942.0}]",
+      "[FAIL] V7.cells e=45 flagged=[{'device_id': 11, 'committed_pkts': 20, 'counter_pkts': 53, 'd_pkts': 33, 'eps_pkts': 20.0, 'd_bytes': 12904, 'eps_bytes': 7396.0}, {'device_id': 46, 'committed_pkts': 28, 'counter_pkts': 45, 'd_pkts': 17, 'eps_pkts': 20.0, 'd_bytes': 7759, 'eps_bytes': 7396.0}]"
+    ],
+    "payload_units_of_d_in_window": 80,
+    "phi0": 0.017419761435606185,
+    "prime": {
+      "epochs": 0,
+      "failed": [],
+      "fed": [],
+      "header_bytes": 0,
+      "store_bytes": 0,
+      "store_records": 0,
+      "total_bytes": 0,
+      "verified": 0
+    },
+    "privacy": {
+      "benign_bytes_disclosed": 262,
+      "disclosed_retained_units": 49,
+      "malicious_bytes_disclosed": 2252288,
+      "own_records_disclosed": 106987,
+      "third_party_records_disclosed": 12759
+    },
+    "retained_of_d_in_window": 37,
+    "statements": {
+      "alpha_statement_max": 0.008333333333333333,
+      "family_wise_alpha": 0.049999999999999996,
+      "n_statements": 6,
+      "statements": [
+        {
+          "D_cap": 286.0,
+          "L_plus": 6.0,
+          "L_star": -1.7494414691165001,
+          "Qhat": 7.467451703351832,
+          "S": 6.0,
+          "U_plus": null,
+          "alpha_side": 0.004166666666666667,
+          "alpha_statement": 0.008333333333333333,
+          "clean": true,
+          "devices": [
+            6
+          ],
+          "family_wise_alpha": 0.05,
+          "kind": "count",
+          "n_statements": 6,
+          "query": "Telnet password prompts",
+          "reasons": [],
+          "text": "Telnet password prompts: >= 6.0 events (UCS not applicable: count estimand (L+ only); deterministic cap 286.0) [per-statement alpha = 0.00833333, family-wise alpha = 0.05 over 6]",
+          "ucs_status": "UCS not applicable: count estimand (L+ only)",
+          "v8": {
+            "epochs": 35,
+            "failed_epochs": [],
+            "retained_eligible": 26,
+            "unavailable_retained": 0
+          },
+          "window": [
+            0,
+            35
+          ]
+        },
+        {
+          "D_cap": 290.0,
+          "L_plus": 10.0,
+          "L_star": -1.546427088188814,
+          "Qhat": 12.445752838919722,
+          "S": 10.0,
+          "U_plus": null,
+          "alpha_side": 0.004166666666666667,
+          "alpha_statement": 0.008333333333333333,
+          "clean": true,
+          "devices": [
+            6
+          ],
+          "family_wise_alpha": 0.05,
+          "kind": "count",
+          "n_statements": 6,
+          "query": "Telnet login prompts",
+          "reasons": [],
+          "text": "Telnet login prompts: >= 10.0 events (UCS not applicable: count estimand (L+ only); deterministic cap 290.0) [per-statement alpha = 0.00833333, family-wise alpha = 0.05 over 6]",
+          "ucs_status": "UCS not applicable: count estimand (L+ only)",
+          "v8": {
+            "epochs": 35,
+            "failed_epochs": [],
+            "retained_eligible": 26,
+            "unavailable_retained": 0
+          },
+          "window": [
+            0,
+            35
+          ]
+        },
+        {
+          "D_cap": 54.0,
+          "L_plus": 11.0,
+          "L_star": -3.043928142763523,
+          "Qhat": 13.68771627305544,
+          "S": 11.0,
+          "U_plus": 54.0,
+          "alpha_side": 0.004166666666666667,
+          "alpha_statement": 0.008333333333333333,
+          "clean": true,
+          "devices": [
+            6
+          ],
+          "family_wise_alpha": 0.05,
+          "kind": "indicator",
+          "n_statements": 6,
+          "query": "Mirai loader strings",
+          "reasons": [],
+          "text": "Mirai loader strings: >= 11.0 events, <= 54.0 [per-statement alpha = 0.00833333, family-wise alpha = 0.05 over 6]",
+          "ucs_status": "issued",
+          "v8": {
+            "epochs": 35,
+            "failed_epochs": [],
+            "retained_eligible": 37,
+            "unavailable_retained": 0
+          },
+          "window": [
+            0,
+            35
+          ]
+        },
+        {
+          "D_cap": 53.0,
+          "L_plus": 10.0,
+          "L_star": -3.3474328494482304,
+          "Qhat": 12.443140989163467,
+          "S": 10.0,
+          "U_plus": 53.0,
+          "alpha_side": 0.004166666666666667,
+          "alpha_statement": 0.008333333333333333,
+          "clean": true,
+          "devices": [
+            6
+          ],
+          "family_wise_alpha": 0.05,
+          "kind": "indicator",
+          "n_statements": 6,
+          "query": "ELF download (Suricata policy-violation)",
+          "reasons": [],
+          "text": "ELF download (Suricata policy-violation): >= 10.0 events, <= 53.0 [per-statement alpha = 0.00833333, family-wise alpha = 0.05 over 6]",
+          "ucs_status": "issued",
+          "v8": {
+            "epochs": 35,
+            "failed_epochs": [],
+            "retained_eligible": 37,
+            "unavailable_retained": 0
+          },
+          "window": [
+            0,
+            35
+          ]
+        },
+        {
+          "D_cap": 69.0,
+          "L_plus": 26.0,
+          "L_star": 6.852513099425643,
+          "Qhat": 32.356345531435025,
+          "S": 26.0,
+          "U_plus": 69.0,
+          "alpha_side": 0.004166666666666667,
+          "alpha_statement": 0.008333333333333333,
+          "clean": true,
+          "devices": [
+            6
+          ],
+          "family_wise_alpha": 0.05,
+          "kind": "indicator",
+          "n_statements": 6,
+          "query": "C&C connections (label)",
+          "reasons": [],
+          "text": "C&C connections (label): >= 26.0 events, <= 69.0 [per-statement alpha = 0.00833333, family-wise alpha = 0.05 over 6]",
+          "ucs_status": "issued",
+          "v8": {
+            "epochs": 35,
+            "failed_epochs": [],
+            "retained_eligible": 37,
+            "unavailable_retained": 0
+          },
+          "window": [
+            0,
+            35
+          ]
+        },
+        {
+          "D_cap": 52.0,
+          "L_plus": 9.0,
+          "L_star": -1.2501195090607655,
+          "Qhat": 11.20117755502775,
+          "S": 9.0,
+          "U_plus": 52.0,
+          "alpha_side": 0.004166666666666667,
+          "alpha_statement": 0.008333333333333333,
+          "clean": true,
+          "devices": [
+            6
+          ],
+          "family_wise_alpha": 0.05,
+          "kind": "indicator",
+          "n_statements": 6,
+          "query": "attack segments (label)",
+          "reasons": [],
+          "text": "attack segments (label): >= 9.0 events, <= 52.0 [per-statement alpha = 0.00833333, family-wise alpha = 0.05 over 6]",
+          "ucs_status": "issued",
+          "v8": {
+            "epochs": 35,
+            "failed_epochs": [],
+            "retained_eligible": 37,
+            "unavailable_retained": 0
+          },
+          "window": [
+            0,
+            35
+          ]
+        }
+      ]
+    },
+    "stream": "lp_iot23_48-1_p10000",
+    "tightening": {
+      "D3": {
+        "U_plus_by_end": [
+          54.0,
+          55.0,
+          55.0,
+          57.0,
+          57.0,
+          59.0,
+          59.0,
+          61.0,
+          61.0,
+          64.0,
+          66.0,
+          68.0,
+          68.0,
+          68.0,
+          70.0,
+          70.0,
+          73.0,
+          74.0,
+          76.0,
+          78.0,
+          81.0,
+          81.0,
+          83.0,
+          85.0,
+          87.0,
+          88.0
+        ],
+        "ends": [
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60
+        ],
+        "tightened_U_plus": 54.0
+      },
+      "L2": {
+        "U_plus_by_end": [
+          69.0,
+          71.0,
+          71.0,
+          74.0,
+          74.0,
+          77.0,
+          77.0,
+          80.0,
+          80.0,
+          83.0,
+          85.0,
+          88.0,
+          88.0,
+          89.0,
+          91.0,
+          92.0,
+          95.0,
+          96.0,
+          98.0,
+          101.0,
+          104.0,
+          105.0,
+          107.0,
+          110.0,
+          112.0,
+          114.0
+        ],
+        "ends": [
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60
+        ],
+        "tightened_U_plus": 69.0
+      },
+      "L4": {
+        "U_plus_by_end": [
+          52.0,
+          53.0,
+          53.0,
+          55.0,
+          55.0,
+          57.0,
+          57.0,
+          59.0,
+          59.0,
+          62.0,
+          64.0,
+          66.0,
+          66.0,
+          66.0,
+          68.0,
+          68.0,
+          71.0,
+          72.0,
+          74.0,
+          76.0,
+          79.0,
+          79.0,
+          81.0,
+          83.0,
+          85.0,
+          86.0
+        ],
+        "ends": [
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60
+        ],
+        "tightened_U_plus": 52.0
+      },
+      "S5": {
+        "U_plus_by_end": [
+          53.0,
+          54.0,
+          54.0,
+          56.0,
+          56.0,
+          58.0,
+          58.0,
+          60.0,
+          60.0,
+          63.0,
+          65.0,
+          67.0,
+          67.0,
+          67.0,
+          69.0,
+          69.0,
+          72.0,
+          73.0,
+          75.0,
+          77.0,
+          80.0,
+          80.0,
+          82.0,
+          84.0,
+          86.0,
+          87.0
+        ],
+        "ends": [
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60
+        ],
+        "tightened_U_plus": 53.0
+      }
+    },
+    "transcript": {
+      "V1": {
+        "PASS": 420
+      },
+      "V2": {
+        "PASS": 240,
+        "SKIP": 60
+      },
+      "V3": {
+        "PASS": 60
+      },
+      "V4": {
+        "PASS": 660
+      },
+      "V5": {
+        "PASS": 60
+      },
+      "V6": {
+        "PASS": 180
+      },
+      "V7": {
+        "FAIL": 2,
+        "PASS": 118
+      }
+    },
+    "truth": {
+      "D1c": 8.0,
+      "D2c": 14.0,
+      "D3": 12.0,
+      "L2": 30.0,
+      "L4": 12.0,
+      "S5": 11.0
+    },
+    "unmatched_committed_units": 11,
+    "verify_s": 16.54599162505474,
+    "window": [
+      0,
+      35
+    ],
+    "window_fail": [
+      "[FAIL] V7.cells e=0 flagged=[{'device_id': 0, 'committed_pkts': 818, 'counter_pkts': 665, 'd_pkts': 153, 'eps_pkts': 84.0, 'd_bytes': 142163, 'eps_bytes': 75942.0}]"
+    ],
+    "window_utc": [
+      "2022-12-31 23:59:57",
+      "2023-01-01 00:17:27"
+    ]
+  },
+  "run": {
+    "Bbar": 169879,
+    "devices": {
+      "foreground": [
+        1,
+        6
+      ],
+      "n": 75,
+      "seed_device": 6,
+      "seed_mac": "02:00:00:00:00:05"
+    },
+    "loss": {
+      "fraction": 0.005451501458623831,
+      "n_lost": 4868
+    },
+    "machine": {
+      "cpu_percent_1s": 35.0,
+      "hw.memsize": "549755813888",
+      "hw.ncpu": "32",
+      "hw.perflevel0.physicalcpu": "24",
+      "hw.perflevel1.physicalcpu": "8",
+      "loadavg": [
+        15.87744140625,
+        15.36669921875,
+        37.884765625
+      ],
+      "machdep.cpu.brand_string": "Apple M3 Ultra",
+      "mem_available_gb": 262.19488525390625,
+      "platform": "macOS-26.5.2-arm64-arm-64bit",
+      "python": "3.12.12",
+      "time": "2026-10-19T00:06:45+0700"
+    },
+    "n_epochs": 60,
+    "policy": {
+      "H_policy": "ca4167bd931abeb8ef0db351e5d83740cc90f04a5a316542908ff5effe9fff52",
+      "H_theta": "8f581ee220ffcd1e8ed8e42e9cd370a777902e88eb9de6fe4382da3db6cb049e",
+      "boost_detectors": [
+        "D1",
+        "D10",
+        "D11",
+        "D12",
+        "D13",
+        "D2",
+        "D3",
+        "D8"
+      ],
+      "controller": "realised",
+      "design": "U6tau0.2",
+      "fold": "48-1",
+      "lam_ref": [
+        "266.8284027083187",
+        "3.799593192277201e-05"
+      ],
+      "model_seed": 0,
+      "phi0": "0.017419761435606185",
+      "tau_mix": "0.2"
+    },
+    "retention": {
+      "gw_id": "c0f3d39cd493b6456b97ee2b76e636d6",
+      "n_epochs": 60,
+      "refusals": [],
+      "retained_s": 6549572,
+      "retained_units": 686,
+      "retention_bytes": 6940436
+    },
+    "spend_over_target": 0.6425722622180101,
+    "validation": {
+      "bad_epochs": [],
+      "compared": 119840,
+      "examples": [],
+      "flowtable_qa": {
+        "n_bad_l2": 0,
+        "n_expired": 74756,
+        "n_flows": 91317,
+        "n_frag": 0,
+        "n_frag_unmatched": 0,
+        "n_ip": 886797,
+        "n_l2": 6168,
+        "n_l4_malformed": 0,
+        "n_late": 0,
+        "n_late_max_us": 0,
+        "n_packets": 892965,
+        "n_tcp_reuse_newflow": 0
+      },
+      "lossless_packets": 892965,
+      "lossless_units": 119840,
+      "mismatches": 0,
+      "stream_units": 1743079
+    }
+  }
+}

@@ -1,0 +1,9 @@
+rev1: B13 online (per-epoch budget, reserve max(phi0, .)) under mimicry: 243 incidents, 243 at or below the bound; median effective reserve rate 0.0228.
+Fig. 5 facts (rho=5%, analytic, 23 LP streams, 23 streams pooled).
+Committed floor phi0 range [0.0170, 0.0188], median 0.0183.
+CtS-AI white-box mimicry: 243 incidents, 243 at or below the (1-phi0)^k bound.
+Two-tier padded (mu=1) retention 0.0124 at head share h=0.052, phi_t=0.1 (phi_cap=0.1244).
+B3 (byte-level Time Machine) and B4 (online top-k) miss with probability 1 under evasion.
+Black-box surrogate transfer is markedly weaker than white-box (points lie below the band).
+TTE inset: P(TTE>n)=(1-phi0)^n; 95% detection at 199 epochs (phi0=.015) and 102 (phi0=.029).
+Saved fig5_evasion_rev1.pdf.

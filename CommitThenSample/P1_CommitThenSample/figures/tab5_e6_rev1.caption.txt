@@ -1,0 +1,91 @@
+{
+ "table": "Table V rev1 (tab:e6)",
+ "source": [
+  "results/summary/E6_overheads_rev1.json",
+  "results/summary/E6_flood.json"
+ ],
+ "cores_measured_rev1": [
+  "E",
+  "P"
+ ],
+ "pipeline_loadavg_1min_per_run": {
+  "P": [
+   2.69189453125,
+   3.13916015625,
+   3.27783203125,
+   3.15478515625,
+   2.9765625
+  ],
+  "E": [
+   2.83935546875,
+   3.45068359375,
+   3.49169921875,
+   5.23291015625,
+   6.1630859375
+  ]
+ },
+ "fallbacks_to_rev0": "primitives (Ed25519/ECVRF microbenchmarks), buffer and storage rows: rev0 measurements (code unchanged); storage rows exclude the tau column (+0.02% of pcap)",
+ "headroom_P": {
+  "110": 867.9962442973728,
+  "700": 136.39940981815857
+ },
+ "headroom_E": {
+  "110": 230.56452953637057,
+  "700": 36.23156892714395
+ },
+ "flood_supported_one_round_ahead": {
+  "P": {
+   "payload/single/incremental/nocap": 21939.37709088393,
+   "payload/single/incremental/nocap/ucap4096": 100000,
+   "zero/single/incremental/cap": 649509.9261085459,
+   "zero/single/incremental/nocap": 155593.54387532524,
+   "zero/single/resort/nocap": 148561.8218652256,
+   "zero/sustained/incremental/cap": 638732.611924434,
+   "zero/sustained/incremental/nocap": 105377.06148958311,
+   "zero/sustained/resort/nocap": 5184.723965116577
+  },
+  "E": {
+   "payload/single/incremental/nocap": 4821.73315111277,
+   "payload/single/incremental/nocap/ucap4096": 8275.015496347336,
+   "zero/single/incremental/cap": 144174.07404953253,
+   "zero/single/incremental/nocap": 39151.568456571404,
+   "zero/single/resort/nocap": 37492.98951351332,
+   "zero/sustained/incremental/cap": 145795.60367569164,
+   "zero/sustained/incremental/nocap": 32634.92106971273,
+   "zero/sustained/resort/nocap": 1348.4000851993233
+  }
+ },
+ "flood_supported_two_rounds_ahead": {
+  "P": {
+   "payload/single/incremental/nocap": 100000,
+   "payload/single/incremental/nocap/ucap4096": 100000,
+   "zero/single/incremental/cap": 1000000,
+   "zero/single/incremental/nocap": 1000000,
+   "zero/single/resort/nocap": 1000000,
+   "zero/sustained/incremental/cap": 1000000,
+   "zero/sustained/incremental/nocap": 300000,
+   "zero/sustained/resort/nocap": 100000
+  },
+  "E": {
+   "payload/single/incremental/nocap": 100000,
+   "payload/single/incremental/nocap/ucap4096": 100000,
+   "zero/single/incremental/cap": 1000000,
+   "zero/single/incremental/nocap": 1000000,
+   "zero/single/resort/nocap": 1000000,
+   "zero/sustained/incremental/cap": 1000000,
+   "zero/sustained/incremental/nocap": 300000,
+   "zero/sustained/resort/nocap": 46511.800267190236
+  }
+ },
+ "verifier_validity_only_ms_per_epoch": {
+  "P": 6.539520795922726,
+  "E": 21.85063330689445
+ },
+ "tau_column": {
+  "definition": "rev1 committed thresholds: 8 B (u64 tau - 1) per payload unit in the metadata store; zstd sizes of the E5 rev1 run's design columns (meta, root_pkt) without and with the tau column",
+  "increase": 0.03957265785458741,
+  "over_pcap": 0.00019357852137661625,
+  "parquet_zstd_design_bytes": 10000137,
+  "parquet_zstd_design_tau_bytes": 10395869
+ }
+}

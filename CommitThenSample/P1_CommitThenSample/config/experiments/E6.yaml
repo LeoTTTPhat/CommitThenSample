@@ -1,0 +1,18 @@
+# E6 — overheads, storage, witness load (DESIGN §3.11, §6.1 row E6; paper Table VI `tab:e6`). Owner P1-G.
+experiment: E6
+stream: lp_iot23_34-1_p10000         # the E5 stream (real pipeline)
+pipeline_epochs: 100                 # first 100 epochs (≈ 0.35 M packets) per timing run
+reps: 5                              # median of 5 runs, machine state recorded with each
+cores: [P, E]                        # E = `taskpolicy -b` (background QoS → efficiency cores)
+omp_threads: 1                       # single-core: LightGBM / OpenMP pinned to one thread
+n_e: [100, 1000, 10000, 100000, 1000000]
+verifier_windows: 20                 # 5-epoch windows (with the 119-epoch prime bundle)
+buffer_streams: [lp_iot23_1-1_p10000, lp_iot23_3-1_p10000, lp_iot23_34-1_p10000, lp_iot23_48-1_p10000,
+                 lp_iot23_49-1_p10000, lp_iot23_7-1_p10000, lp_edge_p10000]
+storage_streams: [lp_iot23_1-1_p10000, lp_iot23_3-1_p10000, lp_iot23_34-1_p10000, lp_iot23_48-1_p10000,
+                  lp_iot23_49-1_p10000, lp_iot23_7-1_p10000, lp_edge_p10000, lp_gotham_p10000,
+                  nat_iot23_1-1, nat_iot23_3-1, nat_iot23_34-1, nat_iot23_48-1, nat_iot23_49-1, nat_iot23_7-1]
+timing: {delta_c: 3.0, delta_sel: 0.5, T: 30}
+iot_rates_pps: [110, 700]            # gateway packet rates of the LP streams (DESIGN §0.1)
+arm_slowdown_vs_ecore: [2, 5, 10]    # EXTRAPOLATION ONLY (assumed factors, not measured)
+anchoring_K: [1, 10, 120, 2880]      # optional ledger anchor of H(Hdr_e) every K epochs

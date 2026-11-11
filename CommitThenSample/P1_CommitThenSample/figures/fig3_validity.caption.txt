@@ -1,0 +1,241 @@
+{
+ "figure": "fig3_validity.pdf",
+ "alpha": 0.05,
+ "alpha_per_side": 0.025,
+ "R": {
+  "lp_edge/rho=0.01": 500,
+  "lp_edge/rho=0.02": 500,
+  "lp_edge/rho=0.05": 500,
+  "lp_iot23/rho=0.01": 500,
+  "lp_iot23/rho=0.02": 500,
+  "lp_iot23/rho=0.05": 1000
+ },
+ "streams": {
+  "lp_edge": 3,
+  "lp_iot23": 13
+ },
+ "rho_panel_a": [
+  0.01,
+  0.02,
+  0.05
+ ],
+ "panel_a": "pooled over (stream, estimand) pairs with Q > 0 of LP-IoT23 and LP-Edge; CtS = L+ lower side OR U+ upper side wrong at any epoch (UCS on indicator estimands); Wald = final epoch; Wilson 95% intervals",
+ "panel_b": "LP-IoT23 (13 streams), rho = 5%, static and adaptive arms pooled, R = 500 per arm; side attacked by each rule: void unretained -> lower, others -> upper (UCS); X := 0 voids the UCS from the first withheld eligible unit",
+ "panel_b_values": {
+  "comp:void_unretained": {
+   "miss": 0.3503987341772152,
+   "k": 55363,
+   "n": 158000
+  },
+  "comp:void_retained": {
+   "miss": 0.1704424778761062,
+   "k": 19260,
+   "n": 113000
+  },
+  "comp:withhold_half": {
+   "miss": 0.0,
+   "k": 0,
+   "n": 113000
+  },
+  "comp:void_random": {
+   "miss": 0.0009823008849557523,
+   "k": 111,
+   "n": 113000
+  },
+  "x0:void_unretained": {
+   "miss": 6.962025316455696e-05,
+   "k": 11,
+   "n": 158000
+  },
+  "x0:void_retained": {
+   "miss": 0.0,
+   "k": 0,
+   "n": 113000
+  },
+  "x0:withhold_half": {
+   "miss": 0.0,
+   "k": 0,
+   "n": 113000
+  },
+  "x0:void_random": {
+   "miss": 0.0,
+   "k": 0,
+   "n": 113000
+  }
+ },
+ "panel_c": "static design, rho = 5%, LP-IoT23 and LP-Edge pairs with Q > 0, binned by Q (log bins); line = median over pairs of the per-pair median (first 200 reps, final epoch) of 1 - S/Q, 1 - L*/Q (clipped at 1) and 1 - L+/Q; band = interquartile range over pairs",
+ "panel_c_bins": [
+  {
+   "Q_geo": 1.4859942891369484,
+   "n_pairs": 7,
+   "S": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "Lstar": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "Lplus": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "Q_geo": 4.86233269940614,
+   "n_pairs": 27,
+   "S": [
+    0.25,
+    0.25,
+    1.0
+   ],
+   "Lstar": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "Lplus": [
+    0.25,
+    0.25,
+    1.0
+   ]
+  },
+  {
+   "Q_geo": 13.83894846783139,
+   "n_pairs": 20,
+   "S": [
+    0.1804812834224599,
+    0.3712121212121212,
+    0.6990384615384615
+   ],
+   "Lstar": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "Lplus": [
+    0.1804812834224599,
+    0.3712121212121212,
+    0.6990384615384615
+   ]
+  },
+  {
+   "Q_geo": 57.86137763737046,
+   "n_pairs": 14,
+   "S": [
+    0.2,
+    0.6565656565656566,
+    0.9870642701525054
+   ],
+   "Lstar": [
+    0.582008429859505,
+    0.9346183040664845,
+    1.0
+   ],
+   "Lplus": [
+    0.2,
+    0.6565656565656566,
+    0.9870642701525054
+   ]
+  },
+  {
+   "Q_geo": 132.58652560554722,
+   "n_pairs": 27,
+   "S": [
+    0.2,
+    0.2807017543859649,
+    0.9807692307692307
+   ],
+   "Lstar": [
+    0.4006958230624189,
+    0.4260611625603,
+    1.0
+   ],
+   "Lplus": [
+    0.2,
+    0.2807017543859649,
+    0.9807692307692307
+   ]
+  },
+  {
+   "Q_geo": 508.8996889253507,
+   "n_pairs": 17,
+   "S": [
+    0.2,
+    0.9745222929936306,
+    0.981675392670157
+   ],
+   "Lstar": [
+    0.21520557879174806,
+    0.885371956051064,
+    1.0
+   ],
+   "Lplus": [
+    0.2,
+    0.885371956051064,
+    0.9782214156079855
+   ]
+  },
+  {
+   "Q_geo": 1321.9710523099952,
+   "n_pairs": 76,
+   "S": [
+    0.2391441916079383,
+    0.8046849145792866,
+    0.9263642999609318
+   ],
+   "Lstar": [
+    0.14220277098877201,
+    0.2962092897190747,
+    0.5225199929024587
+   ],
+   "Lplus": [
+    0.14220277098877201,
+    0.2962092897190747,
+    0.5225199929024587
+   ]
+  },
+  {
+   "Q_geo": 5677.824118391011,
+   "n_pairs": 6,
+   "S": [
+    0.7902316100026519,
+    0.9816080791256439,
+    0.982079945940202
+   ],
+   "Lstar": [
+    0.15347660573040295,
+    0.3745197043043953,
+    0.4290363447675636
+   ],
+   "Lplus": [
+    0.15347660573040295,
+    0.3745197043043953,
+    0.4290363447675636
+   ]
+  },
+  {
+   "Q_geo": 49635.14056209279,
+   "n_pairs": 25,
+   "S": [
+    0.8820365406320542,
+    0.9108075674149372,
+    0.9280495552731893
+   ],
+   "Lstar": [
+    0.08956663659706922,
+    0.10509227394555812,
+    0.12441272770031524
+   ],
+   "Lplus": [
+    0.08956663659706922,
+    0.10509227394555812,
+    0.12441272770031524
+   ]
+  }
+ ],
+ "text_for_caption": "E2: (a) two-sided miscoverage vs rho of CtS statements (time-uniform) and of fixed-time Wald intervals, static (solid) and adaptive (dashed) designs; (b) time-uniform miscoverage under selective abort A11 (rho = 5%); (c) relative gap of the sure count S and of the LCS L* at the final epoch vs Q (rho = 5%, static). LP-IoT23 and LP-Edge, R = 1,000 (LP-IoT23, rho = 5%) / 500, alpha = 0.05, Wilson 95% intervals."
+}

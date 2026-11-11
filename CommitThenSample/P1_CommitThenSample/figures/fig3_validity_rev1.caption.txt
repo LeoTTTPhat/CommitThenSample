@@ -1,0 +1,488 @@
+{
+ "figure": "fig3_validity_rev1.pdf (rev1 variant of fig3_validity.pdf; source results/summary/E2_summary_rev1.parquet)",
+ "alpha": 0.05,
+ "alpha_per_side": 0.025,
+ "R": {
+  "lp_edge/rho=0.01": 500,
+  "lp_edge/rho=0.02": 500,
+  "lp_edge/rho=0.05": 500,
+  "lp_iot23/rho=0.01": 500,
+  "lp_iot23/rho=0.02": 500,
+  "lp_iot23/rho=0.05": 1000
+ },
+ "streams": {
+  "lp_edge": 3,
+  "lp_iot23": 13
+ },
+ "panel_a": "pooled over (stream, estimand) pairs with Q > 0 of LP-IoT23 and LP-Edge; CtS time-unif. = L+ lower side OR U+ upper side wrong at any epoch (UCS on indicator estimands); one eta* = the same supermartingales with ONE pre-registered eta evaluated once at the final epoch (L = Qhat - l/eta* - eta* V/2, eta* = sqrt(2 l/V_ref); U = Qhat + (l + W(eta_U))/eta_U, eta_U = min(0.999/cbar, eta*); valid at that epoch only); Wald = final epoch; Wilson 95% intervals",
+ "panel_a_values": {
+  "ours_tu/Q>0/static": [
+   {
+    "rho": 0.01,
+    "miss": 0.0004200913242009132,
+    "k": 46,
+    "n": 109500
+   },
+   {
+    "rho": 0.02,
+    "miss": 0.0007397260273972603,
+    "k": 81,
+    "n": 109500
+   },
+   {
+    "rho": 0.05,
+    "miss": 0.0012838196286472149,
+    "k": 242,
+    "n": 188500
+   }
+  ],
+  "ours_tu/Q>0/adaptive": [
+   {
+    "rho": 0.01,
+    "miss": 0.00044748858447488587,
+    "k": 49,
+    "n": 109500
+   },
+   {
+    "rho": 0.02,
+    "miss": 0.0007214611872146118,
+    "k": 79,
+    "n": 109500
+   },
+   {
+    "rho": 0.05,
+    "miss": 0.0012360742705570292,
+    "k": 233,
+    "n": 188500
+   }
+  ],
+  "ft1_2s/Q>0/static": [
+   {
+    "rho": 0.01,
+    "miss": 0.0003470319634703196,
+    "k": 38,
+    "n": 109500
+   },
+   {
+    "rho": 0.02,
+    "miss": 0.0005205479452054794,
+    "k": 57,
+    "n": 109500
+   },
+   {
+    "rho": 0.05,
+    "miss": 0.00039257294429708225,
+    "k": 74,
+    "n": 188500
+   }
+  ],
+  "ft1_2s/Q>0/adaptive": [
+   {
+    "rho": 0.01,
+    "miss": 0.00026484018264840185,
+    "k": 29,
+    "n": 109500
+   },
+   {
+    "rho": 0.02,
+    "miss": 0.000502283105022831,
+    "k": 55,
+    "n": 109500
+   },
+   {
+    "rho": 0.05,
+    "miss": 0.00035013262599469495,
+    "k": 66,
+    "n": 188500
+   }
+  ],
+  "wald_ft/Q1-20/static": [
+   {
+    "rho": 0.01,
+    "miss": 0.386,
+    "k": 9843,
+    "n": 25500
+   },
+   {
+    "rho": 0.02,
+    "miss": 0.3393333333333333,
+    "k": 8653,
+    "n": 25500
+   },
+   {
+    "rho": 0.05,
+    "miss": 0.2420421052631579,
+    "k": 11497,
+    "n": 47500
+   }
+  ],
+  "wald_ft/Q1-20/adaptive": [
+   {
+    "rho": 0.01,
+    "miss": 0.4012941176470588,
+    "k": 10233,
+    "n": 25500
+   },
+   {
+    "rho": 0.02,
+    "miss": 0.3443529411764706,
+    "k": 8781,
+    "n": 25500
+   },
+   {
+    "rho": 0.05,
+    "miss": 0.2516842105263158,
+    "k": 11955,
+    "n": 47500
+   }
+  ],
+  "wald_ft/Q>20/static": [
+   {
+    "rho": 0.01,
+    "miss": 0.17114285714285715,
+    "k": 14376,
+    "n": 84000
+   },
+   {
+    "rho": 0.02,
+    "miss": 0.12930952380952382,
+    "k": 10862,
+    "n": 84000
+   },
+   {
+    "rho": 0.05,
+    "miss": 0.0824822695035461,
+    "k": 11630,
+    "n": 141000
+   }
+  ],
+  "wald_ft/Q>20/adaptive": [
+   {
+    "rho": 0.01,
+    "miss": 0.16722619047619047,
+    "k": 14047,
+    "n": 84000
+   },
+   {
+    "rho": 0.02,
+    "miss": 0.1193452380952381,
+    "k": 10025,
+    "n": 84000
+   },
+   {
+    "rho": 0.05,
+    "miss": 0.07694326241134752,
+    "k": 10849,
+    "n": 141000
+   }
+  ]
+ },
+ "panel_b": "unchanged from rev0: LP-IoT23 (13 streams), rho = 5%, static and adaptive arms pooled; side attacked by each rule: void unretained -> lower, others -> upper (UCS)",
+ "panel_b_values": {
+  "comp:void_unretained": {
+   "miss": 0.3503987341772152,
+   "k": 55363,
+   "n": 158000
+  },
+  "comp:void_retained": {
+   "miss": 0.1704424778761062,
+   "k": 19260,
+   "n": 113000
+  },
+  "comp:withhold_half": {
+   "miss": 0.0,
+   "k": 0,
+   "n": 113000
+  },
+  "comp:void_random": {
+   "miss": 0.0009823008849557523,
+   "k": 111,
+   "n": 113000
+  },
+  "x0:void_unretained": {
+   "miss": 6.962025316455696e-05,
+   "k": 11,
+   "n": 158000
+  },
+  "x0:void_retained": {
+   "miss": 0.0,
+   "k": 0,
+   "n": 113000
+  },
+  "x0:withhold_half": {
+   "miss": 0.0,
+   "k": 0,
+   "n": 113000
+  },
+  "x0:void_random": {
+   "miss": 0.0,
+   "k": 0,
+   "n": 113000
+  }
+ },
+ "panel_c": "static design, rho = 5%, LP-IoT23 and LP-Edge pairs with Q > 0, binned by Q (log bins); line = median over pairs of the per-pair median (first 200 reps, final epoch) of 1 - S/Q, 1 - L*/Q (clipped at 1), 1 - L+/Q (band = IQR over pairs), and of the fixed-time bounds alone 1 - L/Q (clipped at 1): one eta* (Chernoff) and Bernstein with the floor-based variance bound kappa Q",
+ "panel_c_bins": [
+  {
+   "Q_geo": 1.4859942891369484,
+   "n_pairs": 7,
+   "gap_S_med": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "gap_Lstar_med": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "rel_lcb_gap_med": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "gapraw_ft1_med": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "gapraw_ftb_med": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "Q_geo": 4.86233269940614,
+   "n_pairs": 27,
+   "gap_S_med": [
+    0.25,
+    0.25,
+    1.0
+   ],
+   "gap_Lstar_med": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "rel_lcb_gap_med": [
+    0.25,
+    0.25,
+    1.0
+   ],
+   "gapraw_ft1_med": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "gapraw_ftb_med": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "Q_geo": 13.83894846783139,
+   "n_pairs": 20,
+   "gap_S_med": [
+    0.1804812834224599,
+    0.3712121212121212,
+    0.6990384615384615
+   ],
+   "gap_Lstar_med": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "rel_lcb_gap_med": [
+    0.1804812834224599,
+    0.3712121212121212,
+    0.6990384615384615
+   ],
+   "gapraw_ft1_med": [
+    0.906138505990764,
+    1.0,
+    1.0
+   ],
+   "gapraw_ftb_med": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "Q_geo": 57.86137763737046,
+   "n_pairs": 14,
+   "gap_S_med": [
+    0.2,
+    0.6565656565656566,
+    0.9870642701525054
+   ],
+   "gap_Lstar_med": [
+    0.582008429859505,
+    0.9346183040664845,
+    1.0
+   ],
+   "rel_lcb_gap_med": [
+    0.2,
+    0.6565656565656566,
+    0.9870642701525054
+   ],
+   "gapraw_ft1_med": [
+    0.8108272954758402,
+    1.0,
+    1.0
+   ],
+   "gapraw_ftb_med": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "Q_geo": 132.58652560554722,
+   "n_pairs": 27,
+   "gap_S_med": [
+    0.2,
+    0.2807017543859649,
+    0.9807692307692307
+   ],
+   "gap_Lstar_med": [
+    0.4006958230624189,
+    0.4260611625603,
+    1.0
+   ],
+   "rel_lcb_gap_med": [
+    0.2,
+    0.2807017543859649,
+    0.9807692307692307
+   ],
+   "gapraw_ft1_med": [
+    0.42130660707966405,
+    0.532617980510793,
+    1.0
+   ],
+   "gapraw_ftb_med": [
+    0.9374745654580867,
+    0.9569824158448592,
+    0.9684916645912643
+   ]
+  },
+  {
+   "Q_geo": 508.8996889253507,
+   "n_pairs": 17,
+   "gap_S_med": [
+    0.2,
+    0.9745222929936306,
+    0.981675392670157
+   ],
+   "gap_Lstar_med": [
+    0.21520557879174806,
+    0.885371956051064,
+    1.0
+   ],
+   "rel_lcb_gap_med": [
+    0.2,
+    0.885371956051064,
+    0.9782214156079855
+   ],
+   "gapraw_ft1_med": [
+    0.30245436264882397,
+    1.0,
+    1.0
+   ],
+   "gapraw_ftb_med": [
+    0.5949357027687268,
+    0.6325649644428283,
+    0.7214641626429301
+   ]
+  },
+  {
+   "Q_geo": 1321.9710523099952,
+   "n_pairs": 76,
+   "gap_S_med": [
+    0.2391441916079383,
+    0.8046849145792866,
+    0.9263642999609318
+   ],
+   "gap_Lstar_med": [
+    0.14220277098877201,
+    0.2962092897190747,
+    0.5225199929024587
+   ],
+   "rel_lcb_gap_med": [
+    0.14220277098877201,
+    0.2962092897190747,
+    0.5225199929024587
+   ],
+   "gapraw_ft1_med": [
+    0.13384778826724947,
+    0.35104555360279016,
+    0.818690531142865
+   ],
+   "gapraw_ftb_med": [
+    0.4376614576367269,
+    0.5041206020656757,
+    1.0
+   ]
+  },
+  {
+   "Q_geo": 5677.824118391011,
+   "n_pairs": 6,
+   "gap_S_med": [
+    0.7902316100026519,
+    0.9816080791256439,
+    0.982079945940202
+   ],
+   "gap_Lstar_med": [
+    0.15347660573040295,
+    0.3745197043043953,
+    0.4290363447675636
+   ],
+   "rel_lcb_gap_med": [
+    0.15347660573040295,
+    0.3745197043043953,
+    0.4290363447675636
+   ],
+   "gapraw_ft1_med": [
+    0.27534891916646004,
+    0.7184598524933082,
+    1.0
+   ],
+   "gapraw_ftb_med": [
+    0.22224699032141582,
+    0.26480806045738414,
+    0.2983379257060787
+   ]
+  },
+  {
+   "Q_geo": 49635.14056209279,
+   "n_pairs": 25,
+   "gap_S_med": [
+    0.8820365406320542,
+    0.9108075674149372,
+    0.9280495552731893
+   ],
+   "gap_Lstar_med": [
+    0.08956663659706922,
+    0.10509227394555812,
+    0.12441272770031524
+   ],
+   "rel_lcb_gap_med": [
+    0.08956663659706922,
+    0.10509227394555812,
+    0.12441272770031524
+   ],
+   "gapraw_ft1_med": [
+    0.13466346599693751,
+    0.1414992051993873,
+    0.15334929698551936
+   ],
+   "gapraw_ftb_med": [
+    0.4875099067158639,
+    0.573431401209836,
+    0.5800435719011899
+   ]
+  }
+ ],
+ "text_for_caption": "E2: (a) two-sided miscoverage vs rho of the CtS statements (time-uniform), of the same bounds with one pre-registered eta evaluated at the final epoch only (valid at that time) and of fixed-time Wald intervals, static (solid) and adaptive (dashed) designs; (b) time-uniform miscoverage under selective abort A11 (rho = 5%); (c) relative gap at the final epoch vs Q of the sure count S, the anytime L* and L+, and the fixed-time bounds (one eta*, Bernstein) (rho = 5%, static). LP-IoT23 and LP-Edge, R = 1,000 (LP-IoT23, rho = 5%) / 500, alpha = 0.05, Wilson 95% intervals."
+}

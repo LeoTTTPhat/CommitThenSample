@@ -1,0 +1,17 @@
+# E10 (SHOULD) -- transfer and few-shot recalibration (DESIGN §3.8, §6.1 E10). Owner: P2-G.
+# S_TON -> CF-GOTHAM: unweighted transfer (calibrate on CF-TON cal/test incidents, test on CF-GOTHAM incidents, both
+# scored by S_TON) and few-shot recalibration on K_target CF-GOTHAM incidents; IoT-23 scenario-level few-shot
+# K_target in {9, 19} scenarios (S_CF); bank-vs-deployment two-sample AUC on phi.
+exp: E10
+alphas: [0.1, 0.2]
+splits: 100
+transfer:
+  - {name: S_TON->CF-GOTHAM, cal: [cf_ton, S_TON.stat], test: [cf_gotham, S_TON.stat], K_cal: 150, n_test: 100}
+few_shot:
+  - {name: CF-GOTHAM (S_TON), ds: cf_gotham, sid: S_TON.stat, K_target: [9, 19, 29, 49], n_test: 100}
+  - {name: CF-GOTHAM (S_GOT, in-domain reference), ds: cf_gotham, sid: S_GOT.stat, K_target: [9, 19, 29, 49], n_test: 100}
+iot23_scenario_few_shot: {sid: S_CF.stat, K_scenarios: [9, 19], splits: 100}
+two_sample:
+  - {name: CF-TON -> CF-GOTHAM, bank: [cf_ton, caltest], deploy: [cf_gotham, caltest]}
+  - {name: CF-TON -> IoT-23, bank: [cf_ton, caltest], deploy: [iot23, null]}
+  - {name: CF-GOTHAM-T -> Gotham-real, bank: [cf_gotham_t, caltest], deploy: [gotham_real, null]}

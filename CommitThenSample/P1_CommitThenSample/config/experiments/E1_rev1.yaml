@@ -1,0 +1,70 @@
+# E1 rev1 — evidence retained at equal storage with faithful / online baselines (review R3-M2, R1-M5; fix list B4, M4, M6).
+# Deep-merged over config/defaults.yaml. Same streams, incidents and metrics as E1.yaml; changes:
+#   * B4 and B13 ONLINE versions are primary (no test-stream hindsight): the horizon threshold controller with a θ_ref
+#     calibrated on the fold's training streams (B4ctl / B13ctl, as specified; spend reported, not matched) and the
+#     budget-exact per-epoch variants (B4ep / B13ep: per-epoch greedy top-k within B̄ + carried deficit). B13 online
+#     variants use a keyed reserve π_r,e = max(φ0, ·) computed from the epoch's own committed metadata, so their π
+#     are predictable and their HT statements valid. The offline global top-k versions (hindsight) stay as reference
+#     rows (B4-offline, B13-offline: NOT valid / not online).
+#   * B3 Time Machine scored at packet/byte level: content evidence iff the unit's first payload packet lies within the
+#     first N bytes of its connection; estimator hits iff the first hit packet does (scripts/05b_baselines_rev1.py
+#     aux_b3_offsets.npz). The whole-unit scoring of rev0 stays as a reference row (B3-unit).
+#   * B6 triggered only by the 36 strict pre-registered audit sids (B6); the rev0 all-sids variant = B6-allsids.
+#   * Duffield–Lund–Thorup threshold sampling π = min(1, s/z) (DLT), budget-matched, next to B10 (π ∝ √s, renamed
+#     "CtS-Size (√s)" in the outputs).
+#   * cluster-bootstrap CIs for recall and per-stream incident counts (scripts/90_aggregate.py --rev rev1).
+name: E1_rev1
+
+stream_kinds_e1: [lp_iot23, lp_edge]
+rho: [0.01, 0.02, 0.05, 0.10]
+seeds: [0, 1, 2]
+
+policies:
+  # name: {kind: pi | mask | mask_bytes | packet | adaptive, file: design stem ({s} = seed), seeded, estimator, label}
+  CtS-AI:        {kind: adaptive, source: "U6tau0.2_s{s}", grid_key: U6tau0.2, seeded: true,
+                  label: "CtS-AI adaptive (as deployed; realised spend)"}
+  CtS-AI-static: {kind: pi, file: "U6tau0.2_s{s}_bm", seeded: true, estimator: ht,
+                  label: "CtS-AI static, budget-matched (U5tau0.2_bm)"}
+  CtS-Size:      {kind: pi, file: "B10_bm", seeded: false, estimator: ht, label: "CtS-Size (B10: pi ~ sqrt(s), byte-cost size-only)"}
+  DLT:           {kind: pi, file: "DLT", seeded: false, estimator: ht, label: "DLT threshold sampling (pi = min(1, s/z))"}
+  CtS-Unif:      {kind: pi, file: "B8_bm", seeded: false, estimator: ht, label: "CtS-Unif (B8)"}
+  B2:            {kind: mask, file: "B2", seeded: false, estimator: sum, partial: true, label: "B2 ring buffer"}
+  B3:            {kind: mask_bytes, file: "B3", seeded: false, estimator: sum_bytes, partial: true,
+                  label: "B3 Time Machine (byte-level scoring)"}
+  B3-unit:       {kind: mask, file: "B3", seeded: false, estimator: sum, partial: true,
+                  label: "B3 Time Machine, whole-unit scoring (rev0 reference)"}
+  B4:            {kind: mask, file: "B4ep_s{s}", seeded: true, estimator: sum, scaled_variant: true,
+                  label: "B4 top-k online, per-epoch budget (budget-exact)"}
+  B4-ctl:        {kind: mask, file: "B4on_s{s}", seeded: true, estimator: sum, scaled_variant: true,
+                  label: "B4 online horizon threshold controller (training theta_ref; spend not matched)"}
+  B4-offline:    {kind: mask, file: "B4_s{s}", seeded: true, estimator: sum, scaled_variant: true,
+                  label: "B4 offline global top-k (hindsight; reference)"}
+  B6:            {kind: pi, file: "B6s", seeded: false, estimator: sum, d_only: true,
+                  label: "B6 alert-triggered, 36 strict audit sids"}
+  B6-allsids:    {kind: pi, file: "B6", seeded: false, estimator: sum, d_only: true,
+                  label: "B6 alert-triggered, all replay alerts (rev0 reference)"}
+  B13:           {kind: pi, file: "B13ep_s{s}", seeded: true, estimator: ht,
+                  label: "B13 top-k + keyed reserve, online per-epoch budget (valid HT)"}
+  B13-ctl:       {kind: pi, file: "B13on_s{s}", seeded: true, estimator: ht,
+                  label: "B13 online controller (training theta_ref; spend not matched; valid HT)"}
+  B13-offline:   {kind: pi, file: "B13_s{s}", seeded: true, estimator: ht,
+                  label: "B13 offline global top-k + reserve (hindsight; NOT valid; reference)"}
+  B15:           {kind: packet, file: "B15", seeded: false, estimator: none, label: "B15 1:N packet sampling (upper bound)"}
+
+mc_adaptive:
+  reps: 200
+  chunk: 50
+
+incidents:
+  k_strata: [20, 100]
+  presence_set: device_window
+
+estimands:
+  min_eligible: 50
+
+bootstrap:
+  B: 2000
+  seed: 20261019
+  # clusters: LP-IoT23 = stream (fold x prevalence), LP-Edge = attack class (the same sessions at three thinnings)
+  cluster_lp_iot23: stream
+  cluster_lp_edge: attack_class

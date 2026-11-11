@@ -1,0 +1,16 @@
+# E2 -- power against baselines on the same candidate set C. Owner: P2-G. DESIGN §6.1 E2, §6.2, §6.3.
+# Methods with a level reuse the E1 cells (same config); this experiment adds the fixed-claim baselines
+# (B1, B2, B4 = lag-LLR > 0, B5 on its 15 incidents), the r_C-limited oracle, ranked analyst load, CRC-BH with
+# the B4 lag-LLR scorer, and precision matching on the PREREG fine alpha grid.
+exp: E2
+splits: 200
+alphas: [0.05, 0.1, 0.2]
+datasets:
+  cf_ton:    {K: 150, n_test: 150}
+  cf_gotham: {K: 100, n_test: 100}
+fixed_baselines: [B1, B2, B4, B5]
+lag_llr_scorer: lag_llr          # CRC-BH on <S>.lag_llr ("B4 inside CRC")
+fine_grid_methods: [crc_bh, crc_fdx020, ltt, bh_iid, bh_iid_pooled, b8, crc_st]
+fine_grid_scorers: [stat, fuse_s0]
+precision_targets: [0.05, 0.1, 0.15, 0.2, 0.3]
+ranked_frac: 0.8                 # claims inspected to reach 80% observable STR (ranked baselines)

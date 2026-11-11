@@ -1,0 +1,36 @@
+# E5 — end-to-end protocol security on the E5 stream (DESIGN §6.1 row E5, §6.3; paper Table V `tab:e5`).
+# Owner P1-G. Every value below is fixed BEFORE looking at E5 test-stream outcomes (no tuning on the test stream).
+experiment: E5
+stream: lp_iot23_34-1_p10000         # LP-IoT23(34-1, 1 %): C&C incident (1,352 payload units of the infected host)
+fold: "34-1"                         # LOSO fold whose models never saw scenario 34-1
+model_seed: 0
+p_key: p10000
+rho: 0.05                            # headline budget; B̄ = ρ Σ_all s / E of the stream (as in 05_designs)
+design: U6tau0.2                     # CtS-AI (U5 utility + boost + τ_mix = 0.2)
+controller: realised                 # adaptive arm (realised-cost controller + follow-the-evidence boost)
+master_key: "P1-G/E5/deployment/v1"  # KeySet.from_master (sk_G, sk_W, sk_I, sk_V, k_st) and the escrow master
+ahead: 1                             # r*_e = r0 + e + 1
+counters:
+  p_loss: [0.001, 0.01]              # gateway capture loss (i.i.d.) — main honest run uses the first
+  ge_onset: 1.0e-4                   # Gilbert–Elliott burst onset per packet
+  ge_mean_burst: 50
+  skew_ms: 50                        # counter clock offset ~ U(−50, +50) ms per (device, hour)
+  far: 1.0e-3                        # ε_cell(n) = (1 − FAR) quantile of honest |Δ| per log2(n+1) bin
+  calib_source: [ciciot2023_benign, BenignTraffic]   # CIC TRAINING half (9.26 h)
+  calib_seeds: [0, 1, 2, 3, 4, 5, 6, 7]
+  test_seeds: [100, 101, 102, 103, 104, 105, 106, 107]   # extra honest loss/skew draws on the E5 stream (FAR)
+  main_seed: 100
+trials:
+  per_adversary: 200
+  window: 5                          # disclosed epochs per trial (consecutive)
+  seed: 20261019
+  a8_m: [1, 2, 3, 5, 10, 20, 50, 100, 200]
+grinding:
+  M: [1, 4, 16, 64, 256]
+  k: [1, 3, 10]
+  pi: "0.05"
+  trials: 200
+  seed: 7
+chi2:
+  n_bins: 10                         # π-bins (equal-count over the real payload units)
+  mc_reps: 200                       # Philox replications on the same τ

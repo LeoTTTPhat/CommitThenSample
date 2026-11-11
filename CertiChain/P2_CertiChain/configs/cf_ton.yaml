@@ -1,0 +1,16 @@
+# CF-TON (DESIGN §5.3, §5.4) -- owner P2-E. Main validity/power benchmark.
+# Incidents: train 150 / dev 60 (TRAIN pools) / caltest 300 (cal/test pools); all 6 TON templates.
+variant: cf_ton
+dataset: ton
+seed_variant: cf_ton          # seed = BLAKE3("<seed_variant>|<split_role>|<idx>")
+splits: {train: 150, dev: 60, caltest: 300}
+templates: null               # default: T-BOT, T-C2DOS, T-PIVOT, T-CRED, T-WEBI, T-WEBX for every split
+n_camp_p: [0.10, 0.55, 0.25, 0.10]
+decoy_rate: 2.0               # decoys ~ Poisson(2)
+decoy_kind_p: {D1: 0.4, D2: 0.2, D3: 0.4}
+evidence_loss: 0.0            # E8 variant: 0.3 (paired: keep seed_variant: cf_ton)
+victim_is_seed_p: 0.5         # campaigns k >= 1: victim = seed w.p. 0.5, else a neighbour of the seed in B
+window: {min_s: 3600, margin_s: 1800, extra_s: 1800, max_s: null}   # L = max(60 min, span + 30 min) + U(0, 30 min)
+ts_round: 1.0                 # CF-TON: ts/te rounded to 1 s everywhere, ts_res = 1.0
+W: 1800
+scope_rule: "alg1_step6:seed+N1+shared_external;F_infra=3;U_max=1000"

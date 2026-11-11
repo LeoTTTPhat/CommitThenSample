@@ -1,0 +1,15 @@
+# E4 -- stress: validity under corrupted LLM scores (CF-TON fusion, M_fuse s0 trained clean). Owner: P2-G.
+exp: E4
+dataset: cf_ton
+K: 150
+n_test: 150
+splits: 100
+alphas: [0.1, 0.2]
+base: S_TON.fuse_s0
+cal_and_test:                     # bank tag suffixes written by P2-F scripts/11 --e4
+  noise: [1, 2, 4]
+  invert: [0.5, 1]
+  memorise: [2, 5]
+test_only_inject: [1, 3, 10]      # calibration rows from the clean bank, test rows from __E4-inject-<q>
+families: {bh: crc_bh, threshold: crc_st}
+bootstrap: {B: 1000, splits: 50, seed: 0}

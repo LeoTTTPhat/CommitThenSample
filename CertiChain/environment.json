@@ -1,0 +1,103 @@
+{
+  "project": "P2_CertiChain",
+  "created_date": "2026-11-11",
+  "python": "3.12.12",
+  "source_root": "/Users/sonha/Documents/SonHa/IoTJ-SI26-Oct",
+  "platform": "macOS arm64",
+  "original_hardware": "Apple M3 Ultra, 512 GB unified memory",
+  "memory_limit_gb": 90,
+  "external_tools": [
+    "tshark"
+  ],
+  "copy_method": "APFS copy-on-write file clones; independent regular files",
+  "contents": {
+    "P2_CertiChain/src": {
+      "files": 88,
+      "bytes": 909336
+    },
+    "P2_CertiChain/scripts": {
+      "files": 20,
+      "bytes": 392643
+    },
+    "P2_CertiChain/tests": {
+      "files": 28,
+      "bytes": 266113
+    },
+    "P2_CertiChain/configs": {
+      "files": 24,
+      "bytes": 36448
+    },
+    "P2_CertiChain/figures": {
+      "files": 38,
+      "bytes": 1784431
+    },
+    "P2_CertiChain/results": {
+      "files": 69331,
+      "bytes": 9172012357
+    },
+    "data/iot23": {
+      "files": 63,
+      "bytes": 55987165573
+    },
+    "data/gotham2025": {
+      "files": 209,
+      "bytes": 32102884328
+    },
+    "data/attack": {
+      "files": 3,
+      "bytes": 60544013
+    },
+    "data/ton_iot/Processed_datasets/Processed_Network_dataset": {
+      "files": 23,
+      "bytes": 3372475448
+    },
+    "data/ton_iot/Raw_datasets/network_data/Network_dataset_Bro": {
+      "files": 922,
+      "bytes": 9395016980
+    },
+    "data/huggingface/hub/models--mlx-community--Qwen2.5-7B-Instruct-4bit/refs": {
+      "files": 1,
+      "bytes": 40
+    },
+    "data/huggingface/hub/models--mlx-community--Qwen2.5-7B-Instruct-4bit/snapshots": {
+      "files": 11,
+      "bytes": 4295889861
+    },
+    "data/huggingface/hub/models--mlx-community--Qwen3-30B-A3B-Instruct-2507-4bit/refs": {
+      "files": 1,
+      "bytes": 40
+    },
+    "data/huggingface/hub/models--mlx-community--Qwen3-30B-A3B-Instruct-2507-4bit/snapshots": {
+      "files": 16,
+      "bytes": 17197087380
+    },
+    "data/huggingface/hub/models--mlx-community--Llama-3.2-3B-Instruct-4bit/refs": {
+      "files": 1,
+      "bytes": 40
+    },
+    "data/huggingface/hub/models--mlx-community--Llama-3.2-3B-Instruct-4bit/snapshots": {
+      "files": 8,
+      "bytes": 1824825759
+    }
+  },
+  "models": [
+    {
+      "id": "mlx-community/Qwen2.5-7B-Instruct-4bit",
+      "revisions": [
+        "c26a38f6a37d0a51b4e9a1eb3026530fa35d9fed"
+      ]
+    },
+    {
+      "id": "mlx-community/Qwen3-30B-A3B-Instruct-2507-4bit",
+      "revisions": [
+        "e9675aa3ca5f900ccef55267914466d55ab325fa"
+      ]
+    },
+    {
+      "id": "mlx-community/Llama-3.2-3B-Instruct-4bit",
+      "revisions": [
+        "7f0dc925e0d0afb0322d96f9255cfddf2ba5636e"
+      ]
+    }
+  ]
+}

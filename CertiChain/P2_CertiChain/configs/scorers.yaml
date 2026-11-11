@@ -1,0 +1,50 @@
+# Scorers (DESIGN §3.4.2, §3.4.4, §5.3) -- owner P2-F. Values are the DESIGN defaults (§3.10);
+# anything tuned is tuned on train/dev only and recorded in notes/P2-F.md.
+scorers:
+  S_TON:   {train: [[cf_ton, train]], targets: [cf_ton, gotham_real]}   # gotham_real = Gotham case study (P2-E 06)
+  S_TON_H: {train: [[cf_ton_h, train]], targets: [cf_ton_h]}
+  S_GOT:   {train: [[cf_gotham, train]], targets: [cf_gotham, cf_gotham_t]}
+  S_CF:    {train: [[cf_ton, train], [cf_gotham, train]], targets: [iot23]}
+  # post-PREREG addition (19 Oct, documented deviation): CF-GOTHAM regenerated as cf_gotham_v2 / cf_gotham_t_v2
+  # after the pre-registered E15 artifact check (integer-second splice starts, probe AUC 1.00). Old S_GOT kept.
+  S_GOT2:  {train: [[cf_gotham_v2, train]], targets: [cf_gotham_v2, cf_gotham_t_v2]}
+  # post-PREREG corrected IoT-23 transfer scorer (same deviation entry); S_CF stays the pre-registered primary
+  S_CF2:   {train: [[cf_ton, train], [cf_gotham_v2, train]], targets: [iot23]}
+  # P2-X exploratory Gotham cross-fit (19 Oct, review R3-M4): trained on train-pool device half A (cf_gotham_xa),
+  # scores the half-B bank (cf_gotham_xb) and the Gotham-real case study; not pre-registered
+  S_GOTXA: {train: [[cf_gotham_xa, train]], targets: [cf_gotham_xb, gotham_real]}
+lightgbm:
+  objective: binary
+  num_leaves: 63
+  learning_rate: 0.05
+  min_child_samples: 50
+  feature_fraction: 0.8
+  bagging_fraction: 0.8
+  bagging_freq: 1
+  lambda_l2: 1.0
+  scale_pos_weight: 20.0
+  seed: 0
+  num_threads: 16          # <= 16 (shared machine)
+  deterministic: true
+  force_row_wise: true
+  verbose: -1
+  metric: auc              # early-stopping metric on the incident-grouped validation fold
+  first_metric_only: true
+training:
+  max_rounds: 1000
+  early_stopping: 50
+  n_folds: 5
+  fold_seed: 0
+  fuse_seeds: [0, 1, 2, 3, 4]
+  W: 1800.0                # lag-bin upper edge of the lag-LLR (= candidate window W)
+cascade:
+  kappa_target: 0.10
+  kappa_max: 0.15
+  pos_below: 0.005
+  fdp_above: 0.01
+  # Shrink space: 'cand' = DESIGN literal (equal mass of ALL training candidates removed from both ends);
+  # 'pos' = equal mass of the training TRUE-link distribution removed from both ends. Chosen on S_TON training
+  # OOF only (18 Oct): 'cand' leaves 1.0% of training true links in the band (96% above it: the band sits in
+  # the dense null region), 'pos' keeps 90.8% at kappa 0.083 -> 'pos' (deviation, notes/P2-F.md).
+  rule: pos
+  kappa_grid: [0.05, 0.10, 0.20]

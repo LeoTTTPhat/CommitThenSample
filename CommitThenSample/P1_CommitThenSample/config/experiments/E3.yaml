@@ -1,0 +1,48 @@
+# E3 — value of the AI utility at equal budget (DESIGN §6.1 E3, §5.6 splits; owner P1-E).
+# Deep-merged over config/defaults.yaml. Budget-matched static designs (<design>_bm, fixed λ, expected spend = B̄E);
+# analytic MSE Σ f²(1-π)/π; LCB width by MC (500 reps, ρ = 5%); adaptive U6 / U6τ arms by MC (as deployed).
+name: E3
+
+streams_e3:
+  in_domain: [lp_iot23_1-1_p10000, lp_iot23_3-1_p10000, lp_iot23_7-1_p10000, lp_iot23_34-1_p10000,
+              lp_iot23_48-1_p10000, lp_iot23_49-1_p10000]          # LOSO, p = 1% (realised 0.41-1.05%)
+  zero_shot: [lp_edge_p10000, lp_gotham_p10000, lp_gotham_nat]     # all-scenario models applied unchanged
+rho: [0.02, 0.05]
+rho_mc: [0.05]
+seeds: [0, 1, 2]
+reference: U1
+
+designs_e3:
+  # label: {file: budget-matched design stem ({s} = seed), seeded}
+  U0:      {file: "U0_bm", seeded: false}
+  U1:      {file: "U1_bm", seeded: false}
+  U3:      {file: "U3_s{s}_bm", seeded: true}
+  U5:      {file: "U5_s{s}_bm", seeded: true}
+  U5tau0.2: {file: "U6tau0.2_s{s}_bm", seeded: true}     # static mixture tau = 0.2 (= U6tau without the boost)
+  U5tau0.5: {file: "U6tau0.5_s{s}_bm", seeded: true}
+  U8:      {file: "U8_bm", seeded: false}
+  U7:      {file: "U7_bm", seeded: false}                # oracle (uses f): headroom only
+adaptive_e3:
+  # as deployed: realised-cost controller + boost; λ_ref^A from the boost replay (P1-D lamref.json)
+  U6:      {source: "U6_s{s}", grid_key: U6}
+  U6tau0.2: {source: "U6tau0.2_s{s}", grid_key: U6tau0.2}
+  U6tau0.5: {source: "U6tau0.5_s{s}", grid_key: U6tau0.5}
+
+ppi:
+  base_design: U5                                         # B12: X = g + Z (f - g)/pi on the U5 design
+  estimands: indicator_and_count                          # count g = p_hit * sqrt(M_cell) (first-moment proxy)
+
+mc_e3:
+  reps: 500
+  chunk: 100
+  width_reps: 500
+  report_every: 1000000                                   # final epoch only
+
+bootstrap:
+  B: 2000
+  nested: true
+  per_scenario: true                                      # geometric mean of per-scenario geometric means
+
+estimands:
+  min_eligible: 50
+  classes_primary: [D, S]                                 # content estimands; L (oracle-analyst labels) secondary

@@ -1,0 +1,17 @@
+[project]
+name = "certichain"
+version = "0.1.0"
+description = "CertiChain: attack-provenance reconstruction with known error rates from network-only evidence"
+requires-python = ">=3.12"
+dependencies = ["numpy", "scipy", "pyarrow", "polars", "pandas", "lightgbm", "blake3", "pyyaml", "psutil", "mlx", "mlx-lm"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["slow: long-running tests (real LLM, large data)"]

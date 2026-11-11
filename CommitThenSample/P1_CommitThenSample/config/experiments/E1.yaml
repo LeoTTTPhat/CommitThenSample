@@ -1,0 +1,32 @@
+# E1 — evidence retained at equal storage (DESIGN §6.1 E1, §6.2 baselines; owner P1-E).
+# Deep-merged over config/defaults.yaml. Analytic for static designs and deterministic baselines; the adaptive
+# CtS-AI arm (U6tau: realised-cost controller + boost) by an exact full-unit Monte Carlo (200 reps).
+name: E1
+
+stream_kinds_e1: [lp_iot23, lp_edge]   # distinct streams per (fold, realised-prevalence bin), as in E2
+rho: [0.01, 0.02, 0.05, 0.10]
+seeds: [0, 1, 2]                       # utility-model seeds (CtS-AI, B4, B13 depend on them)
+
+policies:
+  # name: {kind: pi | mask | adaptive, file: design stem ({s} = seed), seeded: bool}
+  CtS-AI:        {kind: adaptive, source: "U6tau0.2_s{s}", grid_key: U6tau0.2, seeded: true}   # as deployed (MC)
+  CtS-AI-static: {kind: pi, file: "U6tau0.2_s{s}_bm", seeded: true, estimator: ht}          # budget-matched static U5tau
+  CtS-Size:      {kind: pi, file: "B10_bm", seeded: false, estimator: ht}
+  CtS-Unif:      {kind: pi, file: "B8_bm", seeded: false, estimator: ht}
+  B2:            {kind: mask, file: "B2", seeded: false, estimator: sum, partial: true}
+  B3:            {kind: mask, file: "B3", seeded: false, estimator: sum, partial: true}
+  B4:            {kind: mask, file: "B4_s{s}", seeded: true, estimator: sum, scaled_variant: true}
+  B6:            {kind: pi, file: "B6", seeded: false, estimator: sum, d_only: true}
+  B13:           {kind: pi, file: "B13_s{s}", seeded: true, estimator: ht}
+  B15:           {kind: packet, file: "B15", seeded: false, estimator: none}
+
+mc_adaptive:
+  reps: 200
+  chunk: 50
+
+incidents:
+  k_strata: [20, 100]                  # k <= 20, 21-100, > 100 content-bearing units (DESIGN §5.5)
+  presence_set: device_window          # payload units of the incident's device(s) within its epoch span
+
+estimands:
+  min_eligible: 50

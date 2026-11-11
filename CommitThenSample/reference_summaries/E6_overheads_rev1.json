@@ -1,0 +1,1115 @@
+{
+  "anchoring": {
+    "cts_anchor_every_K": {
+      "1": {
+        "bytes_per_day": 92160.0,
+        "tx_per_day": 2880.0
+      },
+      "10": {
+        "bytes_per_day": 9216.0,
+        "tx_per_day": 288.0
+      },
+      "120": {
+        "bytes_per_day": 768.0,
+        "tx_per_day": 24.0
+      },
+      "2880": {
+        "bytes_per_day": 32.0,
+        "tx_per_day": 1.0
+      }
+    },
+    "cts_witness_cosignatures_per_day": 2880,
+    "note": "Chain4ensic-style per-record anchoring vs CtS's per-epoch cosignature; an optional ledger anchor of H(Hdr_e) every K epochs (security does not depend on it: TR does)",
+    "per_committed_unit_tx_per_day": 625228.1379310344,
+    "per_record_retained_tx_per_day": 28942.344827586207
+  },
+  "arm_extrapolation": {
+    "LABEL": "EXTRAPOLATION (not measured): E-core \u00b5s/packet \u00d7 assumed slowdown factor of a gateway-class ARM core",
+    "ecore_us_per_packet": 39.428914365923916,
+    "rows": [
+      {
+        "cpu_share_at_pps": {
+          "110": 0.008674361160503262,
+          "700": 0.05520048011229348
+        },
+        "pps_per_core": 12681.049124500381,
+        "slowdown": 2,
+        "us_per_packet": 78.85782873184783
+      },
+      {
+        "cpu_share_at_pps": {
+          "110": 0.021685902901258155,
+          "700": 0.1380012002807337
+        },
+        "pps_per_core": 5072.419649800153,
+        "slowdown": 5,
+        "us_per_packet": 197.14457182961957
+      },
+      {
+        "cpu_share_at_pps": {
+          "110": 0.04337180580251631,
+          "700": 0.2760024005614674
+        },
+        "pps_per_core": 2536.2098249000765,
+        "slowdown": 10,
+        "us_per_packet": 394.28914365923913
+      }
+    ]
+  },
+  "buffer": {
+    "lp_edge_p10000": {
+      "ahead1_max_MB": 199.646334,
+      "ahead1_p50_MB": 1.371202,
+      "ahead1_p99_MB": 4.553345069999986,
+      "ahead2_max_MB": 212.853034,
+      "ahead2_p50_MB": 3.728491,
+      "ahead2_p99_MB": 8.950888229999997,
+      "payload_rate_Bps": 90129.8403448276,
+      "pps": 262.2912643678161,
+      "residence_s": [
+        33.5,
+        63.5
+      ]
+    },
+    "lp_iot23_1-1_p10000": {
+      "ahead1_max_MB": 199.519456,
+      "ahead1_p50_MB": 1.2234495,
+      "ahead1_p99_MB": 3.0976106699999892,
+      "ahead2_max_MB": 212.426006,
+      "ahead2_p50_MB": 3.399066,
+      "ahead2_p99_MB": 6.549011319999994,
+      "payload_rate_Bps": 78150.68222222223,
+      "pps": 119.56157088122606,
+      "residence_s": [
+        33.5,
+        63.5
+      ]
+    },
+    "lp_iot23_3-1_p10000": {
+      "ahead1_max_MB": 199.517513,
+      "ahead1_p50_MB": 1.2252065,
+      "ahead1_p99_MB": 3.1045217499999964,
+      "ahead2_max_MB": 212.421253,
+      "ahead2_p50_MB": 3.402805,
+      "ahead2_p99_MB": 6.546278499999992,
+      "payload_rate_Bps": 78199.53892720306,
+      "pps": 118.5267816091954,
+      "residence_s": [
+        33.5,
+        63.5
+      ]
+    },
+    "lp_iot23_34-1_p10000": {
+      "ahead1_max_MB": 199.517204,
+      "ahead1_p50_MB": 1.222999,
+      "ahead1_p99_MB": 3.090404859999997,
+      "ahead2_max_MB": 212.421368,
+      "ahead2_p50_MB": 3.397611,
+      "ahead2_p99_MB": 6.558262379999996,
+      "payload_rate_Bps": 78092.33593869732,
+      "pps": 116.95486590038314,
+      "residence_s": [
+        33.5,
+        63.5
+      ]
+    },
+    "lp_iot23_48-1_p10000": {
+      "ahead1_max_MB": 199.518508,
+      "ahead1_p50_MB": 1.22195,
+      "ahead1_p99_MB": 3.1292440899999994,
+      "ahead2_max_MB": 212.423252,
+      "ahead2_p50_MB": 3.3950255,
+      "ahead2_p99_MB": 6.732580679999995,
+      "payload_rate_Bps": 78111.90390804598,
+      "pps": 500.115632183908,
+      "residence_s": [
+        33.5,
+        63.5
+      ]
+    },
+    "lp_iot23_49-1_p10000": {
+      "ahead1_max_MB": 199.520324,
+      "ahead1_p50_MB": 1.2229865,
+      "ahead1_p99_MB": 3.1612205599999994,
+      "ahead2_max_MB": 212.427296,
+      "ahead2_p50_MB": 3.3980105,
+      "ahead2_p99_MB": 6.806003389999991,
+      "payload_rate_Bps": 78213.46590038315,
+      "pps": 730.9518007662836,
+      "residence_s": [
+        33.5,
+        63.5
+      ]
+    },
+    "lp_iot23_7-1_p10000": {
+      "ahead1_max_MB": 199.518084,
+      "ahead1_p50_MB": 1.221298,
+      "ahead1_p99_MB": 3.0876271699999998,
+      "ahead2_max_MB": 212.422036,
+      "ahead2_p50_MB": 3.393323,
+      "ahead2_p99_MB": 6.542343419999994,
+      "payload_rate_Bps": 78016.09735632184,
+      "pps": 266.9675478927203,
+      "residence_s": [
+        33.5,
+        63.5
+      ]
+    }
+  },
+  "buffer_range": {
+    "ahead1_max_MB": [
+      199.517204,
+      199.646334
+    ],
+    "ahead1_p50_MB": [
+      1.221298,
+      1.371202
+    ],
+    "ahead1_p99_MB": [
+      3.0876271699999998,
+      4.553345069999986
+    ],
+    "ahead2_max_MB": [
+      212.421253,
+      212.853034
+    ],
+    "ahead2_p50_MB": [
+      3.393323,
+      3.728491
+    ],
+    "ahead2_p99_MB": [
+      6.542343419999994,
+      8.950888229999997
+    ],
+    "pps": [
+      116.95486590038314,
+      730.9518007662836
+    ]
+  },
+  "config": {
+    "anchoring_K": [
+      1,
+      10,
+      120,
+      2880
+    ],
+    "arm_slowdown_vs_ecore": [
+      2,
+      5,
+      10
+    ],
+    "buffer_streams": [
+      "lp_iot23_1-1_p10000",
+      "lp_iot23_3-1_p10000",
+      "lp_iot23_34-1_p10000",
+      "lp_iot23_48-1_p10000",
+      "lp_iot23_49-1_p10000",
+      "lp_iot23_7-1_p10000",
+      "lp_edge_p10000"
+    ],
+    "cores": [
+      "P",
+      "E"
+    ],
+    "experiment": "E6",
+    "iot_rates_pps": [
+      110,
+      700
+    ],
+    "n_e": [
+      100,
+      1000,
+      10000,
+      100000,
+      1000000
+    ],
+    "omp_threads": 1,
+    "pipeline_epochs": 100,
+    "reps": 5,
+    "storage_streams": [
+      "lp_iot23_1-1_p10000",
+      "lp_iot23_3-1_p10000",
+      "lp_iot23_34-1_p10000",
+      "lp_iot23_48-1_p10000",
+      "lp_iot23_49-1_p10000",
+      "lp_iot23_7-1_p10000",
+      "lp_edge_p10000",
+      "lp_gotham_p10000",
+      "nat_iot23_1-1",
+      "nat_iot23_3-1",
+      "nat_iot23_34-1",
+      "nat_iot23_48-1",
+      "nat_iot23_49-1",
+      "nat_iot23_7-1"
+    ],
+    "stream": "lp_iot23_34-1_p10000",
+    "timing": {
+      "T": 30,
+      "delta_c": 3.0,
+      "delta_sel": 0.5
+    },
+    "verifier_windows": 20
+  },
+  "epochs": {
+    "E": {
+      "loadavg_1min": 4.86865234375,
+      "rows": [
+        {
+          "commit_total_ms": 0.680126016959548,
+          "header_sign": 0.13637496158480644,
+          "inclusion_proof_bytes": 224,
+          "leaves": 0.13533397577703,
+          "merkle": 0.1865830272436142,
+          "n_e": 100,
+          "n_pay": 84,
+          "prf_select": 0.18341606482863426,
+          "proof_verify": 0.01795799471437931,
+          "state_commitment": 0.041917082853615284,
+          "store_bytes": 20978,
+          "store_hash": 0.17991696950048208,
+          "verifier_recompute": 1.5469590434804559,
+          "vrf_prove": 7.6792920008301735,
+          "vrf_verify": 6.898790947161615
+        },
+        {
+          "commit_total_ms": 7.2499169036746025,
+          "header_sign": 0.31833292450755835,
+          "inclusion_proof_bytes": 320,
+          "leaves": 1.6262080753222108,
+          "merkle": 3.082791925407946,
+          "n_e": 1000,
+          "n_pay": 754,
+          "prf_select": 1.3429580722004175,
+          "proof_verify": 0.016834004782140255,
+          "state_commitment": 0.032791984267532825,
+          "store_bytes": 199978,
+          "store_hash": 2.1897919941693544,
+          "verifier_recompute": 11.878957971930504,
+          "vrf_prove": 8.205124991945922,
+          "vrf_verify": 7.175000035203993
+        },
+        {
+          "commit_total_ms": 70.79779112245888,
+          "header_sign": 2.163875033147633,
+          "inclusion_proof_bytes": 384,
+          "leaves": 18.089916091412306,
+          "merkle": 31.750082969665527,
+          "n_e": 10000,
+          "n_pay": 7505,
+          "prf_select": 16.051084036007524,
+          "proof_verify": 0.028582988306879997,
+          "state_commitment": 0.07312500383704901,
+          "store_bytes": 1995588,
+          "store_hash": 18.72079202439636,
+          "verifier_recompute": 124.46470896247774,
+          "vrf_prove": 9.88566700834781,
+          "vrf_verify": 9.214791934937239
+        },
+        {
+          "commit_total_ms": 650.1278760842979,
+          "header_sign": 25.91883298009634,
+          "inclusion_proof_bytes": 544,
+          "leaves": 176.34583404287696,
+          "merkle": 266.2129170494154,
+          "n_e": 100000,
+          "n_pay": 74722,
+          "prf_select": 160.66979197785258,
+          "proof_verify": 0.04183407872915268,
+          "state_commitment": 0.05979195702821016,
+          "store_bytes": 19919458,
+          "store_hash": 181.59050005488098,
+          "verifier_recompute": 1175.8210000116378,
+          "vrf_prove": 7.474582991562784,
+          "vrf_verify": 8.860332891345024
+        },
+        {
+          "commit_total_ms": 6583.50924984552,
+          "header_sign": 289.4720829790458,
+          "inclusion_proof_bytes": 640,
+          "leaves": 1778.3684169407934,
+          "merkle": 2610.0404169410467,
+          "n_e": 1000000,
+          "n_pay": 749582,
+          "prf_select": 1641.2702499656007,
+          "proof_verify": 0.05874992348253727,
+          "state_commitment": 0.09337498340755701,
+          "store_bytes": 199454058,
+          "store_hash": 1905.5349580012262,
+          "verifier_recompute": 12923.332582926378,
+          "vrf_prove": 9.752374957315624,
+          "vrf_verify": 8.146292064338923
+        }
+      ]
+    },
+    "P": {
+      "loadavg_1min": 6.4228515625,
+      "rows": [
+        {
+          "commit_total_ms": 0.2594171091914177,
+          "header_sign": 0.04287506453692913,
+          "inclusion_proof_bytes": 224,
+          "leaves": 0.06362504791468382,
+          "merkle": 0.09229197166860104,
+          "n_e": 100,
+          "n_pay": 84,
+          "prf_select": 0.0688750296831131,
+          "proof_verify": 0.00529095996171236,
+          "state_commitment": 0.0076249707490205765,
+          "store_bytes": 20978,
+          "store_hash": 0.05300005432218313,
+          "verifier_recompute": 0.49183296505361795,
+          "vrf_prove": 3.5083340480923653,
+          "vrf_verify": 3.532000002451241
+        },
+        {
+          "commit_total_ms": 2.1446249447762966,
+          "header_sign": 0.11483300477266312,
+          "inclusion_proof_bytes": 320,
+          "leaves": 0.6058340659365058,
+          "merkle": 0.8882499532774091,
+          "n_e": 1000,
+          "n_pay": 754,
+          "prf_select": 0.5748330149799585,
+          "proof_verify": 0.008541974239051342,
+          "state_commitment": 0.011832918971776962,
+          "store_bytes": 199978,
+          "store_hash": 0.5238750018179417,
+          "verifier_recompute": 3.7050830433145165,
+          "vrf_prove": 3.6071669310331345,
+          "vrf_verify": 3.599999938160181
+        },
+        {
+          "commit_total_ms": 18.457500031217933,
+          "header_sign": 0.6760830292478204,
+          "inclusion_proof_bytes": 384,
+          "leaves": 5.480332998558879,
+          "merkle": 7.707791985012591,
+          "n_e": 10000,
+          "n_pay": 7505,
+          "prf_select": 4.737040959298611,
+          "proof_verify": 0.010292045772075653,
+          "state_commitment": 0.017708982340991497,
+          "store_bytes": 1995588,
+          "store_hash": 4.575583036057651,
+          "verifier_recompute": 34.59679102525115,
+          "vrf_prove": 3.556916955858469,
+          "vrf_verify": 3.4609580179676414
+        },
+        {
+          "commit_total_ms": 177.71970899775624,
+          "header_sign": 6.132542039267719,
+          "inclusion_proof_bytes": 544,
+          "leaves": 51.70058296062052,
+          "merkle": 76.46641694009304,
+          "n_e": 100000,
+          "n_pay": 74722,
+          "prf_select": 45.538875041529536,
+          "proof_verify": 0.012042000889778137,
+          "state_commitment": 0.018749968148767948,
+          "store_bytes": 19919458,
+          "store_hash": 43.40141708962619,
+          "verifier_recompute": 329.0036249672994,
+          "vrf_prove": 3.2797909807413816,
+          "vrf_verify": 3.228291985578835
+        },
+        {
+          "commit_total_ms": 1832.9437078209594,
+          "header_sign": 62.88720795419067,
+          "inclusion_proof_bytes": 640,
+          "leaves": 523.4193329233676,
+          "merkle": 788.4751668898389,
+          "n_e": 1000000,
+          "n_pay": 749582,
+          "prf_select": 475.4822499817237,
+          "proof_verify": 0.022916938178241253,
+          "state_commitment": 0.024250010028481483,
+          "store_bytes": 199454058,
+          "store_hash": 458.13775004353374,
+          "verifier_recompute": 3551.582792075351,
+          "vrf_prove": 3.347167046740651,
+          "vrf_verify": 3.3365420531481504
+        }
+      ]
+    }
+  },
+  "headroom_E": {
+    "110": 230.56452953637057,
+    "700": 36.23156892714395
+  },
+  "headroom_P": {
+    "110": 867.9962442973728,
+    "700": 136.39940981815857
+  },
+  "pipeline": {
+    "E": {
+      "commit_latency_ms_median": 41.22010449646041,
+      "commit_latency_ms_p99": 130.24451035424158,
+      "epochs": 100,
+      "loadavg_1min": [
+        2.83935546875,
+        3.45068359375,
+        3.49169921875,
+        5.23291015625,
+        6.1630859375
+      ],
+      "packets": 332753,
+      "payload_units": 16322,
+      "per_epoch_ms": {
+        "commit": 41.22010449646041,
+        "finish": 2.297687518876046,
+        "publish": 0.2631255192682147,
+        "select": 10.49077050993219
+      },
+      "policy_thresholds_ms_median": 28.512249991763383,
+      "pps_per_core": 25362.098249000763,
+      "runs": 5,
+      "units": 21861,
+      "us_per_packet": {
+        "flowtable": 17.408116281285622,
+        "gateway_epoch_work": 18.563674746662144,
+        "policy_thresholds": 8.707105822558741,
+        "reader": 2.491433336540067,
+        "reader_parse": 4.588238747994699,
+        "total": 39.428914365923916
+      },
+      "us_per_packet_runs": [
+        39.46902795469263,
+        38.54734705640384,
+        39.428914365923916,
+        37.95414015794039,
+        39.998694479212176
+      ]
+    },
+    "P": {
+      "commit_latency_ms_median": 10.109854454640299,
+      "commit_latency_ms_p99": 31.231104930629996,
+      "epochs": 100,
+      "loadavg_1min": [
+        2.69189453125,
+        3.13916015625,
+        3.27783203125,
+        3.15478515625,
+        2.9765625
+      ],
+      "packets": 332753,
+      "payload_units": 16322,
+      "per_epoch_ms": {
+        "commit": 10.109854454640299,
+        "finish": 0.4782704636454582,
+        "publish": 0.10164547711610794,
+        "select": 3.8547295262105763
+      },
+      "policy_thresholds_ms_median": 6.912833487149328,
+      "pps_per_core": 95479.586872711,
+      "runs": 5,
+      "units": 21861,
+      "us_per_packet": {
+        "flowtable": 4.625991351065139,
+        "gateway_epoch_work": 5.154972049106721,
+        "policy_thresholds": 2.114852455731938,
+        "reader": 0.8306187321863167,
+        "reader_parse": 1.4838205817802668,
+        "total": 10.473442887149837
+      },
+      "us_per_packet_runs": [
+        10.446814030068923,
+        10.573822276442423,
+        10.364814517218981,
+        11.426705018314891,
+        10.473442887149837
+      ]
+    }
+  },
+  "pipeline_headline_variant": "cached_registration",
+  "pipeline_variants": {
+    "as_implemented": {
+      "E": {
+        "commit_latency_ms_median": 40.357937512453645,
+        "commit_latency_ms_p99": 55.098140421323514,
+        "epochs": 100,
+        "loadavg_1min": [
+          4.46044921875,
+          4.4140625,
+          4.3623046875,
+          4.19970703125,
+          4.2548828125
+        ],
+        "packets": 332753,
+        "payload_units": 16322,
+        "per_epoch_ms": {
+          "commit": 40.357937512453645,
+          "finish": 2.2346454788930714,
+          "publish": 0.2531249774619937,
+          "select": 10.152333008591086
+        },
+        "policy_thresholds_ms_median": 28.560062462929636,
+        "pps_per_core": 25798.32422305673,
+        "runs": 5,
+        "units": 21861,
+        "us_per_packet": {
+          "flowtable": 16.965765648963114,
+          "gateway_epoch_work": 17.797103132837243,
+          "policy_thresholds": 8.631343806708177,
+          "reader": 2.5967047390348235,
+          "reader_parse": 4.623666930118931,
+          "total": 38.762207628442404
+        },
+        "us_per_packet_runs": [
+          37.33657334717473,
+          39.76192025284334,
+          40.34221704991295,
+          37.779301638241954,
+          38.762207628442404
+        ]
+      },
+      "P": {
+        "commit_latency_ms_median": 10.07124996976927,
+        "commit_latency_ms_p99": 12.906322889029983,
+        "epochs": 100,
+        "loadavg_1min": [
+          4.65185546875,
+          5.080078125,
+          5.060546875,
+          4.9580078125,
+          4.79736328125
+        ],
+        "packets": 332753,
+        "payload_units": 16322,
+        "per_epoch_ms": {
+          "commit": 10.07124996976927,
+          "finish": 0.46885450137779117,
+          "publish": 0.10179157834500074,
+          "select": 3.85856197681278
+        },
+        "policy_thresholds_ms_median": 6.893000041600317,
+        "pps_per_core": 95181.87064099545,
+        "runs": 5,
+        "units": 21861,
+        "us_per_packet": {
+          "flowtable": 4.844660429927491,
+          "gateway_epoch_work": 5.048622894999511,
+          "policy_thresholds": 2.082398831617176,
+          "reader": 0.8303885796831711,
+          "reader_parse": 1.478485041571069,
+          "total": 10.506202423482247
+        },
+        "us_per_packet_runs": [
+          10.305517530787862,
+          10.406458018680286,
+          11.027909840125952,
+          10.506202423482247,
+          11.03235996364279
+        ]
+      }
+    },
+    "cached_registration": {
+      "E": {
+        "commit_latency_ms_median": 41.22010449646041,
+        "commit_latency_ms_p99": 130.24451035424158,
+        "epochs": 100,
+        "loadavg_1min": [
+          2.83935546875,
+          3.45068359375,
+          3.49169921875,
+          5.23291015625,
+          6.1630859375
+        ],
+        "packets": 332753,
+        "payload_units": 16322,
+        "per_epoch_ms": {
+          "commit": 41.22010449646041,
+          "finish": 2.297687518876046,
+          "publish": 0.2631255192682147,
+          "select": 10.49077050993219
+        },
+        "policy_thresholds_ms_median": 28.512249991763383,
+        "pps_per_core": 25362.098249000763,
+        "runs": 5,
+        "units": 21861,
+        "us_per_packet": {
+          "flowtable": 17.408116281285622,
+          "gateway_epoch_work": 18.563674746662144,
+          "policy_thresholds": 8.707105822558741,
+          "reader": 2.491433336540067,
+          "reader_parse": 4.588238747994699,
+          "total": 39.428914365923916
+        },
+        "us_per_packet_runs": [
+          39.46902795469263,
+          38.54734705640384,
+          39.428914365923916,
+          37.95414015794039,
+          39.998694479212176
+        ]
+      },
+      "P": {
+        "commit_latency_ms_median": 10.109854454640299,
+        "commit_latency_ms_p99": 31.231104930629996,
+        "epochs": 100,
+        "loadavg_1min": [
+          2.69189453125,
+          3.13916015625,
+          3.27783203125,
+          3.15478515625,
+          2.9765625
+        ],
+        "packets": 332753,
+        "payload_units": 16322,
+        "per_epoch_ms": {
+          "commit": 10.109854454640299,
+          "finish": 0.4782704636454582,
+          "publish": 0.10164547711610794,
+          "select": 3.8547295262105763
+        },
+        "policy_thresholds_ms_median": 6.912833487149328,
+        "pps_per_core": 95479.586872711,
+        "runs": 5,
+        "units": 21861,
+        "us_per_packet": {
+          "flowtable": 4.625991351065139,
+          "gateway_epoch_work": 5.154972049106721,
+          "policy_thresholds": 2.114852455731938,
+          "reader": 0.8306187321863167,
+          "reader_parse": 1.4838205817802668,
+          "total": 10.473442887149837
+        },
+        "us_per_packet_runs": [
+          10.446814030068923,
+          10.573822276442423,
+          10.364814517218981,
+          11.426705018314891,
+          10.473442887149837
+        ]
+      }
+    }
+  },
+  "primitive_counts": {
+    "active_estimands": 17,
+    "aead_per_retained_unit": 1,
+    "blake3_per_packet_avg_protocol": 3.7501935721848874,
+    "blake3_per_payload_packet_implementation": 6.0,
+    "blake3_per_payload_packet_protocol": 4.0,
+    "blake3_per_zero_payload_packet": 0.0,
+    "max_tree_evals_per_payload_unit": 1800,
+    "mean_eligible_estimands": 5.7167596229102475,
+    "mean_tree_evals_per_payload_unit": 1139.03668657411,
+    "packets": 3036335,
+    "payload_packets": 2846711,
+    "payload_units": 141497,
+    "per_epoch": {
+      "ecvrf_prove": 1,
+      "ed25519_sign": 1,
+      "header_hash": 1,
+      "merkle_build": "O(n_e)",
+      "state_commitment_blake3": 2,
+      "store_hash": 1,
+      "witness_ed25519_verify_sign": 2
+    },
+    "per_flow": {
+      "flow_uid_blake3": 1
+    },
+    "per_payload_unit": {
+      "epoch_merkle_blake3": 2,
+      "isqrt": 1,
+      "prf_word_blake3": 1,
+      "threshold_unit": 1,
+      "unit_leaf": 1
+    },
+    "per_zero_payload_unit": {
+      "epoch_merkle_blake3": 2,
+      "leaf0": 1
+    },
+    "retained_units": 8743,
+    "trees_per_model": [
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      0,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200
+    ],
+    "units": 188871
+  },
+  "primitives": {
+    "E": {
+      "machine_before": {
+        "cpu_percent_1s": 28.0,
+        "hw.memsize": "549755813888",
+        "hw.ncpu": "32",
+        "hw.perflevel0.physicalcpu": "24",
+        "hw.perflevel1.physicalcpu": "8",
+        "loadavg": [
+          9.9453125,
+          13.14599609375,
+          27.62841796875
+        ],
+        "machdep.cpu.brand_string": "Apple M3 Ultra",
+        "mem_available_gb": 260.60772705078125,
+        "platform": "macOS-26.5.2-arm64-arm-64bit",
+        "python": "3.12.12",
+        "time": "2026-10-19T00:14:15+0700"
+      },
+      "us": {
+        "aead_seal_1516B": 6.9078916,
+        "blake3_frame_1500B": 5.20335415,
+        "blake3_frame_512B": 2.5368896,
+        "blake3_frame_64B": 1.2282792,
+        "ecvrf_prove": 7576.29042,
+        "ecvrf_verify": 7496.98667,
+        "ed25519_sign": 63.7857082,
+        "ed25519_verify": 172.91099160000002,
+        "frame_leaf_1500B": 6.237443750000001,
+        "frame_leaf_512B": 3.9437208,
+        "frame_leaf_64B": 2.79710835,
+        "header_encode_hash": 3.22936665,
+        "leaf0": 1.39709375,
+        "merkle_root": {
+          "100": {
+            "us_per_leaf": 2.66378396,
+            "us_per_tree": 266.378396
+          },
+          "1000": {
+            "us_per_leaf": 2.524807085,
+            "us_per_tree": 2524.807085
+          },
+          "10000": {
+            "us_per_leaf": 2.6264091649999997,
+            "us_per_tree": 26264.09165
+          },
+          "100000": {
+            "us_per_leaf": 2.74315958,
+            "us_per_tree": 274315.958
+          }
+        },
+        "prf_u_word": 2.0314541999999998,
+        "state_commitment": 8.86319375,
+        "threshold_unit": 2.5030646,
+        "unit_leaf": 1.6472208000000002
+      }
+    },
+    "P": {
+      "machine_before": {
+        "cpu_percent_1s": 19.6,
+        "hw.memsize": "549755813888",
+        "hw.ncpu": "32",
+        "hw.perflevel0.physicalcpu": "24",
+        "hw.perflevel1.physicalcpu": "8",
+        "loadavg": [
+          10.61083984375,
+          13.4296875,
+          27.984375
+        ],
+        "machdep.cpu.brand_string": "Apple M3 Ultra",
+        "mem_available_gb": 261.4867706298828,
+        "platform": "macOS-26.5.2-arm64-arm-64bit",
+        "python": "3.12.12",
+        "time": "2026-10-19T00:14:02+0700"
+      },
+      "us": {
+        "aead_seal_1516B": 2.3801916000000003,
+        "blake3_frame_1500B": 1.86064585,
+        "blake3_frame_512B": 0.8189604500000001,
+        "blake3_frame_64B": 0.43601670000000003,
+        "ecvrf_prove": 3816.13375,
+        "ecvrf_verify": 3872.085,
+        "ed25519_sign": 26.1135334,
+        "ed25519_verify": 79.1658416,
+        "frame_leaf_1500B": 2.42892085,
+        "frame_leaf_512B": 1.316675,
+        "frame_leaf_64B": 0.94085835,
+        "header_encode_hash": 1.1684124999999999,
+        "leaf0": 0.53693955,
+        "merkle_root": {
+          "100": {
+            "us_per_leaf": 0.930856875,
+            "us_per_tree": 93.0856875
+          },
+          "1000": {
+            "us_per_leaf": 0.964144585,
+            "us_per_tree": 964.144585
+          },
+          "10000": {
+            "us_per_leaf": 0.9161560400000001,
+            "us_per_tree": 9161.5604
+          },
+          "100000": {
+            "us_per_leaf": 0.92170166,
+            "us_per_tree": 92170.166
+          }
+        },
+        "prf_u_word": 0.7415437500000001,
+        "state_commitment": 3.1533729,
+        "threshold_unit": 0.8905042,
+        "unit_leaf": 0.5871229499999999
+      }
+    }
+  },
+  "proof_sizes": {
+    "header_bytes": 272,
+    "inclusion_bytes": "32 ceil(log2 n_e)",
+    "omega_bytes": 72,
+    "sigma_bytes": 64,
+    "vrf_proof_bytes": 80
+  },
+  "storage": {
+    "e5_run": {
+      "meta_over_pcap": 0.004891724030464029,
+      "parquet_zstd_design_bytes": 10000137,
+      "parquet_zstd_full_bytes": 11866367,
+      "raw_design_bytes": 27275922,
+      "retained_plaintext_s": 103462133,
+      "retention_bytes": 108693671,
+      "storage_over_pcap": 0.05550185089564252,
+      "storage_over_pcap_ciphertext": 0.0580609398512124,
+      "stream": "E5 honest run (lp_iot23_34-1_p10000, committed)",
+      "sum_s_all": 2044297049
+    },
+    "note": "content = \u03c1 \u03a3 s (\u03c1 = 5 %) for the streams; exact retained bytes for the E5 run; pcap = \u03a3 (caplen + 16) + 24",
+    "rows": [
+      {
+        "content_rho5_bytes": 102976969.65,
+        "content_share_of_storage": 0.894013344187734,
+        "meta_over_pcap": 0.0059275768365941615,
+        "meta_raw_design_bytes": 33135516,
+        "meta_zstd_design_bytes": 12208078,
+        "n_epochs": 870,
+        "payload_units": 167008,
+        "pcap_bytes": 2059539417.0,
+        "storage_over_pcap": 0.05592757683659416,
+        "stream": "lp_iot23_1-1_p10000",
+        "sum_s_all": 2059539393.0,
+        "units": 236775
+      },
+      {
+        "content_rho5_bytes": 103001942.55000001,
+        "content_share_of_storage": 0.9088376846952924,
+        "meta_over_pcap": 0.005015324344482472,
+        "meta_raw_design_bytes": 28543510,
+        "meta_zstd_design_bytes": 10331763,
+        "n_epochs": 870,
+        "payload_units": 141399,
+        "pcap_bytes": 2060038875.0,
+        "storage_over_pcap": 0.055015324344482475,
+        "stream": "lp_iot23_3-1_p10000",
+        "sum_s_all": 2060038851.0,
+        "units": 207659
+      },
+      {
+        "content_rho5_bytes": 102741429.45,
+        "content_share_of_storage": 0.9113422266338749,
+        "meta_over_pcap": 0.004864131759459377,
+        "meta_raw_design_bytes": 27337734,
+        "meta_zstd_design_bytes": 9994957,
+        "n_epochs": 870,
+        "payload_units": 141823,
+        "pcap_bytes": 2054828613.0,
+        "storage_over_pcap": 0.05486413175945938,
+        "stream": "lp_iot23_34-1_p10000",
+        "sum_s_all": 2054828589.0,
+        "units": 189291
+      },
+      {
+        "content_rho5_bytes": 147794975.65,
+        "content_share_of_storage": 0.848560430284347,
+        "meta_over_pcap": 0.008923322624465685,
+        "meta_raw_design_bytes": 132924428,
+        "meta_zstd_design_bytes": 26376445,
+        "n_epochs": 870,
+        "payload_units": 141128,
+        "pcap_bytes": 2955899537.0,
+        "storage_over_pcap": 0.05892332262446569,
+        "stream": "lp_iot23_48-1_p10000",
+        "sum_s_all": 2955899513.0,
+        "units": 1743079
+      },
+      {
+        "content_rho5_bytes": 163741784.85000002,
+        "content_share_of_storage": 0.726212804780115,
+        "meta_over_pcap": 0.018850342035953444,
+        "meta_raw_design_bytes": 390947402,
+        "meta_zstd_design_bytes": 61731773,
+        "n_epochs": 870,
+        "payload_units": 141157,
+        "pcap_bytes": 3274835721.0,
+        "storage_over_pcap": 0.06885034203595346,
+        "stream": "lp_iot23_49-1_p10000",
+        "sum_s_all": 3274835697.0,
+        "units": 5537491
+      },
+      {
+        "content_rho5_bytes": 117578343.5,
+        "content_share_of_storage": 0.7350901794335206,
+        "meta_over_pcap": 0.018018865438429996,
+        "meta_raw_design_bytes": 296860256,
+        "meta_zstd_design_bytes": 42372567,
+        "n_epochs": 870,
+        "payload_units": 142530,
+        "pcap_bytes": 2351566894.0,
+        "storage_over_pcap": 0.06801886543843,
+        "stream": "lp_iot23_7-1_p10000",
+        "sum_s_all": 2351566870.0,
+        "units": 4151797
+      },
+      {
+        "content_rho5_bytes": 118400739.9,
+        "content_share_of_storage": 0.8096333954412861,
+        "meta_over_pcap": 0.01175634587398385,
+        "meta_raw_design_bytes": 67885046,
+        "meta_zstd_design_bytes": 27839201,
+        "n_epochs": 870,
+        "payload_units": 376095,
+        "pcap_bytes": 2368014822.0,
+        "storage_over_pcap": 0.061756345873983855,
+        "stream": "lp_edge_p10000",
+        "sum_s_all": 2368014798.0,
+        "units": 434167
+      },
+      {
+        "content_rho5_bytes": 468696783.35,
+        "content_share_of_storage": 0.9874934767820629,
+        "meta_over_pcap": 0.000633245865010266,
+        "meta_raw_design_bytes": 24781478,
+        "meta_zstd_design_bytes": 5936006,
+        "n_epochs": 256,
+        "payload_units": 60531,
+        "pcap_bytes": 9373935691.0,
+        "storage_over_pcap": 0.050633245865010265,
+        "stream": "lp_gotham_p10000",
+        "sum_s_all": 9373935667.0,
+        "units": 273637
+      },
+      {
+        "content_rho5_bytes": 576845.9,
+        "content_share_of_storage": 0.20494636058899485,
+        "meta_over_pcap": 0.1939662741817182,
+        "meta_raw_design_bytes": 6389348,
+        "meta_zstd_design_bytes": 2237773,
+        "n_epochs": 870,
+        "payload_units": 27530,
+        "pcap_bytes": 11536942.0,
+        "storage_over_pcap": 0.2439662741817182,
+        "stream": "nat_iot23_1-1",
+        "sum_s_all": 11536918.0,
+        "units": 52666
+      },
+      {
+        "content_rho5_bytes": 608941.7000000001,
+        "content_share_of_storage": 0.5773175712759191,
+        "meta_over_pcap": 0.03660744534328984,
+        "meta_raw_design_bytes": 1803700,
+        "meta_zstd_design_bytes": 445836,
+        "n_epochs": 870,
+        "payload_units": 1958,
+        "pcap_bytes": 12178858.0,
+        "storage_over_pcap": 0.08660744534328986,
+        "stream": "nat_iot23_3-1",
+        "sum_s_all": 12178834.0,
+        "units": 23588
+      },
+      {
+        "content_rho5_bytes": 341305.7,
+        "content_share_of_storage": 0.6338273563340915,
+        "meta_over_pcap": 0.028885834605164813,
+        "meta_raw_design_bytes": 591566,
+        "meta_zstd_design_bytes": 197178,
+        "n_epochs": 870,
+        "payload_units": 2345,
+        "pcap_bytes": 6826138.0,
+        "storage_over_pcap": 0.07888583460516481,
+        "stream": "nat_iot23_34-1",
+        "sum_s_all": 6826114.0,
+        "units": 5182
+      },
+      {
+        "content_rho5_bytes": 45394851.900000006,
+        "content_share_of_storage": 0.7625890255876104,
+        "meta_over_pcap": 0.015566115328597425,
+        "meta_raw_design_bytes": 106178260,
+        "meta_zstd_design_bytes": 14132430,
+        "n_epochs": 870,
+        "payload_units": 1650,
+        "pcap_bytes": 907897062.0,
+        "storage_over_pcap": 0.06556611532859744,
+        "stream": "nat_iot23_48-1",
+        "sum_s_all": 907897038.0,
+        "units": 1558970
+      },
+      {
+        "content_rho5_bytes": 61391443.1,
+        "content_share_of_storage": 0.5727898758090398,
+        "meta_over_pcap": 0.037292045672729916,
+        "meta_raw_design_bytes": 364233704,
+        "meta_zstd_design_bytes": 45788250,
+        "n_epochs": 870,
+        "payload_units": 1862,
+        "pcap_bytes": 1227828886.0,
+        "storage_over_pcap": 0.08729204567272991,
+        "stream": "nat_iot23_49-1",
+        "sum_s_all": 1227828862.0,
+        "units": 5353585
+      },
+      {
+        "content_rho5_bytes": 16859774.5,
+        "content_share_of_storage": 0.3525156915227739,
+        "meta_over_pcap": 0.0918376577337971,
+        "meta_raw_design_bytes": 277943982,
+        "meta_zstd_design_bytes": 30967244,
+        "n_epochs": 870,
+        "payload_units": 49107,
+        "pcap_bytes": 337195514.0,
+        "storage_over_pcap": 0.14183765773379708,
+        "stream": "nat_iot23_7-1",
+        "sum_s_all": 337195490.0,
+        "units": 4013751
+      }
+    ]
+  },
+  "tau_column": {
+    "definition": "rev1 committed thresholds: 8 B (u64 tau - 1) per payload unit in the metadata store; zstd sizes of the E5 rev1 run's design columns (meta, root_pkt) without and with the tau column",
+    "increase": 0.03957265785458741,
+    "over_pcap": 0.00019357852137661625,
+    "parquet_zstd_design_bytes": 10000137,
+    "parquet_zstd_design_tau_bytes": 10395869
+  },
+  "verifier": {
+    "E_cached": {
+      "loadavg_1min": 4.55810546875,
+      "median_disclosure_bytes": 388960.0,
+      "median_prime_bytes": 5062204.5,
+      "median_prime_check_s": 0.2123441459843889,
+      "median_s_per_5_epoch_window": 1.0821864374447614,
+      "median_s_per_5_epoch_window_fast_no_prime": 0.10925316653447226,
+      "median_s_per_epoch": 0.21643728748895227,
+      "windows": 20
+    },
+    "P_cached": {
+      "loadavg_1min": 4.53515625,
+      "median_disclosure_bytes": 388960.0,
+      "median_prime_bytes": 5062204.5,
+      "median_prime_check_s": 0.05908441648352891,
+      "median_s_per_5_epoch_window": 0.2927240625722334,
+      "median_s_per_5_epoch_window_fast_no_prime": 0.03269760397961363,
+      "median_s_per_epoch": 0.058544812514446674,
+      "windows": 20
+    }
+  },
+  "witness": {
+    "bytes_down_per_epoch": 72,
+    "bytes_up_per_epoch": 336,
+    "cosignatures_per_day": 2880,
+    "log_MB_per_day_full_headers": 1.17504,
+    "log_MB_per_day_hash_only": 0.35712,
+    "wire_MB_per_day": 1.17504
+  }
+}

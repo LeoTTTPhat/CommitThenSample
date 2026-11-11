@@ -1,0 +1,16 @@
+# E15 -- non-triviality and non-circularity of ChainForge (Table III columns + text). Owner: P2-G.
+exp: E15
+oracle_datasets: [cf_ton, cf_ton_h, cf_gotham, iot23]
+oracles: [B1, B2]
+oracle_splits: 50
+probe_datasets: [cf_ton, cf_gotham]
+probe_roles: [train, caltest]
+probe:
+  folds: 5
+  lightgbm: {objective: binary, learning_rate: 0.05, num_leaves: 15, min_child_samples: 20,
+             feature_fraction: 0.9, bagging_fraction: 0.8, bagging_freq: 1, lambda_l2: 1.0, verbose: -1,
+             num_threads: 4, seed: 0, deterministic: true, force_row_wise: true}
+  rounds: 200
+  bootstrap_B: 200
+leakage_tests: [tests/test_leakage_features.py, tests/test_leakage_ingest.py]
+reuse_variants: [cf_ton, cf_ton_h, cf_gotham, cf_gotham_t]

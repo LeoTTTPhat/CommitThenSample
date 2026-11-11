@@ -1,0 +1,2419 @@
+{
+ "exp": "E10",
+ "prereg_blake3": "955c768e80f31f4040548e0e944c327605396eaedc80430597abfda5b8f610a6",
+ "updated": "2026-10-19T01:24:35+0700",
+ "numbers": {
+  "transfer|S_TON->CF-GOTHAM|a=0.1|fdr": {
+   "value": 0.0,
+   "definition": "unweighted transfer (cf_ton/S_TON.stat calibration, K = 150; cf_gotham/S_TON.stat test, 100 incidents), CRC-BH, 100 splits: realised FDR = mean over test incidents of the strict per-incident FDP (AMB = false), mean over splits",
+   "status": "secondary",
+   "split_sd": 0.0
+  },
+  "transfer|S_TON->CF-GOTHAM|a=0.1|fdr_lenient": {
+   "value": 0.0,
+   "definition": "unweighted transfer (cf_ton/S_TON.stat calibration, K = 150; cf_gotham/S_TON.stat test, 100 incidents), CRC-BH, 100 splits: mean per-incident lenient FDP (AMB excluded), mean over splits",
+   "status": "secondary",
+   "split_sd": 0.0
+  },
+  "transfer|S_TON->CF-GOTHAM|a=0.1|pooled_fdr": {
+   "value": 0.0,
+   "definition": "unweighted transfer (cf_ton/S_TON.stat calibration, K = 150; cf_gotham/S_TON.stat test, 100 incidents), CRC-BH, 100 splits: pooled FDR = sum V / max(sum R, 1) over a split's test incidents (strict), mean over splits",
+   "status": "secondary",
+   "split_sd": 0.0
+  },
+  "transfer|S_TON->CF-GOTHAM|a=0.1|str_mean": {
+   "value": 0.0,
+   "definition": "unweighted transfer (cf_ton/S_TON.stat calibration, K = 150; cf_gotham/S_TON.stat test, 100 incidents), CRC-BH, 100 splits: STR = certified distinct transitions / |T*|, mean over test incidents with |T*| > 0",
+   "status": "secondary",
+   "split_sd": 0.0
+  },
+  "transfer|S_TON->CF-GOTHAM|a=0.1|cer_link_mean": {
+   "value": 0.0,
+   "definition": "unweighted transfer (cf_ton/S_TON.stat calibration, K = 150; cf_gotham/S_TON.stat test, 100 incidents), CRC-BH, 100 splits: CER_link = certified true links / (|E*_link| + |T*_hid|), mean over incidents with a positive denominator",
+   "status": "secondary",
+   "split_sd": 0.0
+  },
+  "transfer|S_TON->CF-GOTHAM|a=0.1|abstain": {
+   "value": 0.0,
+   "definition": "unweighted transfer (cf_ton/S_TON.stat calibration, K = 150; cf_gotham/S_TON.stat test, 100 incidents), CRC-BH, 100 splits: share of splits with lambda-hat = lambda_0 (no claims anywhere)",
+   "status": "secondary",
+   "split_sd": 0.0
+  },
+  "transfer|S_TON->CF-GOTHAM|a=0.1|n_claims": {
+   "value": 0.0,
+   "definition": "unweighted transfer (cf_ton/S_TON.stat calibration, K = 150; cf_gotham/S_TON.stat test, 100 incidents), CRC-BH, 100 splits: mean claims per test incident",
+   "status": "secondary",
+   "split_sd": 0.0
+  },
+  "transfer|S_TON->CF-GOTHAM|a=0.2|fdr": {
+   "value": 0.0,
+   "definition": "unweighted transfer (cf_ton/S_TON.stat calibration, K = 150; cf_gotham/S_TON.stat test, 100 incidents), CRC-BH, 100 splits: realised FDR = mean over test incidents of the strict per-incident FDP (AMB = false), mean over splits",
+   "status": "secondary",
+   "split_sd": 0.0
+  },
+  "transfer|S_TON->CF-GOTHAM|a=0.2|fdr_lenient": {
+   "value": 0.0,
+   "definition": "unweighted transfer (cf_ton/S_TON.stat calibration, K = 150; cf_gotham/S_TON.stat test, 100 incidents), CRC-BH, 100 splits: mean per-incident lenient FDP (AMB excluded), mean over splits",
+   "status": "secondary",
+   "split_sd": 0.0
+  },
+  "transfer|S_TON->CF-GOTHAM|a=0.2|pooled_fdr": {
+   "value": 0.0,
+   "definition": "unweighted transfer (cf_ton/S_TON.stat calibration, K = 150; cf_gotham/S_TON.stat test, 100 incidents), CRC-BH, 100 splits: pooled FDR = sum V / max(sum R, 1) over a split's test incidents (strict), mean over splits",
+   "status": "secondary",
+   "split_sd": 0.0
+  },
+  "transfer|S_TON->CF-GOTHAM|a=0.2|str_mean": {
+   "value": 0.0,
+   "definition": "unweighted transfer (cf_ton/S_TON.stat calibration, K = 150; cf_gotham/S_TON.stat test, 100 incidents), CRC-BH, 100 splits: STR = certified distinct transitions / |T*|, mean over test incidents with |T*| > 0",
+   "status": "secondary",
+   "split_sd": 0.0
+  },
+  "transfer|S_TON->CF-GOTHAM|a=0.2|cer_link_mean": {
+   "value": 0.0,
+   "definition": "unweighted transfer (cf_ton/S_TON.stat calibration, K = 150; cf_gotham/S_TON.stat test, 100 incidents), CRC-BH, 100 splits: CER_link = certified true links / (|E*_link| + |T*_hid|), mean over incidents with a positive denominator",
+   "status": "secondary",
+   "split_sd": 0.0
+  },
+  "transfer|S_TON->CF-GOTHAM|a=0.2|abstain": {
+   "value": 0.0,
+   "definition": "unweighted transfer (cf_ton/S_TON.stat calibration, K = 150; cf_gotham/S_TON.stat test, 100 incidents), CRC-BH, 100 splits: share of splits with lambda-hat = lambda_0 (no claims anywhere)",
+   "status": "secondary",
+   "split_sd": 0.0
+  },
+  "transfer|S_TON->CF-GOTHAM|a=0.2|n_claims": {
+   "value": 0.0,
+   "definition": "unweighted transfer (cf_ton/S_TON.stat calibration, K = 150; cf_gotham/S_TON.stat test, 100 incidents), CRC-BH, 100 splits: mean claims per test incident",
+   "status": "secondary",
+   "split_sd": 0.0
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=9|a=0.1|fdr": {
+   "value": 0.06146734672072642,
+   "definition": "realised FDR = mean over test incidents of the strict per-incident FDP (AMB = false), mean over splits",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/b4371368d36da2be",
+   "split_sd": 0.06339615923060006,
+   "split_q05": 0.0,
+   "split_q95": 0.17992848739922154,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=9|a=0.1|fdr_lenient": {
+   "value": 0.05907597278330103,
+   "definition": "mean per-incident lenient FDP (AMB excluded), mean over splits",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/b4371368d36da2be",
+   "split_sd": 0.061478343401689825,
+   "split_q05": 0.0,
+   "split_q95": 0.17341264765489753,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=9|a=0.1|pooled_fdr": {
+   "value": 0.8071365323210367,
+   "definition": "pooled FDR = sum V / max(sum R, 1) over a split's test incidents (strict), mean over splits",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/b4371368d36da2be",
+   "split_sd": 0.303471380400244,
+   "split_q05": 0.0,
+   "split_q95": 1.0,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=9|a=0.1|str_mean": {
+   "value": 0.019449403765306753,
+   "definition": "STR = certified distinct transitions / |T*|, mean over test incidents with |T*| > 0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/b4371368d36da2be",
+   "split_sd": 0.028340332651192644,
+   "split_q05": 0.0,
+   "split_q95": 0.07916981002690054,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=9|a=0.1|cer_link_mean": {
+   "value": 0.019204697293323168,
+   "definition": "CER_link = certified true links / (|E*_link| + |T*_hid|), mean over incidents with a positive denominator",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/b4371368d36da2be",
+   "split_sd": 0.028735167028030594,
+   "split_q05": 0.0,
+   "split_q95": 0.07836460176239778,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=9|a=0.1|abstain": {
+   "value": 0.0,
+   "definition": "share of splits with lambda-hat = lambda_0 (no claims anywhere)",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/b4371368d36da2be",
+   "split_sd": 0.0,
+   "split_q05": 0.0,
+   "split_q95": 0.0,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=9|a=0.1|n_claims": {
+   "value": 3.3884000000000003,
+   "definition": "mean claims per test incident",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/b4371368d36da2be",
+   "split_sd": 6.659293759381499,
+   "split_q05": 0.0,
+   "split_q95": 15.1425,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=9|a=0.1|fdr|decoy_rich=0": {
+   "value": 0.07652769247516572,
+   "definition": "realised strict FDR within stratum decoy_rich=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/b4371368d36da2be",
+   "split_sd": 0.06779135402052731,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=9|a=0.1|fdr|decoy_rich=1": {
+   "value": 0.049223681837878355,
+   "definition": "realised strict FDR within stratum decoy_rich=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/b4371368d36da2be",
+   "split_sd": 0.06321931938512763,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=9|a=0.1|fdr|benign_only=0": {
+   "value": 0.052743655516719716,
+   "definition": "realised strict FDR within stratum benign_only=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/b4371368d36da2be",
+   "split_sd": 0.06721380381202445,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=9|a=0.1|fdr|benign_only=1": {
+   "value": 0.148724802974803,
+   "definition": "realised strict FDR within stratum benign_only=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/b4371368d36da2be",
+   "split_sd": 0.10141143222526935,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=9|a=0.1|fdr|short_chain=0": {
+   "value": 0.09342837938741509,
+   "definition": "realised strict FDR within stratum short_chain=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/b4371368d36da2be",
+   "split_sd": 0.13427821361655734,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=9|a=0.1|fdr|short_chain=1": {
+   "value": 0.04243427541574514,
+   "definition": "realised strict FDR within stratum short_chain=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/b4371368d36da2be",
+   "split_sd": 0.030436220312829578,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=9|a=0.1|fdr|N_tercile=0": {
+   "value": 0.12503410055666067,
+   "definition": "realised strict FDR within stratum N_tercile=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/b4371368d36da2be",
+   "split_sd": 0.09266332646982024,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=9|a=0.1|fdr|N_tercile=1": {
+   "value": 0.01603549299534337,
+   "definition": "realised strict FDR within stratum N_tercile=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/b4371368d36da2be",
+   "split_sd": 0.023155236853098508,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=9|a=0.1|fdr|N_tercile=2": {
+   "value": 0.04006502836527412,
+   "definition": "realised strict FDR within stratum N_tercile=2",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/b4371368d36da2be",
+   "split_sd": 0.0956614994521101,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=9|a=0.2|fdr": {
+   "value": 0.11934519885080133,
+   "definition": "realised FDR = mean over test incidents of the strict per-incident FDP (AMB = false), mean over splits",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/90828c2d6fc5061b",
+   "split_sd": 0.09117941033279622,
+   "split_q05": 0.01992857142857143,
+   "split_q95": 0.29983762395455477,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=9|a=0.2|fdr_lenient": {
+   "value": 0.11522548492067256,
+   "definition": "mean per-incident lenient FDP (AMB excluded), mean over splits",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/90828c2d6fc5061b",
+   "split_sd": 0.08914880268299735,
+   "split_q05": 0.01990909090909091,
+   "split_q95": 0.2942491139276136,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=9|a=0.2|pooled_fdr": {
+   "value": 0.9281878197841804,
+   "definition": "pooled FDR = sum V / max(sum R, 1) over a split's test incidents (strict), mean over splits",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/90828c2d6fc5061b",
+   "split_sd": 0.04262765432810914,
+   "split_q05": 0.8609722222222222,
+   "split_q95": 0.9708626198083067,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=9|a=0.2|str_mean": {
+   "value": 0.045070728844808755,
+   "definition": "STR = certified distinct transitions / |T*|, mean over test incidents with |T*| > 0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/90828c2d6fc5061b",
+   "split_sd": 0.04047834321177044,
+   "split_q05": 0.0017399267399267403,
+   "split_q95": 0.12490161919852102,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=9|a=0.2|cer_link_mean": {
+   "value": 0.04514905510897873,
+   "definition": "CER_link = certified true links / (|E*_link| + |T*_hid|), mean over incidents with a positive denominator",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/90828c2d6fc5061b",
+   "split_sd": 0.04168561311391104,
+   "split_q05": 0.0016060862214708372,
+   "split_q95": 0.1271771799839551,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=9|a=0.2|abstain": {
+   "value": 0.0,
+   "definition": "share of splits with lambda-hat = lambda_0 (no claims anywhere)",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/90828c2d6fc5061b",
+   "split_sd": 0.0,
+   "split_q05": 0.0,
+   "split_q95": 0.0,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=9|a=0.2|n_claims": {
+   "value": 9.147,
+   "definition": "mean claims per test incident",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/90828c2d6fc5061b",
+   "split_sd": 11.541517283794242,
+   "split_q05": 0.14650000000000002,
+   "split_q95": 32.72449999999999,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=9|a=0.2|fdr|decoy_rich=0": {
+   "value": 0.14079334020831027,
+   "definition": "realised strict FDR within stratum decoy_rich=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/90828c2d6fc5061b",
+   "split_sd": 0.09876178148668599,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=9|a=0.2|fdr|decoy_rich=1": {
+   "value": 0.10246594122122472,
+   "definition": "realised strict FDR within stratum decoy_rich=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/90828c2d6fc5061b",
+   "split_sd": 0.09137282591241905,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=9|a=0.2|fdr|benign_only=0": {
+   "value": 0.11347946687121942,
+   "definition": "realised strict FDR within stratum benign_only=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/90828c2d6fc5061b",
+   "split_sd": 0.09686014262419947,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=9|a=0.2|fdr|benign_only=1": {
+   "value": 0.17734057609057605,
+   "definition": "realised strict FDR within stratum benign_only=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/90828c2d6fc5061b",
+   "split_sd": 0.09953092948549705,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=9|a=0.2|fdr|short_chain=0": {
+   "value": 0.20264076426626818,
+   "definition": "realised strict FDR within stratum short_chain=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/90828c2d6fc5061b",
+   "split_sd": 0.1832939881848297,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=9|a=0.2|fdr|short_chain=1": {
+   "value": 0.06699671453077266,
+   "definition": "realised strict FDR within stratum short_chain=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/90828c2d6fc5061b",
+   "split_sd": 0.03853960348316316,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=9|a=0.2|fdr|N_tercile=0": {
+   "value": 0.20601076222338593,
+   "definition": "realised strict FDR within stratum N_tercile=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/90828c2d6fc5061b",
+   "split_sd": 0.09910471510271433,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=9|a=0.2|fdr|N_tercile=1": {
+   "value": 0.032751085888496706,
+   "definition": "realised strict FDR within stratum N_tercile=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/90828c2d6fc5061b",
+   "split_sd": 0.05010187384815687,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=9|a=0.2|fdr|N_tercile=2": {
+   "value": 0.1137488297626656,
+   "definition": "realised strict FDR within stratum N_tercile=2",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/90828c2d6fc5061b",
+   "split_sd": 0.14437406863829794,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=19|a=0.1|fdr": {
+   "value": 0.05695882681104429,
+   "definition": "realised FDR = mean over test incidents of the strict per-incident FDP (AMB = false), mean over splits",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/f88f67fc65b32061",
+   "split_sd": 0.043641240986829546,
+   "split_q05": 0.01,
+   "split_q95": 0.13122139628364157,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=19|a=0.1|fdr_lenient": {
+   "value": 0.05446915221021534,
+   "definition": "mean per-incident lenient FDP (AMB excluded), mean over splits",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/f88f67fc65b32061",
+   "split_sd": 0.04209652552404967,
+   "split_q05": 0.01,
+   "split_q95": 0.12779195679120126,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=19|a=0.1|pooled_fdr": {
+   "value": 0.8904731548381616,
+   "definition": "pooled FDR = sum V / max(sum R, 1) over a split's test incidents (strict), mean over splits",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/f88f67fc65b32061",
+   "split_sd": 0.1649781401867512,
+   "split_q05": 0.850287356321839,
+   "split_q95": 1.0,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=19|a=0.1|str_mean": {
+   "value": 0.015786648530473565,
+   "definition": "STR = certified distinct transitions / |T*|, mean over test incidents with |T*| > 0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/f88f67fc65b32061",
+   "split_sd": 0.019657918789702293,
+   "split_q05": 0.0,
+   "split_q95": 0.05568295638906444,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=19|a=0.1|cer_link_mean": {
+   "value": 0.015352296634471671,
+   "definition": "CER_link = certified true links / (|E*_link| + |T*_hid|), mean over incidents with a positive denominator",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/f88f67fc65b32061",
+   "split_sd": 0.019749749020803575,
+   "split_q05": 0.0,
+   "split_q95": 0.05660229414578814,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=19|a=0.1|abstain": {
+   "value": 0.0,
+   "definition": "share of splits with lambda-hat = lambda_0 (no claims anywhere)",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/f88f67fc65b32061",
+   "split_sd": 0.0,
+   "split_q05": 0.0,
+   "split_q95": 0.0,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=19|a=0.1|n_claims": {
+   "value": 2.3439000000000005,
+   "definition": "mean claims per test incident",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/f88f67fc65b32061",
+   "split_sd": 4.355606139033216,
+   "split_q05": 0.01,
+   "split_q95": 9.783499999999997,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=19|a=0.1|fdr|decoy_rich=0": {
+   "value": 0.07338924086062368,
+   "definition": "realised strict FDR within stratum decoy_rich=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/f88f67fc65b32061",
+   "split_sd": 0.05003734142956514,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=19|a=0.1|fdr|decoy_rich=1": {
+   "value": 0.04403322851246236,
+   "definition": "realised strict FDR within stratum decoy_rich=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/f88f67fc65b32061",
+   "split_sd": 0.043928486751066496,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=19|a=0.1|fdr|benign_only=0": {
+   "value": 0.0463681795879341,
+   "definition": "realised strict FDR within stratum benign_only=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/f88f67fc65b32061",
+   "split_sd": 0.04577578230877129,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=19|a=0.1|fdr|benign_only=1": {
+   "value": 0.15869785769785769,
+   "definition": "realised strict FDR within stratum benign_only=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/f88f67fc65b32061",
+   "split_sd": 0.09829608191461704,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=19|a=0.1|fdr|short_chain=0": {
+   "value": 0.07868172954328512,
+   "definition": "realised strict FDR within stratum short_chain=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/f88f67fc65b32061",
+   "split_sd": 0.09162651959789078,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=19|a=0.1|fdr|short_chain=1": {
+   "value": 0.043704888671837194,
+   "definition": "realised strict FDR within stratum short_chain=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/f88f67fc65b32061",
+   "split_sd": 0.024010910715321673,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=19|a=0.1|fdr|N_tercile=0": {
+   "value": 0.13130935952493966,
+   "definition": "realised strict FDR within stratum N_tercile=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/f88f67fc65b32061",
+   "split_sd": 0.0715492935190195,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=19|a=0.1|fdr|N_tercile=1": {
+   "value": 0.01379266552631522,
+   "definition": "realised strict FDR within stratum N_tercile=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/f88f67fc65b32061",
+   "split_sd": 0.018309265379995558,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=19|a=0.1|fdr|N_tercile=2": {
+   "value": 0.02207874182345412,
+   "definition": "realised strict FDR within stratum N_tercile=2",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/f88f67fc65b32061",
+   "split_sd": 0.060840211112409344,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=19|a=0.2|fdr": {
+   "value": 0.12228924740005732,
+   "definition": "realised FDR = mean over test incidents of the strict per-incident FDP (AMB = false), mean over splits",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/853ac7560599b9f7",
+   "split_sd": 0.06734787907117196,
+   "split_q05": 0.035596747002997,
+   "split_q95": 0.2132195684467585,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=19|a=0.2|fdr_lenient": {
+   "value": 0.11799019161936083,
+   "definition": "mean per-incident lenient FDP (AMB excluded), mean over splits",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/853ac7560599b9f7",
+   "split_sd": 0.0657770208574411,
+   "split_q05": 0.03501305916305916,
+   "split_q95": 0.20571784604271973,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=19|a=0.2|pooled_fdr": {
+   "value": 0.9337268174732328,
+   "definition": "pooled FDR = sum V / max(sum R, 1) over a split's test incidents (strict), mean over splits",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/853ac7560599b9f7",
+   "split_sd": 0.04014495356859922,
+   "split_q05": 0.8570823244552058,
+   "split_q95": 0.969762398818537,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=19|a=0.2|str_mean": {
+   "value": 0.046500400834061394,
+   "definition": "STR = certified distinct transitions / |T*|, mean over test incidents with |T*| > 0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/853ac7560599b9f7",
+   "split_sd": 0.03125516385871854,
+   "split_q05": 0.0093334289600068,
+   "split_q95": 0.08888265380173585,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=19|a=0.2|cer_link_mean": {
+   "value": 0.04627111028101113,
+   "definition": "CER_link = certified true links / (|E*_link| + |T*_hid|), mean over incidents with a positive denominator",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/853ac7560599b9f7",
+   "split_sd": 0.03168383331265493,
+   "split_q05": 0.008671744324970131,
+   "split_q95": 0.08937550985648804,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=19|a=0.2|abstain": {
+   "value": 0.0,
+   "definition": "share of splits with lambda-hat = lambda_0 (no claims anywhere)",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/853ac7560599b9f7",
+   "split_sd": 0.0,
+   "split_q05": 0.0,
+   "split_q95": 0.0,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=19|a=0.2|n_claims": {
+   "value": 9.028499999999998,
+   "definition": "mean claims per test incident",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/853ac7560599b9f7",
+   "split_sd": 8.01093852873127,
+   "split_q05": 0.6465000000000001,
+   "split_q95": 18.23299999999997,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=19|a=0.2|fdr|decoy_rich=0": {
+   "value": 0.14602807459612663,
+   "definition": "realised strict FDR within stratum decoy_rich=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/853ac7560599b9f7",
+   "split_sd": 0.0752296738285701,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=19|a=0.2|fdr|decoy_rich=1": {
+   "value": 0.1041639403188493,
+   "definition": "realised strict FDR within stratum decoy_rich=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/853ac7560599b9f7",
+   "split_sd": 0.06657140713313155,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=19|a=0.2|fdr|benign_only=0": {
+   "value": 0.11634831252092934,
+   "definition": "realised strict FDR within stratum benign_only=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/853ac7560599b9f7",
+   "split_sd": 0.07329669750994895,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=19|a=0.2|fdr|benign_only=1": {
+   "value": 0.1748885558885559,
+   "definition": "realised strict FDR within stratum benign_only=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/853ac7560599b9f7",
+   "split_sd": 0.09784868270206301,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=19|a=0.2|fdr|short_chain=0": {
+   "value": 0.2062520483202398,
+   "definition": "realised strict FDR within stratum short_chain=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/853ac7560599b9f7",
+   "split_sd": 0.14237106594289944,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=19|a=0.2|fdr|short_chain=1": {
+   "value": 0.06910847625818828,
+   "definition": "realised strict FDR within stratum short_chain=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/853ac7560599b9f7",
+   "split_sd": 0.02864735405049221,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=19|a=0.2|fdr|N_tercile=0": {
+   "value": 0.21757854485552158,
+   "definition": "realised strict FDR within stratum N_tercile=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/853ac7560599b9f7",
+   "split_sd": 0.07878645280307768,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=19|a=0.2|fdr|N_tercile=1": {
+   "value": 0.028796781684046025,
+   "definition": "realised strict FDR within stratum N_tercile=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/853ac7560599b9f7",
+   "split_sd": 0.032244932174223445,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=19|a=0.2|fdr|N_tercile=2": {
+   "value": 0.11509911987186718,
+   "definition": "realised strict FDR within stratum N_tercile=2",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/853ac7560599b9f7",
+   "split_sd": 0.11382539631744437,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=29|a=0.1|fdr": {
+   "value": 0.05385801961750662,
+   "definition": "realised FDR = mean over test incidents of the strict per-incident FDP (AMB = false), mean over splits",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/fa4d92a3c0bc5808",
+   "split_sd": 0.03390205631607377,
+   "split_q05": 0.008559523809523809,
+   "split_q95": 0.13292745924674654,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=29|a=0.1|fdr_lenient": {
+   "value": 0.051351452788248826,
+   "definition": "mean per-incident lenient FDP (AMB excluded), mean over splits",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/fa4d92a3c0bc5808",
+   "split_sd": 0.03240589670811725,
+   "split_q05": 0.00811888111888112,
+   "split_q95": 0.12572480938139596,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=29|a=0.1|pooled_fdr": {
+   "value": 0.8724859153182521,
+   "definition": "pooled FDR = sum V / max(sum R, 1) over a split's test incidents (strict), mean over splits",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/fa4d92a3c0bc5808",
+   "split_sd": 0.18553505367958936,
+   "split_q05": 0.837015503875969,
+   "split_q95": 1.0,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=29|a=0.1|str_mean": {
+   "value": 0.014986037202875065,
+   "definition": "STR = certified distinct transitions / |T*|, mean over test incidents with |T*| > 0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/fa4d92a3c0bc5808",
+   "split_sd": 0.014814157977581266,
+   "split_q05": 0.0,
+   "split_q95": 0.05407787392973671,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=29|a=0.1|cer_link_mean": {
+   "value": 0.014551269882890927,
+   "definition": "CER_link = certified true links / (|E*_link| + |T*_hid|), mean over incidents with a positive denominator",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/fa4d92a3c0bc5808",
+   "split_sd": 0.014725804214096389,
+   "split_q05": 0.0,
+   "split_q95": 0.05406083370601406,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=29|a=0.1|abstain": {
+   "value": 0.0,
+   "definition": "share of splits with lambda-hat = lambda_0 (no claims anywhere)",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/fa4d92a3c0bc5808",
+   "split_sd": 0.0,
+   "split_q05": 0.0,
+   "split_q95": 0.0,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=29|a=0.1|n_claims": {
+   "value": 1.9479999999999997,
+   "definition": "mean claims per test incident",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/fa4d92a3c0bc5808",
+   "split_sd": 2.5042658554449595,
+   "split_q05": 0.01,
+   "split_q95": 9.060500000000001,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=29|a=0.1|fdr|decoy_rich=0": {
+   "value": 0.07218178458480087,
+   "definition": "realised strict FDR within stratum decoy_rich=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/fa4d92a3c0bc5808",
+   "split_sd": 0.04698084069162529,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=29|a=0.1|fdr|decoy_rich=1": {
+   "value": 0.03984026923056371,
+   "definition": "realised strict FDR within stratum decoy_rich=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/fa4d92a3c0bc5808",
+   "split_sd": 0.031240991114785562,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=29|a=0.1|fdr|benign_only=0": {
+   "value": 0.04394712897795988,
+   "definition": "realised strict FDR within stratum benign_only=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/fa4d92a3c0bc5808",
+   "split_sd": 0.03337342387209109,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=29|a=0.1|fdr|benign_only=1": {
+   "value": 0.14860492285492286,
+   "definition": "realised strict FDR within stratum benign_only=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/fa4d92a3c0bc5808",
+   "split_sd": 0.09845539136263182,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=29|a=0.1|fdr|short_chain=0": {
+   "value": 0.07142638921652007,
+   "definition": "realised strict FDR within stratum short_chain=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/fa4d92a3c0bc5808",
+   "split_sd": 0.06133430011342449,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=29|a=0.1|fdr|short_chain=1": {
+   "value": 0.04270098396020866,
+   "definition": "realised strict FDR within stratum short_chain=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/fa4d92a3c0bc5808",
+   "split_sd": 0.024349741153561404,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=29|a=0.1|fdr|N_tercile=0": {
+   "value": 0.12989960267099782,
+   "definition": "realised strict FDR within stratum N_tercile=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/fa4d92a3c0bc5808",
+   "split_sd": 0.07054905395927444,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=29|a=0.1|fdr|N_tercile=1": {
+   "value": 0.012624864983025494,
+   "definition": "realised strict FDR within stratum N_tercile=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/fa4d92a3c0bc5808",
+   "split_sd": 0.015647209103913453,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=29|a=0.1|fdr|N_tercile=2": {
+   "value": 0.016197931804387652,
+   "definition": "realised strict FDR within stratum N_tercile=2",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/fa4d92a3c0bc5808",
+   "split_sd": 0.032835063855476396,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=29|a=0.2|fdr": {
+   "value": 0.1198423108052268,
+   "definition": "realised FDR = mean over test incidents of the strict per-incident FDP (AMB = false), mean over splits",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/1d38c3828b49a191",
+   "split_sd": 0.07241908398281748,
+   "split_q05": 0.035812120171495175,
+   "split_q95": 0.20684813369797278,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=29|a=0.2|fdr_lenient": {
+   "value": 0.11561000171581379,
+   "definition": "mean per-incident lenient FDP (AMB excluded), mean over splits",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/1d38c3828b49a191",
+   "split_sd": 0.07064359138469528,
+   "split_q05": 0.03496296564602853,
+   "split_q95": 0.19769451195994334,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=29|a=0.2|pooled_fdr": {
+   "value": 0.9201215098386534,
+   "definition": "pooled FDR = sum V / max(sum R, 1) over a split's test incidents (strict), mean over splits",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/1d38c3828b49a191",
+   "split_sd": 0.10174555479117826,
+   "split_q05": 0.8517120894479385,
+   "split_q95": 0.9677273252441811,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=29|a=0.2|str_mean": {
+   "value": 0.04627680828950071,
+   "definition": "STR = certified distinct transitions / |T*|, mean over test incidents with |T*| > 0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/1d38c3828b49a191",
+   "split_sd": 0.03445380498275879,
+   "split_q05": 0.0079716202960585,
+   "split_q95": 0.09206665922183052,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=29|a=0.2|cer_link_mean": {
+   "value": 0.04613375256295348,
+   "definition": "CER_link = certified true links / (|E*_link| + |T*_hid|), mean over incidents with a positive denominator",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/1d38c3828b49a191",
+   "split_sd": 0.03503054695599376,
+   "split_q05": 0.007350940258243629,
+   "split_q95": 0.09282394316471267,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=29|a=0.2|abstain": {
+   "value": 0.0,
+   "definition": "share of splits with lambda-hat = lambda_0 (no claims anywhere)",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/1d38c3828b49a191",
+   "split_sd": 0.0,
+   "split_q05": 0.0,
+   "split_q95": 0.0,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=29|a=0.2|n_claims": {
+   "value": 8.9097,
+   "definition": "mean claims per test incident",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/1d38c3828b49a191",
+   "split_sd": 8.72331723287962,
+   "split_q05": 0.489,
+   "split_q95": 19.598999999999965,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=29|a=0.2|fdr|decoy_rich=0": {
+   "value": 0.14583409537150163,
+   "definition": "realised strict FDR within stratum decoy_rich=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/1d38c3828b49a191",
+   "split_sd": 0.08420974383309465,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=29|a=0.2|fdr|decoy_rich=1": {
+   "value": 0.10008292107168985,
+   "definition": "realised strict FDR within stratum decoy_rich=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/1d38c3828b49a191",
+   "split_sd": 0.06878646356783417,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=29|a=0.2|fdr|benign_only=0": {
+   "value": 0.11468456804991659,
+   "definition": "realised strict FDR within stratum benign_only=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/1d38c3828b49a191",
+   "split_sd": 0.07864265219073614,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=29|a=0.2|fdr|benign_only=1": {
+   "value": 0.16830044955044954,
+   "definition": "realised strict FDR within stratum benign_only=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/1d38c3828b49a191",
+   "split_sd": 0.09383138463526898,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=29|a=0.2|fdr|short_chain=0": {
+   "value": 0.19905148179018567,
+   "definition": "realised strict FDR within stratum short_chain=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/1d38c3828b49a191",
+   "split_sd": 0.147951489039963,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=29|a=0.2|fdr|short_chain=1": {
+   "value": 0.06847342584789007,
+   "definition": "realised strict FDR within stratum short_chain=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/1d38c3828b49a191",
+   "split_sd": 0.03055181384548831,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=29|a=0.2|fdr|N_tercile=0": {
+   "value": 0.21655070227843187,
+   "definition": "realised strict FDR within stratum N_tercile=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/1d38c3828b49a191",
+   "split_sd": 0.08746173828977133,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=29|a=0.2|fdr|N_tercile=1": {
+   "value": 0.027388311976620207,
+   "definition": "realised strict FDR within stratum N_tercile=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/1d38c3828b49a191",
+   "split_sd": 0.03081777227835531,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=29|a=0.2|fdr|N_tercile=2": {
+   "value": 0.10910489054220245,
+   "definition": "realised strict FDR within stratum N_tercile=2",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/1d38c3828b49a191",
+   "split_sd": 0.11361259910159922,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=49|a=0.1|fdr": {
+   "value": 0.06018310138794804,
+   "definition": "realised FDR = mean over test incidents of the strict per-incident FDP (AMB = false), mean over splits",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/9a2ce928d3cb4153",
+   "split_sd": 0.03504714235471294,
+   "split_q05": 0.018142857142857145,
+   "split_q95": 0.11138398923720254,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=49|a=0.1|fdr_lenient": {
+   "value": 0.057491040408019195,
+   "definition": "mean per-incident lenient FDP (AMB excluded), mean over splits",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/9a2ce928d3cb4153",
+   "split_sd": 0.03370710298469117,
+   "split_q05": 0.017772727272727277,
+   "split_q95": 0.10564188705767019,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=49|a=0.1|pooled_fdr": {
+   "value": 0.8997433704579223,
+   "definition": "pooled FDR = sum V / max(sum R, 1) over a split's test incidents (strict), mean over splits",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/9a2ce928d3cb4153",
+   "split_sd": 0.13713883739235613,
+   "split_q05": 0.8571428571428571,
+   "split_q95": 1.0,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=49|a=0.1|str_mean": {
+   "value": 0.016583746918490468,
+   "definition": "STR = certified distinct transitions / |T*|, mean over test incidents with |T*| > 0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/9a2ce928d3cb4153",
+   "split_sd": 0.015224372682538706,
+   "split_q05": 0.0,
+   "split_q95": 0.033396089762549284,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=49|a=0.1|cer_link_mean": {
+   "value": 0.01602395529923459,
+   "definition": "CER_link = certified true links / (|E*_link| + |T*_hid|), mean over incidents with a positive denominator",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/9a2ce928d3cb4153",
+   "split_sd": 0.015114804672918524,
+   "split_q05": 0.0,
+   "split_q95": 0.032253837229111855,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=49|a=0.1|abstain": {
+   "value": 0.0,
+   "definition": "share of splits with lambda-hat = lambda_0 (no claims anywhere)",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/9a2ce928d3cb4153",
+   "split_sd": 0.0,
+   "split_q05": 0.0,
+   "split_q95": 0.0,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=49|a=0.1|n_claims": {
+   "value": 2.3673999999999995,
+   "definition": "mean claims per test incident",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/9a2ce928d3cb4153",
+   "split_sd": 3.152307995258347,
+   "split_q05": 0.03900000000000001,
+   "split_q95": 4.588499999999973,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=49|a=0.1|fdr|decoy_rich=0": {
+   "value": 0.07560414800740876,
+   "definition": "realised strict FDR within stratum decoy_rich=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/9a2ce928d3cb4153",
+   "split_sd": 0.04433495184477376,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=49|a=0.1|fdr|decoy_rich=1": {
+   "value": 0.048477220952324596,
+   "definition": "realised strict FDR within stratum decoy_rich=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/9a2ce928d3cb4153",
+   "split_sd": 0.03510415947575237,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=49|a=0.1|fdr|benign_only=0": {
+   "value": 0.04912156123272899,
+   "definition": "realised strict FDR within stratum benign_only=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/9a2ce928d3cb4153",
+   "split_sd": 0.0354219334943016,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=49|a=0.1|fdr|benign_only=1": {
+   "value": 0.16791877566877564,
+   "definition": "realised strict FDR within stratum benign_only=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/9a2ce928d3cb4153",
+   "split_sd": 0.09275178999426016,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=49|a=0.1|fdr|short_chain=0": {
+   "value": 0.0803022386029404,
+   "definition": "realised strict FDR within stratum short_chain=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/9a2ce928d3cb4153",
+   "split_sd": 0.06329903812020765,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=49|a=0.1|fdr|short_chain=1": {
+   "value": 0.04720091943886511,
+   "definition": "realised strict FDR within stratum short_chain=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/9a2ce928d3cb4153",
+   "split_sd": 0.023488467070580193,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=49|a=0.1|fdr|N_tercile=0": {
+   "value": 0.14205170318920665,
+   "definition": "realised strict FDR within stratum N_tercile=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/9a2ce928d3cb4153",
+   "split_sd": 0.06708932311178946,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=49|a=0.1|fdr|N_tercile=1": {
+   "value": 0.015474330923410691,
+   "definition": "realised strict FDR within stratum N_tercile=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/9a2ce928d3cb4153",
+   "split_sd": 0.01654110287846122,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=49|a=0.1|fdr|N_tercile=2": {
+   "value": 0.02050915007232801,
+   "definition": "realised strict FDR within stratum N_tercile=2",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/9a2ce928d3cb4153",
+   "split_sd": 0.042908854535631556,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=49|a=0.2|fdr": {
+   "value": 0.1361564655405917,
+   "definition": "realised FDR = mean over test incidents of the strict per-incident FDP (AMB = false), mean over splits",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/4b5b3393cb94cbc6",
+   "split_sd": 0.055762242404114225,
+   "split_q05": 0.03716243441291473,
+   "split_q95": 0.20153796919823613,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=49|a=0.2|fdr_lenient": {
+   "value": 0.13144359798928226,
+   "definition": "mean per-incident lenient FDP (AMB excluded), mean over splits",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/4b5b3393cb94cbc6",
+   "split_sd": 0.05445383973703683,
+   "split_q05": 0.03516431966726084,
+   "split_q95": 0.19627463377974078,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=49|a=0.2|pooled_fdr": {
+   "value": 0.9432754051819292,
+   "definition": "pooled FDR = sum V / max(sum R, 1) over a split's test incidents (strict), mean over splits",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/4b5b3393cb94cbc6",
+   "split_sd": 0.03131862601394267,
+   "split_q05": 0.869385925593904,
+   "split_q95": 0.9678956331655737,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=49|a=0.2|str_mean": {
+   "value": 0.054704578370650306,
+   "definition": "STR = certified distinct transitions / |T*|, mean over test incidents with |T*| > 0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/4b5b3393cb94cbc6",
+   "split_sd": 0.02613131423233051,
+   "split_q05": 0.010780632411067194,
+   "split_q95": 0.08411485238738536,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=49|a=0.2|cer_link_mean": {
+   "value": 0.05457917812788348,
+   "definition": "CER_link = certified true links / (|E*_link| + |T*_hid|), mean over incidents with a positive denominator",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/4b5b3393cb94cbc6",
+   "split_sd": 0.0264604558688482,
+   "split_q05": 0.010740760002773733,
+   "split_q95": 0.0840553468204567,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=49|a=0.2|abstain": {
+   "value": 0.0,
+   "definition": "share of splits with lambda-hat = lambda_0 (no claims anywhere)",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/4b5b3393cb94cbc6",
+   "split_sd": 0.0,
+   "split_q05": 0.0,
+   "split_q95": 0.0,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=49|a=0.2|n_claims": {
+   "value": 10.4888,
+   "definition": "mean claims per test incident",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/4b5b3393cb94cbc6",
+   "split_sd": 6.268730201837877,
+   "split_q05": 0.8095000000000001,
+   "split_q95": 16.741,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=49|a=0.2|fdr|decoy_rich=0": {
+   "value": 0.16096540201329546,
+   "definition": "realised strict FDR within stratum decoy_rich=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/4b5b3393cb94cbc6",
+   "split_sd": 0.06941644212384415,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=49|a=0.2|fdr|decoy_rich=1": {
+   "value": 0.11737267634641807,
+   "definition": "realised strict FDR within stratum decoy_rich=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/4b5b3393cb94cbc6",
+   "split_sd": 0.05442606437897537,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=49|a=0.2|fdr|benign_only=0": {
+   "value": 0.1322302694582029,
+   "definition": "realised strict FDR within stratum benign_only=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/4b5b3393cb94cbc6",
+   "split_sd": 0.059574412562276864,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=49|a=0.2|fdr|benign_only=1": {
+   "value": 0.17418897768897765,
+   "definition": "realised strict FDR within stratum benign_only=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/4b5b3393cb94cbc6",
+   "split_sd": 0.09104194121920846,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=49|a=0.2|fdr|short_chain=0": {
+   "value": 0.23081506947938787,
+   "definition": "realised strict FDR within stratum short_chain=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/4b5b3393cb94cbc6",
+   "split_sd": 0.11031447750082175,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=49|a=0.2|fdr|short_chain=1": {
+   "value": 0.07516093316526255,
+   "definition": "realised strict FDR within stratum short_chain=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/4b5b3393cb94cbc6",
+   "split_sd": 0.027982989758230555,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=49|a=0.2|fdr|N_tercile=0": {
+   "value": 0.2397406642896561,
+   "definition": "realised strict FDR within stratum N_tercile=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/4b5b3393cb94cbc6",
+   "split_sd": 0.07289094941209392,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=49|a=0.2|fdr|N_tercile=1": {
+   "value": 0.030713502238583445,
+   "definition": "realised strict FDR within stratum N_tercile=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/4b5b3393cb94cbc6",
+   "split_sd": 0.028366606157417706,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_TON.stat|K=49|a=0.2|fdr|N_tercile=2": {
+   "value": 0.13231484799257215,
+   "definition": "realised strict FDR within stratum N_tercile=2",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_TON.stat/4b5b3393cb94cbc6",
+   "split_sd": 0.0860759087761168,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=9|a=0.1|fdr": {
+   "value": 0.027753051119514215,
+   "definition": "realised FDR = mean over test incidents of the strict per-incident FDP (AMB = false), mean over splits",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/6d84a7522161f172",
+   "split_sd": 0.028688682921541128,
+   "split_q05": 0.0,
+   "split_q95": 0.08316202686202685,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=9|a=0.1|fdr_lenient": {
+   "value": 0.00947074401647544,
+   "definition": "mean per-incident lenient FDP (AMB excluded), mean over splits",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/6d84a7522161f172",
+   "split_sd": 0.00920490095861493,
+   "split_q05": 0.0,
+   "split_q95": 0.022864583333333327,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=9|a=0.1|pooled_fdr": {
+   "value": 0.06359559033366578,
+   "definition": "pooled FDR = sum V / max(sum R, 1) over a split's test incidents (strict), mean over splits",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/6d84a7522161f172",
+   "split_sd": 0.058108012601903666,
+   "split_q05": 0.0,
+   "split_q95": 0.1838469732588892,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=9|a=0.1|str_mean": {
+   "value": 0.27531112572689287,
+   "definition": "STR = certified distinct transitions / |T*|, mean over test incidents with |T*| > 0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/6d84a7522161f172",
+   "split_sd": 0.09551351118565768,
+   "split_q05": 0.12971896179504874,
+   "split_q95": 0.45612419263634446,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=9|a=0.1|cer_link_mean": {
+   "value": 0.2725830999351311,
+   "definition": "CER_link = certified true links / (|E*_link| + |T*_hid|), mean over incidents with a positive denominator",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/6d84a7522161f172",
+   "split_sd": 0.09666121716712417,
+   "split_q05": 0.1263109116738804,
+   "split_q95": 0.46064433584710834,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=9|a=0.1|abstain": {
+   "value": 0.0,
+   "definition": "share of splits with lambda-hat = lambda_0 (no claims anywhere)",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/6d84a7522161f172",
+   "split_sd": 0.0,
+   "split_q05": 0.0,
+   "split_q95": 0.0,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=9|a=0.1|n_claims": {
+   "value": 1.8204000000000002,
+   "definition": "mean claims per test incident",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/6d84a7522161f172",
+   "split_sd": 0.8779359632430805,
+   "split_q05": 0.7155,
+   "split_q95": 3.5629999999999997,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=9|a=0.1|fdr|decoy_rich=0": {
+   "value": 0.029399935553994894,
+   "definition": "realised strict FDR within stratum decoy_rich=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/6d84a7522161f172",
+   "split_sd": 0.030694394307130692,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=9|a=0.1|fdr|decoy_rich=1": {
+   "value": 0.02634955696130254,
+   "definition": "realised strict FDR within stratum decoy_rich=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/6d84a7522161f172",
+   "split_sd": 0.029741518605553793,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=9|a=0.1|fdr|benign_only=0": {
+   "value": 0.03065766736942358,
+   "definition": "realised strict FDR within stratum benign_only=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/6d84a7522161f172",
+   "split_sd": 0.03186578323936511,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=9|a=0.1|fdr|benign_only=1": {
+   "value": 0.0,
+   "definition": "realised strict FDR within stratum benign_only=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/6d84a7522161f172",
+   "split_sd": 0.0,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=9|a=0.1|fdr|short_chain=0": {
+   "value": 0.03743419281246581,
+   "definition": "realised strict FDR within stratum short_chain=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/6d84a7522161f172",
+   "split_sd": 0.04192132770100888,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=9|a=0.1|fdr|short_chain=1": {
+   "value": 0.02197846622193525,
+   "definition": "realised strict FDR within stratum short_chain=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/6d84a7522161f172",
+   "split_sd": 0.02259829836489206,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=9|a=0.1|fdr|N_tercile=0": {
+   "value": 0.030581684781681738,
+   "definition": "realised strict FDR within stratum N_tercile=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/6d84a7522161f172",
+   "split_sd": 0.040537916673972246,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=9|a=0.1|fdr|N_tercile=1": {
+   "value": 0.04254421427601999,
+   "definition": "realised strict FDR within stratum N_tercile=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/6d84a7522161f172",
+   "split_sd": 0.038760251965138645,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=9|a=0.1|fdr|N_tercile=2": {
+   "value": 0.010126248060678673,
+   "definition": "realised strict FDR within stratum N_tercile=2",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/6d84a7522161f172",
+   "split_sd": 0.013662687549369815,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=9|a=0.2|fdr": {
+   "value": 0.10724819998985263,
+   "definition": "realised FDR = mean over test incidents of the strict per-incident FDP (AMB = false), mean over splits",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/93c0975948570a96",
+   "split_sd": 0.06310699479883387,
+   "split_q05": 0.02318333333333333,
+   "split_q95": 0.23926236242916768,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=9|a=0.2|fdr_lenient": {
+   "value": 0.04134893786451877,
+   "definition": "mean per-incident lenient FDP (AMB excluded), mean over splits",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/93c0975948570a96",
+   "split_sd": 0.03588488265359508,
+   "split_q05": 0.005291666666666667,
+   "split_q95": 0.11476463748789724,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=9|a=0.2|pooled_fdr": {
+   "value": 0.2261160701117965,
+   "definition": "pooled FDR = sum V / max(sum R, 1) over a split's test incidents (strict), mean over splits",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/93c0975948570a96",
+   "split_sd": 0.12866184628518867,
+   "split_q05": 0.05434409109284463,
+   "split_q95": 0.48225204767684743,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=9|a=0.2|str_mean": {
+   "value": 0.44695803700040443,
+   "definition": "STR = certified distinct transitions / |T*|, mean over test incidents with |T*| > 0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/93c0975948570a96",
+   "split_sd": 0.08192652020106342,
+   "split_q05": 0.2841690727779398,
+   "split_q95": 0.5448209940005282,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=9|a=0.2|cer_link_mean": {
+   "value": 0.44968871504054164,
+   "definition": "CER_link = certified true links / (|E*_link| + |T*_hid|), mean over incidents with a positive denominator",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/93c0975948570a96",
+   "split_sd": 0.08646362108498007,
+   "split_q05": 0.28151847572804783,
+   "split_q95": 0.5566627332722802,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=9|a=0.2|abstain": {
+   "value": 0.0,
+   "definition": "share of splits with lambda-hat = lambda_0 (no claims anywhere)",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/93c0975948570a96",
+   "split_sd": 0.0,
+   "split_q05": 0.0,
+   "split_q95": 0.0,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=9|a=0.2|n_claims": {
+   "value": 4.0965,
+   "definition": "mean claims per test incident",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/93c0975948570a96",
+   "split_sd": 1.5982379027977638,
+   "split_q05": 1.659,
+   "split_q95": 7.393999999999999,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=9|a=0.2|fdr|decoy_rich=0": {
+   "value": 0.09931888086901236,
+   "definition": "realised strict FDR within stratum decoy_rich=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/93c0975948570a96",
+   "split_sd": 0.06094795980526879,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=9|a=0.2|fdr|decoy_rich=1": {
+   "value": 0.11403443125225088,
+   "definition": "realised strict FDR within stratum decoy_rich=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/93c0975948570a96",
+   "split_sd": 0.06855791592785719,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=9|a=0.2|fdr|benign_only=0": {
+   "value": 0.11834115608975619,
+   "definition": "realised strict FDR within stratum benign_only=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/93c0975948570a96",
+   "split_sd": 0.06977003669896525,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=9|a=0.2|fdr|benign_only=1": {
+   "value": 0.0008333333333333333,
+   "definition": "realised strict FDR within stratum benign_only=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/93c0975948570a96",
+   "split_sd": 0.008333333333333333,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=9|a=0.2|fdr|short_chain=0": {
+   "value": 0.16400949894786318,
+   "definition": "realised strict FDR within stratum short_chain=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/93c0975948570a96",
+   "split_sd": 0.10981377374199203,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=9|a=0.2|fdr|short_chain=1": {
+   "value": 0.07207137125153769,
+   "definition": "realised strict FDR within stratum short_chain=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/93c0975948570a96",
+   "split_sd": 0.037665410240026016,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=9|a=0.2|fdr|N_tercile=0": {
+   "value": 0.11822758362499698,
+   "definition": "realised strict FDR within stratum N_tercile=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/93c0975948570a96",
+   "split_sd": 0.07029423941570796,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=9|a=0.2|fdr|N_tercile=1": {
+   "value": 0.14481358544784606,
+   "definition": "realised strict FDR within stratum N_tercile=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/93c0975948570a96",
+   "split_sd": 0.0766215597991859,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=9|a=0.2|fdr|N_tercile=2": {
+   "value": 0.059344819946526926,
+   "definition": "realised strict FDR within stratum N_tercile=2",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/93c0975948570a96",
+   "split_sd": 0.0553998765538385,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=19|a=0.1|fdr": {
+   "value": 0.04325750612654049,
+   "definition": "realised FDR = mean over test incidents of the strict per-incident FDP (AMB = false), mean over splits",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/25f8208560d69fc5",
+   "split_sd": 0.029821380537028874,
+   "split_q05": 0.00825,
+   "split_q95": 0.09861336332749374,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=19|a=0.1|fdr_lenient": {
+   "value": 0.013370198718120547,
+   "definition": "mean per-incident lenient FDP (AMB excluded), mean over splits",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/25f8208560d69fc5",
+   "split_sd": 0.009316121666378246,
+   "split_q05": 0.0015833333333333335,
+   "split_q95": 0.03025025110123793,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=19|a=0.1|pooled_fdr": {
+   "value": 0.0933654333933239,
+   "definition": "pooled FDR = sum V / max(sum R, 1) over a split's test incidents (strict), mean over splits",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/25f8208560d69fc5",
+   "split_sd": 0.060474950514903605,
+   "split_q05": 0.019704738330975954,
+   "split_q95": 0.20059850374064836,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=19|a=0.1|str_mean": {
+   "value": 0.33500294524530866,
+   "definition": "STR = certified distinct transitions / |T*|, mean over test incidents with |T*| > 0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/25f8208560d69fc5",
+   "split_sd": 0.07925146908793533,
+   "split_q05": 0.23393886016591792,
+   "split_q95": 0.4735488443078978,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=19|a=0.1|cer_link_mean": {
+   "value": 0.332611584181709,
+   "definition": "CER_link = certified true links / (|E*_link| + |T*_hid|), mean over incidents with a positive denominator",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/25f8208560d69fc5",
+   "split_sd": 0.08063917320483835,
+   "split_q05": 0.22934032525647555,
+   "split_q95": 0.4781689049601111,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=19|a=0.1|abstain": {
+   "value": 0.0,
+   "definition": "share of splits with lambda-hat = lambda_0 (no claims anywhere)",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/25f8208560d69fc5",
+   "split_sd": 0.0,
+   "split_q05": 0.0,
+   "split_q95": 0.0,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=19|a=0.1|n_claims": {
+   "value": 2.3560000000000003,
+   "definition": "mean claims per test incident",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/25f8208560d69fc5",
+   "split_sd": 0.818403224812707,
+   "split_q05": 1.4375,
+   "split_q95": 4.0005,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=19|a=0.1|fdr|decoy_rich=0": {
+   "value": 0.04599603755359036,
+   "definition": "realised strict FDR within stratum decoy_rich=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/25f8208560d69fc5",
+   "split_sd": 0.02898234751794434,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=19|a=0.1|fdr|decoy_rich=1": {
+   "value": 0.04130661060170719,
+   "definition": "realised strict FDR within stratum decoy_rich=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/25f8208560d69fc5",
+   "split_sd": 0.03471918569086043,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=19|a=0.1|fdr|benign_only=0": {
+   "value": 0.04777811717250814,
+   "definition": "realised strict FDR within stratum benign_only=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/25f8208560d69fc5",
+   "split_sd": 0.033168753498337804,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=19|a=0.1|fdr|benign_only=1": {
+   "value": 0.0,
+   "definition": "realised strict FDR within stratum benign_only=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/25f8208560d69fc5",
+   "split_sd": 0.0,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=19|a=0.1|fdr|short_chain=0": {
+   "value": 0.05562852267845202,
+   "definition": "realised strict FDR within stratum short_chain=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/25f8208560d69fc5",
+   "split_sd": 0.047062075515667705,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=19|a=0.1|fdr|short_chain=1": {
+   "value": 0.03566537251970953,
+   "definition": "realised strict FDR within stratum short_chain=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/25f8208560d69fc5",
+   "split_sd": 0.022112733585354316,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=19|a=0.1|fdr|N_tercile=0": {
+   "value": 0.05363733060952233,
+   "definition": "realised strict FDR within stratum N_tercile=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/25f8208560d69fc5",
+   "split_sd": 0.043014075117326786,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=19|a=0.1|fdr|N_tercile=1": {
+   "value": 0.062227111822753284,
+   "definition": "realised strict FDR within stratum N_tercile=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/25f8208560d69fc5",
+   "split_sd": 0.04270108826465714,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=19|a=0.1|fdr|N_tercile=2": {
+   "value": 0.01400249947373729,
+   "definition": "realised strict FDR within stratum N_tercile=2",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/25f8208560d69fc5",
+   "split_sd": 0.01364832981329645,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=19|a=0.2|fdr": {
+   "value": 0.13302404395855982,
+   "definition": "realised FDR = mean over test incidents of the strict per-incident FDP (AMB = false), mean over splits",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/9fc2ae2a80f06f60",
+   "split_sd": 0.051064670015574194,
+   "split_q05": 0.05667698412698413,
+   "split_q95": 0.21555207499715645,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=19|a=0.2|fdr_lenient": {
+   "value": 0.05394961869492817,
+   "definition": "mean per-incident lenient FDP (AMB excluded), mean over splits",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/9fc2ae2a80f06f60",
+   "split_sd": 0.03313491654662891,
+   "split_q05": 0.010316666666666665,
+   "split_q95": 0.11871598344541646,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=19|a=0.2|pooled_fdr": {
+   "value": 0.2806549760773542,
+   "definition": "pooled FDR = sum V / max(sum R, 1) over a split's test incidents (strict), mean over splits",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/9fc2ae2a80f06f60",
+   "split_sd": 0.10888121155612959,
+   "split_q05": 0.10889885611077664,
+   "split_q95": 0.4584270956177178,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=19|a=0.2|str_mean": {
+   "value": 0.4916476291721443,
+   "definition": "STR = certified distinct transitions / |T*|, mean over test incidents with |T*| > 0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/9fc2ae2a80f06f60",
+   "split_sd": 0.05037171846059154,
+   "split_q05": 0.40220653086301167,
+   "split_q95": 0.5588872465580134,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=19|a=0.2|cer_link_mean": {
+   "value": 0.4967257904049484,
+   "definition": "CER_link = certified true links / (|E*_link| + |T*_hid|), mean over incidents with a positive denominator",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/9fc2ae2a80f06f60",
+   "split_sd": 0.0542865343937102,
+   "split_q05": 0.3970245054087189,
+   "split_q95": 0.5663143577186024,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=19|a=0.2|abstain": {
+   "value": 0.0,
+   "definition": "share of splits with lambda-hat = lambda_0 (no claims anywhere)",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/9fc2ae2a80f06f60",
+   "split_sd": 0.0,
+   "split_q05": 0.0,
+   "split_q95": 0.0,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=19|a=0.2|n_claims": {
+   "value": 4.823600000000001,
+   "definition": "mean claims per test incident",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/9fc2ae2a80f06f60",
+   "split_sd": 1.3046440127483052,
+   "split_q05": 2.8575,
+   "split_q95": 7.2505,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=19|a=0.2|fdr|decoy_rich=0": {
+   "value": 0.11818816665187938,
+   "definition": "realised strict FDR within stratum decoy_rich=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/9fc2ae2a80f06f60",
+   "split_sd": 0.05319216457775773,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=19|a=0.2|fdr|decoy_rich=1": {
+   "value": 0.1448387477964763,
+   "definition": "realised strict FDR within stratum decoy_rich=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/9fc2ae2a80f06f60",
+   "split_sd": 0.05609530960490023,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=19|a=0.2|fdr|benign_only=0": {
+   "value": 0.14660292877625536,
+   "definition": "realised strict FDR within stratum benign_only=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/9fc2ae2a80f06f60",
+   "split_sd": 0.056486904941813375,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=19|a=0.2|fdr|benign_only=1": {
+   "value": 0.0,
+   "definition": "realised strict FDR within stratum benign_only=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/9fc2ae2a80f06f60",
+   "split_sd": 0.0,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=19|a=0.2|fdr|short_chain=0": {
+   "value": 0.2083373465914391,
+   "definition": "realised strict FDR within stratum short_chain=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/9fc2ae2a80f06f60",
+   "split_sd": 0.09058817841915731,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=19|a=0.2|fdr|short_chain=1": {
+   "value": 0.08587738865022565,
+   "definition": "realised strict FDR within stratum short_chain=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/9fc2ae2a80f06f60",
+   "split_sd": 0.029942226506410576,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=19|a=0.2|fdr|N_tercile=0": {
+   "value": 0.1413395480777466,
+   "definition": "realised strict FDR within stratum N_tercile=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/9fc2ae2a80f06f60",
+   "split_sd": 0.05332691020920546,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=19|a=0.2|fdr|N_tercile=1": {
+   "value": 0.1818069230969599,
+   "definition": "realised strict FDR within stratum N_tercile=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/9fc2ae2a80f06f60",
+   "split_sd": 0.06605821586310921,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=19|a=0.2|fdr|N_tercile=2": {
+   "value": 0.0770524682295619,
+   "definition": "realised strict FDR within stratum N_tercile=2",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/9fc2ae2a80f06f60",
+   "split_sd": 0.04757413293620079,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=29|a=0.1|fdr": {
+   "value": 0.056338577112663574,
+   "definition": "realised FDR = mean over test incidents of the strict per-incident FDP (AMB = false), mean over splits",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/564663ba1b08f034",
+   "split_sd": 0.03161705144594144,
+   "split_q05": 0.012904761904761903,
+   "split_q95": 0.11501411587681323,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=29|a=0.1|fdr_lenient": {
+   "value": 0.01640381087608642,
+   "definition": "mean per-incident lenient FDP (AMB excluded), mean over splits",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/564663ba1b08f034",
+   "split_sd": 0.0113412448469954,
+   "split_q05": 0.003357142857142857,
+   "split_q95": 0.03745272782772782,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=29|a=0.1|pooled_fdr": {
+   "value": 0.12018255482073265,
+   "definition": "pooled FDR = sum V / max(sum R, 1) over a split's test incidents (strict), mean over splits",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/564663ba1b08f034",
+   "split_sd": 0.06359636731172184,
+   "split_q05": 0.029577097111033762,
+   "split_q95": 0.2308249158249158,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=29|a=0.1|str_mean": {
+   "value": 0.3720547058713581,
+   "definition": "STR = certified distinct transitions / |T*|, mean over test incidents with |T*| > 0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/564663ba1b08f034",
+   "split_sd": 0.07187240199657477,
+   "split_q05": 0.2566449538067237,
+   "split_q95": 0.4772319989324757,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=29|a=0.1|cer_link_mean": {
+   "value": 0.37003763348451135,
+   "definition": "CER_link = certified true links / (|E*_link| + |T*_hid|), mean over incidents with a positive denominator",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/564663ba1b08f034",
+   "split_sd": 0.0732319837030692,
+   "split_q05": 0.2547997714108037,
+   "split_q95": 0.47955953873576856,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=29|a=0.1|abstain": {
+   "value": 0.0,
+   "definition": "share of splits with lambda-hat = lambda_0 (no claims anywhere)",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/564663ba1b08f034",
+   "split_sd": 0.0,
+   "split_q05": 0.0,
+   "split_q95": 0.0,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=29|a=0.1|n_claims": {
+   "value": 2.7474999999999996,
+   "definition": "mean claims per test incident",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/564663ba1b08f034",
+   "split_sd": 0.8030615345556207,
+   "split_q05": 1.5890000000000002,
+   "split_q95": 4.143999999999999,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=29|a=0.1|fdr|decoy_rich=0": {
+   "value": 0.0563268765737741,
+   "definition": "realised strict FDR within stratum decoy_rich=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/564663ba1b08f034",
+   "split_sd": 0.029410010704865746,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=29|a=0.1|fdr|decoy_rich=1": {
+   "value": 0.05639972771660829,
+   "definition": "realised strict FDR within stratum decoy_rich=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/564663ba1b08f034",
+   "split_sd": 0.03813979165105807,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=29|a=0.1|fdr|benign_only=0": {
+   "value": 0.06220679331983234,
+   "definition": "realised strict FDR within stratum benign_only=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/564663ba1b08f034",
+   "split_sd": 0.035197041604677806,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=29|a=0.1|fdr|benign_only=1": {
+   "value": 0.0,
+   "definition": "realised strict FDR within stratum benign_only=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/564663ba1b08f034",
+   "split_sd": 0.0,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=29|a=0.1|fdr|short_chain=0": {
+   "value": 0.07264074546950341,
+   "definition": "realised strict FDR within stratum short_chain=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/564663ba1b08f034",
+   "split_sd": 0.04926486719890423,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=29|a=0.1|fdr|short_chain=1": {
+   "value": 0.04621280823789075,
+   "definition": "realised strict FDR within stratum short_chain=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/564663ba1b08f034",
+   "split_sd": 0.02378258162020457,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=29|a=0.1|fdr|N_tercile=0": {
+   "value": 0.07253123851309114,
+   "definition": "realised strict FDR within stratum N_tercile=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/564663ba1b08f034",
+   "split_sd": 0.04160202657601405,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=29|a=0.1|fdr|N_tercile=1": {
+   "value": 0.07899681340704863,
+   "definition": "realised strict FDR within stratum N_tercile=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/564663ba1b08f034",
+   "split_sd": 0.0460484236567201,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=29|a=0.1|fdr|N_tercile=2": {
+   "value": 0.018237271318418173,
+   "definition": "realised strict FDR within stratum N_tercile=2",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/564663ba1b08f034",
+   "split_sd": 0.016907345926911836,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=29|a=0.2|fdr": {
+   "value": 0.15013782140305734,
+   "definition": "realised FDR = mean over test incidents of the strict per-incident FDP (AMB = false), mean over splits",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/37baa1b39309051c",
+   "split_sd": 0.04538501224689102,
+   "split_q05": 0.07622709928959928,
+   "split_q95": 0.22726741140693632,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=29|a=0.2|fdr_lenient": {
+   "value": 0.06440819191679124,
+   "definition": "mean per-incident lenient FDP (AMB excluded), mean over splits",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/37baa1b39309051c",
+   "split_sd": 0.030370920132536103,
+   "split_q05": 0.020168890056022407,
+   "split_q95": 0.12090384707413365,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=29|a=0.2|pooled_fdr": {
+   "value": 0.31651614026192215,
+   "definition": "pooled FDR = sum V / max(sum R, 1) over a split's test incidents (strict), mean over splits",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/37baa1b39309051c",
+   "split_sd": 0.09150846484854738,
+   "split_q05": 0.15109994206710822,
+   "split_q95": 0.47537256993647203,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=29|a=0.2|str_mean": {
+   "value": 0.5094850849217478,
+   "definition": "STR = certified distinct transitions / |T*|, mean over test incidents with |T*| > 0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/37baa1b39309051c",
+   "split_sd": 0.034959393897705915,
+   "split_q05": 0.45334185608997357,
+   "split_q95": 0.5601202826185294,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=29|a=0.2|cer_link_mean": {
+   "value": 0.5163736472284888,
+   "definition": "CER_link = certified true links / (|E*_link| + |T*_hid|), mean over incidents with a positive denominator",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/37baa1b39309051c",
+   "split_sd": 0.037485162883956466,
+   "split_q05": 0.4617180138930863,
+   "split_q95": 0.5681145920343191,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=29|a=0.2|abstain": {
+   "value": 0.0,
+   "definition": "share of splits with lambda-hat = lambda_0 (no claims anywhere)",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/37baa1b39309051c",
+   "split_sd": 0.0,
+   "split_q05": 0.0,
+   "split_q95": 0.0,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=29|a=0.2|n_claims": {
+   "value": 5.2651,
+   "definition": "mean claims per test incident",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/37baa1b39309051c",
+   "split_sd": 1.1076114030660844,
+   "split_q05": 3.7929999999999997,
+   "split_q95": 7.32,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=29|a=0.2|fdr|decoy_rich=0": {
+   "value": 0.1328402014073127,
+   "definition": "realised strict FDR within stratum decoy_rich=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/37baa1b39309051c",
+   "split_sd": 0.05121621522005408,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=29|a=0.2|fdr|decoy_rich=1": {
+   "value": 0.16313622257789692,
+   "definition": "realised strict FDR within stratum decoy_rich=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/37baa1b39309051c",
+   "split_sd": 0.04781159405836353,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=29|a=0.2|fdr|benign_only=0": {
+   "value": 0.16538302467842989,
+   "definition": "realised strict FDR within stratum benign_only=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/37baa1b39309051c",
+   "split_sd": 0.050036445986469315,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=29|a=0.2|fdr|benign_only=1": {
+   "value": 0.0008333333333333333,
+   "definition": "realised strict FDR within stratum benign_only=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/37baa1b39309051c",
+   "split_sd": 0.008333333333333333,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=29|a=0.2|fdr|short_chain=0": {
+   "value": 0.23556703272767304,
+   "definition": "realised strict FDR within stratum short_chain=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/37baa1b39309051c",
+   "split_sd": 0.07690716954604326,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=29|a=0.2|fdr|short_chain=1": {
+   "value": 0.09648697707756393,
+   "definition": "realised strict FDR within stratum short_chain=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/37baa1b39309051c",
+   "split_sd": 0.02961941487926997,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=29|a=0.2|fdr|N_tercile=0": {
+   "value": 0.1549787986351178,
+   "definition": "realised strict FDR within stratum N_tercile=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/37baa1b39309051c",
+   "split_sd": 0.05292135963769521,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=29|a=0.2|fdr|N_tercile=1": {
+   "value": 0.20568045026627174,
+   "definition": "realised strict FDR within stratum N_tercile=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/37baa1b39309051c",
+   "split_sd": 0.056701518285073804,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=29|a=0.2|fdr|N_tercile=2": {
+   "value": 0.09243760874137104,
+   "definition": "realised strict FDR within stratum N_tercile=2",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/37baa1b39309051c",
+   "split_sd": 0.04337333621197054,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=49|a=0.1|fdr": {
+   "value": 0.07209726518994301,
+   "definition": "realised FDR = mean over test incidents of the strict per-incident FDP (AMB = false), mean over splits",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/e21dfa53a8ee6654",
+   "split_sd": 0.03307539973913582,
+   "split_q05": 0.029306184012066368,
+   "split_q95": 0.12014681966584141,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=49|a=0.1|fdr_lenient": {
+   "value": 0.020515735348035385,
+   "definition": "mean per-incident lenient FDP (AMB excluded), mean over splits",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/e21dfa53a8ee6654",
+   "split_sd": 0.013406321911843964,
+   "split_q05": 0.004975,
+   "split_q95": 0.038754534966667316,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=49|a=0.1|pooled_fdr": {
+   "value": 0.14988592454911676,
+   "definition": "pooled FDR = sum V / max(sum R, 1) over a split's test incidents (strict), mean over splits",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/e21dfa53a8ee6654",
+   "split_sd": 0.06529184217069649,
+   "split_q05": 0.056623931623931624,
+   "split_q95": 0.2445334840554574,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=49|a=0.1|str_mean": {
+   "value": 0.4058266611292785,
+   "definition": "STR = certified distinct transitions / |T*|, mean over test incidents with |T*| > 0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/e21dfa53a8ee6654",
+   "split_sd": 0.060491071609454154,
+   "split_q05": 0.2968117242216289,
+   "split_q95": 0.48919985776173225,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=49|a=0.1|cer_link_mean": {
+   "value": 0.4043016826597025,
+   "definition": "CER_link = certified true links / (|E*_link| + |T*_hid|), mean over incidents with a positive denominator",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/e21dfa53a8ee6654",
+   "split_sd": 0.06227053868976878,
+   "split_q05": 0.293752705681276,
+   "split_q95": 0.49051417389761065,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=49|a=0.1|abstain": {
+   "value": 0.0,
+   "definition": "share of splits with lambda-hat = lambda_0 (no claims anywhere)",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/e21dfa53a8ee6654",
+   "split_sd": 0.0,
+   "split_q05": 0.0,
+   "split_q95": 0.0,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=49|a=0.1|n_claims": {
+   "value": 3.1736,
+   "definition": "mean claims per test incident",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/e21dfa53a8ee6654",
+   "split_sd": 0.8145290763144163,
+   "split_q05": 2.0675,
+   "split_q95": 4.24,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=49|a=0.1|fdr|decoy_rich=0": {
+   "value": 0.06834139248625508,
+   "definition": "realised strict FDR within stratum decoy_rich=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/e21dfa53a8ee6654",
+   "split_sd": 0.03181345489134988,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=49|a=0.1|fdr|decoy_rich=1": {
+   "value": 0.07501119765942085,
+   "definition": "realised strict FDR within stratum decoy_rich=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/e21dfa53a8ee6654",
+   "split_sd": 0.03846431375380521,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=49|a=0.1|fdr|benign_only=0": {
+   "value": 0.07946913401001106,
+   "definition": "realised strict FDR within stratum benign_only=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/e21dfa53a8ee6654",
+   "split_sd": 0.03664517002078973,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=49|a=0.1|fdr|benign_only=1": {
+   "value": 0.0,
+   "definition": "realised strict FDR within stratum benign_only=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/e21dfa53a8ee6654",
+   "split_sd": 0.0,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=49|a=0.1|fdr|short_chain=0": {
+   "value": 0.09767702138455556,
+   "definition": "realised strict FDR within stratum short_chain=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/e21dfa53a8ee6654",
+   "split_sd": 0.05237640679122859,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=49|a=0.1|fdr|short_chain=1": {
+   "value": 0.05582972918594804,
+   "definition": "realised strict FDR within stratum short_chain=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/e21dfa53a8ee6654",
+   "split_sd": 0.02492433170613603,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=49|a=0.1|fdr|N_tercile=0": {
+   "value": 0.09381420018449477,
+   "definition": "realised strict FDR within stratum N_tercile=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/e21dfa53a8ee6654",
+   "split_sd": 0.04053748731505736,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=49|a=0.1|fdr|N_tercile=1": {
+   "value": 0.09868946584268963,
+   "definition": "realised strict FDR within stratum N_tercile=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/e21dfa53a8ee6654",
+   "split_sd": 0.04988959002575126,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=49|a=0.1|fdr|N_tercile=2": {
+   "value": 0.025443383051165176,
+   "definition": "realised strict FDR within stratum N_tercile=2",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/e21dfa53a8ee6654",
+   "split_sd": 0.020514239337889997,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=49|a=0.2|fdr": {
+   "value": 0.16238512742911773,
+   "definition": "realised FDR = mean over test incidents of the strict per-incident FDP (AMB = false), mean over splits",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/0496a280a9df62fa",
+   "split_sd": 0.043364662264240496,
+   "split_q05": 0.09263281024531025,
+   "split_q95": 0.24520653703625914,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=49|a=0.2|fdr_lenient": {
+   "value": 0.07326928069170062,
+   "definition": "mean per-incident lenient FDP (AMB excluded), mean over splits",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/0496a280a9df62fa",
+   "split_sd": 0.03101934872510654,
+   "split_q05": 0.0292895757020757,
+   "split_q95": 0.1253420287865288,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=49|a=0.2|pooled_fdr": {
+   "value": 0.3447741998041737,
+   "definition": "pooled FDR = sum V / max(sum R, 1) over a split's test incidents (strict), mean over splits",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/0496a280a9df62fa",
+   "split_sd": 0.08538335895404063,
+   "split_q05": 0.18540085388994307,
+   "split_q95": 0.4835832004088874,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=49|a=0.2|str_mean": {
+   "value": 0.517793154643818,
+   "definition": "STR = certified distinct transitions / |T*|, mean over test incidents with |T*| > 0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/0496a280a9df62fa",
+   "split_sd": 0.024616478909878316,
+   "split_q05": 0.48014551132209643,
+   "split_q95": 0.5643630765341279,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=49|a=0.2|cer_link_mean": {
+   "value": 0.5255203225947501,
+   "definition": "CER_link = certified true links / (|E*_link| + |T*_hid|), mean over incidents with a positive denominator",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/0496a280a9df62fa",
+   "split_sd": 0.026381257907653992,
+   "split_q05": 0.4867420474326925,
+   "split_q95": 0.5741928649143656,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=49|a=0.2|abstain": {
+   "value": 0.0,
+   "definition": "share of splits with lambda-hat = lambda_0 (no claims anywhere)",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/0496a280a9df62fa",
+   "split_sd": 0.0,
+   "split_q05": 0.0,
+   "split_q95": 0.0,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=49|a=0.2|n_claims": {
+   "value": 5.6419999999999995,
+   "definition": "mean claims per test incident",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/0496a280a9df62fa",
+   "split_sd": 1.1333850255591065,
+   "split_q05": 4.0089999999999995,
+   "split_q95": 7.654999999999998,
+   "ci_kind": null
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=49|a=0.2|fdr|decoy_rich=0": {
+   "value": 0.14721065533586208,
+   "definition": "realised strict FDR within stratum decoy_rich=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/0496a280a9df62fa",
+   "split_sd": 0.05216588841382959,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=49|a=0.2|fdr|decoy_rich=1": {
+   "value": 0.17399217495369665,
+   "definition": "realised strict FDR within stratum decoy_rich=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/0496a280a9df62fa",
+   "split_sd": 0.04242266661819605,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=49|a=0.2|fdr|benign_only=0": {
+   "value": 0.17875558933277777,
+   "definition": "realised strict FDR within stratum benign_only=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/0496a280a9df62fa",
+   "split_sd": 0.047433840012768264,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=49|a=0.2|fdr|benign_only=1": {
+   "value": 0.0009090909090909091,
+   "definition": "realised strict FDR within stratum benign_only=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/0496a280a9df62fa",
+   "split_sd": 0.00909090909090909,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=49|a=0.2|fdr|short_chain=0": {
+   "value": 0.2570605389480557,
+   "definition": "realised strict FDR within stratum short_chain=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/0496a280a9df62fa",
+   "split_sd": 0.07189586266293763,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=49|a=0.2|fdr|short_chain=1": {
+   "value": 0.10123101347228981,
+   "definition": "realised strict FDR within stratum short_chain=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/0496a280a9df62fa",
+   "split_sd": 0.028713081297997288,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=49|a=0.2|fdr|N_tercile=0": {
+   "value": 0.17020295276057595,
+   "definition": "realised strict FDR within stratum N_tercile=0",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/0496a280a9df62fa",
+   "split_sd": 0.055683276183712244,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=49|a=0.2|fdr|N_tercile=1": {
+   "value": 0.2169978892739851,
+   "definition": "realised strict FDR within stratum N_tercile=1",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/0496a280a9df62fa",
+   "split_sd": 0.048132915437099036,
+   "n_splits": 100
+  },
+  "fewshot|cf_gotham|S_GOT.stat|K=49|a=0.2|fdr|N_tercile=2": {
+   "value": 0.1038891702779368,
+   "definition": "realised strict FDR within stratum N_tercile=2",
+   "status": "secondary",
+   "source": "results/exp/E10/cf_gotham/crc_bh__S_GOT.stat/0496a280a9df62fa",
+   "split_sd": 0.043274086007923124,
+   "n_splits": 100
+  },
+  "iot23_fewshot|K=9|a=0.1|fdr": {
+   "value": 0.03658333333333334,
+   "definition": "IoT-23 scenario-level few-shot: CRC on 9 random scenarios' mean window losses, test = the other scenarios' windows; mean over test scenarios of the scenario FDP, 100 draws",
+   "status": "secondary",
+   "split_sd": 0.059635681019638405,
+   "str_pooled": 0.0006755732031968558,
+   "abstain": 0.0
+  },
+  "iot23_fewshot|K=9|a=0.2|fdr": {
+   "value": 0.11951448551448551,
+   "definition": "IoT-23 scenario-level few-shot: CRC on 9 random scenarios' mean window losses, test = the other scenarios' windows; mean over test scenarios of the scenario FDP, 100 draws",
+   "status": "secondary",
+   "split_sd": 0.10362188581273955,
+   "str_pooled": 0.004096059341424381,
+   "abstain": 0.0
+  },
+  "iot23_fewshot|K=19|a=0.1|fdr": {
+   "value": 0.08375757575757575,
+   "definition": "IoT-23 scenario-level few-shot: CRC on 19 random scenarios' mean window losses, test = the other scenarios' windows; mean over test scenarios of the scenario FDP, 100 draws",
+   "status": "secondary",
+   "split_sd": 0.12099499990857226,
+   "str_pooled": 0.0,
+   "abstain": 0.0
+  },
+  "iot23_fewshot|K=19|a=0.2|fdr": {
+   "value": 0.15248518148518148,
+   "definition": "IoT-23 scenario-level few-shot: CRC on 19 random scenarios' mean window losses, test = the other scenarios' windows; mean over test scenarios of the scenario FDP, 100 draws",
+   "status": "secondary",
+   "split_sd": 0.16804600534822745,
+   "str_pooled": 0.01159177518992358,
+   "abstain": 0.0
+  },
+  "two_sample|CF-TON -> CF-GOTHAM|auc": {
+   "value": 1.0,
+   "definition": "cross-validated logistic two-sample classifier on phi(I) (42-d, label-free), bank vs deployment incidents; AUC 0.5 = indistinguishable",
+   "status": "secondary",
+   "n_bank": 300,
+   "n_deploy": 200,
+   "folds": 5
+  },
+  "two_sample|CF-TON -> IoT-23|auc": {
+   "value": 0.9999799196787149,
+   "definition": "cross-validated logistic two-sample classifier on phi(I) (42-d, label-free), bank vs deployment incidents; AUC 0.5 = indistinguishable",
+   "status": "secondary",
+   "n_bank": 300,
+   "n_deploy": 166,
+   "folds": 5
+  },
+  "two_sample|CF-GOTHAM-T -> Gotham-real|auc": {
+   "value": 0.7392592592592593,
+   "definition": "cross-validated logistic two-sample classifier on phi(I) (42-d, label-free), bank vs deployment incidents; AUC 0.5 = indistinguishable",
+   "status": "secondary",
+   "n_bank": 150,
+   "n_deploy": 9,
+   "folds": 5
+  }
+ }
+}

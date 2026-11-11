@@ -1,0 +1,318 @@
+{
+  "budgets_s": {
+    "one_round_ahead": 0.8,
+    "two_rounds_ahead": 30.8,
+    "two_rounds_ahead_sustained": 30.0
+  },
+  "cores": {
+    "P": {
+      "loadavg_1min": 153.04150390625,
+      "rows": [
+        {
+          "cap": false,
+          "cap_aggregated": null,
+          "cap_s": 0.0,
+          "commit_plus_cap_s": 0.0674171670107171,
+          "commit_s": 0.0674171670107171,
+          "history": "single",
+          "impl": "incremental",
+          "kind": "payload",
+          "n_flood": 1000,
+          "n_payload": 1180,
+          "n_units": 1238,
+          "reps": 3,
+          "rolling_window_rows": 25975,
+          "store_MB": 0.274684,
+          "thresholds_s": 0.05732662498485297,
+          "ucap": null
+        },
+        {
+          "cap": false,
+          "cap_aggregated": null,
+          "cap_s": 0.0,
+          "commit_plus_cap_s": 0.3543684999458492,
+          "commit_s": 0.3543684999458492,
+          "history": "single",
+          "impl": "incremental",
+          "kind": "payload",
+          "n_flood": 10000,
+          "n_payload": 10180,
+          "n_units": 10238,
+          "reps": 3,
+          "rolling_window_rows": 25975,
+          "store_MB": 2.317684,
+          "thresholds_s": 0.20828212494961917,
+          "ucap": 4096
+        },
+        {
+          "cap": false,
+          "cap_aggregated": null,
+          "cap_s": 0.0,
+          "commit_plus_cap_s": 0.015534250065684319,
+          "commit_s": 0.015534250065684319,
+          "history": "single",
+          "impl": "incremental",
+          "kind": "zero",
+          "n_flood": 0,
+          "n_payload": 180,
+          "n_units": 238,
+          "reps": 3,
+          "rolling_window_rows": 25975,
+          "store_MB": 0.047684,
+          "thresholds_s": 0.010199958924204111,
+          "ucap": null
+        },
+        {
+          "cap": false,
+          "cap_aggregated": null,
+          "cap_s": 0.0,
+          "commit_plus_cap_s": 0.02553924999665469,
+          "commit_s": 0.02553924999665469,
+          "history": "single",
+          "impl": "incremental",
+          "kind": "zero",
+          "n_flood": 1000,
+          "n_payload": 180,
+          "n_units": 1238,
+          "reps": 3,
+          "rolling_window_rows": 25975,
+          "store_MB": 0.164684,
+          "thresholds_s": 0.014871374936774373,
+          "ucap": null
+        },
+        {
+          "cap": false,
+          "cap_aggregated": null,
+          "cap_s": 0.0,
+          "commit_plus_cap_s": 0.2875407919054851,
+          "commit_s": 0.2875407919054851,
+          "history": "single",
+          "impl": "incremental",
+          "kind": "zero",
+          "n_flood": 30000,
+          "n_payload": 180,
+          "n_units": 30238,
+          "reps": 3,
+          "rolling_window_rows": 25975,
+          "store_MB": 3.557684,
+          "thresholds_s": 0.08341550000477582,
+          "ucap": null
+        },
+        {
+          "cap": false,
+          "cap_aggregated": null,
+          "cap_s": 0.0,
+          "commit_plus_cap_s": 0.025225209072232246,
+          "commit_s": 0.025225209072232246,
+          "history": "sustained",
+          "impl": "incremental",
+          "kind": "zero",
+          "n_flood": 1000,
+          "n_payload": 180,
+          "n_units": 1238,
+          "reps": 3,
+          "rolling_window_rows": 144975,
+          "store_MB": 0.164684,
+          "thresholds_s": 0.014802624937146902,
+          "ucap": null
+        },
+        {
+          "cap": false,
+          "cap_aggregated": null,
+          "cap_s": 0.0,
+          "commit_plus_cap_s": 0.08072245796211064,
+          "commit_s": 0.08072245796211064,
+          "history": "sustained",
+          "impl": "incremental",
+          "kind": "zero",
+          "n_flood": 10000,
+          "n_payload": 180,
+          "n_units": 10238,
+          "reps": 3,
+          "rolling_window_rows": 1215975,
+          "store_MB": 1.217684,
+          "thresholds_s": 0.04167070798575878,
+          "ucap": null
+        },
+        {
+          "cap": true,
+          "cap_aggregated": 21811,
+          "cap_s": 0.03423179197125137,
+          "commit_plus_cap_s": 0.10224949999246746,
+          "commit_s": 0.0680177080212161,
+          "history": "sustained",
+          "impl": "incremental",
+          "kind": "zero",
+          "n_flood": 30000,
+          "n_payload": 180,
+          "n_units": 8428,
+          "reps": 3,
+          "rolling_window_rows": 1000369,
+          "store_MB": 1.005914,
+          "thresholds_s": 0.033899416914209723,
+          "ucap": null
+        },
+        {
+          "cap": false,
+          "cap_aggregated": null,
+          "cap_s": 0.0,
+          "commit_plus_cap_s": 0.24534004100132734,
+          "commit_s": 0.24534004100132734,
+          "history": "sustained",
+          "impl": "resort",
+          "kind": "zero",
+          "n_flood": 1000,
+          "n_payload": 180,
+          "n_units": 1238,
+          "reps": 3,
+          "rolling_window_rows": 144975,
+          "store_MB": 0.164684,
+          "thresholds_s": 0.23656954092439264,
+          "ucap": null
+        },
+        {
+          "cap": false,
+          "cap_aggregated": null,
+          "cap_s": 0.0,
+          "commit_plus_cap_s": 2.286887124995701,
+          "commit_s": 2.286887124995701,
+          "history": "sustained",
+          "impl": "resort",
+          "kind": "zero",
+          "n_flood": 10000,
+          "n_payload": 180,
+          "n_units": 10238,
+          "reps": 3,
+          "rolling_window_rows": 1215975,
+          "store_MB": 1.217684,
+          "thresholds_s": 2.246645500068553,
+          "ucap": null
+        }
+      ],
+      "supported": {
+        "payload/single/incremental/nocap": {
+          "commit_s_at_max_measured": 0.0674171670107171,
+          "max_measured": [
+            1000,
+            0.0674171670107171
+          ],
+          "one_round_ahead": {
+            "n": 1000,
+            "note": "largest measured flood still fits (lower bound)"
+          },
+          "one_round_ahead_flood_units_per_s": 33.333333333333336,
+          "two_rounds_ahead": {
+            "n": 1000,
+            "note": "largest measured flood still fits (lower bound)"
+          },
+          "two_rounds_ahead_flood_units_per_s": 33.333333333333336
+        },
+        "payload/single/incremental/nocap/ucap4096": {
+          "commit_s_at_max_measured": 0.3543684999458492,
+          "max_measured": [
+            10000,
+            0.3543684999458492
+          ],
+          "one_round_ahead": {
+            "n": 10000,
+            "note": "largest measured flood still fits (lower bound)"
+          },
+          "one_round_ahead_flood_units_per_s": 333.3333333333333,
+          "two_rounds_ahead": {
+            "n": 10000,
+            "note": "largest measured flood still fits (lower bound)"
+          },
+          "two_rounds_ahead_flood_units_per_s": 333.3333333333333
+        },
+        "zero/single/incremental/nocap": {
+          "commit_s_at_max_measured": 0.2875407919054851,
+          "max_measured": [
+            30000,
+            0.2875407919054851
+          ],
+          "one_round_ahead": {
+            "n": 30000,
+            "note": "largest measured flood still fits (lower bound)"
+          },
+          "one_round_ahead_flood_units_per_s": 1000.0,
+          "two_rounds_ahead": {
+            "n": 30000,
+            "note": "largest measured flood still fits (lower bound)"
+          },
+          "two_rounds_ahead_flood_units_per_s": 1000.0
+        },
+        "zero/sustained/incremental/cap": {
+          "commit_s_at_max_measured": 0.10224949999246746,
+          "max_measured": [
+            30000,
+            0.10224949999246746
+          ],
+          "one_round_ahead": {
+            "n": 30000,
+            "note": "largest measured flood still fits (lower bound)"
+          },
+          "one_round_ahead_flood_units_per_s": 1000.0,
+          "two_rounds_ahead": {
+            "n": 30000,
+            "note": "largest measured flood still fits (lower bound)"
+          },
+          "two_rounds_ahead_flood_units_per_s": 1000.0
+        },
+        "zero/sustained/incremental/nocap": {
+          "commit_s_at_max_measured": 0.08072245796211064,
+          "max_measured": [
+            10000,
+            0.08072245796211064
+          ],
+          "one_round_ahead": {
+            "n": 10000,
+            "note": "largest measured flood still fits (lower bound)"
+          },
+          "one_round_ahead_flood_units_per_s": 333.3333333333333,
+          "two_rounds_ahead": {
+            "n": 10000,
+            "note": "largest measured flood still fits (lower bound)"
+          },
+          "two_rounds_ahead_flood_units_per_s": 333.3333333333333
+        },
+        "zero/sustained/resort/nocap": {
+          "commit_s_at_max_measured": 2.286887124995701,
+          "max_measured": [
+            10000,
+            2.286887124995701
+          ],
+          "one_round_ahead": {
+            "between": [
+              1000,
+              10000
+            ],
+            "n": 3384.41293674264
+          },
+          "one_round_ahead_flood_units_per_s": 112.813764558088,
+          "two_rounds_ahead": {
+            "n": 10000,
+            "note": "largest measured flood still fits (lower bound)"
+          },
+          "two_rounds_ahead_flood_units_per_s": 333.3333333333333
+        }
+      }
+    }
+  },
+  "definition": "Commit time of one gateway epoch = Gateway.commit (unit leaves, Merkle root, CtS thresholds = features + 120-epoch rolling statistics + utility, metadata store with the committed \u03c4 column and H(store), C^st, header, Ed25519 signature) of a real epoch of the E5 rev1 run (lp_iot23_34-1_p10000, epoch 400, 238 units, 163 payload) plus N flood units of ONE compromised device; median over reps; single core (P = performance, E = efficiency core via taskpolicy -b), Python prototype, OMP 1 thread. kind zero = random-port SYN scan (one unit per packet: N/30 SYN per second); payload = one-packet TCP units with 16 B payload. history single = the real 119 preceding epochs; sustained = the same flood in every preceding epoch (the rolling statistics span 120 flooded epochs). impl resort = the original RollingDeviceStats (re-sorts the whole window every epoch: the code as reviewed); incremental = the rev1 bit-exact IncrementalRollingStats (O(n_e + n_{e-W})). cap = zero-payload cap of protocol/flood.py (k_dev = 8,192 per device, k_tot = 16,384 per epoch; never binds on any training or test stream), its own cost included in commit_plus_cap; ucap = the policy's utility cap (4,096 scored payload units per device and epoch; never binds on our data).",
+  "notes": [
+    "two rounds ahead (designated round r0+e+2): the build budget grows by one drand period, but a sustained flood also needs commit \u2264 T = 30 s per epoch on average (one commit per epoch on the same core); content then waits \u2264 2T + \u0394_c + \u0394_sel \u2248 63.5 s (E6 buffer ahead2) and the adaptive design of epoch e can only use selections up to e \u2212 2",
+    "supported n = largest flood (units per epoch from one device) whose median commit (+ cap) time fits the budget, log-log interpolation between measured points; None = even the smallest measured flood exceeds it"
+  ],
+  "per_packet_limit": {
+    "E": {
+      "cores_needed_at_33k_pps": 1.4543900486909715,
+      "note": "per-packet pipeline (reader, parser, flow table, gateway) of the rev0 E6 run: it bounds the sustainable packet rate of any flood independently of the commit window (a 10^6-unit/epoch SYN scan is \u2248 33 k packets/s)",
+      "pps_per_core": 22689.92422610548
+    },
+    "P": {
+      "cores_needed_at_33k_pps": 0.5243189340145087,
+      "note": "per-packet pipeline (reader, parser, flow table, gateway) of the rev0 E6 run: it bounds the sustainable packet rate of any flood independently of the commit window (a 10^6-unit/epoch SYN scan is \u2248 33 k packets/s)",
+      "pps_per_core": 62938.791371373285
+    }
+  }
+}

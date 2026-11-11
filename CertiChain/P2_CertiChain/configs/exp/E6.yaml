@@ -1,0 +1,10 @@
+# E6 (SHOULD) -- anytime-valid streaming certification at the gateway (DESIGN §3.7, Alg. 6; P2-C certify/elond.py).
+# CF-TON, prefix-only statistical scorer S_TON.stat_prefix (theta_l chosen on OOF training prefix scores), looks at
+# (1, 2, 4, 8, 16, 32, 64, 96) x 300 s after the case trigger t_0 (meta.json); 100 splits K = 150 / 150 test.
+exp: E6
+dataset: cf_ton
+scorer: S_TON
+K: 150
+n_test: null          # the rest of the pool (incidents without candidates are not streamed: 295 of 300)
+splits: 100
+alphas: [0.1, 0.2]

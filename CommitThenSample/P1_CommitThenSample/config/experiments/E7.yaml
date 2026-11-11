@@ -1,0 +1,37 @@
+# E7: which design choices matter (DESIGN Sec. 6.1 row E7; Prop. 4, Thm. 1 + Cor. 1).
+# Owner: P1-F. Read by scripts/16_e7.py. Analytic + 200 MC (panel a frontier).
+experiment: E7
+priority: SHOULD
+analytic: true
+mc_reps: 200
+
+rho: 0.05
+seeds: [0, 1, 2]
+
+# (a) detection--variance frontier over gamma (floor share).
+gamma_grid: [0.1, 0.2, 0.3, 0.5]
+
+# (b) two-tier trade-off g_mu(phi_t) (Prop. 4(ii)); H = 1 KB, measured head shares C_H/C_T.
+two_tier:
+  H_bytes: 1024
+  phi_t_grid: [0.1, 0.3, 0.5, 1.0]
+  m_grid: [1, 3, 10]
+
+# (c) UCB slack vs phi0 against the Thm. 1 / Cor. 1 bound (ratio ~ 1.19 in the null regime).
+capacity:
+  phi0_grid_min: 0.005
+  phi0_grid_max: 0.05
+  n_phi0: 46
+  alpha: 0.05               # alpha/2 = 0.025 per side
+  b: 1.0                    # eligibility bound per floor unit (indicator)
+
+# Supplement ablations.
+supplement:
+  lcs_K_grid: [16, 32, 64]
+  budget_modes: [horizon, per_epoch]   # DESIGN Sec. 3.5 end-of-epoch water-filling ablation
+
+# Frontier is measured on the headline stream (+ the other LP-IoT23 folds for the band).
+streams:
+  frontier_stream: lp_iot23_34-1_p10000
+  frontier_folds: [1-1, 3-1, 7-1, 34-1, 48-1, 49-1]
+  headline_ppm: 10000

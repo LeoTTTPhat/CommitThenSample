@@ -1,0 +1,20 @@
+# CF-TON-H (template-held-out; DESIGN §5.3, §5.4.2, E3 primary endpoint) -- owner P2-E.
+# train 150 incidents with the train-H templates only (TRAIN pools); caltest 200 with the held-out
+# templates T-WEBI, T-WEBX (+ decoys) from the cal/test pools. D1 decoy types are the observable types
+# of the split's allowed templates (so injection/xss never appear in CF-TON-H train incidents).
+variant: cf_ton_h
+dataset: ton
+seed_variant: cf_ton_h
+splits: {train: 150, caltest: 200}
+templates:
+  train: [T-BOT, T-C2DOS, T-PIVOT, T-CRED]
+  caltest: [T-WEBI, T-WEBX]
+n_camp_p: [0.10, 0.55, 0.25, 0.10]
+decoy_rate: 2.0
+decoy_kind_p: {D1: 0.4, D2: 0.2, D3: 0.4}
+evidence_loss: 0.0
+victim_is_seed_p: 0.5
+window: {min_s: 3600, margin_s: 1800, extra_s: 1800, max_s: null}
+ts_round: 1.0
+W: 1800
+scope_rule: "alg1_step6:seed+N1+shared_external;F_infra=3;U_max=1000"

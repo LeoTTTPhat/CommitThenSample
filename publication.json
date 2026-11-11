@@ -1,0 +1,11 @@
+{
+  "part_bytes": 1887436800,
+  "payload_format": "tar.zst, split into numbered compressed parts",
+  "projects": {
+    "CertiChain": "P2_CertiChain",
+    "CommitThenSample": "P1_CommitThenSample"
+  },
+  "release_tag": "artifacts-2026-11-11",
+  "remote": "git@github-phat:LeoTTTPhat/CommitThenSample.git",
+  "repository": "LeoTTTPhat/CommitThenSample"
+}

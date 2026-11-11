@@ -1,0 +1,55 @@
+# Event units (Alg. 1), candidates (Alg. 2) and GT extraction — owner P2-B.
+# DESIGN §3.2, §3.3, §3.10: these values are FIXED (not swept; changing them changes the
+# hypothesis set). The G1 levers may only be switched on the dev pool (§8.3), in order.
+units:
+  tau_gap: 120.0          # s, burst split (idle gap ts_i - max te so far within a key group)
+  F_fan: 8                # distinct dsts for a fan-out unit
+  tau_merge: 600.0        # s, activity merge gap t^s_{u'} - t^e_u
+  F_infra: 3              # internal hosts contacting a host => INFRA
+  U_max: 1000             # unit cap (closest by (hop, |t - seed activity|))
+  max_dsts: 256           # stored dst IPs per unit (scope/relations prioritised first)
+  max_prefixes: 256       # stored /24 prefixes per unit
+  max_dports: 64
+  max_names: 64           # stored DNS names / HTTP hosts / SNIs per unit
+  max_merge_rounds: 64
+candidates:
+  W: 1800.0               # s, t^s_u < t^s_v <= t^e_u + W
+  P: 10                   # predecessors per v and relation (smallest lag_gap; tie: unit-id hash)
+  N_max: 30000
+  prune_generic: true     # benign-protocol pairs linked only via SAME_ACTOR / SHARED_EXT-via-INFRA
+  relations: [PIVOT, REVERSE, SAME_ACTOR, SAME_VICTIM, SHARED_EXT]
+  g1_levers:              # default off; dev pool only, applied in this order
+    P5: false             # (i)  P -> 5
+    victim_seed_only: false   # (ii) SAME_VICTIM-only pairs kept only if u or v touches the seed
+    prune_benign_all: false   # (iii) benign-type prune applied whatever the relations
+# Internal = RFC1918 + local-scope addresses + these per-dataset prefixes (incident plans).
+internal_prefixes:
+  iot23: []
+  gotham: []
+  cf_ton: []
+  cf_ton_h: []
+  cf_gotham: []
+  cf_gotham_t: []
+gotham:
+  roles:                  # from P2-A ingest (gotham_csv.INFRA / sessions.json "infrastructure")
+    scanner: 192.168.0.100
+    cnc: 192.168.33.10
+    report: 192.168.33.11
+    loader: 192.168.33.12
+    download: 192.168.33.13
+    merlin: 192.168.34.10
+    udp_scanner: 192.168.35.10
+    coap_device: 192.168.20.10
+    amp_peer: 192.168.0.200
+  # case-study incidents (label-free case metadata: seed device + window, UTC), from
+  # results/interim/gotham/sessions.json "design_case_study_windows" (incident construction: P2-B)
+  incidents:
+    - {name: mirai_infection_caltest, session: mirai-infection, window: ["2025-01-18 21:25:00", "2025-01-18 22:00:00"],
+       seeds: [192.168.20.19, 192.168.18.10, 192.168.17.15, 192.168.18.17, 192.168.18.18], one_incident_per_seed: true}
+    - {name: mirai_dos_17_15, session: mirai-dos, window: ["2025-01-25 18:45:00", "2025-01-25 19:30:00"],
+       seeds: [192.168.17.15], one_incident_per_seed: true}
+    - {name: merlin_17_15, session: merlin, window: ["2025-01-17 16:05:00", "2025-01-17 17:17:00"],
+       seeds: [192.168.17.15], one_incident_per_seed: true}
+runtime:
+  workers: 8              # <= 8 pool processes (memguard may halve via MEMGUARD_WORKERS)
+  polars_threads_per_worker: 4

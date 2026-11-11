@@ -1,0 +1,26 @@
+# E2 rev1 overlay (review R1-M3 / fix list M2; helper P1-X-E2, 19 Oct 2026): VALID fixed-time (final-epoch) comparators
+# next to the anytime LCS/UCS and Wald. Deep-merged over config/experiments/E2.yaml (itself over defaults.yaml) by
+#     scripts/11_e2.py --exp-root E2_rev1        (outputs results/E2_rev1/<stream>/<cfg_hash>/)
+# Every parameter below is fixed before the test streams are seen: the training-fold V_ref of E2.yaml
+# (estimands.v_ref_epochs, fallback b̄²/φ0), the design's committed floor φ0 and c̄ = b̄/φ0, the window length
+# (committed metadata), α and the UCS grid's top point eta0_frac. Formulas: estimation/cs.py (fixed-time section),
+# engine: sim/montecarlo.py::_ft_final; notes/P1-X-E2.md.
+name: E2_rev1
+
+fixed_time:
+  enabled: true
+  # ft1: one eta per estimand, evaluated once at the window's final epoch (Markov instead of Ville; no K-point
+  #      mixture, no running max):
+  #      lower  L = Qhat - log(1/α_side)/η - η V/2,       η = η* = sqrt(2 log(1/α_side)/V_ref)  (LCS grid centre)
+  #      upper  U = Qhat + (log(1/α_side) + W(η_U))/η_U,  η_U = min(eta0_frac/c̄, η*)            (UCS issuance rules)
+  eta_lower: lcs_grid_centre
+  eta_upper: min_eta0_over_cbar_and_eta_star
+  # fth: the same with the centre tuned to the evaluation horizon (review: "η tuned to the horizon"):
+  #      V_ref_ft = V_ref x window_epochs / v_ref_epochs for training-sourced V_ref; fallback V_ref unchanged
+  horizon_rule: training_V_per_epoch_x_window_epochs
+  # ftb: Bernstein with the known design-variance bound κQ, κ = b̄(1-φ)/φ (every hit at the floor), increments <= κ
+  #      (lower) / b̄ (upper); populations fixed in advance (not part 'reactor')
+  bernstein: floor_variance_bound
+  # ftx: exact worst-case Poisson-binomial bounds of the retained-hit count (static designs, indicator estimands,
+  #      populations fixed in advance) for estimands with at most this many hits
+  exact_pb_kmax: 1000

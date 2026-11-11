@@ -1,0 +1,3353 @@
+{
+ "exp": "X2",
+ "status": "exploratory (post-PREREG revision analysis X2, P2-X; not pre-registered)",
+ "prereg_blake3": "955c768e80f31f4040548e0e944c327605396eaedc80430597abfda5b8f610a6",
+ "updated": "2026-10-19T05:36:10+0700",
+ "definitions": {
+  "n_claims": "certified claims summed over the 166 windows (P-LOSO: each scenario held out, lambda-hat from the other 22 scenarios; fixed: the rule's claim set)",
+  "n_true": "claims with Y = 1 (true direct-enabling links)",
+  "n_amb": "claims with Y = AMB (counted false)",
+  "n_false_y0": "claims with Y = 0",
+  "by_truth": "claims by truth class (revision_audit.truth_class)",
+  "R0": "the definitional hidden entry transition EXEC(hidden) -> first malicious seed episode added once per malicious window by the IoT-23 GT (gt/iot23_episodes.py rule R0)",
+  "ostr_pooled": "distinct observable transitions hit / observable transitions (15)",
+  "ceiling_without_R0": "observable transitions with their enabling pair in C / (|T*| - #R0) = r_CT"
+ },
+ "claims": {
+  "P-LOSO|S_CF.stat|crc_bh|a=0.1": {
+   "n_claims": 86,
+   "n_true": 0,
+   "n_amb": 2,
+   "n_false_y0": 84,
+   "n_windows": 8,
+   "n_scenarios": 3,
+   "n_transitions_hit": 0,
+   "pooled_fdr": 1.0,
+   "by_truth": {
+    "FALSE: benign <-> malicious": 82,
+    "AMB: same episode": 2,
+    "FALSE: benign -> benign": 2
+   },
+   "top_type_pairs": [
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "FLOOD_UDP",
+     "len": 62
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "HTTP_UPLOAD",
+     "len": 7
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "FLOOD_SYN",
+     "len": 6
+    },
+    {
+     "u_type": "C2_PERIODIC",
+     "v_type": "CONN_FAIL_BURST",
+     "len": 2
+    },
+    {
+     "u_type": "CONN_FAIL_BURST",
+     "v_type": "BENIGN_GENERIC_UDP_SYS",
+     "len": 2
+    },
+    {
+     "u_type": "CONN_FAIL_BURST",
+     "v_type": "DNS_ACTIVITY",
+     "len": 2
+    },
+    {
+     "u_type": "HTTP_UPLOAD",
+     "v_type": "FLOOD_UDP",
+     "len": 2
+    },
+    {
+     "u_type": "INTERACTIVE_SESSION",
+     "v_type": "HTTP_DOWNLOAD",
+     "len": 1
+    }
+   ],
+   "lam_idx_per_scenario": {
+    "1-1": 49,
+    "17-1": 49,
+    "20-1": 49,
+    "21-1": 49,
+    "3-1": 49,
+    "33-1": 49,
+    "34-1": 49,
+    "35-1": 49,
+    "36-1": 49,
+    "39-1": 49,
+    "42-1": 49,
+    "43-1": 49,
+    "44-1": 50,
+    "48-1": 49,
+    "49-1": 49,
+    "52-1": 49,
+    "60-1": 50,
+    "7-1": 49,
+    "8-1": 49,
+    "9-1": 49,
+    "HP-4-1": 49,
+    "HP-5-1": 49,
+    "HP-7-1": 49
+   },
+   "n_scenarios_abstaining": 0
+  },
+  "P-LOSO|S_CF.stat|crc_st|a=0.1": {
+   "n_claims": 11,
+   "n_true": 1,
+   "n_amb": 6,
+   "n_false_y0": 4,
+   "n_windows": 9,
+   "n_scenarios": 6,
+   "n_transitions_hit": 1,
+   "pooled_fdr": 0.9090909090909091,
+   "by_truth": {
+    "AMB: same episode": 4,
+    "FALSE: benign <-> malicious": 4,
+    "AMB: malicious pair not in T* (transitive / reverse / unexplained)": 2,
+    "TRUE link (Y=1)": 1
+   },
+   "top_type_pairs": [
+    {
+     "u_type": "SCAN_H",
+     "v_type": "BENIGN_GENERIC_TCP_HIGH",
+     "len": 4
+    },
+    {
+     "u_type": "HTTP_DOWNLOAD",
+     "v_type": "SCAN_H",
+     "len": 3
+    },
+    {
+     "u_type": "BENIGN_GENERIC_TCP_SYS",
+     "v_type": "FLOOD_UDP",
+     "len": 2
+    },
+    {
+     "u_type": "BENIGN_GENERIC_TCP_HIGH",
+     "v_type": "HTTP_DOWNLOAD",
+     "len": 1
+    },
+    {
+     "u_type": "HTTP_DOWNLOAD",
+     "v_type": "BENIGN_GENERIC_TCP_HIGH",
+     "len": 1
+    }
+   ],
+   "lam_idx_per_scenario": {
+    "1-1": 23,
+    "17-1": 23,
+    "20-1": 23,
+    "21-1": 23,
+    "3-1": 23,
+    "33-1": 23,
+    "34-1": 23,
+    "35-1": 23,
+    "36-1": 23,
+    "39-1": 23,
+    "42-1": 23,
+    "43-1": 25,
+    "44-1": 23,
+    "48-1": 23,
+    "49-1": 23,
+    "52-1": 23,
+    "60-1": 23,
+    "7-1": 23,
+    "8-1": 23,
+    "9-1": 23,
+    "HP-4-1": 23,
+    "HP-5-1": 23,
+    "HP-7-1": 23
+   },
+   "n_scenarios_abstaining": 0
+  },
+  "P-LOSO|S_CF.stat|crc_fdx020|a=0.1": {
+   "n_claims": 86,
+   "n_true": 0,
+   "n_amb": 2,
+   "n_false_y0": 84,
+   "n_windows": 8,
+   "n_scenarios": 3,
+   "n_transitions_hit": 0,
+   "pooled_fdr": 1.0,
+   "by_truth": {
+    "FALSE: benign <-> malicious": 82,
+    "FALSE: benign -> benign": 2,
+    "AMB: same episode": 2
+   },
+   "top_type_pairs": [
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "FLOOD_UDP",
+     "len": 62
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "HTTP_UPLOAD",
+     "len": 7
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "FLOOD_SYN",
+     "len": 6
+    },
+    {
+     "u_type": "HTTP_UPLOAD",
+     "v_type": "FLOOD_UDP",
+     "len": 2
+    },
+    {
+     "u_type": "CONN_FAIL_BURST",
+     "v_type": "BENIGN_GENERIC_UDP_SYS",
+     "len": 2
+    },
+    {
+     "u_type": "C2_PERIODIC",
+     "v_type": "CONN_FAIL_BURST",
+     "len": 2
+    },
+    {
+     "u_type": "CONN_FAIL_BURST",
+     "v_type": "DNS_ACTIVITY",
+     "len": 2
+    },
+    {
+     "u_type": "INTERACTIVE_SESSION",
+     "v_type": "HTTP_DOWNLOAD",
+     "len": 1
+    }
+   ],
+   "lam_idx_per_scenario": {
+    "1-1": 49,
+    "17-1": 49,
+    "20-1": 49,
+    "21-1": 49,
+    "3-1": 49,
+    "33-1": 49,
+    "34-1": 49,
+    "35-1": 49,
+    "36-1": 49,
+    "39-1": 49,
+    "42-1": 49,
+    "43-1": 49,
+    "44-1": 50,
+    "48-1": 49,
+    "49-1": 49,
+    "52-1": 49,
+    "60-1": 50,
+    "7-1": 49,
+    "8-1": 49,
+    "9-1": 49,
+    "HP-4-1": 49,
+    "HP-5-1": 49,
+    "HP-7-1": 49
+   },
+   "n_scenarios_abstaining": 0
+  },
+  "P-LOSO|S_CF.stat|ltt|a=0.1": {
+   "n_claims": 2,
+   "n_true": 0,
+   "n_amb": 0,
+   "n_false_y0": 2,
+   "n_windows": 1,
+   "n_scenarios": 1,
+   "n_transitions_hit": 0,
+   "pooled_fdr": 1.0,
+   "by_truth": {
+    "FALSE: benign <-> malicious": 2
+   },
+   "top_type_pairs": [
+    {
+     "u_type": "CONN_FAIL_BURST",
+     "v_type": "CONN_FAIL_BURST",
+     "len": 1
+    },
+    {
+     "u_type": "C2_PERIODIC",
+     "v_type": "CONN_FAIL_BURST",
+     "len": 1
+    }
+   ],
+   "lam_idx_per_scenario": {
+    "1-1": 37,
+    "17-1": 37,
+    "20-1": 37,
+    "21-1": 37,
+    "3-1": 37,
+    "33-1": 37,
+    "34-1": 40,
+    "35-1": 37,
+    "36-1": 37,
+    "39-1": 37,
+    "42-1": 37,
+    "43-1": 37,
+    "44-1": 37,
+    "48-1": 37,
+    "49-1": 37,
+    "52-1": 37,
+    "60-1": 37,
+    "7-1": 37,
+    "8-1": 37,
+    "9-1": 37,
+    "HP-4-1": 37,
+    "HP-5-1": 37,
+    "HP-7-1": 37
+   },
+   "n_scenarios_abstaining": 0
+  },
+  "P-LOSO|S_CF.stat|crc_bh|a=0.2": {
+   "n_claims": 286,
+   "n_true": 1,
+   "n_amb": 9,
+   "n_false_y0": 276,
+   "n_windows": 18,
+   "n_scenarios": 6,
+   "n_transitions_hit": 1,
+   "pooled_fdr": 0.9965034965034965,
+   "by_truth": {
+    "FALSE: benign <-> malicious": 204,
+    "FALSE: benign -> benign": 72,
+    "AMB: same episode": 7,
+    "AMB: malicious pair not in T* (transitive / reverse / unexplained)": 2,
+    "TRUE link (Y=1)": 1
+   },
+   "top_type_pairs": [
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "FLOOD_UDP",
+     "len": 148
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "HTTP_UPLOAD",
+     "len": 46
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "FLOOD_SYN",
+     "len": 14
+    },
+    {
+     "u_type": "HTTP_DOWNLOAD",
+     "v_type": "BENIGN_GENERIC_TCP_SYS",
+     "len": 8
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "CONN_FAIL_BURST",
+     "len": 7
+    },
+    {
+     "u_type": "HTTP_UPLOAD",
+     "v_type": "FLOOD_UDP",
+     "len": 7
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "SCAN_H",
+     "len": 6
+    },
+    {
+     "u_type": "HTTP_DOWNLOAD",
+     "v_type": "BENIGN_GENERIC_UDP_SYS",
+     "len": 4
+    }
+   ],
+   "lam_idx_per_scenario": {
+    "1-1": 53,
+    "17-1": 53,
+    "20-1": 54,
+    "21-1": 54,
+    "3-1": 53,
+    "33-1": 53,
+    "34-1": 54,
+    "35-1": 53,
+    "36-1": 53,
+    "39-1": 53,
+    "42-1": 55,
+    "43-1": 53,
+    "44-1": 55,
+    "48-1": 53,
+    "49-1": 53,
+    "52-1": 53,
+    "60-1": 55,
+    "7-1": 53,
+    "8-1": 53,
+    "9-1": 53,
+    "HP-4-1": 53,
+    "HP-5-1": 53,
+    "HP-7-1": 53
+   },
+   "n_scenarios_abstaining": 0
+  },
+  "P-LOSO|S_CF.stat|crc_st|a=0.2": {
+   "n_claims": 21,
+   "n_true": 1,
+   "n_amb": 10,
+   "n_false_y0": 10,
+   "n_windows": 17,
+   "n_scenarios": 9,
+   "n_transitions_hit": 1,
+   "pooled_fdr": 0.9523809523809523,
+   "by_truth": {
+    "FALSE: benign <-> malicious": 10,
+    "AMB: same episode": 7,
+    "AMB: malicious pair not in T* (transitive / reverse / unexplained)": 3,
+    "TRUE link (Y=1)": 1
+   },
+   "top_type_pairs": [
+    {
+     "u_type": "SCAN_H",
+     "v_type": "BENIGN_GENERIC_TCP_HIGH",
+     "len": 7
+    },
+    {
+     "u_type": "HTTP_DOWNLOAD",
+     "v_type": "SCAN_H",
+     "len": 3
+    },
+    {
+     "u_type": "BENIGN_GENERIC_TCP_SYS",
+     "v_type": "FLOOD_UDP",
+     "len": 3
+    },
+    {
+     "u_type": "INTERACTIVE_SESSION",
+     "v_type": "HTTP_DOWNLOAD",
+     "len": 3
+    },
+    {
+     "u_type": "BENIGN_GENERIC_TCP_HIGH",
+     "v_type": "HTTP_DOWNLOAD",
+     "len": 2
+    },
+    {
+     "u_type": "HTTP_DOWNLOAD",
+     "v_type": "BENIGN_GENERIC_TCP_HIGH",
+     "len": 1
+    },
+    {
+     "u_type": "CONN_FAIL_BURST",
+     "v_type": "FLOOD_ACK",
+     "len": 1
+    },
+    {
+     "u_type": "CONN_FAIL_BURST",
+     "v_type": "CONN_FAIL_BURST",
+     "len": 1
+    }
+   ],
+   "lam_idx_per_scenario": {
+    "1-1": 28,
+    "17-1": 27,
+    "20-1": 27,
+    "21-1": 27,
+    "3-1": 27,
+    "33-1": 27,
+    "34-1": 27,
+    "35-1": 27,
+    "36-1": 27,
+    "39-1": 27,
+    "42-1": 28,
+    "43-1": 28,
+    "44-1": 28,
+    "48-1": 27,
+    "49-1": 27,
+    "52-1": 27,
+    "60-1": 27,
+    "7-1": 27,
+    "8-1": 27,
+    "9-1": 27,
+    "HP-4-1": 27,
+    "HP-5-1": 27,
+    "HP-7-1": 27
+   },
+   "n_scenarios_abstaining": 0
+  },
+  "P-LOSO|S_CF.stat|crc_fdx020|a=0.2": {
+   "n_claims": 286,
+   "n_true": 1,
+   "n_amb": 9,
+   "n_false_y0": 276,
+   "n_windows": 18,
+   "n_scenarios": 6,
+   "n_transitions_hit": 1,
+   "pooled_fdr": 0.9965034965034965,
+   "by_truth": {
+    "FALSE: benign <-> malicious": 204,
+    "FALSE: benign -> benign": 72,
+    "AMB: same episode": 7,
+    "AMB: malicious pair not in T* (transitive / reverse / unexplained)": 2,
+    "TRUE link (Y=1)": 1
+   },
+   "top_type_pairs": [
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "FLOOD_UDP",
+     "len": 148
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "HTTP_UPLOAD",
+     "len": 46
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "FLOOD_SYN",
+     "len": 14
+    },
+    {
+     "u_type": "HTTP_DOWNLOAD",
+     "v_type": "BENIGN_GENERIC_TCP_SYS",
+     "len": 8
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "CONN_FAIL_BURST",
+     "len": 7
+    },
+    {
+     "u_type": "HTTP_UPLOAD",
+     "v_type": "FLOOD_UDP",
+     "len": 7
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "SCAN_H",
+     "len": 6
+    },
+    {
+     "u_type": "BENIGN_GENERIC_TCP_SYS",
+     "v_type": "FLOOD_UDP",
+     "len": 4
+    }
+   ],
+   "lam_idx_per_scenario": {
+    "1-1": 53,
+    "17-1": 53,
+    "20-1": 54,
+    "21-1": 54,
+    "3-1": 53,
+    "33-1": 53,
+    "34-1": 54,
+    "35-1": 53,
+    "36-1": 53,
+    "39-1": 53,
+    "42-1": 55,
+    "43-1": 53,
+    "44-1": 55,
+    "48-1": 53,
+    "49-1": 53,
+    "52-1": 53,
+    "60-1": 55,
+    "7-1": 53,
+    "8-1": 53,
+    "9-1": 53,
+    "HP-4-1": 53,
+    "HP-5-1": 53,
+    "HP-7-1": 53
+   },
+   "n_scenarios_abstaining": 0
+  },
+  "P-LOSO|S_CF.stat|ltt|a=0.2": {
+   "n_claims": 85,
+   "n_true": 0,
+   "n_amb": 2,
+   "n_false_y0": 83,
+   "n_windows": 8,
+   "n_scenarios": 3,
+   "n_transitions_hit": 0,
+   "pooled_fdr": 1.0,
+   "by_truth": {
+    "FALSE: benign <-> malicious": 81,
+    "FALSE: benign -> benign": 2,
+    "AMB: same episode": 2
+   },
+   "top_type_pairs": [
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "FLOOD_UDP",
+     "len": 61
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "HTTP_UPLOAD",
+     "len": 7
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "FLOOD_SYN",
+     "len": 6
+    },
+    {
+     "u_type": "C2_PERIODIC",
+     "v_type": "CONN_FAIL_BURST",
+     "len": 2
+    },
+    {
+     "u_type": "CONN_FAIL_BURST",
+     "v_type": "DNS_ACTIVITY",
+     "len": 2
+    },
+    {
+     "u_type": "HTTP_UPLOAD",
+     "v_type": "FLOOD_UDP",
+     "len": 2
+    },
+    {
+     "u_type": "CONN_FAIL_BURST",
+     "v_type": "BENIGN_GENERIC_UDP_SYS",
+     "len": 2
+    },
+    {
+     "u_type": "CONN_FAIL_BURST",
+     "v_type": "CONN_FAIL_BURST",
+     "len": 1
+    }
+   ],
+   "lam_idx_per_scenario": {
+    "1-1": 49,
+    "17-1": 49,
+    "20-1": 49,
+    "21-1": 49,
+    "3-1": 49,
+    "33-1": 49,
+    "34-1": 49,
+    "35-1": 49,
+    "36-1": 49,
+    "39-1": 49,
+    "42-1": 49,
+    "43-1": 49,
+    "44-1": 50,
+    "48-1": 49,
+    "49-1": 49,
+    "52-1": 49,
+    "60-1": 49,
+    "7-1": 49,
+    "8-1": 49,
+    "9-1": 49,
+    "HP-4-1": 49,
+    "HP-5-1": 49,
+    "HP-7-1": 49
+   },
+   "n_scenarios_abstaining": 0
+  },
+  "P-LOSO|S_CF.fuse_s0|crc_bh|a=0.1": {
+   "n_claims": 117,
+   "n_true": 0,
+   "n_amb": 3,
+   "n_false_y0": 114,
+   "n_windows": 10,
+   "n_scenarios": 3,
+   "n_transitions_hit": 0,
+   "pooled_fdr": 1.0,
+   "by_truth": {
+    "FALSE: benign <-> malicious": 78,
+    "FALSE: benign -> benign": 36,
+    "AMB: same episode": 2,
+    "AMB: malicious pair not in T* (transitive / reverse / unexplained)": 1
+   },
+   "top_type_pairs": [
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "FLOOD_UDP",
+     "len": 99
+    },
+    {
+     "u_type": "INTERACTIVE_SESSION",
+     "v_type": "HTTP_DOWNLOAD",
+     "len": 2
+    },
+    {
+     "u_type": "HTTP_UPLOAD",
+     "v_type": "FLOOD_UDP",
+     "len": 2
+    },
+    {
+     "u_type": "C2_PERIODIC",
+     "v_type": "CONN_FAIL_BURST",
+     "len": 2
+    },
+    {
+     "u_type": "CONN_FAIL_BURST",
+     "v_type": "DNS_ACTIVITY",
+     "len": 2
+    },
+    {
+     "u_type": "HTTP_DOWNLOAD",
+     "v_type": "BENIGN_GENERIC_TCP_HIGH",
+     "len": 2
+    },
+    {
+     "u_type": "CONN_FAIL_BURST",
+     "v_type": "FLOOD_SYN",
+     "len": 1
+    },
+    {
+     "u_type": "CONN_FAIL_BURST",
+     "v_type": "BENIGN_GENERIC_UDP_SYS",
+     "len": 1
+    }
+   ],
+   "lam_idx_per_scenario": {
+    "1-1": 48,
+    "17-1": 48,
+    "20-1": 48,
+    "21-1": 48,
+    "3-1": 48,
+    "33-1": 48,
+    "34-1": 50,
+    "35-1": 48,
+    "36-1": 48,
+    "39-1": 48,
+    "42-1": 50,
+    "43-1": 48,
+    "44-1": 48,
+    "48-1": 48,
+    "49-1": 48,
+    "52-1": 48,
+    "60-1": 50,
+    "7-1": 48,
+    "8-1": 48,
+    "9-1": 48,
+    "HP-4-1": 48,
+    "HP-5-1": 48,
+    "HP-7-1": 48
+   },
+   "n_scenarios_abstaining": 0
+  },
+  "P-LOSO|S_CF.fuse_s0|crc_st|a=0.1": {
+   "n_claims": 14,
+   "n_true": 2,
+   "n_amb": 1,
+   "n_false_y0": 11,
+   "n_windows": 11,
+   "n_scenarios": 7,
+   "n_transitions_hit": 2,
+   "pooled_fdr": 0.8571428571428571,
+   "by_truth": {
+    "FALSE: benign <-> malicious": 11,
+    "TRUE link (Y=1)": 2,
+    "AMB: malicious pair not in T* (transitive / reverse / unexplained)": 1
+   },
+   "top_type_pairs": [
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "FLOOD_UDP",
+     "len": 5
+    },
+    {
+     "u_type": "BENIGN_GENERIC_TCP_HIGH",
+     "v_type": "HTTP_DOWNLOAD",
+     "len": 3
+    },
+    {
+     "u_type": "BENIGN_GENERIC_TCP_SYS",
+     "v_type": "FLOOD_UDP",
+     "len": 3
+    },
+    {
+     "u_type": "INTERACTIVE_SESSION",
+     "v_type": "SCAN_H",
+     "len": 1
+    },
+    {
+     "u_type": "C2_PERIODIC",
+     "v_type": "SCAN_H",
+     "len": 1
+    },
+    {
+     "u_type": "HTTP_DOWNLOAD",
+     "v_type": "BENIGN_GENERIC_TCP_HIGH",
+     "len": 1
+    }
+   ],
+   "lam_idx_per_scenario": {
+    "1-1": 25,
+    "17-1": 25,
+    "20-1": 25,
+    "21-1": 25,
+    "3-1": 25,
+    "33-1": 25,
+    "34-1": 25,
+    "35-1": 25,
+    "36-1": 25,
+    "39-1": 25,
+    "42-1": 25,
+    "43-1": 25,
+    "44-1": 25,
+    "48-1": 25,
+    "49-1": 25,
+    "52-1": 25,
+    "60-1": 25,
+    "7-1": 25,
+    "8-1": 25,
+    "9-1": 25,
+    "HP-4-1": 25,
+    "HP-5-1": 25,
+    "HP-7-1": 25
+   },
+   "n_scenarios_abstaining": 0
+  },
+  "P-LOSO|S_CF.fuse_s0|crc_fdx020|a=0.1": {
+   "n_claims": 117,
+   "n_true": 0,
+   "n_amb": 3,
+   "n_false_y0": 114,
+   "n_windows": 10,
+   "n_scenarios": 3,
+   "n_transitions_hit": 0,
+   "pooled_fdr": 1.0,
+   "by_truth": {
+    "FALSE: benign <-> malicious": 78,
+    "FALSE: benign -> benign": 36,
+    "AMB: same episode": 2,
+    "AMB: malicious pair not in T* (transitive / reverse / unexplained)": 1
+   },
+   "top_type_pairs": [
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "FLOOD_UDP",
+     "len": 99
+    },
+    {
+     "u_type": "HTTP_DOWNLOAD",
+     "v_type": "BENIGN_GENERIC_TCP_HIGH",
+     "len": 2
+    },
+    {
+     "u_type": "HTTP_UPLOAD",
+     "v_type": "FLOOD_UDP",
+     "len": 2
+    },
+    {
+     "u_type": "INTERACTIVE_SESSION",
+     "v_type": "HTTP_DOWNLOAD",
+     "len": 2
+    },
+    {
+     "u_type": "C2_PERIODIC",
+     "v_type": "CONN_FAIL_BURST",
+     "len": 2
+    },
+    {
+     "u_type": "CONN_FAIL_BURST",
+     "v_type": "DNS_ACTIVITY",
+     "len": 2
+    },
+    {
+     "u_type": "CONN_FAIL_BURST",
+     "v_type": "CONN_FAIL_BURST",
+     "len": 1
+    },
+    {
+     "u_type": "CONN_FAIL_BURST",
+     "v_type": "FLOOD_SYN",
+     "len": 1
+    }
+   ],
+   "lam_idx_per_scenario": {
+    "1-1": 48,
+    "17-1": 48,
+    "20-1": 48,
+    "21-1": 48,
+    "3-1": 48,
+    "33-1": 48,
+    "34-1": 50,
+    "35-1": 48,
+    "36-1": 48,
+    "39-1": 48,
+    "42-1": 50,
+    "43-1": 48,
+    "44-1": 48,
+    "48-1": 48,
+    "49-1": 48,
+    "52-1": 48,
+    "60-1": 50,
+    "7-1": 48,
+    "8-1": 48,
+    "9-1": 48,
+    "HP-4-1": 48,
+    "HP-5-1": 48,
+    "HP-7-1": 48
+   },
+   "n_scenarios_abstaining": 0
+  },
+  "P-LOSO|S_CF.fuse_s0|ltt|a=0.1": {
+   "n_claims": 8,
+   "n_true": 0,
+   "n_amb": 0,
+   "n_false_y0": 8,
+   "n_windows": 1,
+   "n_scenarios": 1,
+   "n_transitions_hit": 0,
+   "pooled_fdr": 1.0,
+   "by_truth": {
+    "FALSE: benign <-> malicious": 8
+   },
+   "top_type_pairs": [
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "FLOOD_UDP",
+     "len": 8
+    }
+   ],
+   "lam_idx_per_scenario": {
+    "1-1": 35,
+    "17-1": 35,
+    "20-1": 35,
+    "21-1": 35,
+    "3-1": 35,
+    "33-1": 35,
+    "34-1": 35,
+    "35-1": 35,
+    "36-1": 35,
+    "39-1": 35,
+    "42-1": 35,
+    "43-1": 35,
+    "44-1": 35,
+    "48-1": 35,
+    "49-1": 35,
+    "52-1": 35,
+    "60-1": 41,
+    "7-1": 35,
+    "8-1": 35,
+    "9-1": 35,
+    "HP-4-1": 35,
+    "HP-5-1": 35,
+    "HP-7-1": 35
+   },
+   "n_scenarios_abstaining": 0
+  },
+  "P-LOSO|S_CF.fuse_s0|crc_bh|a=0.2": {
+   "n_claims": 204,
+   "n_true": 0,
+   "n_amb": 7,
+   "n_false_y0": 197,
+   "n_windows": 16,
+   "n_scenarios": 5,
+   "n_transitions_hit": 0,
+   "pooled_fdr": 1.0,
+   "by_truth": {
+    "FALSE: benign <-> malicious": 129,
+    "FALSE: benign -> benign": 68,
+    "AMB: same episode": 6,
+    "AMB: malicious pair not in T* (transitive / reverse / unexplained)": 1
+   },
+   "top_type_pairs": [
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "FLOOD_UDP",
+     "len": 129
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "HTTP_UPLOAD",
+     "len": 14
+    },
+    {
+     "u_type": "HTTP_DOWNLOAD",
+     "v_type": "BENIGN_GENERIC_TCP_SYS",
+     "len": 8
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "SCAN_H",
+     "len": 6
+    },
+    {
+     "u_type": "HTTP_UPLOAD",
+     "v_type": "FLOOD_UDP",
+     "len": 6
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "FLOOD_SYN",
+     "len": 5
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "CONN_FAIL_BURST",
+     "len": 3
+    },
+    {
+     "u_type": "C2_PERIODIC",
+     "v_type": "BENIGN_GENERIC_TCP_SYS",
+     "len": 3
+    }
+   ],
+   "lam_idx_per_scenario": {
+    "1-1": 53,
+    "17-1": 53,
+    "20-1": 54,
+    "21-1": 53,
+    "3-1": 53,
+    "33-1": 53,
+    "34-1": 53,
+    "35-1": 53,
+    "36-1": 53,
+    "39-1": 53,
+    "42-1": 55,
+    "43-1": 53,
+    "44-1": 55,
+    "48-1": 53,
+    "49-1": 53,
+    "52-1": 53,
+    "60-1": 54,
+    "7-1": 53,
+    "8-1": 53,
+    "9-1": 53,
+    "HP-4-1": 53,
+    "HP-5-1": 53,
+    "HP-7-1": 53
+   },
+   "n_scenarios_abstaining": 0
+  },
+  "P-LOSO|S_CF.fuse_s0|crc_st|a=0.2": {
+   "n_claims": 30,
+   "n_true": 4,
+   "n_amb": 7,
+   "n_false_y0": 19,
+   "n_windows": 22,
+   "n_scenarios": 9,
+   "n_transitions_hit": 4,
+   "pooled_fdr": 0.8666666666666667,
+   "by_truth": {
+    "FALSE: benign <-> malicious": 17,
+    "AMB: same episode": 4,
+    "TRUE link (Y=1)": 4,
+    "AMB: malicious pair not in T* (transitive / reverse / unexplained)": 3,
+    "FALSE: benign -> benign": 2
+   },
+   "top_type_pairs": [
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "FLOOD_UDP",
+     "len": 11
+    },
+    {
+     "u_type": "BENIGN_GENERIC_TCP_SYS",
+     "v_type": "FLOOD_UDP",
+     "len": 4
+    },
+    {
+     "u_type": "SCAN_H",
+     "v_type": "SCAN_H",
+     "len": 3
+    },
+    {
+     "u_type": "BENIGN_GENERIC_TCP_HIGH",
+     "v_type": "HTTP_DOWNLOAD",
+     "len": 3
+    },
+    {
+     "u_type": "BENIGN_GENERIC_TCP_HIGH",
+     "v_type": "SCAN_H",
+     "len": 2
+    },
+    {
+     "u_type": "HTTP_DOWNLOAD",
+     "v_type": "BENIGN_GENERIC_TCP_HIGH",
+     "len": 2
+    },
+    {
+     "u_type": "INTERACTIVE_SESSION",
+     "v_type": "SCAN_H",
+     "len": 1
+    },
+    {
+     "u_type": "FLOOD_UDP",
+     "v_type": "FLOOD_ACK",
+     "len": 1
+    }
+   ],
+   "lam_idx_per_scenario": {
+    "1-1": 27,
+    "17-1": 27,
+    "20-1": 27,
+    "21-1": 27,
+    "3-1": 27,
+    "33-1": 27,
+    "34-1": 27,
+    "35-1": 27,
+    "36-1": 27,
+    "39-1": 27,
+    "42-1": 27,
+    "43-1": 27,
+    "44-1": 27,
+    "48-1": 27,
+    "49-1": 27,
+    "52-1": 27,
+    "60-1": 27,
+    "7-1": 27,
+    "8-1": 27,
+    "9-1": 27,
+    "HP-4-1": 27,
+    "HP-5-1": 27,
+    "HP-7-1": 27
+   },
+   "n_scenarios_abstaining": 0
+  },
+  "P-LOSO|S_CF.fuse_s0|crc_fdx020|a=0.2": {
+   "n_claims": 204,
+   "n_true": 0,
+   "n_amb": 7,
+   "n_false_y0": 197,
+   "n_windows": 16,
+   "n_scenarios": 5,
+   "n_transitions_hit": 0,
+   "pooled_fdr": 1.0,
+   "by_truth": {
+    "FALSE: benign <-> malicious": 129,
+    "FALSE: benign -> benign": 68,
+    "AMB: same episode": 6,
+    "AMB: malicious pair not in T* (transitive / reverse / unexplained)": 1
+   },
+   "top_type_pairs": [
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "FLOOD_UDP",
+     "len": 129
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "HTTP_UPLOAD",
+     "len": 14
+    },
+    {
+     "u_type": "HTTP_DOWNLOAD",
+     "v_type": "BENIGN_GENERIC_TCP_SYS",
+     "len": 8
+    },
+    {
+     "u_type": "HTTP_UPLOAD",
+     "v_type": "FLOOD_UDP",
+     "len": 6
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "SCAN_H",
+     "len": 6
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "FLOOD_SYN",
+     "len": 5
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "CONN_FAIL_BURST",
+     "len": 3
+    },
+    {
+     "u_type": "C2_PERIODIC",
+     "v_type": "BENIGN_GENERIC_TCP_SYS",
+     "len": 3
+    }
+   ],
+   "lam_idx_per_scenario": {
+    "1-1": 53,
+    "17-1": 53,
+    "20-1": 54,
+    "21-1": 53,
+    "3-1": 53,
+    "33-1": 53,
+    "34-1": 53,
+    "35-1": 53,
+    "36-1": 53,
+    "39-1": 53,
+    "42-1": 55,
+    "43-1": 53,
+    "44-1": 55,
+    "48-1": 53,
+    "49-1": 53,
+    "52-1": 53,
+    "60-1": 54,
+    "7-1": 53,
+    "8-1": 53,
+    "9-1": 53,
+    "HP-4-1": 53,
+    "HP-5-1": 53,
+    "HP-7-1": 53
+   },
+   "n_scenarios_abstaining": 0
+  },
+  "P-LOSO|S_CF.fuse_s0|ltt|a=0.2": {
+   "n_claims": 114,
+   "n_true": 0,
+   "n_amb": 2,
+   "n_false_y0": 112,
+   "n_windows": 10,
+   "n_scenarios": 3,
+   "n_transitions_hit": 0,
+   "pooled_fdr": 1.0,
+   "by_truth": {
+    "FALSE: benign <-> malicious": 76,
+    "FALSE: benign -> benign": 36,
+    "AMB: same episode": 2
+   },
+   "top_type_pairs": [
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "FLOOD_UDP",
+     "len": 99
+    },
+    {
+     "u_type": "INTERACTIVE_SESSION",
+     "v_type": "HTTP_DOWNLOAD",
+     "len": 2
+    },
+    {
+     "u_type": "CONN_FAIL_BURST",
+     "v_type": "DNS_ACTIVITY",
+     "len": 2
+    },
+    {
+     "u_type": "C2_PERIODIC",
+     "v_type": "CONN_FAIL_BURST",
+     "len": 2
+    },
+    {
+     "u_type": "HTTP_UPLOAD",
+     "v_type": "FLOOD_UDP",
+     "len": 2
+    },
+    {
+     "u_type": "HTTP_DOWNLOAD",
+     "v_type": "BENIGN_GENERIC_TCP_HIGH",
+     "len": 2
+    },
+    {
+     "u_type": "CONN_FAIL_BURST",
+     "v_type": "CONN_FAIL_BURST",
+     "len": 1
+    },
+    {
+     "u_type": "INTERACTIVE_SESSION",
+     "v_type": "BENIGN_GENERIC_TCP_HIGH",
+     "len": 1
+    }
+   ],
+   "lam_idx_per_scenario": {
+    "1-1": 47,
+    "17-1": 47,
+    "20-1": 47,
+    "21-1": 47,
+    "3-1": 47,
+    "33-1": 47,
+    "34-1": 48,
+    "35-1": 47,
+    "36-1": 47,
+    "39-1": 47,
+    "42-1": 50,
+    "43-1": 47,
+    "44-1": 47,
+    "48-1": 47,
+    "49-1": 47,
+    "52-1": 47,
+    "60-1": 50,
+    "7-1": 47,
+    "8-1": 47,
+    "9-1": 47,
+    "HP-4-1": 47,
+    "HP-5-1": 47,
+    "HP-7-1": 47
+   },
+   "n_scenarios_abstaining": 0
+  },
+  "P-LOSO|S_CF2.stat|crc_bh|a=0.1": {
+   "n_claims": 91,
+   "n_true": 0,
+   "n_amb": 3,
+   "n_false_y0": 88,
+   "n_windows": 8,
+   "n_scenarios": 3,
+   "n_transitions_hit": 0,
+   "pooled_fdr": 1.0,
+   "by_truth": {
+    "FALSE: benign <-> malicious": 80,
+    "FALSE: benign -> benign": 8,
+    "AMB: same episode": 2,
+    "AMB: malicious pair not in T* (transitive / reverse / unexplained)": 1
+   },
+   "top_type_pairs": [
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "FLOOD_UDP",
+     "len": 67
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "SCAN_H",
+     "len": 6
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "HTTP_UPLOAD",
+     "len": 4
+    },
+    {
+     "u_type": "CONN_FAIL_BURST",
+     "v_type": "DNS_ACTIVITY",
+     "len": 3
+    },
+    {
+     "u_type": "CONN_FAIL_BURST",
+     "v_type": "BENIGN_GENERIC_UDP_SYS",
+     "len": 2
+    },
+    {
+     "u_type": "HTTP_UPLOAD",
+     "v_type": "FLOOD_UDP",
+     "len": 2
+    },
+    {
+     "u_type": "C2_PERIODIC",
+     "v_type": "CONN_FAIL_BURST",
+     "len": 2
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "CONN_FAIL_BURST",
+     "len": 2
+    }
+   ],
+   "lam_idx_per_scenario": {
+    "1-1": 51,
+    "17-1": 51,
+    "20-1": 51,
+    "21-1": 51,
+    "3-1": 51,
+    "33-1": 51,
+    "34-1": 51,
+    "35-1": 51,
+    "36-1": 51,
+    "39-1": 51,
+    "42-1": 51,
+    "43-1": 51,
+    "44-1": 51,
+    "48-1": 51,
+    "49-1": 51,
+    "52-1": 51,
+    "60-1": 51,
+    "7-1": 51,
+    "8-1": 51,
+    "9-1": 51,
+    "HP-4-1": 51,
+    "HP-5-1": 51,
+    "HP-7-1": 51
+   },
+   "n_scenarios_abstaining": 0
+  },
+  "P-LOSO|S_CF2.stat|crc_st|a=0.1": {
+   "n_claims": 6,
+   "n_true": 0,
+   "n_amb": 2,
+   "n_false_y0": 4,
+   "n_windows": 5,
+   "n_scenarios": 4,
+   "n_transitions_hit": 0,
+   "pooled_fdr": 1.0,
+   "by_truth": {
+    "FALSE: benign <-> malicious": 4,
+    "AMB: malicious pair not in T* (transitive / reverse / unexplained)": 2
+   },
+   "top_type_pairs": [
+    {
+     "u_type": "BENIGN_GENERIC_TCP_SYS",
+     "v_type": "FLOOD_UDP",
+     "len": 2
+    },
+    {
+     "u_type": "HTTP_DOWNLOAD",
+     "v_type": "SCAN_H",
+     "len": 2
+    },
+    {
+     "u_type": "BENIGN_GENERIC_TCP_HIGH",
+     "v_type": "HTTP_DOWNLOAD",
+     "len": 1
+    },
+    {
+     "u_type": "INTERACTIVE_SESSION",
+     "v_type": "HTTP_DOWNLOAD",
+     "len": 1
+    }
+   ],
+   "lam_idx_per_scenario": {
+    "1-1": 23,
+    "17-1": 23,
+    "20-1": 23,
+    "21-1": 23,
+    "3-1": 23,
+    "33-1": 23,
+    "34-1": 23,
+    "35-1": 23,
+    "36-1": 23,
+    "39-1": 23,
+    "42-1": 23,
+    "43-1": 26,
+    "44-1": 23,
+    "48-1": 23,
+    "49-1": 23,
+    "52-1": 23,
+    "60-1": 23,
+    "7-1": 23,
+    "8-1": 23,
+    "9-1": 23,
+    "HP-4-1": 23,
+    "HP-5-1": 23,
+    "HP-7-1": 23
+   },
+   "n_scenarios_abstaining": 0
+  },
+  "P-LOSO|S_CF2.stat|crc_fdx020|a=0.1": {
+   "n_claims": 91,
+   "n_true": 0,
+   "n_amb": 3,
+   "n_false_y0": 88,
+   "n_windows": 8,
+   "n_scenarios": 3,
+   "n_transitions_hit": 0,
+   "pooled_fdr": 1.0,
+   "by_truth": {
+    "FALSE: benign <-> malicious": 80,
+    "FALSE: benign -> benign": 8,
+    "AMB: same episode": 2,
+    "AMB: malicious pair not in T* (transitive / reverse / unexplained)": 1
+   },
+   "top_type_pairs": [
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "FLOOD_UDP",
+     "len": 67
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "SCAN_H",
+     "len": 6
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "HTTP_UPLOAD",
+     "len": 4
+    },
+    {
+     "u_type": "CONN_FAIL_BURST",
+     "v_type": "DNS_ACTIVITY",
+     "len": 3
+    },
+    {
+     "u_type": "HTTP_UPLOAD",
+     "v_type": "FLOOD_UDP",
+     "len": 2
+    },
+    {
+     "u_type": "C2_PERIODIC",
+     "v_type": "CONN_FAIL_BURST",
+     "len": 2
+    },
+    {
+     "u_type": "CONN_FAIL_BURST",
+     "v_type": "BENIGN_GENERIC_UDP_SYS",
+     "len": 2
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "CONN_FAIL_BURST",
+     "len": 2
+    }
+   ],
+   "lam_idx_per_scenario": {
+    "1-1": 51,
+    "17-1": 51,
+    "20-1": 51,
+    "21-1": 51,
+    "3-1": 51,
+    "33-1": 51,
+    "34-1": 51,
+    "35-1": 51,
+    "36-1": 51,
+    "39-1": 51,
+    "42-1": 51,
+    "43-1": 51,
+    "44-1": 51,
+    "48-1": 51,
+    "49-1": 51,
+    "52-1": 51,
+    "60-1": 51,
+    "7-1": 51,
+    "8-1": 51,
+    "9-1": 51,
+    "HP-4-1": 51,
+    "HP-5-1": 51,
+    "HP-7-1": 51
+   },
+   "n_scenarios_abstaining": 0
+  },
+  "P-LOSO|S_CF2.stat|ltt|a=0.1": {
+   "n_claims": 1,
+   "n_true": 0,
+   "n_amb": 0,
+   "n_false_y0": 1,
+   "n_windows": 1,
+   "n_scenarios": 1,
+   "n_transitions_hit": 0,
+   "pooled_fdr": 1.0,
+   "by_truth": {
+    "FALSE: benign <-> malicious": 1
+   },
+   "top_type_pairs": [
+    {
+     "u_type": "CONN_FAIL_BURST",
+     "v_type": "CONN_FAIL_BURST",
+     "len": 1
+    }
+   ],
+   "lam_idx_per_scenario": {
+    "1-1": 38,
+    "17-1": 38,
+    "20-1": 38,
+    "21-1": 38,
+    "3-1": 38,
+    "33-1": 38,
+    "34-1": 43,
+    "35-1": 38,
+    "36-1": 38,
+    "39-1": 38,
+    "42-1": 38,
+    "43-1": 38,
+    "44-1": 38,
+    "48-1": 38,
+    "49-1": 38,
+    "52-1": 38,
+    "60-1": 38,
+    "7-1": 38,
+    "8-1": 38,
+    "9-1": 38,
+    "HP-4-1": 38,
+    "HP-5-1": 38,
+    "HP-7-1": 38
+   },
+   "n_scenarios_abstaining": 0
+  },
+  "P-LOSO|S_CF2.stat|crc_bh|a=0.2": {
+   "n_claims": 176,
+   "n_true": 1,
+   "n_amb": 4,
+   "n_false_y0": 171,
+   "n_windows": 13,
+   "n_scenarios": 5,
+   "n_transitions_hit": 1,
+   "pooled_fdr": 0.9943181818181818,
+   "by_truth": {
+    "FALSE: benign <-> malicious": 115,
+    "FALSE: benign -> benign": 56,
+    "AMB: same episode": 3,
+    "AMB: malicious pair not in T* (transitive / reverse / unexplained)": 1,
+    "TRUE link (Y=1)": 1
+   },
+   "top_type_pairs": [
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "FLOOD_UDP",
+     "len": 108
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "HTTP_UPLOAD",
+     "len": 12
+    },
+    {
+     "u_type": "HTTP_DOWNLOAD",
+     "v_type": "BENIGN_GENERIC_TCP_SYS",
+     "len": 8
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "SCAN_H",
+     "len": 6
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "FLOOD_SYN",
+     "len": 5
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "BENIGN_GENERIC_UDP_SYS",
+     "len": 4
+    },
+    {
+     "u_type": "CONN_FAIL_BURST",
+     "v_type": "DNS_ACTIVITY",
+     "len": 3
+    },
+    {
+     "u_type": "INTERACTIVE_SESSION",
+     "v_type": "HTTP_DOWNLOAD",
+     "len": 3
+    }
+   ],
+   "lam_idx_per_scenario": {
+    "1-1": 55,
+    "17-1": 55,
+    "20-1": 55,
+    "21-1": 55,
+    "3-1": 55,
+    "33-1": 55,
+    "34-1": 55,
+    "35-1": 55,
+    "36-1": 55,
+    "39-1": 55,
+    "42-1": 56,
+    "43-1": 55,
+    "44-1": 56,
+    "48-1": 55,
+    "49-1": 55,
+    "52-1": 55,
+    "60-1": 55,
+    "7-1": 55,
+    "8-1": 55,
+    "9-1": 55,
+    "HP-4-1": 55,
+    "HP-5-1": 55,
+    "HP-7-1": 56
+   },
+   "n_scenarios_abstaining": 0
+  },
+  "P-LOSO|S_CF2.stat|crc_st|a=0.2": {
+   "n_claims": 23,
+   "n_true": 0,
+   "n_amb": 11,
+   "n_false_y0": 12,
+   "n_windows": 18,
+   "n_scenarios": 10,
+   "n_transitions_hit": 0,
+   "pooled_fdr": 1.0,
+   "by_truth": {
+    "FALSE: benign <-> malicious": 12,
+    "AMB: same episode": 7,
+    "AMB: malicious pair not in T* (transitive / reverse / unexplained)": 4
+   },
+   "top_type_pairs": [
+    {
+     "u_type": "SCAN_H",
+     "v_type": "BENIGN_GENERIC_TCP_HIGH",
+     "len": 7
+    },
+    {
+     "u_type": "HTTP_DOWNLOAD",
+     "v_type": "SCAN_H",
+     "len": 3
+    },
+    {
+     "u_type": "BENIGN_GENERIC_TCP_SYS",
+     "v_type": "FLOOD_UDP",
+     "len": 3
+    },
+    {
+     "u_type": "BENIGN_GENERIC_TCP_HIGH",
+     "v_type": "HTTP_DOWNLOAD",
+     "len": 3
+    },
+    {
+     "u_type": "INTERACTIVE_SESSION",
+     "v_type": "HTTP_DOWNLOAD",
+     "len": 2
+    },
+    {
+     "u_type": "INTERACTIVE_SESSION",
+     "v_type": "BENIGN_GENERIC_TCP_HIGH",
+     "len": 2
+    },
+    {
+     "u_type": "CONN_FAIL_BURST",
+     "v_type": "CONN_FAIL_BURST",
+     "len": 1
+    },
+    {
+     "u_type": "INTERACTIVE_SESSION",
+     "v_type": "SCAN_H",
+     "len": 1
+    }
+   ],
+   "lam_idx_per_scenario": {
+    "1-1": 30,
+    "17-1": 28,
+    "20-1": 28,
+    "21-1": 28,
+    "3-1": 28,
+    "33-1": 28,
+    "34-1": 28,
+    "35-1": 29,
+    "36-1": 28,
+    "39-1": 29,
+    "42-1": 28,
+    "43-1": 31,
+    "44-1": 31,
+    "48-1": 29,
+    "49-1": 29,
+    "52-1": 28,
+    "60-1": 28,
+    "7-1": 28,
+    "8-1": 28,
+    "9-1": 28,
+    "HP-4-1": 28,
+    "HP-5-1": 28,
+    "HP-7-1": 28
+   },
+   "n_scenarios_abstaining": 0
+  },
+  "P-LOSO|S_CF2.stat|crc_fdx020|a=0.2": {
+   "n_claims": 176,
+   "n_true": 1,
+   "n_amb": 4,
+   "n_false_y0": 171,
+   "n_windows": 13,
+   "n_scenarios": 5,
+   "n_transitions_hit": 1,
+   "pooled_fdr": 0.9943181818181818,
+   "by_truth": {
+    "FALSE: benign <-> malicious": 115,
+    "FALSE: benign -> benign": 56,
+    "AMB: same episode": 3,
+    "TRUE link (Y=1)": 1,
+    "AMB: malicious pair not in T* (transitive / reverse / unexplained)": 1
+   },
+   "top_type_pairs": [
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "FLOOD_UDP",
+     "len": 108
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "HTTP_UPLOAD",
+     "len": 12
+    },
+    {
+     "u_type": "HTTP_DOWNLOAD",
+     "v_type": "BENIGN_GENERIC_TCP_SYS",
+     "len": 8
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "SCAN_H",
+     "len": 6
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "FLOOD_SYN",
+     "len": 5
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "BENIGN_GENERIC_UDP_SYS",
+     "len": 4
+    },
+    {
+     "u_type": "CONN_FAIL_BURST",
+     "v_type": "DNS_ACTIVITY",
+     "len": 3
+    },
+    {
+     "u_type": "INTERACTIVE_SESSION",
+     "v_type": "HTTP_DOWNLOAD",
+     "len": 3
+    }
+   ],
+   "lam_idx_per_scenario": {
+    "1-1": 55,
+    "17-1": 55,
+    "20-1": 55,
+    "21-1": 55,
+    "3-1": 55,
+    "33-1": 55,
+    "34-1": 55,
+    "35-1": 55,
+    "36-1": 55,
+    "39-1": 55,
+    "42-1": 56,
+    "43-1": 55,
+    "44-1": 56,
+    "48-1": 55,
+    "49-1": 55,
+    "52-1": 55,
+    "60-1": 55,
+    "7-1": 55,
+    "8-1": 55,
+    "9-1": 55,
+    "HP-4-1": 55,
+    "HP-5-1": 55,
+    "HP-7-1": 56
+   },
+   "n_scenarios_abstaining": 0
+  },
+  "P-LOSO|S_CF2.stat|ltt|a=0.2": {
+   "n_claims": 91,
+   "n_true": 0,
+   "n_amb": 3,
+   "n_false_y0": 88,
+   "n_windows": 8,
+   "n_scenarios": 3,
+   "n_transitions_hit": 0,
+   "pooled_fdr": 1.0,
+   "by_truth": {
+    "FALSE: benign <-> malicious": 80,
+    "FALSE: benign -> benign": 8,
+    "AMB: same episode": 2,
+    "AMB: malicious pair not in T* (transitive / reverse / unexplained)": 1
+   },
+   "top_type_pairs": [
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "FLOOD_UDP",
+     "len": 67
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "SCAN_H",
+     "len": 6
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "HTTP_UPLOAD",
+     "len": 4
+    },
+    {
+     "u_type": "CONN_FAIL_BURST",
+     "v_type": "DNS_ACTIVITY",
+     "len": 3
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "CONN_FAIL_BURST",
+     "len": 2
+    },
+    {
+     "u_type": "CONN_FAIL_BURST",
+     "v_type": "BENIGN_GENERIC_UDP_SYS",
+     "len": 2
+    },
+    {
+     "u_type": "C2_PERIODIC",
+     "v_type": "CONN_FAIL_BURST",
+     "len": 2
+    },
+    {
+     "u_type": "HTTP_UPLOAD",
+     "v_type": "FLOOD_UDP",
+     "len": 2
+    }
+   ],
+   "lam_idx_per_scenario": {
+    "1-1": 48,
+    "17-1": 48,
+    "20-1": 48,
+    "21-1": 48,
+    "3-1": 48,
+    "33-1": 48,
+    "34-1": 51,
+    "35-1": 48,
+    "36-1": 48,
+    "39-1": 48,
+    "42-1": 51,
+    "43-1": 48,
+    "44-1": 48,
+    "48-1": 48,
+    "49-1": 48,
+    "52-1": 48,
+    "60-1": 51,
+    "7-1": 48,
+    "8-1": 48,
+    "9-1": 48,
+    "HP-4-1": 48,
+    "HP-5-1": 48,
+    "HP-7-1": 48
+   },
+   "n_scenarios_abstaining": 0
+  },
+  "P-LOSO|S_CF2.fuse_s0|crc_bh|a=0.1": {
+   "n_claims": 35,
+   "n_true": 0,
+   "n_amb": 0,
+   "n_false_y0": 35,
+   "n_windows": 5,
+   "n_scenarios": 3,
+   "n_transitions_hit": 0,
+   "pooled_fdr": 1.0,
+   "by_truth": {
+    "FALSE: benign <-> malicious": 33,
+    "FALSE: benign -> benign": 2
+   },
+   "top_type_pairs": [
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "FLOOD_UDP",
+     "len": 28
+    },
+    {
+     "u_type": "C2_PERIODIC",
+     "v_type": "CONN_FAIL_BURST",
+     "len": 2
+    },
+    {
+     "u_type": "CONN_FAIL_BURST",
+     "v_type": "DNS_ACTIVITY",
+     "len": 1
+    },
+    {
+     "u_type": "CONN_FAIL_BURST",
+     "v_type": "BENIGN_GENERIC_UDP_SYS",
+     "len": 1
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "CONN_FAIL_BURST",
+     "len": 1
+    },
+    {
+     "u_type": "INTERACTIVE_SESSION",
+     "v_type": "HTTP_DOWNLOAD",
+     "len": 1
+    },
+    {
+     "u_type": "CONN_FAIL_BURST",
+     "v_type": "CONN_FAIL_BURST",
+     "len": 1
+    }
+   ],
+   "lam_idx_per_scenario": {
+    "1-1": 49,
+    "17-1": 49,
+    "20-1": 49,
+    "21-1": 49,
+    "3-1": 49,
+    "33-1": 49,
+    "34-1": 50,
+    "35-1": 49,
+    "36-1": 49,
+    "39-1": 49,
+    "42-1": 49,
+    "43-1": 49,
+    "44-1": 52,
+    "48-1": 49,
+    "49-1": 49,
+    "52-1": 49,
+    "60-1": 50,
+    "7-1": 49,
+    "8-1": 49,
+    "9-1": 49,
+    "HP-4-1": 49,
+    "HP-5-1": 49,
+    "HP-7-1": 49
+   },
+   "n_scenarios_abstaining": 0
+  },
+  "P-LOSO|S_CF2.fuse_s0|crc_st|a=0.1": {
+   "n_claims": 3,
+   "n_true": 0,
+   "n_amb": 1,
+   "n_false_y0": 2,
+   "n_windows": 3,
+   "n_scenarios": 3,
+   "n_transitions_hit": 0,
+   "pooled_fdr": 1.0,
+   "by_truth": {
+    "FALSE: benign <-> malicious": 2,
+    "AMB: malicious pair not in T* (transitive / reverse / unexplained)": 1
+   },
+   "top_type_pairs": [
+    {
+     "u_type": "HTTP_DOWNLOAD",
+     "v_type": "SCAN_H",
+     "len": 2
+    },
+    {
+     "u_type": "BENIGN_GENERIC_TCP_HIGH",
+     "v_type": "HTTP_DOWNLOAD",
+     "len": 1
+    }
+   ],
+   "lam_idx_per_scenario": {
+    "1-1": 18,
+    "17-1": 18,
+    "20-1": 18,
+    "21-1": 18,
+    "3-1": 18,
+    "33-1": 18,
+    "34-1": 18,
+    "35-1": 18,
+    "36-1": 18,
+    "39-1": 22,
+    "42-1": 18,
+    "43-1": 26,
+    "44-1": 18,
+    "48-1": 22,
+    "49-1": 18,
+    "52-1": 18,
+    "60-1": 18,
+    "7-1": 18,
+    "8-1": 18,
+    "9-1": 18,
+    "HP-4-1": 18,
+    "HP-5-1": 18,
+    "HP-7-1": 18
+   },
+   "n_scenarios_abstaining": 0
+  },
+  "P-LOSO|S_CF2.fuse_s0|crc_fdx020|a=0.1": {
+   "n_claims": 35,
+   "n_true": 0,
+   "n_amb": 0,
+   "n_false_y0": 35,
+   "n_windows": 5,
+   "n_scenarios": 3,
+   "n_transitions_hit": 0,
+   "pooled_fdr": 1.0,
+   "by_truth": {
+    "FALSE: benign <-> malicious": 33,
+    "FALSE: benign -> benign": 2
+   },
+   "top_type_pairs": [
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "FLOOD_UDP",
+     "len": 28
+    },
+    {
+     "u_type": "C2_PERIODIC",
+     "v_type": "CONN_FAIL_BURST",
+     "len": 2
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "CONN_FAIL_BURST",
+     "len": 1
+    },
+    {
+     "u_type": "CONN_FAIL_BURST",
+     "v_type": "BENIGN_GENERIC_UDP_SYS",
+     "len": 1
+    },
+    {
+     "u_type": "CONN_FAIL_BURST",
+     "v_type": "CONN_FAIL_BURST",
+     "len": 1
+    },
+    {
+     "u_type": "INTERACTIVE_SESSION",
+     "v_type": "HTTP_DOWNLOAD",
+     "len": 1
+    },
+    {
+     "u_type": "CONN_FAIL_BURST",
+     "v_type": "DNS_ACTIVITY",
+     "len": 1
+    }
+   ],
+   "lam_idx_per_scenario": {
+    "1-1": 49,
+    "17-1": 49,
+    "20-1": 49,
+    "21-1": 49,
+    "3-1": 49,
+    "33-1": 49,
+    "34-1": 50,
+    "35-1": 49,
+    "36-1": 49,
+    "39-1": 49,
+    "42-1": 49,
+    "43-1": 49,
+    "44-1": 52,
+    "48-1": 49,
+    "49-1": 49,
+    "52-1": 49,
+    "60-1": 50,
+    "7-1": 49,
+    "8-1": 49,
+    "9-1": 49,
+    "HP-4-1": 49,
+    "HP-5-1": 49,
+    "HP-7-1": 49
+   },
+   "n_scenarios_abstaining": 0
+  },
+  "P-LOSO|S_CF2.fuse_s0|ltt|a=0.1": {
+   "n_claims": 11,
+   "n_true": 0,
+   "n_amb": 0,
+   "n_false_y0": 11,
+   "n_windows": 2,
+   "n_scenarios": 1,
+   "n_transitions_hit": 0,
+   "pooled_fdr": 1.0,
+   "by_truth": {
+    "FALSE: benign <-> malicious": 11
+   },
+   "top_type_pairs": [
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "FLOOD_UDP",
+     "len": 11
+    }
+   ],
+   "lam_idx_per_scenario": {
+    "1-1": 42,
+    "17-1": 42,
+    "20-1": 42,
+    "21-1": 42,
+    "3-1": 42,
+    "33-1": 42,
+    "34-1": 42,
+    "35-1": 42,
+    "36-1": 42,
+    "39-1": 42,
+    "42-1": 42,
+    "43-1": 42,
+    "44-1": 42,
+    "48-1": 42,
+    "49-1": 42,
+    "52-1": 42,
+    "60-1": 47,
+    "7-1": 42,
+    "8-1": 42,
+    "9-1": 42,
+    "HP-4-1": 42,
+    "HP-5-1": 42,
+    "HP-7-1": 42
+   },
+   "n_scenarios_abstaining": 0
+  },
+  "P-LOSO|S_CF2.fuse_s0|crc_bh|a=0.2": {
+   "n_claims": 301,
+   "n_true": 1,
+   "n_amb": 103,
+   "n_false_y0": 197,
+   "n_windows": 20,
+   "n_scenarios": 7,
+   "n_transitions_hit": 1,
+   "pooled_fdr": 0.9966777408637874,
+   "by_truth": {
+    "FALSE: benign <-> malicious": 158,
+    "AMB: same episode": 102,
+    "FALSE: benign -> benign": 39,
+    "TRUE link (Y=1)": 1,
+    "AMB: malicious pair not in T* (transitive / reverse / unexplained)": 1
+   },
+   "top_type_pairs": [
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "FLOOD_UDP",
+     "len": 112
+    },
+    {
+     "u_type": "SCAN_H",
+     "v_type": "BENIGN_GENERIC_TCP_HIGH",
+     "len": 95
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "HTTP_UPLOAD",
+     "len": 23
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "FLOOD_SYN",
+     "len": 13
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "CONN_FAIL_BURST",
+     "len": 11
+    },
+    {
+     "u_type": "HTTP_UPLOAD",
+     "v_type": "FLOOD_UDP",
+     "len": 6
+    },
+    {
+     "u_type": "HTTP_DOWNLOAD",
+     "v_type": "BENIGN_GENERIC_TCP_SYS",
+     "len": 6
+    },
+    {
+     "u_type": "CONN_FAIL_BURST",
+     "v_type": "DNS_ACTIVITY",
+     "len": 3
+    }
+   ],
+   "lam_idx_per_scenario": {
+    "1-1": 56,
+    "17-1": 56,
+    "20-1": 57,
+    "21-1": 57,
+    "3-1": 56,
+    "33-1": 56,
+    "34-1": 57,
+    "35-1": 56,
+    "36-1": 57,
+    "39-1": 56,
+    "42-1": 57,
+    "43-1": 56,
+    "44-1": 57,
+    "48-1": 56,
+    "49-1": 56,
+    "52-1": 56,
+    "60-1": 57,
+    "7-1": 56,
+    "8-1": 56,
+    "9-1": 56,
+    "HP-4-1": 56,
+    "HP-5-1": 56,
+    "HP-7-1": 56
+   },
+   "n_scenarios_abstaining": 0
+  },
+  "P-LOSO|S_CF2.fuse_s0|crc_st|a=0.2": {
+   "n_claims": 18,
+   "n_true": 1,
+   "n_amb": 5,
+   "n_false_y0": 12,
+   "n_windows": 12,
+   "n_scenarios": 7,
+   "n_transitions_hit": 1,
+   "pooled_fdr": 0.9444444444444444,
+   "by_truth": {
+    "FALSE: benign <-> malicious": 12,
+    "AMB: malicious pair not in T* (transitive / reverse / unexplained)": 3,
+    "AMB: same episode": 2,
+    "TRUE link (Y=1)": 1
+   },
+   "top_type_pairs": [
+    {
+     "u_type": "INTERACTIVE_SESSION",
+     "v_type": "HTTP_DOWNLOAD",
+     "len": 6
+    },
+    {
+     "u_type": "BENIGN_GENERIC_TCP_SYS",
+     "v_type": "FLOOD_UDP",
+     "len": 3
+    },
+    {
+     "u_type": "HTTP_DOWNLOAD",
+     "v_type": "SCAN_H",
+     "len": 3
+    },
+    {
+     "u_type": "BENIGN_GENERIC_TCP_HIGH",
+     "v_type": "HTTP_DOWNLOAD",
+     "len": 2
+    },
+    {
+     "u_type": "CONN_FAIL_BURST",
+     "v_type": "FLOOD_ACK",
+     "len": 1
+    },
+    {
+     "u_type": "CONN_FAIL_BURST",
+     "v_type": "SCAN_H",
+     "len": 1
+    },
+    {
+     "u_type": "SCAN_H",
+     "v_type": "BENIGN_GENERIC_TCP_HIGH",
+     "len": 1
+    },
+    {
+     "u_type": "BENIGN_GENERIC_TCP_HIGH",
+     "v_type": "SCAN_H",
+     "len": 1
+    }
+   ],
+   "lam_idx_per_scenario": {
+    "1-1": 29,
+    "17-1": 29,
+    "20-1": 29,
+    "21-1": 29,
+    "3-1": 29,
+    "33-1": 29,
+    "34-1": 29,
+    "35-1": 30,
+    "36-1": 29,
+    "39-1": 30,
+    "42-1": 30,
+    "43-1": 31,
+    "44-1": 31,
+    "48-1": 30,
+    "49-1": 29,
+    "52-1": 30,
+    "60-1": 29,
+    "7-1": 29,
+    "8-1": 29,
+    "9-1": 29,
+    "HP-4-1": 29,
+    "HP-5-1": 29,
+    "HP-7-1": 29
+   },
+   "n_scenarios_abstaining": 0
+  },
+  "P-LOSO|S_CF2.fuse_s0|crc_fdx020|a=0.2": {
+   "n_claims": 301,
+   "n_true": 1,
+   "n_amb": 103,
+   "n_false_y0": 197,
+   "n_windows": 20,
+   "n_scenarios": 7,
+   "n_transitions_hit": 1,
+   "pooled_fdr": 0.9966777408637874,
+   "by_truth": {
+    "FALSE: benign <-> malicious": 158,
+    "AMB: same episode": 102,
+    "FALSE: benign -> benign": 39,
+    "TRUE link (Y=1)": 1,
+    "AMB: malicious pair not in T* (transitive / reverse / unexplained)": 1
+   },
+   "top_type_pairs": [
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "FLOOD_UDP",
+     "len": 112
+    },
+    {
+     "u_type": "SCAN_H",
+     "v_type": "BENIGN_GENERIC_TCP_HIGH",
+     "len": 95
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "HTTP_UPLOAD",
+     "len": 23
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "FLOOD_SYN",
+     "len": 13
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "CONN_FAIL_BURST",
+     "len": 11
+    },
+    {
+     "u_type": "HTTP_DOWNLOAD",
+     "v_type": "BENIGN_GENERIC_TCP_SYS",
+     "len": 6
+    },
+    {
+     "u_type": "HTTP_UPLOAD",
+     "v_type": "FLOOD_UDP",
+     "len": 6
+    },
+    {
+     "u_type": "DNS_ACTIVITY",
+     "v_type": "C2_PERIODIC",
+     "len": 3
+    }
+   ],
+   "lam_idx_per_scenario": {
+    "1-1": 56,
+    "17-1": 56,
+    "20-1": 57,
+    "21-1": 57,
+    "3-1": 56,
+    "33-1": 56,
+    "34-1": 57,
+    "35-1": 56,
+    "36-1": 57,
+    "39-1": 56,
+    "42-1": 57,
+    "43-1": 56,
+    "44-1": 57,
+    "48-1": 56,
+    "49-1": 56,
+    "52-1": 56,
+    "60-1": 57,
+    "7-1": 56,
+    "8-1": 56,
+    "9-1": 56,
+    "HP-4-1": 56,
+    "HP-5-1": 56,
+    "HP-7-1": 56
+   },
+   "n_scenarios_abstaining": 0
+  },
+  "P-LOSO|S_CF2.fuse_s0|ltt|a=0.2": {
+   "n_claims": 25,
+   "n_true": 0,
+   "n_amb": 0,
+   "n_false_y0": 25,
+   "n_windows": 4,
+   "n_scenarios": 3,
+   "n_transitions_hit": 0,
+   "pooled_fdr": 1.0,
+   "by_truth": {
+    "FALSE: benign <-> malicious": 23,
+    "FALSE: benign -> benign": 2
+   },
+   "top_type_pairs": [
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "FLOOD_UDP",
+     "len": 18
+    },
+    {
+     "u_type": "C2_PERIODIC",
+     "v_type": "CONN_FAIL_BURST",
+     "len": 2
+    },
+    {
+     "u_type": "CONN_FAIL_BURST",
+     "v_type": "BENIGN_GENERIC_UDP_SYS",
+     "len": 1
+    },
+    {
+     "u_type": "INTERACTIVE_SESSION",
+     "v_type": "HTTP_DOWNLOAD",
+     "len": 1
+    },
+    {
+     "u_type": "CONN_FAIL_BURST",
+     "v_type": "DNS_ACTIVITY",
+     "len": 1
+    },
+    {
+     "u_type": "CONN_FAIL_BURST",
+     "v_type": "CONN_FAIL_BURST",
+     "len": 1
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "CONN_FAIL_BURST",
+     "len": 1
+    }
+   ],
+   "lam_idx_per_scenario": {
+    "1-1": 49,
+    "17-1": 49,
+    "20-1": 49,
+    "21-1": 49,
+    "3-1": 49,
+    "33-1": 49,
+    "34-1": 49,
+    "35-1": 49,
+    "36-1": 49,
+    "39-1": 49,
+    "42-1": 49,
+    "43-1": 49,
+    "44-1": 50,
+    "48-1": 49,
+    "49-1": 49,
+    "52-1": 49,
+    "60-1": 49,
+    "7-1": 49,
+    "8-1": 49,
+    "9-1": 49,
+    "HP-4-1": 49,
+    "HP-5-1": 49,
+    "HP-7-1": 49
+   },
+   "n_scenarios_abstaining": 0
+  },
+  "fixed|B1": {
+   "n_claims": 16492,
+   "n_true": 13,
+   "n_amb": 1758,
+   "n_false_y0": 14721,
+   "n_windows": 151,
+   "n_scenarios": 22,
+   "n_transitions_hit": 13,
+   "pooled_fdr": 0.9992117390249818,
+   "by_truth": {
+    "FALSE: benign -> benign": 9345,
+    "FALSE: benign <-> malicious": 5376,
+    "AMB: same episode": 1531,
+    "AMB: malicious pair not in T* (transitive / reverse / unexplained)": 226,
+    "TRUE link (Y=1)": 13,
+    "AMB: mixed unit": 1
+   },
+   "top_type_pairs": [
+    {
+     "u_type": "C2_PERIODIC",
+     "v_type": "BENIGN_GENERIC_UDP_SYS",
+     "len": 7264
+    },
+    {
+     "u_type": "SCAN_H",
+     "v_type": "BENIGN_GENERIC_UDP_SYS",
+     "len": 1752
+    },
+    {
+     "u_type": "SCAN_H",
+     "v_type": "BENIGN_GENERIC_TCP_HIGH",
+     "len": 997
+    },
+    {
+     "u_type": "SCAN_H",
+     "v_type": "BENIGN_GENERIC_TCP_SYS",
+     "len": 962
+    },
+    {
+     "u_type": "CONN_FAIL_BURST",
+     "v_type": "BENIGN_GENERIC_UDP_SYS",
+     "len": 598
+    },
+    {
+     "u_type": "INTERACTIVE_SESSION",
+     "v_type": "BENIGN_GENERIC_UDP_SYS",
+     "len": 586
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "REPORT_SMALL",
+     "len": 354
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "SCAN_H",
+     "len": 353
+    }
+   ]
+  },
+  "fixed|B2": {
+   "n_claims": 44,
+   "n_true": 7,
+   "n_amb": 16,
+   "n_false_y0": 21,
+   "n_windows": 21,
+   "n_scenarios": 10,
+   "n_transitions_hit": 7,
+   "pooled_fdr": 0.8409090909090909,
+   "by_truth": {
+    "FALSE: benign <-> malicious": 20,
+    "AMB: malicious pair not in T* (transitive / reverse / unexplained)": 10,
+    "TRUE link (Y=1)": 7,
+    "AMB: same episode": 6,
+    "FALSE: benign -> benign": 1
+   },
+   "top_type_pairs": [
+    {
+     "u_type": "HTTP_DOWNLOAD",
+     "v_type": "BENIGN_GENERIC_TCP_HIGH",
+     "len": 12
+    },
+    {
+     "u_type": "CONN_FAIL_BURST",
+     "v_type": "SCAN_H",
+     "len": 8
+    },
+    {
+     "u_type": "BENIGN_GENERIC_TCP_HIGH",
+     "v_type": "SCAN_H",
+     "len": 6
+    },
+    {
+     "u_type": "HTTP_DOWNLOAD",
+     "v_type": "SCAN_H",
+     "len": 2
+    },
+    {
+     "u_type": "CONN_FAIL_BURST",
+     "v_type": "FLOOD_SYN",
+     "len": 2
+    },
+    {
+     "u_type": "CONN_FAIL_BURST",
+     "v_type": "FLOOD_UDP",
+     "len": 2
+    },
+    {
+     "u_type": "CONN_FAIL_BURST",
+     "v_type": "FLOOD_ACK",
+     "len": 2
+    },
+    {
+     "u_type": "INTERACTIVE_SESSION",
+     "v_type": "C2_PERIODIC",
+     "len": 2
+    }
+   ]
+  },
+  "fixed|B4": {
+   "n_claims": 290844,
+   "n_true": 1,
+   "n_amb": 1575,
+   "n_false_y0": 289268,
+   "n_windows": 155,
+   "n_scenarios": 23,
+   "n_transitions_hit": 1,
+   "pooled_fdr": 0.9999965617306873,
+   "by_truth": {
+    "FALSE: benign -> benign": 271903,
+    "FALSE: benign <-> malicious": 17365,
+    "AMB: same episode": 1454,
+    "AMB: malicious pair not in T* (transitive / reverse / unexplained)": 121,
+    "TRUE link (Y=1)": 1
+   },
+   "top_type_pairs": [
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "BENIGN_GENERIC_UDP_SYS",
+     "len": 185143
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "BENIGN_GENERIC_TCP_HIGH",
+     "len": 37609
+    },
+    {
+     "u_type": "BENIGN_GENERIC_TCP_HIGH",
+     "v_type": "BENIGN_GENERIC_UDP_SYS",
+     "len": 27783
+    },
+    {
+     "u_type": "BENIGN_GENERIC_TCP_HIGH",
+     "v_type": "BENIGN_GENERIC_TCP_HIGH",
+     "len": 25410
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "BENIGN_GENERIC_TCP_SYS",
+     "len": 5710
+    },
+    {
+     "u_type": "SCAN_H",
+     "v_type": "BENIGN_GENERIC_UDP_SYS",
+     "len": 1618
+    },
+    {
+     "u_type": "BENIGN_GENERIC_UDP_SYS",
+     "v_type": "DNS_ACTIVITY",
+     "len": 1148
+    },
+    {
+     "u_type": "SCAN_H",
+     "v_type": "BENIGN_GENERIC_TCP_HIGH",
+     "len": 942
+    }
+   ]
+  }
+ },
+ "transition_split": {
+  "n_T": 164,
+  "n_T_hid": 149,
+  "n_T_hid_R0": 149,
+  "n_T_hid_other": 0,
+  "n_T_obs": 15,
+  "n_T_obs_in_C": 13,
+  "rho_T": 0.9085365853658537,
+  "rho_T_R0_share": 0.9085365853658537,
+  "rho_T_without_R0": 0.0,
+  "ceiling_with_R0": 0.07926829268292683,
+  "ceiling_without_R0": 0.8666666666666667,
+  "r_CT": 0.8666666666666667,
+  "n_windows_with_R0": 149,
+  "n_windows_with_obs": 14
+ },
+ "observable_str": {
+  "P-LOSO|S_CF.stat|crc_bh|a=0.1": {
+   "n_transitions_hit": 0,
+   "ostr_pooled": 0.0,
+   "str_pooled_with_R0": 0.0,
+   "str_pooled_without_R0": 0.0
+  },
+  "P-LOSO|S_CF.stat|crc_st|a=0.1": {
+   "n_transitions_hit": 1,
+   "ostr_pooled": 0.06666666666666667,
+   "str_pooled_with_R0": 0.006097560975609756,
+   "str_pooled_without_R0": 0.06666666666666667
+  },
+  "P-LOSO|S_CF.stat|crc_fdx020|a=0.1": {
+   "n_transitions_hit": 0,
+   "ostr_pooled": 0.0,
+   "str_pooled_with_R0": 0.0,
+   "str_pooled_without_R0": 0.0
+  },
+  "P-LOSO|S_CF.stat|ltt|a=0.1": {
+   "n_transitions_hit": 0,
+   "ostr_pooled": 0.0,
+   "str_pooled_with_R0": 0.0,
+   "str_pooled_without_R0": 0.0
+  },
+  "P-LOSO|S_CF.stat|crc_bh|a=0.2": {
+   "n_transitions_hit": 1,
+   "ostr_pooled": 0.06666666666666667,
+   "str_pooled_with_R0": 0.006097560975609756,
+   "str_pooled_without_R0": 0.06666666666666667
+  },
+  "P-LOSO|S_CF.stat|crc_st|a=0.2": {
+   "n_transitions_hit": 1,
+   "ostr_pooled": 0.06666666666666667,
+   "str_pooled_with_R0": 0.006097560975609756,
+   "str_pooled_without_R0": 0.06666666666666667
+  },
+  "P-LOSO|S_CF.stat|crc_fdx020|a=0.2": {
+   "n_transitions_hit": 1,
+   "ostr_pooled": 0.06666666666666667,
+   "str_pooled_with_R0": 0.006097560975609756,
+   "str_pooled_without_R0": 0.06666666666666667
+  },
+  "P-LOSO|S_CF.stat|ltt|a=0.2": {
+   "n_transitions_hit": 0,
+   "ostr_pooled": 0.0,
+   "str_pooled_with_R0": 0.0,
+   "str_pooled_without_R0": 0.0
+  },
+  "P-LOSO|S_CF.fuse_s0|crc_bh|a=0.1": {
+   "n_transitions_hit": 0,
+   "ostr_pooled": 0.0,
+   "str_pooled_with_R0": 0.0,
+   "str_pooled_without_R0": 0.0
+  },
+  "P-LOSO|S_CF.fuse_s0|crc_st|a=0.1": {
+   "n_transitions_hit": 2,
+   "ostr_pooled": 0.13333333333333333,
+   "str_pooled_with_R0": 0.012195121951219513,
+   "str_pooled_without_R0": 0.13333333333333333
+  },
+  "P-LOSO|S_CF.fuse_s0|crc_fdx020|a=0.1": {
+   "n_transitions_hit": 0,
+   "ostr_pooled": 0.0,
+   "str_pooled_with_R0": 0.0,
+   "str_pooled_without_R0": 0.0
+  },
+  "P-LOSO|S_CF.fuse_s0|ltt|a=0.1": {
+   "n_transitions_hit": 0,
+   "ostr_pooled": 0.0,
+   "str_pooled_with_R0": 0.0,
+   "str_pooled_without_R0": 0.0
+  },
+  "P-LOSO|S_CF.fuse_s0|crc_bh|a=0.2": {
+   "n_transitions_hit": 0,
+   "ostr_pooled": 0.0,
+   "str_pooled_with_R0": 0.0,
+   "str_pooled_without_R0": 0.0
+  },
+  "P-LOSO|S_CF.fuse_s0|crc_st|a=0.2": {
+   "n_transitions_hit": 4,
+   "ostr_pooled": 0.26666666666666666,
+   "str_pooled_with_R0": 0.024390243902439025,
+   "str_pooled_without_R0": 0.26666666666666666
+  },
+  "P-LOSO|S_CF.fuse_s0|crc_fdx020|a=0.2": {
+   "n_transitions_hit": 0,
+   "ostr_pooled": 0.0,
+   "str_pooled_with_R0": 0.0,
+   "str_pooled_without_R0": 0.0
+  },
+  "P-LOSO|S_CF.fuse_s0|ltt|a=0.2": {
+   "n_transitions_hit": 0,
+   "ostr_pooled": 0.0,
+   "str_pooled_with_R0": 0.0,
+   "str_pooled_without_R0": 0.0
+  },
+  "P-LOSO|S_CF2.stat|crc_bh|a=0.1": {
+   "n_transitions_hit": 0,
+   "ostr_pooled": 0.0,
+   "str_pooled_with_R0": 0.0,
+   "str_pooled_without_R0": 0.0
+  },
+  "P-LOSO|S_CF2.stat|crc_st|a=0.1": {
+   "n_transitions_hit": 0,
+   "ostr_pooled": 0.0,
+   "str_pooled_with_R0": 0.0,
+   "str_pooled_without_R0": 0.0
+  },
+  "P-LOSO|S_CF2.stat|crc_fdx020|a=0.1": {
+   "n_transitions_hit": 0,
+   "ostr_pooled": 0.0,
+   "str_pooled_with_R0": 0.0,
+   "str_pooled_without_R0": 0.0
+  },
+  "P-LOSO|S_CF2.stat|ltt|a=0.1": {
+   "n_transitions_hit": 0,
+   "ostr_pooled": 0.0,
+   "str_pooled_with_R0": 0.0,
+   "str_pooled_without_R0": 0.0
+  },
+  "P-LOSO|S_CF2.stat|crc_bh|a=0.2": {
+   "n_transitions_hit": 1,
+   "ostr_pooled": 0.06666666666666667,
+   "str_pooled_with_R0": 0.006097560975609756,
+   "str_pooled_without_R0": 0.06666666666666667
+  },
+  "P-LOSO|S_CF2.stat|crc_st|a=0.2": {
+   "n_transitions_hit": 0,
+   "ostr_pooled": 0.0,
+   "str_pooled_with_R0": 0.0,
+   "str_pooled_without_R0": 0.0
+  },
+  "P-LOSO|S_CF2.stat|crc_fdx020|a=0.2": {
+   "n_transitions_hit": 1,
+   "ostr_pooled": 0.06666666666666667,
+   "str_pooled_with_R0": 0.006097560975609756,
+   "str_pooled_without_R0": 0.06666666666666667
+  },
+  "P-LOSO|S_CF2.stat|ltt|a=0.2": {
+   "n_transitions_hit": 0,
+   "ostr_pooled": 0.0,
+   "str_pooled_with_R0": 0.0,
+   "str_pooled_without_R0": 0.0
+  },
+  "P-LOSO|S_CF2.fuse_s0|crc_bh|a=0.1": {
+   "n_transitions_hit": 0,
+   "ostr_pooled": 0.0,
+   "str_pooled_with_R0": 0.0,
+   "str_pooled_without_R0": 0.0
+  },
+  "P-LOSO|S_CF2.fuse_s0|crc_st|a=0.1": {
+   "n_transitions_hit": 0,
+   "ostr_pooled": 0.0,
+   "str_pooled_with_R0": 0.0,
+   "str_pooled_without_R0": 0.0
+  },
+  "P-LOSO|S_CF2.fuse_s0|crc_fdx020|a=0.1": {
+   "n_transitions_hit": 0,
+   "ostr_pooled": 0.0,
+   "str_pooled_with_R0": 0.0,
+   "str_pooled_without_R0": 0.0
+  },
+  "P-LOSO|S_CF2.fuse_s0|ltt|a=0.1": {
+   "n_transitions_hit": 0,
+   "ostr_pooled": 0.0,
+   "str_pooled_with_R0": 0.0,
+   "str_pooled_without_R0": 0.0
+  },
+  "P-LOSO|S_CF2.fuse_s0|crc_bh|a=0.2": {
+   "n_transitions_hit": 1,
+   "ostr_pooled": 0.06666666666666667,
+   "str_pooled_with_R0": 0.006097560975609756,
+   "str_pooled_without_R0": 0.06666666666666667
+  },
+  "P-LOSO|S_CF2.fuse_s0|crc_st|a=0.2": {
+   "n_transitions_hit": 1,
+   "ostr_pooled": 0.06666666666666667,
+   "str_pooled_with_R0": 0.006097560975609756,
+   "str_pooled_without_R0": 0.06666666666666667
+  },
+  "P-LOSO|S_CF2.fuse_s0|crc_fdx020|a=0.2": {
+   "n_transitions_hit": 1,
+   "ostr_pooled": 0.06666666666666667,
+   "str_pooled_with_R0": 0.006097560975609756,
+   "str_pooled_without_R0": 0.06666666666666667
+  },
+  "P-LOSO|S_CF2.fuse_s0|ltt|a=0.2": {
+   "n_transitions_hit": 0,
+   "ostr_pooled": 0.0,
+   "str_pooled_with_R0": 0.0,
+   "str_pooled_without_R0": 0.0
+  },
+  "fixed|B1": {
+   "n_transitions_hit": 13,
+   "ostr_pooled": 0.8666666666666667,
+   "str_pooled_with_R0": 0.07926829268292683,
+   "str_pooled_without_R0": 0.8666666666666667
+  },
+  "fixed|B2": {
+   "n_transitions_hit": 7,
+   "ostr_pooled": 0.4666666666666667,
+   "str_pooled_with_R0": 0.042682926829268296,
+   "str_pooled_without_R0": 0.4666666666666667
+  },
+  "fixed|B4": {
+   "n_transitions_hit": 1,
+   "ostr_pooled": 0.06666666666666667,
+   "str_pooled_with_R0": 0.006097560975609756,
+   "str_pooled_without_R0": 0.06666666666666667
+  }
+ },
+ "pwin": {
+  "P-WIN|S_CF.stat|crc_bh|a=0.1": {
+   "sum_R_over_splits": 19437.0,
+   "sum_TP_over_splits": 73.0,
+   "mean_claims_per_split": 97.185,
+   "mean_true_claims_per_split": 0.365,
+   "n_distinct_claims": 313,
+   "n_distinct_true_claims": 2
+  },
+  "P-WIN|S_CF.stat|crc_bh|a=0.2": {
+   "sum_R_over_splits": 42654.0,
+   "sum_TP_over_splits": 290.0,
+   "mean_claims_per_split": 213.27,
+   "mean_true_claims_per_split": 1.45,
+   "n_distinct_claims": 511,
+   "n_distinct_true_claims": 3
+  },
+  "P-WIN|S_CF.fuse_s0|crc_bh|a=0.1": {
+   "sum_R_over_splits": 18340.0,
+   "sum_TP_over_splits": 15.0,
+   "mean_claims_per_split": 91.7,
+   "mean_true_claims_per_split": 0.075,
+   "n_distinct_claims": 309,
+   "n_distinct_true_claims": 1
+  },
+  "P-WIN|S_CF.fuse_s0|crc_bh|a=0.2": {
+   "sum_R_over_splits": 30811.0,
+   "sum_TP_over_splits": 105.0,
+   "mean_claims_per_split": 154.055,
+   "mean_true_claims_per_split": 0.525,
+   "n_distinct_claims": 309,
+   "n_distinct_true_claims": 1
+  }
+ },
+ "true_links": [
+  {
+   "scenario": "3-1",
+   "window": "3-1_b000",
+   "row": 31,
+   "cand_id": 22,
+   "rank": 2,
+   "N": 1159,
+   "score": -4.441072630131865,
+   "ref_p": 0.01937549601817137,
+   "min_bh_idx": 59,
+   "min_bh_lambda": 0.686967069859094,
+   "transition": "CC#1@seed -> SCAN#2@seed",
+   "u_type": "C2_PERIODIC",
+   "v_type": "INTERACTIVE_SESSION",
+   "u_src": "192.168.2.5",
+   "u_dst": "51.38.81.99",
+   "v_dst": "121.232.125.149",
+   "lag_s": 897.987429857254,
+   "S_CF.stat|a=0.1": false,
+   "S_CF.stat|a=0.2": false,
+   "S_CF.fuse_s0|a=0.1": false,
+   "S_CF.fuse_s0|a=0.2": false,
+   "S_CF2.stat|a=0.1": false,
+   "S_CF2.stat|a=0.2": false,
+   "S_CF2.fuse_s0|a=0.1": false,
+   "S_CF2.fuse_s0|a=0.2": false,
+   "B1": true,
+   "B2": false,
+   "B4": false,
+   "pwin_freq|S_CF.stat|a=0.1": 0.0,
+   "pwin_freq|S_CF.stat|a=0.2": 0.0,
+   "pwin_freq|S_CF.fuse_s0|a=0.1": 0.0,
+   "pwin_freq|S_CF.fuse_s0|a=0.2": 0.0
+  },
+  {
+   "scenario": "3-1",
+   "window": "3-1_b001",
+   "row": 32,
+   "cand_id": 21,
+   "rank": 1,
+   "N": 1300,
+   "score": -4.465373397618931,
+   "ref_p": 0.019585306003302227,
+   "min_bh_idx": 59,
+   "min_bh_lambda": 0.686967069859094,
+   "transition": "CC#1@seed -> SCAN#2@seed",
+   "u_type": "C2_PERIODIC",
+   "v_type": "INTERACTIVE_SESSION",
+   "u_src": "192.168.2.5",
+   "u_dst": "54.39.23.28",
+   "v_dst": "69.156.162.142",
+   "lag_s": 989.2427351474762,
+   "S_CF.stat|a=0.1": false,
+   "S_CF.stat|a=0.2": false,
+   "S_CF.fuse_s0|a=0.1": false,
+   "S_CF.fuse_s0|a=0.2": false,
+   "S_CF2.stat|a=0.1": false,
+   "S_CF2.stat|a=0.2": false,
+   "S_CF2.fuse_s0|a=0.1": false,
+   "S_CF2.fuse_s0|a=0.2": false,
+   "B1": true,
+   "B2": false,
+   "B4": false,
+   "pwin_freq|S_CF.stat|a=0.1": 0.0,
+   "pwin_freq|S_CF.stat|a=0.2": 0.0,
+   "pwin_freq|S_CF.fuse_s0|a=0.1": 0.0,
+   "pwin_freq|S_CF.fuse_s0|a=0.2": 0.0
+  },
+  {
+   "scenario": "3-1",
+   "window": "3-1_b005",
+   "row": 35,
+   "cand_id": 20,
+   "rank": 1,
+   "N": 429,
+   "score": -4.881409996727417,
+   "ref_p": 0.023699406146520347,
+   "min_bh_idx": 60,
+   "min_bh_lambda": 0.8,
+   "transition": "CC#1@seed -> SCAN#2@seed",
+   "u_type": "C2_PERIODIC",
+   "v_type": "SCAN_H",
+   "u_src": "192.168.2.5",
+   "u_dst": "54.39.23.28",
+   "v_dst": "161.246.34.147",
+   "lag_s": 306.04483294487,
+   "S_CF.stat|a=0.1": false,
+   "S_CF.stat|a=0.2": false,
+   "S_CF.fuse_s0|a=0.1": false,
+   "S_CF.fuse_s0|a=0.2": false,
+   "S_CF2.stat|a=0.1": false,
+   "S_CF2.stat|a=0.2": false,
+   "S_CF2.fuse_s0|a=0.1": false,
+   "S_CF2.fuse_s0|a=0.2": false,
+   "B1": true,
+   "B2": true,
+   "B4": false,
+   "pwin_freq|S_CF.stat|a=0.1": 0.0,
+   "pwin_freq|S_CF.stat|a=0.2": 0.0,
+   "pwin_freq|S_CF.fuse_s0|a=0.1": 0.0,
+   "pwin_freq|S_CF.fuse_s0|a=0.2": 0.0
+  },
+  {
+   "scenario": "34-1",
+   "window": "34-1_b008",
+   "row": 62,
+   "cand_id": 37,
+   "rank": 5,
+   "N": 65,
+   "score": -9.904913398169386,
+   "ref_p": 0.290085109876577,
+   "min_bh_idx": 60,
+   "min_bh_lambda": 0.8,
+   "transition": "CC#0@seed -> ATK#1@seed",
+   "u_type": "CONN_FAIL_BURST",
+   "v_type": "FLOOD_ACK",
+   "u_src": "192.168.1.195",
+   "u_dst": "185.244.25.235",
+   "v_dst": "123.59.209.185",
+   "lag_s": 5512.756983995438,
+   "S_CF.stat|a=0.1": false,
+   "S_CF.stat|a=0.2": false,
+   "S_CF.fuse_s0|a=0.1": false,
+   "S_CF.fuse_s0|a=0.2": false,
+   "S_CF2.stat|a=0.1": false,
+   "S_CF2.stat|a=0.2": false,
+   "S_CF2.fuse_s0|a=0.1": false,
+   "S_CF2.fuse_s0|a=0.2": false,
+   "B1": true,
+   "B2": true,
+   "B4": false,
+   "pwin_freq|S_CF.stat|a=0.1": 0.0,
+   "pwin_freq|S_CF.stat|a=0.2": 0.0,
+   "pwin_freq|S_CF.fuse_s0|a=0.1": 0.0,
+   "pwin_freq|S_CF.fuse_s0|a=0.2": 0.0
+  },
+  {
+   "scenario": "34-1",
+   "window": "34-1_b009",
+   "row": 63,
+   "cand_id": 19,
+   "rank": 20,
+   "N": 42,
+   "score": -9.168471936232988,
+   "ref_p": 0.17042956313912228,
+   "min_bh_idx": 55,
+   "min_bh_lambda": 0.3735249782317618,
+   "transition": "CC#0@seed -> ATK#1@seed",
+   "u_type": "CONN_FAIL_BURST",
+   "v_type": "FLOOD_UDP",
+   "u_src": "192.168.1.195",
+   "u_dst": "185.244.25.235",
+   "v_dst": "74.91.117.248",
+   "lag_s": 97.06064200401306,
+   "S_CF.stat|a=0.1": false,
+   "S_CF.stat|a=0.2": false,
+   "S_CF.fuse_s0|a=0.1": false,
+   "S_CF.fuse_s0|a=0.2": false,
+   "S_CF2.stat|a=0.1": false,
+   "S_CF2.stat|a=0.2": true,
+   "S_CF2.fuse_s0|a=0.1": false,
+   "S_CF2.fuse_s0|a=0.2": true,
+   "B1": true,
+   "B2": true,
+   "B4": false,
+   "pwin_freq|S_CF.stat|a=0.1": 0.11428571428571428,
+   "pwin_freq|S_CF.stat|a=0.2": 0.9904761904761905,
+   "pwin_freq|S_CF.fuse_s0|a=0.1": 0.14285714285714285,
+   "pwin_freq|S_CF.fuse_s0|a=0.2": 1.0
+  },
+  {
+   "scenario": "35-1",
+   "window": "35-1_b006",
+   "row": 70,
+   "cand_id": 1239,
+   "rank": 31,
+   "N": 1629,
+   "score": -7.107647296822138,
+   "ref_p": 0.05788018937631701,
+   "min_bh_idx": 60,
+   "min_bh_lambda": 0.8,
+   "transition": "CC#0@seed -> ATK#1@seed",
+   "u_type": "FLOOD_UDP",
+   "v_type": "FLOOD_ACK",
+   "u_src": "192.168.1.196",
+   "u_dst": "104.248.160.24",
+   "v_dst": "209.97.190.136",
+   "lag_s": 185.9719021320343,
+   "S_CF.stat|a=0.1": false,
+   "S_CF.stat|a=0.2": false,
+   "S_CF.fuse_s0|a=0.1": false,
+   "S_CF.fuse_s0|a=0.2": false,
+   "S_CF2.stat|a=0.1": false,
+   "S_CF2.stat|a=0.2": false,
+   "S_CF2.fuse_s0|a=0.1": false,
+   "S_CF2.fuse_s0|a=0.2": false,
+   "B1": true,
+   "B2": false,
+   "B4": true,
+   "pwin_freq|S_CF.stat|a=0.1": 0.0,
+   "pwin_freq|S_CF.stat|a=0.2": 0.0,
+   "pwin_freq|S_CF.fuse_s0|a=0.1": 0.0,
+   "pwin_freq|S_CF.fuse_s0|a=0.2": 0.0
+  },
+  {
+   "scenario": "39-1",
+   "window": "39-1_b000",
+   "row": 86,
+   "cand_id": 77,
+   "rank": 29,
+   "N": 3938,
+   "score": -5.66750798059463,
+   "ref_p": 0.0320370725121553,
+   "min_bh_idx": 59,
+   "min_bh_lambda": 0.686967069859094,
+   "transition": "CC#0@seed -> SCAN#1@seed",
+   "u_type": "BENIGN_GENERIC_TCP_HIGH",
+   "v_type": "SCAN_H",
+   "u_src": "192.168.1.194",
+   "u_dst": "94.125.182.255",
+   "v_dst": "124.173.131.66",
+   "lag_s": 7.744335889816284,
+   "S_CF.stat|a=0.1": false,
+   "S_CF.stat|a=0.2": false,
+   "S_CF.fuse_s0|a=0.1": false,
+   "S_CF.fuse_s0|a=0.2": false,
+   "S_CF2.stat|a=0.1": false,
+   "S_CF2.stat|a=0.2": false,
+   "S_CF2.fuse_s0|a=0.1": false,
+   "S_CF2.fuse_s0|a=0.2": false,
+   "B1": true,
+   "B2": true,
+   "B4": false,
+   "pwin_freq|S_CF.stat|a=0.1": 0.0,
+   "pwin_freq|S_CF.stat|a=0.2": 0.0,
+   "pwin_freq|S_CF.fuse_s0|a=0.1": 0.0,
+   "pwin_freq|S_CF.fuse_s0|a=0.2": 0.0
+  },
+  {
+   "scenario": "39-1",
+   "window": "39-1_b001",
+   "row": 87,
+   "cand_id": 1,
+   "rank": 5,
+   "N": 4297,
+   "score": -4.166152237192528,
+   "ref_p": 0.017085830528265053,
+   "min_bh_idx": 59,
+   "min_bh_lambda": 0.686967069859094,
+   "transition": "CC#0@seed -> SCAN#1@seed",
+   "u_type": "BENIGN_GENERIC_TCP_HIGH",
+   "v_type": "SCAN_H",
+   "u_src": "192.168.1.194",
+   "u_dst": "45.58.183.18",
+   "v_dst": "203.14.210.93",
+   "lag_s": 5.39965295791626,
+   "S_CF.stat|a=0.1": false,
+   "S_CF.stat|a=0.2": false,
+   "S_CF.fuse_s0|a=0.1": false,
+   "S_CF.fuse_s0|a=0.2": false,
+   "S_CF2.stat|a=0.1": false,
+   "S_CF2.stat|a=0.2": false,
+   "S_CF2.fuse_s0|a=0.1": false,
+   "S_CF2.fuse_s0|a=0.2": false,
+   "B1": true,
+   "B2": true,
+   "B4": false,
+   "pwin_freq|S_CF.stat|a=0.1": 0.0,
+   "pwin_freq|S_CF.stat|a=0.2": 0.0,
+   "pwin_freq|S_CF.fuse_s0|a=0.1": 0.0,
+   "pwin_freq|S_CF.fuse_s0|a=0.2": 0.0
+  },
+  {
+   "scenario": "39-1",
+   "window": "39-1_b002",
+   "row": 88,
+   "cand_id": 1,
+   "rank": 8,
+   "N": 3993,
+   "score": -4.949774657799423,
+   "ref_p": 0.024255858715780447,
+   "min_bh_idx": 59,
+   "min_bh_lambda": 0.686967069859094,
+   "transition": "CC#0@seed -> SCAN#1@seed",
+   "u_type": "BENIGN_GENERIC_TCP_HIGH",
+   "v_type": "SCAN_H",
+   "u_src": "192.168.1.194",
+   "u_dst": "45.58.183.18",
+   "v_dst": "42.236.86.212",
+   "lag_s": 1.3527500629425049,
+   "S_CF.stat|a=0.1": false,
+   "S_CF.stat|a=0.2": false,
+   "S_CF.fuse_s0|a=0.1": false,
+   "S_CF.fuse_s0|a=0.2": false,
+   "S_CF2.stat|a=0.1": false,
+   "S_CF2.stat|a=0.2": false,
+   "S_CF2.fuse_s0|a=0.1": false,
+   "S_CF2.fuse_s0|a=0.2": false,
+   "B1": true,
+   "B2": true,
+   "B4": false,
+   "pwin_freq|S_CF.stat|a=0.1": 0.0,
+   "pwin_freq|S_CF.stat|a=0.2": 0.0,
+   "pwin_freq|S_CF.fuse_s0|a=0.1": 0.0,
+   "pwin_freq|S_CF.fuse_s0|a=0.2": 0.0
+  },
+  {
+   "scenario": "43-1",
+   "window": "43-1_b000",
+   "row": 92,
+   "cand_id": 7,
+   "rank": 1,
+   "N": 5127,
+   "score": -0.4625681573795595,
+   "ref_p": 0.0030924167373635094,
+   "min_bh_idx": 59,
+   "min_bh_lambda": 0.686967069859094,
+   "transition": "CC#0@seed -> SCAN#1@seed",
+   "u_type": "HTTP_DOWNLOAD",
+   "v_type": "BENIGN_GENERIC_TCP_HIGH",
+   "u_src": "192.168.1.198",
+   "u_dst": "142.11.219.83",
+   "v_dst": "142.11.219.83",
+   "lag_s": 188.58013105392456,
+   "S_CF.stat|a=0.1": false,
+   "S_CF.stat|a=0.2": false,
+   "S_CF.fuse_s0|a=0.1": false,
+   "S_CF.fuse_s0|a=0.2": false,
+   "S_CF2.stat|a=0.1": false,
+   "S_CF2.stat|a=0.2": false,
+   "S_CF2.fuse_s0|a=0.1": false,
+   "S_CF2.fuse_s0|a=0.2": false,
+   "B1": true,
+   "B2": false,
+   "B4": false,
+   "pwin_freq|S_CF.stat|a=0.1": 0.0,
+   "pwin_freq|S_CF.stat|a=0.2": 0.0,
+   "pwin_freq|S_CF.fuse_s0|a=0.1": 0.0,
+   "pwin_freq|S_CF.fuse_s0|a=0.2": 0.0
+  },
+  {
+   "scenario": "44-1",
+   "window": "44-1_b000",
+   "row": 93,
+   "cand_id": 28,
+   "rank": 2,
+   "N": 34,
+   "score": -3.9007278643272136,
+   "ref_p": 0.015325251087819161,
+   "min_bh_idx": 53,
+   "min_bh_lambda": 0.27543017240604384,
+   "transition": "CC#0@seed -> ATK#1@seed",
+   "u_type": "C2_PERIODIC",
+   "v_type": "HTTP_UPLOAD",
+   "u_src": "192.168.1.199",
+   "u_dst": "46.101.251.172",
+   "v_dst": "86.136.151.56",
+   "lag_s": 6206.194833993912,
+   "S_CF.stat|a=0.1": false,
+   "S_CF.stat|a=0.2": true,
+   "S_CF.fuse_s0|a=0.1": false,
+   "S_CF.fuse_s0|a=0.2": false,
+   "S_CF2.stat|a=0.1": false,
+   "S_CF2.stat|a=0.2": false,
+   "S_CF2.fuse_s0|a=0.1": false,
+   "S_CF2.fuse_s0|a=0.2": false,
+   "B1": true,
+   "B2": false,
+   "B4": false,
+   "pwin_freq|S_CF.stat|a=0.1": 0.6421052631578947,
+   "pwin_freq|S_CF.stat|a=0.2": 1.0,
+   "pwin_freq|S_CF.fuse_s0|a=0.1": 0.09473684210526316,
+   "pwin_freq|S_CF.fuse_s0|a=0.2": 0.9894736842105263
+  },
+  {
+   "scenario": "52-1",
+   "window": "52-1_b000",
+   "row": 103,
+   "cand_id": 9,
+   "rank": 3,
+   "N": 2648,
+   "score": -4.214455301703048,
+   "ref_p": 0.017468961805460533,
+   "min_bh_idx": 59,
+   "min_bh_lambda": 0.686967069859094,
+   "transition": "CC#1@seed -> SCAN#2@seed",
+   "u_type": "C2_PERIODIC",
+   "v_type": "SCAN_H",
+   "u_src": "192.168.1.197",
+   "u_dst": "185.244.25.108",
+   "v_dst": "14.187.82.75",
+   "lag_s": 0.0007588863372802734,
+   "S_CF.stat|a=0.1": false,
+   "S_CF.stat|a=0.2": false,
+   "S_CF.fuse_s0|a=0.1": false,
+   "S_CF.fuse_s0|a=0.2": false,
+   "S_CF2.stat|a=0.1": false,
+   "S_CF2.stat|a=0.2": false,
+   "S_CF2.fuse_s0|a=0.1": false,
+   "S_CF2.fuse_s0|a=0.2": false,
+   "B1": true,
+   "B2": true,
+   "B4": false,
+   "pwin_freq|S_CF.stat|a=0.1": 0.0,
+   "pwin_freq|S_CF.stat|a=0.2": 0.0,
+   "pwin_freq|S_CF.fuse_s0|a=0.1": 0.0,
+   "pwin_freq|S_CF.fuse_s0|a=0.2": 0.0
+  },
+  {
+   "scenario": "60-1",
+   "window": "60-1_b000",
+   "row": 111,
+   "cand_id": 45,
+   "rank": 20,
+   "N": 90,
+   "score": -7.946405467417355,
+   "ref_p": 0.08501865484433012,
+   "min_bh_idx": 56,
+   "min_bh_lambda": 0.43498443476584864,
+   "transition": "CC#0@seed -> ATK#1@seed",
+   "u_type": "C2_PERIODIC",
+   "v_type": "HTTP_UPLOAD",
+   "u_src": "192.168.1.195",
+   "u_dst": "102.165.48.81",
+   "v_dst": "68.206.48.206",
+   "lag_s": 5824.86741900444,
+   "S_CF.stat|a=0.1": false,
+   "S_CF.stat|a=0.2": false,
+   "S_CF.fuse_s0|a=0.1": false,
+   "S_CF.fuse_s0|a=0.2": false,
+   "S_CF2.stat|a=0.1": false,
+   "S_CF2.stat|a=0.2": false,
+   "S_CF2.fuse_s0|a=0.1": false,
+   "S_CF2.fuse_s0|a=0.2": false,
+   "B1": true,
+   "B2": false,
+   "B4": false,
+   "pwin_freq|S_CF.stat|a=0.1": 0.0,
+   "pwin_freq|S_CF.stat|a=0.2": 0.8584905660377359,
+   "pwin_freq|S_CF.fuse_s0|a=0.1": 0.0,
+   "pwin_freq|S_CF.fuse_s0|a=0.2": 0.0
+  }
+ ],
+ "files": {
+  "claims_ploso": "results/exp/X2/iot23_audit/certified_claims_ploso.parquet",
+  "true_links": "results/exp/X2/iot23_audit/true_links.parquet",
+  "baselines": {
+   "B1": "results/exp/X2/iot23_audit/baseline_B1_claims.parquet",
+   "B2": "results/exp/X2/iot23_audit/baseline_B2_claims.parquet",
+   "B4": "results/exp/X2/iot23_audit/baseline_B4_claims.parquet"
+  }
+ }
+}

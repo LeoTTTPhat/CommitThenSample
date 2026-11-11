@@ -1,0 +1,4978 @@
+{
+ "exp": "E15",
+ "prereg_blake3": "955c768e80f31f4040548e0e944c327605396eaedc80430597abfda5b8f610a6",
+ "updated": "2026-10-19T03:05:54+0700",
+ "numbers": {
+  "descriptor|cf_ton|n_incidents": {
+   "value": 300,
+   "definition": "n_incidents of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_ton/S_TON.stat"
+  },
+  "descriptor|cf_ton|N_median": {
+   "value": 242.5,
+   "definition": "N_median of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_ton/S_TON.stat"
+  },
+  "descriptor|cf_ton|N_over_r_pooled": {
+   "value": 173.18645640074212,
+   "definition": "N_over_r_pooled of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_ton/S_TON.stat"
+  },
+  "descriptor|cf_ton|N_over_r_median": {
+   "value": 78.0,
+   "definition": "N_over_r_median of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_ton/S_TON.stat"
+  },
+  "descriptor|cf_ton|r_CT": {
+   "value": 0.9221556886227545,
+   "definition": "r_CT of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_ton/S_TON.stat"
+  },
+  "descriptor|cf_ton|rho_T": {
+   "value": 0.007640067911714771,
+   "definition": "rho_T of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_ton/S_TON.stat"
+  },
+  "descriptor|cf_ton|ceiling": {
+   "value": 0.9151103565365026,
+   "definition": "ceiling of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_ton/S_TON.stat"
+  },
+  "descriptor|cf_ton|n_T": {
+   "value": 1178.0,
+   "definition": "n_T of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_ton/S_TON.stat"
+  },
+  "descriptor|cf_ton|n_T_obs": {
+   "value": 1169.0,
+   "definition": "n_T_obs of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_ton/S_TON.stat"
+  },
+  "descriptor|cf_ton|n_T_hid": {
+   "value": 9.0,
+   "definition": "n_T_hid of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_ton/S_TON.stat"
+  },
+  "descriptor|cf_ton|n_T_obs_in_C": {
+   "value": 1078.0,
+   "definition": "n_T_obs_in_C of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_ton/S_TON.stat"
+  },
+  "descriptor|cf_ton|n_true": {
+   "value": 1078.0,
+   "definition": "n_true of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_ton/S_TON.stat"
+  },
+  "descriptor|cf_ton|amb_share": {
+   "value": 0.5198150135909472,
+   "definition": "amb_share of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_ton/S_TON.stat"
+  },
+  "descriptor|cf_ton_h|n_incidents": {
+   "value": 200,
+   "definition": "n_incidents of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_ton_h/S_TON_H.stat"
+  },
+  "descriptor|cf_ton_h|N_median": {
+   "value": 261.5,
+   "definition": "N_median of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_ton_h/S_TON_H.stat"
+  },
+  "descriptor|cf_ton_h|N_over_r_pooled": {
+   "value": 80.10561497326204,
+   "definition": "N_over_r_pooled of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_ton_h/S_TON_H.stat"
+  },
+  "descriptor|cf_ton_h|N_over_r_median": {
+   "value": 71.22222222222223,
+   "definition": "N_over_r_median of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_ton_h/S_TON_H.stat"
+  },
+  "descriptor|cf_ton_h|r_CT": {
+   "value": 0.9408805031446541,
+   "definition": "r_CT of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_ton_h/S_TON_H.stat"
+  },
+  "descriptor|cf_ton_h|rho_T": {
+   "value": 0.008728179551122194,
+   "definition": "rho_T of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_ton_h/S_TON_H.stat"
+  },
+  "descriptor|cf_ton_h|ceiling": {
+   "value": 0.9326683291770574,
+   "definition": "ceiling of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_ton_h/S_TON_H.stat"
+  },
+  "descriptor|cf_ton_h|n_T": {
+   "value": 802.0,
+   "definition": "n_T of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_ton_h/S_TON_H.stat"
+  },
+  "descriptor|cf_ton_h|n_T_obs": {
+   "value": 795.0,
+   "definition": "n_T_obs of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_ton_h/S_TON_H.stat"
+  },
+  "descriptor|cf_ton_h|n_T_hid": {
+   "value": 7.0,
+   "definition": "n_T_hid of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_ton_h/S_TON_H.stat"
+  },
+  "descriptor|cf_ton_h|n_T_obs_in_C": {
+   "value": 748.0,
+   "definition": "n_T_obs_in_C of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_ton_h/S_TON_H.stat"
+  },
+  "descriptor|cf_ton_h|n_true": {
+   "value": 748.0,
+   "definition": "n_true of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_ton_h/S_TON_H.stat"
+  },
+  "descriptor|cf_ton_h|amb_share": {
+   "value": 0.41708327851598476,
+   "definition": "amb_share of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_ton_h/S_TON_H.stat"
+  },
+  "descriptor|cf_gotham|n_incidents": {
+   "value": 200,
+   "definition": "n_incidents of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_gotham/S_GOT.stat"
+  },
+  "descriptor|cf_gotham|N_median": {
+   "value": 240.5,
+   "definition": "N_median of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_gotham/S_GOT.stat"
+  },
+  "descriptor|cf_gotham|N_over_r_pooled": {
+   "value": 85.85796766743648,
+   "definition": "N_over_r_pooled of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_gotham/S_GOT.stat"
+  },
+  "descriptor|cf_gotham|N_over_r_median": {
+   "value": 68.75,
+   "definition": "N_over_r_median of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_gotham/S_GOT.stat"
+  },
+  "descriptor|cf_gotham|r_CT": {
+   "value": 0.8185255198487713,
+   "definition": "r_CT of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_gotham/S_GOT.stat"
+  },
+  "descriptor|cf_gotham|rho_T": {
+   "value": 0.3366771159874608,
+   "definition": "rho_T of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_gotham/S_GOT.stat"
+  },
+  "descriptor|cf_gotham|ceiling": {
+   "value": 0.5429467084639499,
+   "definition": "ceiling of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_gotham/S_GOT.stat"
+  },
+  "descriptor|cf_gotham|n_T": {
+   "value": 1595.0,
+   "definition": "n_T of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_gotham/S_GOT.stat"
+  },
+  "descriptor|cf_gotham|n_T_obs": {
+   "value": 1058.0,
+   "definition": "n_T_obs of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_gotham/S_GOT.stat"
+  },
+  "descriptor|cf_gotham|n_T_hid": {
+   "value": 537.0,
+   "definition": "n_T_hid of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_gotham/S_GOT.stat"
+  },
+  "descriptor|cf_gotham|n_T_obs_in_C": {
+   "value": 866.0,
+   "definition": "n_T_obs_in_C of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_gotham/S_GOT.stat"
+  },
+  "descriptor|cf_gotham|n_true": {
+   "value": 972.0,
+   "definition": "n_true of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_gotham/S_GOT.stat"
+  },
+  "descriptor|cf_gotham|amb_share": {
+   "value": 0.17233650313664636,
+   "definition": "amb_share of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_gotham/S_GOT.stat"
+  },
+  "descriptor|iot23|n_incidents": {
+   "value": 166,
+   "definition": "n_incidents of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/iot23/S_CF.stat"
+  },
+  "descriptor|iot23|N_median": {
+   "value": 1490.5,
+   "definition": "N_median of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/iot23/S_CF.stat"
+  },
+  "descriptor|iot23|N_over_r_pooled": {
+   "value": 1903.923076923077,
+   "definition": "N_over_r_pooled of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/iot23/S_CF.stat"
+  },
+  "descriptor|iot23|N_over_r_median": {
+   "value": 1300.0,
+   "definition": "N_over_r_median of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/iot23/S_CF.stat"
+  },
+  "descriptor|iot23|r_CT": {
+   "value": 0.8666666666666667,
+   "definition": "r_CT of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/iot23/S_CF.stat"
+  },
+  "descriptor|iot23|rho_T": {
+   "value": 0.9085365853658537,
+   "definition": "rho_T of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/iot23/S_CF.stat"
+  },
+  "descriptor|iot23|ceiling": {
+   "value": 0.0792682926829268,
+   "definition": "ceiling of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/iot23/S_CF.stat"
+  },
+  "descriptor|iot23|n_T": {
+   "value": 164.0,
+   "definition": "n_T of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/iot23/S_CF.stat"
+  },
+  "descriptor|iot23|n_T_obs": {
+   "value": 15.0,
+   "definition": "n_T_obs of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/iot23/S_CF.stat"
+  },
+  "descriptor|iot23|n_T_hid": {
+   "value": 149.0,
+   "definition": "n_T_hid of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/iot23/S_CF.stat"
+  },
+  "descriptor|iot23|n_T_obs_in_C": {
+   "value": 13.0,
+   "definition": "n_T_obs_in_C of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/iot23/S_CF.stat"
+  },
+  "descriptor|iot23|n_true": {
+   "value": 13.0,
+   "definition": "n_true of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/iot23/S_CF.stat"
+  },
+  "descriptor|iot23|amb_share": {
+   "value": 0.003738190571169152,
+   "definition": "amb_share of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/iot23/S_CF.stat"
+  },
+  "descriptor|gotham_real|n_incidents": {
+   "value": 9,
+   "definition": "n_incidents of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/gotham_real/S_TON.stat"
+  },
+  "descriptor|gotham_real|N_median": {
+   "value": 46.0,
+   "definition": "N_median of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/gotham_real/S_TON.stat"
+  },
+  "descriptor|gotham_real|N_over_r_pooled": {
+   "value": 67.58333333333333,
+   "definition": "N_over_r_pooled of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/gotham_real/S_TON.stat"
+  },
+  "descriptor|gotham_real|N_over_r_median": {
+   "value": 68.5,
+   "definition": "N_over_r_median of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/gotham_real/S_TON.stat"
+  },
+  "descriptor|gotham_real|r_CT": {
+   "value": 1.0,
+   "definition": "r_CT of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/gotham_real/S_TON.stat"
+  },
+  "descriptor|gotham_real|rho_T": {
+   "value": 0.9347826086956522,
+   "definition": "rho_T of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/gotham_real/S_TON.stat"
+  },
+  "descriptor|gotham_real|ceiling": {
+   "value": 0.06521739130434778,
+   "definition": "ceiling of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/gotham_real/S_TON.stat"
+  },
+  "descriptor|gotham_real|n_T": {
+   "value": 184.0,
+   "definition": "n_T of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/gotham_real/S_TON.stat"
+  },
+  "descriptor|gotham_real|n_T_obs": {
+   "value": 12.0,
+   "definition": "n_T_obs of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/gotham_real/S_TON.stat"
+  },
+  "descriptor|gotham_real|n_T_hid": {
+   "value": 172.0,
+   "definition": "n_T_hid of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/gotham_real/S_TON.stat"
+  },
+  "descriptor|gotham_real|n_T_obs_in_C": {
+   "value": 12.0,
+   "definition": "n_T_obs_in_C of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/gotham_real/S_TON.stat"
+  },
+  "descriptor|gotham_real|n_true": {
+   "value": 22.0,
+   "definition": "n_true of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/gotham_real/S_TON.stat"
+  },
+  "descriptor|gotham_real|amb_share": {
+   "value": 0.14213197969543148,
+   "definition": "amb_share of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/gotham_real/S_TON.stat"
+  },
+  "descriptor|cf_gotham_t|n_incidents": {
+   "value": 150,
+   "definition": "n_incidents of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "interim/cf_gotham_t/summary_07.json (no bank yet)"
+  },
+  "descriptor|cf_gotham_t|N_median": {
+   "value": 155.5,
+   "definition": "N_median of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "interim/cf_gotham_t/summary_07.json (no bank yet)"
+  },
+  "descriptor|cf_gotham_t|N_over_r_pooled": {
+   "value": null,
+   "definition": "N_over_r_pooled of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "interim/cf_gotham_t/summary_07.json (no bank yet)"
+  },
+  "descriptor|cf_gotham_t|N_over_r_median": {
+   "value": 52.0,
+   "definition": "N_over_r_median of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "interim/cf_gotham_t/summary_07.json (no bank yet)"
+  },
+  "descriptor|cf_gotham_t|r_CT": {
+   "value": 0.8571428571428571,
+   "definition": "r_CT of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "interim/cf_gotham_t/summary_07.json (no bank yet)"
+  },
+  "descriptor|cf_gotham_t|rho_T": {
+   "value": 0.3099467140319716,
+   "definition": "rho_T of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "interim/cf_gotham_t/summary_07.json (no bank yet)"
+  },
+  "descriptor|cf_gotham_t|ceiling": {
+   "value": 0.5914742451154529,
+   "definition": "ceiling of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "interim/cf_gotham_t/summary_07.json (no bank yet)"
+  },
+  "descriptor|cf_gotham_t|n_T": {
+   "value": 1126,
+   "definition": "n_T of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "interim/cf_gotham_t/summary_07.json (no bank yet)"
+  },
+  "descriptor|cf_gotham_t|n_T_obs": {
+   "value": 777,
+   "definition": "n_T_obs of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "interim/cf_gotham_t/summary_07.json (no bank yet)"
+  },
+  "descriptor|cf_gotham_t|n_T_hid": {
+   "value": 349,
+   "definition": "n_T_hid of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "interim/cf_gotham_t/summary_07.json (no bank yet)"
+  },
+  "descriptor|cf_gotham_t|n_T_obs_in_C": {
+   "value": 666,
+   "definition": "n_T_obs_in_C of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "interim/cf_gotham_t/summary_07.json (no bank yet)"
+  },
+  "descriptor|cf_gotham_t|n_true": {
+   "value": 739,
+   "definition": "n_true of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "interim/cf_gotham_t/summary_07.json (no bank yet)"
+  },
+  "descriptor|cf_gotham_t|amb_share": {
+   "value": 0.18655537096316707,
+   "definition": "amb_share of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "interim/cf_gotham_t/summary_07.json (no bank yet)"
+  },
+  "oracle|cf_ton|B1|fdr": {
+   "value": 0.9572567338983661,
+   "definition": "realised FDR = mean over test incidents of the strict per-incident FDP (AMB = false), mean over splits; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_ton/B1",
+   "split_mean50": 0.9571997671904775,
+   "split_sd50": 0.00664474458504055
+  },
+  "oracle|cf_ton|B1|fdr_lenient": {
+   "value": 0.9394481404788155,
+   "definition": "mean per-incident lenient FDP (AMB excluded), mean over splits; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_ton/B1",
+   "split_mean50": 0.9397348203759703,
+   "split_sd50": 0.007309214617351445
+  },
+  "oracle|cf_ton|B1|pooled_fdr": {
+   "value": 0.9928319902014002,
+   "definition": "pooled FDR = sum V / max(sum R, 1) over a split's test incidents (strict), mean over splits; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_ton/B1",
+   "split_mean50": 0.9928492190137428,
+   "split_sd50": 0.00042514360816011505
+  },
+  "oracle|cf_ton|B1|recall_pooled": {
+   "value": 0.9554730983302412,
+   "definition": "certified true links / true links in C (pooled); rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_ton/B1",
+   "split_mean50": 0.9558338886196701,
+   "split_sd50": 0.005643056130865523
+  },
+  "oracle|cf_ton|B1|str_mean": {
+   "value": 0.8962266282550979,
+   "definition": "STR = certified distinct transitions / |T*|, mean over test incidents with |T*| > 0; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_ton/B1",
+   "split_mean50": 0.8966941554150408,
+   "split_sd50": 0.009568455820851349
+  },
+  "oracle|cf_ton|B1|str_pooled": {
+   "value": 0.8743633276740238,
+   "definition": "STR pooled over a split's test incidents; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_ton/B1",
+   "split_mean50": 0.8741588991092999,
+   "split_sd50": 0.009743153190383384
+  },
+  "oracle|cf_ton|B1|cer_link_mean": {
+   "value": 0.9228464102129583,
+   "definition": "CER_link = certified true links / (|E*_link| + |T*_hid|), mean over incidents with a positive denominator; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_ton/B1",
+   "split_mean50": 0.9223779250592697,
+   "split_sd50": 0.007468678589356073
+  },
+  "oracle|cf_ton|B1|cer_link_pooled": {
+   "value": 0.9035087719298246,
+   "definition": "CER_link pooled over a split; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_ton/B1",
+   "split_mean50": 0.9024735997749669,
+   "split_sd50": 0.007899817952337235
+  },
+  "oracle|cf_ton|B1|ucr": {
+   "value": 0.1396022102523418,
+   "definition": "share of certified links with a decoy endpoint (pooled); rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_ton/B1",
+   "split_mean50": 0.13914733993204895,
+   "split_sd50": 0.00924115791943104
+  },
+  "oracle|cf_ton|B1|wrongful_benign": {
+   "value": 0.6842105263157895,
+   "definition": "P(any claim | benign-only incident); rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_ton/B1",
+   "split_mean50": 0.6902128982128981,
+   "split_sd50": 0.07934633099429836
+  },
+  "oracle|cf_ton|B1|n_claims": {
+   "value": 478.98,
+   "definition": "mean claims per test incident; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_ton/B1",
+   "split_mean50": 482.1135999999999,
+   "split_sd50": 33.40422016218895
+  },
+  "oracle|cf_ton|B1|bridge_recall": {
+   "value": null,
+   "definition": "certified bridges / bridges (pooled); rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_ton/B1",
+   "split_mean50": null,
+   "split_sd50": null
+  },
+  "oracle|cf_ton|B1|precision_pooled": {
+   "value": 0.007168009798599773,
+   "definition": "1 - pooled strict FDR",
+   "status": "secondary",
+   "source": "baselines/cf_ton/B1"
+  },
+  "oracle|cf_ton|B2|fdr": {
+   "value": 0.8296274112925505,
+   "definition": "realised FDR = mean over test incidents of the strict per-incident FDP (AMB = false), mean over splits; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_ton/B2",
+   "split_mean50": 0.8273824820796896,
+   "split_sd50": 0.019775012945804
+  },
+  "oracle|cf_ton|B2|fdr_lenient": {
+   "value": 0.7760303389535134,
+   "definition": "mean per-incident lenient FDP (AMB excluded), mean over splits; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_ton/B2",
+   "split_mean50": 0.7772198153360241,
+   "split_sd50": 0.022756423427247395
+  },
+  "oracle|cf_ton|B2|pooled_fdr": {
+   "value": 0.9725203950193216,
+   "definition": "pooled FDR = sum V / max(sum R, 1) over a split's test incidents (strict), mean over splits; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_ton/B2",
+   "split_mean50": 0.9723916992967425,
+   "split_sd50": 0.0021366387315164886
+  },
+  "oracle|cf_ton|B2|recall_pooled": {
+   "value": 0.17810760667903525,
+   "definition": "certified true links / true links in C (pooled); rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_ton/B2",
+   "split_mean50": 0.17843295326553402,
+   "split_sd50": 0.010047121637405834
+  },
+  "oracle|cf_ton|B2|str_mean": {
+   "value": 0.18208636954188556,
+   "definition": "STR = certified distinct transitions / |T*|, mean over test incidents with |T*| > 0; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_ton/B2",
+   "split_mean50": 0.18263388139706851,
+   "split_sd50": 0.010801233656175205
+  },
+  "oracle|cf_ton|B2|str_pooled": {
+   "value": 0.16298811544991512,
+   "definition": "STR pooled over a split's test incidents; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_ton/B2",
+   "split_mean50": 0.16316671137870054,
+   "split_sd50": 0.00894153314023371
+  },
+  "oracle|cf_ton|B2|cer_link_mean": {
+   "value": 0.18722532904027567,
+   "definition": "CER_link = certified true links / (|E*_link| + |T*_hid|), mean over incidents with a positive denominator; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_ton/B2",
+   "split_mean50": 0.18772001410292205,
+   "split_sd50": 0.011288417996980282
+  },
+  "oracle|cf_ton|B2|cer_link_pooled": {
+   "value": 0.16842105263157894,
+   "definition": "CER_link pooled over a split; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_ton/B2",
+   "split_mean50": 0.168453652657295,
+   "split_sd50": 0.009201582627613366
+  },
+  "oracle|cf_ton|B2|ucr": {
+   "value": 0.14784599971375412,
+   "definition": "share of certified links with a decoy endpoint (pooled); rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_ton/B2",
+   "split_mean50": 0.14655581825812952,
+   "split_sd50": 0.010733431450211998
+  },
+  "oracle|cf_ton|B2|wrongful_benign": {
+   "value": 0.2631578947368421,
+   "definition": "P(any claim | benign-only incident); rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_ton/B2",
+   "split_mean50": 0.2654312354312354,
+   "split_sd50": 0.0992918802557869
+  },
+  "oracle|cf_ton|B2|n_claims": {
+   "value": 23.29,
+   "definition": "mean claims per test incident; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_ton/B2",
+   "split_mean50": 23.294799999999995,
+   "split_sd50": 1.5256252812752589
+  },
+  "oracle|cf_ton|B2|bridge_recall": {
+   "value": null,
+   "definition": "certified bridges / bridges (pooled); rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_ton/B2",
+   "split_mean50": null,
+   "split_sd50": null
+  },
+  "oracle|cf_ton|B2|precision_pooled": {
+   "value": 0.027479604980678363,
+   "definition": "1 - pooled strict FDR",
+   "status": "secondary",
+   "source": "baselines/cf_ton/B2"
+  },
+  "oracle|cf_ton_h|B1|fdr": {
+   "value": 0.9666182587564862,
+   "definition": "realised FDR = mean over test incidents of the strict per-incident FDP (AMB = false), mean over splits; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_ton_h/B1",
+   "split_mean50": 0.9684287948074428,
+   "split_sd50": 0.007545509441095865
+  },
+  "oracle|cf_ton_h|B1|fdr_lenient": {
+   "value": 0.931019676975096,
+   "definition": "mean per-incident lenient FDP (AMB excluded), mean over splits; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_ton_h/B1",
+   "split_mean50": 0.9325245625730125,
+   "split_sd50": 0.011448393994593412
+  },
+  "oracle|cf_ton_h|B1|pooled_fdr": {
+   "value": 0.9833589349718382,
+   "definition": "pooled FDR = sum V / max(sum R, 1) over a split's test incidents (strict), mean over splits; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_ton_h/B1",
+   "split_mean50": 0.9833955248971455,
+   "split_sd50": 0.0007461796013164845
+  },
+  "oracle|cf_ton_h|B1|recall_pooled": {
+   "value": 0.9558823529411765,
+   "definition": "certified true links / true links in C (pooled); rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_ton_h/B1",
+   "split_mean50": 0.9565241392037629,
+   "split_sd50": 0.008197503163985854
+  },
+  "oracle|cf_ton_h|B1|str_mean": {
+   "value": 0.9068731912654565,
+   "definition": "STR = certified distinct transitions / |T*|, mean over test incidents with |T*| > 0; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_ton_h/B1",
+   "split_mean50": 0.9074749263447024,
+   "split_sd50": 0.010861161804701612
+  },
+  "oracle|cf_ton_h|B1|str_pooled": {
+   "value": 0.8915211970074813,
+   "definition": "STR pooled over a split's test incidents; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_ton_h/B1",
+   "split_mean50": 0.891391913294235,
+   "split_sd50": 0.010931847257952071
+  },
+  "oracle|cf_ton_h|B1|cer_link_mean": {
+   "value": 0.9323750528170417,
+   "definition": "CER_link = certified true links / (|E*_link| + |T*_hid|), mean over incidents with a positive denominator; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_ton_h/B1",
+   "split_mean50": 0.9327165716290722,
+   "split_sd50": 0.009683583242221369
+  },
+  "oracle|cf_ton_h|B1|cer_link_pooled": {
+   "value": 0.9202059202059202,
+   "definition": "CER_link pooled over a split; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_ton_h/B1",
+   "split_mean50": 0.919831657611479,
+   "split_sd50": 0.01045809806998088
+  },
+  "oracle|cf_ton_h|B1|ucr": {
+   "value": 0.26823534888051015,
+   "definition": "share of certified links with a decoy endpoint (pooled); rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_ton_h/B1",
+   "split_mean50": 0.2676665603478667,
+   "split_sd50": 0.015040730693085567
+  },
+  "oracle|cf_ton_h|B1|wrongful_benign": {
+   "value": 0.8947368421052632,
+   "definition": "P(any claim | benign-only incident); rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_ton_h/B1",
+   "split_mean50": 0.9154702519702519,
+   "split_sd50": 0.0759884371106011
+  },
+  "oracle|cf_ton_h|B1|n_claims": {
+   "value": 214.83,
+   "definition": "mean claims per test incident; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_ton_h/B1",
+   "split_mean50": 215.878,
+   "split_sd50": 12.296472864116733
+  },
+  "oracle|cf_ton_h|B1|bridge_recall": {
+   "value": null,
+   "definition": "certified bridges / bridges (pooled); rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_ton_h/B1",
+   "split_mean50": null,
+   "split_sd50": null
+  },
+  "oracle|cf_ton_h|B1|precision_pooled": {
+   "value": 0.01664106502816176,
+   "definition": "1 - pooled strict FDR",
+   "status": "secondary",
+   "source": "baselines/cf_ton_h/B1"
+  },
+  "oracle|cf_ton_h|B2|fdr": {
+   "value": 0.7628988194919117,
+   "definition": "realised FDR = mean over test incidents of the strict per-incident FDP (AMB = false), mean over splits; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_ton_h/B2",
+   "split_mean50": 0.7585672111850138,
+   "split_sd50": 0.022493414930199997
+  },
+  "oracle|cf_ton_h|B2|fdr_lenient": {
+   "value": 0.6708761600743025,
+   "definition": "mean per-incident lenient FDP (AMB excluded), mean over splits; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_ton_h/B2",
+   "split_mean50": 0.6692044815418499,
+   "split_sd50": 0.025847517430877077
+  },
+  "oracle|cf_ton_h|B2|pooled_fdr": {
+   "value": 0.9061224489795918,
+   "definition": "pooled FDR = sum V / max(sum R, 1) over a split's test incidents (strict), mean over splits; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_ton_h/B2",
+   "split_mean50": 0.9045487076207614,
+   "split_sd50": 0.006070518322517047
+  },
+  "oracle|cf_ton_h|B2|recall_pooled": {
+   "value": 0.18449197860962566,
+   "definition": "certified true links / true links in C (pooled); rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_ton_h/B2",
+   "split_mean50": 0.18955615187110988,
+   "split_sd50": 0.0124897980056158
+  },
+  "oracle|cf_ton_h|B2|str_mean": {
+   "value": 0.18141059370341137,
+   "definition": "STR = certified distinct transitions / |T*|, mean over test incidents with |T*| > 0; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_ton_h/B2",
+   "split_mean50": 0.18623247443128757,
+   "split_sd50": 0.012238405697329079
+  },
+  "oracle|cf_ton_h|B2|str_pooled": {
+   "value": 0.17206982543640897,
+   "definition": "STR pooled over a split's test incidents; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_ton_h/B2",
+   "split_mean50": 0.17667457529853706,
+   "split_sd50": 0.012142704611420776
+  },
+  "oracle|cf_ton_h|B2|cer_link_mean": {
+   "value": 0.1867433211355863,
+   "definition": "CER_link = certified true links / (|E*_link| + |T*_hid|), mean over incidents with a positive denominator; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_ton_h/B2",
+   "split_mean50": 0.1915007981010767,
+   "split_sd50": 0.01243429060098665
+  },
+  "oracle|cf_ton_h|B2|cer_link_pooled": {
+   "value": 0.1776061776061776,
+   "definition": "CER_link pooled over a split; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_ton_h/B2",
+   "split_mean50": 0.18229604832369073,
+   "split_sd50": 0.012272434449814684
+  },
+  "oracle|cf_ton_h|B2|ucr": {
+   "value": 0.2904761904761905,
+   "definition": "share of certified links with a decoy endpoint (pooled); rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_ton_h/B2",
+   "split_mean50": 0.2910370537865187,
+   "split_sd50": 0.02114579536666692
+  },
+  "oracle|cf_ton_h|B2|wrongful_benign": {
+   "value": 0.3684210526315789,
+   "definition": "P(any claim | benign-only incident); rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_ton_h/B2",
+   "split_mean50": 0.3372607947607948,
+   "split_sd50": 0.11095476067002735
+  },
+  "oracle|cf_ton_h|B2|n_claims": {
+   "value": 7.35,
+   "definition": "mean claims per test incident; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_ton_h/B2",
+   "split_mean50": 7.441400000000001,
+   "split_sd50": 0.5414304937772131
+  },
+  "oracle|cf_ton_h|B2|bridge_recall": {
+   "value": null,
+   "definition": "certified bridges / bridges (pooled); rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_ton_h/B2",
+   "split_mean50": null,
+   "split_sd50": null
+  },
+  "oracle|cf_ton_h|B2|precision_pooled": {
+   "value": 0.09387755102040818,
+   "definition": "1 - pooled strict FDR",
+   "status": "secondary",
+   "source": "baselines/cf_ton_h/B2"
+  },
+  "oracle|cf_gotham|B1|fdr": {
+   "value": 0.9420637400391372,
+   "definition": "realised FDR = mean over test incidents of the strict per-incident FDP (AMB = false), mean over splits; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_gotham/B1",
+   "split_mean50": 0.9446562694232281,
+   "split_sd50": 0.014229519688727857
+  },
+  "oracle|cf_gotham|B1|fdr_lenient": {
+   "value": 0.934800505150838,
+   "definition": "mean per-incident lenient FDP (AMB excluded), mean over splits; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_gotham/B1",
+   "split_mean50": 0.9373148616525024,
+   "split_sd50": 0.014283369652288404
+  },
+  "oracle|cf_gotham|B1|pooled_fdr": {
+   "value": 0.9853298519401723,
+   "definition": "pooled FDR = sum V / max(sum R, 1) over a split's test incidents (strict), mean over splits; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_gotham/B1",
+   "split_mean50": 0.9852486917233948,
+   "split_sd50": 0.0009941052421061627
+  },
+  "oracle|cf_gotham|B1|recall_pooled": {
+   "value": 1.0,
+   "definition": "certified true links / true links in C (pooled); rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_gotham/B1",
+   "split_mean50": 1.0,
+   "split_sd50": 0.0
+  },
+  "oracle|cf_gotham|B1|str_mean": {
+   "value": 0.6331731016300204,
+   "definition": "STR = certified distinct transitions / |T*|, mean over test incidents with |T*| > 0; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_gotham/B1",
+   "split_mean50": 0.6333898410413729,
+   "split_sd50": 0.02035454633843864
+  },
+  "oracle|cf_gotham|B1|str_pooled": {
+   "value": 0.5429467084639499,
+   "definition": "STR pooled over a split's test incidents; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_gotham/B1",
+   "split_mean50": 0.5429522644025561,
+   "split_sd50": 0.014949246905407762
+  },
+  "oracle|cf_gotham|B1|cer_link_mean": {
+   "value": 0.6573745996273558,
+   "definition": "CER_link = certified true links / (|E*_link| + |T*_hid|), mean over incidents with a positive denominator; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_gotham/B1",
+   "split_mean50": 0.6574749737635507,
+   "split_sd50": 0.019542991570715013
+  },
+  "oracle|cf_gotham|B1|cer_link_pooled": {
+   "value": 0.5775401069518716,
+   "definition": "CER_link pooled over a split; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_gotham/B1",
+   "split_mean50": 0.5778154101925291,
+   "split_sd50": 0.013086139063960563
+  },
+  "oracle|cf_gotham|B1|ucr": {
+   "value": 0.08545512172298776,
+   "definition": "share of certified links with a decoy endpoint (pooled); rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_gotham/B1",
+   "split_mean50": 0.0862628863960327,
+   "split_sd50": 0.010211519845932129
+  },
+  "oracle|cf_gotham|B1|wrongful_benign": {
+   "value": 0.6666666666666666,
+   "definition": "P(any claim | benign-only incident); rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_gotham/B1",
+   "split_mean50": 0.6972838827838826,
+   "split_sd50": 0.13823390718132905
+  },
+  "oracle|cf_gotham|B1|n_claims": {
+   "value": 331.285,
+   "definition": "mean claims per test incident; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_gotham/B1",
+   "split_mean50": 331.8086,
+   "split_sd50": 26.612176284013835
+  },
+  "oracle|cf_gotham|B1|bridge_recall": {
+   "value": 0.9906542056074766,
+   "definition": "certified bridges / bridges (pooled); rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_gotham/B1",
+   "split_mean50": 0.9914467703880391,
+   "split_sd50": 0.009067326262063127
+  },
+  "oracle|cf_gotham|B1|precision_pooled": {
+   "value": 0.014670148059827692,
+   "definition": "1 - pooled strict FDR",
+   "status": "secondary",
+   "source": "baselines/cf_gotham/B1"
+  },
+  "oracle|cf_gotham|B2|fdr": {
+   "value": 0.6652721306471306,
+   "definition": "realised FDR = mean over test incidents of the strict per-incident FDP (AMB = false), mean over splits; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_gotham/B2",
+   "split_mean50": 0.6712427899877899,
+   "split_sd50": 0.031217310343114472
+  },
+  "oracle|cf_gotham|B2|fdr_lenient": {
+   "value": 0.5665734126984127,
+   "definition": "mean per-incident lenient FDP (AMB excluded), mean over splits; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_gotham/B2",
+   "split_mean50": 0.5679242063492064,
+   "split_sd50": 0.031164807583234196
+  },
+  "oracle|cf_gotham|B2|pooled_fdr": {
+   "value": 0.8398058252427184,
+   "definition": "pooled FDR = sum V / max(sum R, 1) over a split's test incidents (strict), mean over splits; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_gotham/B2",
+   "split_mean50": 0.8379196140768091,
+   "split_sd50": 0.019872245360096318
+  },
+  "oracle|cf_gotham|B2|recall_pooled": {
+   "value": 0.13580246913580246,
+   "definition": "certified true links / true links in C (pooled); rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_gotham/B2",
+   "split_mean50": 0.13704059691673792,
+   "split_sd50": 0.01347321245904798
+  },
+  "oracle|cf_gotham|B2|str_mean": {
+   "value": 0.10704410743827848,
+   "definition": "STR = certified distinct transitions / |T*|, mean over test incidents with |T*| > 0; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_gotham/B2",
+   "split_mean50": 0.1081316742207634,
+   "split_sd50": 0.017482504026360556
+  },
+  "oracle|cf_gotham|B2|str_pooled": {
+   "value": 0.08275862068965517,
+   "definition": "STR pooled over a split's test incidents; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_gotham/B2",
+   "split_mean50": 0.083627771762481,
+   "split_sd50": 0.008934990673337945
+  },
+  "oracle|cf_gotham|B2|cer_link_mean": {
+   "value": 0.10459867190925051,
+   "definition": "CER_link = certified true links / (|E*_link| + |T*_hid|), mean over incidents with a positive denominator; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_gotham/B2",
+   "split_mean50": 0.10565901711615623,
+   "split_sd50": 0.01751045681544548
+  },
+  "oracle|cf_gotham|B2|cer_link_pooled": {
+   "value": 0.0784313725490196,
+   "definition": "CER_link pooled over a split; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_gotham/B2",
+   "split_mean50": 0.07924458883434533,
+   "split_sd50": 0.008550395702227674
+  },
+  "oracle|cf_gotham|B2|ucr": {
+   "value": 0.2803398058252427,
+   "definition": "share of certified links with a decoy endpoint (pooled); rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_gotham/B2",
+   "split_mean50": 0.2812329983622525,
+   "split_sd50": 0.028267184789174397
+  },
+  "oracle|cf_gotham|B2|wrongful_benign": {
+   "value": 0.2777777777777778,
+   "definition": "P(any claim | benign-only incident); rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_gotham/B2",
+   "split_mean50": 0.3051358086358086,
+   "split_sd50": 0.12679884917946438
+  },
+  "oracle|cf_gotham|B2|n_claims": {
+   "value": 4.12,
+   "definition": "mean claims per test incident; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_gotham/B2",
+   "split_mean50": 4.1368,
+   "split_sd50": 0.28365284905234106
+  },
+  "oracle|cf_gotham|B2|bridge_recall": {
+   "value": 0.0,
+   "definition": "certified bridges / bridges (pooled); rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_gotham/B2",
+   "split_mean50": 0.0,
+   "split_sd50": 0.0
+  },
+  "oracle|cf_gotham|B2|precision_pooled": {
+   "value": 0.1601941747572816,
+   "definition": "1 - pooled strict FDR",
+   "status": "secondary",
+   "source": "baselines/cf_gotham/B2"
+  },
+  "oracle|iot23|B1|fdr": {
+   "value": 0.908435214996928,
+   "definition": "realised FDR = mean over test incidents of the strict per-incident FDP (AMB = false), mean over splits; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/iot23/B1",
+   "split_mean50": 0.9113615336420411,
+   "split_sd50": 0.026087695573800296
+  },
+  "oracle|iot23|B1|fdr_lenient": {
+   "value": 0.908165974580781,
+   "definition": "mean per-incident lenient FDP (AMB excluded), mean over splits; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/iot23/B1",
+   "split_mean50": 0.9110924668399671,
+   "split_sd50": 0.026091280775310758
+  },
+  "oracle|iot23|B1|pooled_fdr": {
+   "value": 0.9992117390249818,
+   "definition": "pooled FDR = sum V / max(sum R, 1) over a split's test incidents (strict), mean over splits; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/iot23/B1",
+   "split_mean50": 0.9992261963912895,
+   "split_sd50": 0.00023169476960896473
+  },
+  "oracle|iot23|B1|recall_pooled": {
+   "value": 1.0,
+   "definition": "certified true links / true links in C (pooled); rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/iot23/B1",
+   "split_mean50": 1.0,
+   "split_sd50": 0.0
+  },
+  "oracle|iot23|B1|str_mean": {
+   "value": 0.04250559284116331,
+   "definition": "STR = certified distinct transitions / |T*|, mean over test incidents with |T*| > 0; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/iot23/B1",
+   "split_mean50": 0.04238865371060283,
+   "split_sd50": 0.01195516288359555
+  },
+  "oracle|iot23|B1|str_pooled": {
+   "value": 0.07926829268292683,
+   "definition": "STR pooled over a split's test incidents; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/iot23/B1",
+   "split_mean50": 0.07850475153611475,
+   "split_sd50": 0.020260554936551614
+  },
+  "oracle|iot23|B1|cer_link_mean": {
+   "value": 0.04250559284116331,
+   "definition": "CER_link = certified true links / (|E*_link| + |T*_hid|), mean over incidents with a positive denominator; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/iot23/B1",
+   "split_mean50": 0.04238865371060283,
+   "split_sd50": 0.01195516288359555
+  },
+  "oracle|iot23|B1|cer_link_pooled": {
+   "value": 0.07926829268292683,
+   "definition": "CER_link pooled over a split; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/iot23/B1",
+   "split_mean50": 0.07850475153611475,
+   "split_sd50": 0.020260554936551614
+  },
+  "oracle|iot23|B1|ucr": {
+   "value": 0.0,
+   "definition": "share of certified links with a decoy endpoint (pooled); rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/iot23/B1",
+   "split_mean50": 0.0,
+   "split_sd50": 0.0
+  },
+  "oracle|iot23|B1|wrongful_benign": {
+   "value": 0.4117647058823529,
+   "definition": "P(any claim | benign-only incident); rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/iot23/B1",
+   "split_mean50": 0.40811544011544015,
+   "split_sd50": 0.16036944836786488
+  },
+  "oracle|iot23|B1|n_claims": {
+   "value": 99.34939759036145,
+   "definition": "mean claims per test incident; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/iot23/B1",
+   "split_mean50": 102.44746987951807,
+   "split_sd50": 12.280144902090223
+  },
+  "oracle|iot23|B1|bridge_recall": {
+   "value": null,
+   "definition": "certified bridges / bridges (pooled); rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/iot23/B1",
+   "split_mean50": null,
+   "split_sd50": null
+  },
+  "oracle|iot23|B1|precision_pooled": {
+   "value": 0.0007882609750181624,
+   "definition": "1 - pooled strict FDR",
+   "status": "secondary",
+   "source": "baselines/iot23/B1"
+  },
+  "oracle|iot23|B2|fdr": {
+   "value": 0.10203313253012049,
+   "definition": "realised FDR = mean over test incidents of the strict per-incident FDP (AMB = false), mean over splits; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/iot23/B2",
+   "split_mean50": 0.1004668674698795,
+   "split_sd50": 0.02448422077047925
+  },
+  "oracle|iot23|B2|fdr_lenient": {
+   "value": 0.044717330861909176,
+   "definition": "mean per-incident lenient FDP (AMB excluded), mean over splits; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/iot23/B2",
+   "split_mean50": 0.04519925857275255,
+   "split_sd50": 0.014181461798015119
+  },
+  "oracle|iot23|B2|pooled_fdr": {
+   "value": 0.8409090909090909,
+   "definition": "pooled FDR = sum V / max(sum R, 1) over a split's test incidents (strict), mean over splits; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/iot23/B2",
+   "split_mean50": 0.8247179279304876,
+   "split_sd50": 0.06014656001155538
+  },
+  "oracle|iot23|B2|recall_pooled": {
+   "value": 0.5384615384615384,
+   "definition": "certified true links / true links in C (pooled); rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/iot23/B2",
+   "split_mean50": 0.5767301587301588,
+   "split_sd50": 0.1635056801610978
+  },
+  "oracle|iot23|B2|str_mean": {
+   "value": 0.02348993288590604,
+   "definition": "STR = certified distinct transitions / |T*|, mean over test incidents with |T*| > 0; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/iot23/B2",
+   "split_mean50": 0.02497195981511764,
+   "split_sd50": 0.009093658688841353
+  },
+  "oracle|iot23|B2|str_pooled": {
+   "value": 0.042682926829268296,
+   "definition": "STR pooled over a split's test incidents; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/iot23/B2",
+   "split_mean50": 0.04515647954090621,
+   "split_sd50": 0.015907707468033768
+  },
+  "oracle|iot23|B2|cer_link_mean": {
+   "value": 0.02348993288590604,
+   "definition": "CER_link = certified true links / (|E*_link| + |T*_hid|), mean over incidents with a positive denominator; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/iot23/B2",
+   "split_mean50": 0.02497195981511764,
+   "split_sd50": 0.009093658688841353
+  },
+  "oracle|iot23|B2|cer_link_pooled": {
+   "value": 0.042682926829268296,
+   "definition": "CER_link pooled over a split; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/iot23/B2",
+   "split_mean50": 0.04515647954090621,
+   "split_sd50": 0.015907707468033768
+  },
+  "oracle|iot23|B2|ucr": {
+   "value": 0.0,
+   "definition": "share of certified links with a decoy endpoint (pooled); rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/iot23/B2",
+   "split_mean50": 0.0,
+   "split_sd50": 0.0
+  },
+  "oracle|iot23|B2|wrongful_benign": {
+   "value": 0.058823529411764705,
+   "definition": "P(any claim | benign-only incident); rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/iot23/B2",
+   "split_mean50": 0.053995670995671,
+   "split_sd50": 0.058766900866564706
+  },
+  "oracle|iot23|B2|n_claims": {
+   "value": 0.26506024096385544,
+   "definition": "mean claims per test incident; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/iot23/B2",
+   "split_mean50": 0.26867469879518074,
+   "split_sd50": 0.10016117429333236
+  },
+  "oracle|iot23|B2|bridge_recall": {
+   "value": null,
+   "definition": "certified bridges / bridges (pooled); rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/iot23/B2",
+   "split_mean50": null,
+   "split_sd50": null
+  },
+  "oracle|iot23|B2|precision_pooled": {
+   "value": 0.15909090909090906,
+   "definition": "1 - pooled strict FDR",
+   "status": "secondary",
+   "source": "baselines/iot23/B2"
+  },
+  "probe|cf_gotham|train|i|all|auc": {
+   "value": 0.9356865948993977,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "secondary",
+   "ci": [
+    0.9088029290528781,
+    0.9600951206260843
+   ],
+   "n": 1938,
+   "n_pos": 1530,
+   "top_features": [
+    [
+     "ldur",
+     0.1435
+    ],
+    [
+     "gap_max",
+     0.1135
+    ],
+    [
+     "t_since_t0",
+     0.1132
+    ],
+    [
+     "rank_norm",
+     0.0928
+    ],
+    [
+     "t_norm",
+     0.0693
+    ],
+    [
+     "frac_ts",
+     0.056
+    ]
+   ]
+  },
+  "probe|cf_gotham|train|i|timing|auc": {
+   "value": 0.8784377803408945,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "secondary",
+   "ci": [
+    0.8286948595787514,
+    0.9264097701180345
+   ],
+   "n": 1938,
+   "n_pos": 1530,
+   "top_features": [
+    [
+     "t_since_t0",
+     0.1548
+    ],
+    [
+     "gap_max",
+     0.1533
+    ],
+    [
+     "frac_ts",
+     0.1452
+    ],
+    [
+     "rank_norm",
+     0.1225
+    ],
+    [
+     "frac_rec_mean",
+     0.1031
+    ],
+    [
+     "t_norm",
+     0.0957
+    ]
+   ]
+  },
+  "probe|cf_gotham|train|i|scorer|auc": {
+   "value": 0.9340686274509804,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "secondary",
+   "ci": [
+    0.9113785891184951,
+    0.9578028235458115
+   ],
+   "n": 1938,
+   "n_pos": 1530,
+   "top_features": [
+    [
+     "ldur",
+     0.3982
+    ],
+    [
+     "lobytes",
+     0.1199
+    ],
+    [
+     "port",
+     0.0906
+    ],
+    [
+     "startcv",
+     0.0771
+    ],
+    [
+     "lrbytes",
+     0.0619
+    ],
+    [
+     "svc",
+     0.058
+    ]
+   ]
+  },
+  "probe|cf_gotham|train|ii|all|auc": {
+   "value": 1.0,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "secondary",
+   "ci": [
+    1.0,
+    1.0
+   ],
+   "n": 6054,
+   "n_pos": 56,
+   "top_features": [
+    [
+     "frac_rec_zero",
+     0.7081
+    ],
+    [
+     "frac_ts",
+     0.2901
+    ],
+    [
+     "seed",
+     0.0009
+    ],
+    [
+     "gap_std",
+     0.0009
+    ],
+    [
+     "lpkts",
+     0.0
+    ],
+    [
+     "lrbytes",
+     0.0
+    ]
+   ]
+  },
+  "probe|cf_gotham|train|ii|timing|auc": {
+   "value": 1.0,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "secondary",
+   "ci": [
+    1.0,
+    1.0
+   ],
+   "n": 6054,
+   "n_pos": 56,
+   "top_features": [
+    [
+     "frac_rec_zero",
+     0.723
+    ],
+    [
+     "frac_ts",
+     0.2762
+    ],
+    [
+     "gap_std",
+     0.0008
+    ],
+    [
+     "gap_cv",
+     0.0
+    ],
+    [
+     "t_norm",
+     0.0
+    ],
+    [
+     "t_since_t0",
+     0.0
+    ]
+   ]
+  },
+  "probe|cf_gotham|train|ii|scorer|auc": {
+   "value": 0.9975959248320869,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "secondary",
+   "ci": [
+    0.9922395684776799,
+    0.9999781965136973
+   ],
+   "n": 6054,
+   "n_pos": 56,
+   "top_features": [
+    [
+     "seed",
+     0.432
+    ],
+    [
+     "ldur",
+     0.2698
+    ],
+    [
+     "lpkts",
+     0.1303
+    ],
+    [
+     "lrbytes",
+     0.0617
+    ],
+    [
+     "lobytes",
+     0.0518
+    ],
+    [
+     "type",
+     0.0205
+    ]
+   ]
+  },
+  "probe|cf_gotham|caltest|i|all|auc": {
+   "value": 0.9922189436535722,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "secondary",
+   "ci": [
+    0.9880036191220385,
+    0.9952703869028662
+   ],
+   "n": 3588,
+   "n_pos": 3039,
+   "top_features": [
+    [
+     "gap_mean",
+     0.2147
+    ],
+    [
+     "port",
+     0.123
+    ],
+    [
+     "seed",
+     0.0981
+    ],
+    [
+     "rank_norm",
+     0.068
+    ],
+    [
+     "frac_rec_zero",
+     0.062
+    ],
+    [
+     "type",
+     0.0444
+    ]
+   ]
+  },
+  "probe|cf_gotham|caltest|i|timing|auc": {
+   "value": 0.933803481276496,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "secondary",
+   "ci": [
+    0.8880521623569467,
+    0.9691349437327493
+   ],
+   "n": 3588,
+   "n_pos": 3039,
+   "top_features": [
+    [
+     "gap_mean",
+     0.2117
+    ],
+    [
+     "gap_max",
+     0.1263
+    ],
+    [
+     "frac_ts",
+     0.0959
+    ],
+    [
+     "t_since_t0",
+     0.0851
+    ],
+    [
+     "t_norm",
+     0.0823
+    ],
+    [
+     "rank_norm",
+     0.0737
+    ]
+   ]
+  },
+  "probe|cf_gotham|caltest|i|scorer|auc": {
+   "value": 0.9872144813238465,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "secondary",
+   "ci": [
+    0.9825166881472718,
+    0.9912659662927651
+   ],
+   "n": 3588,
+   "n_pos": 3039,
+   "top_features": [
+    [
+     "ldur",
+     0.2136
+    ],
+    [
+     "type",
+     0.1524
+    ],
+    [
+     "startcv",
+     0.1249
+    ],
+    [
+     "seed",
+     0.1093
+    ],
+    [
+     "lnrec",
+     0.0879
+    ],
+    [
+     "svc",
+     0.054
+    ]
+   ]
+  },
+  "probe|cf_gotham|caltest|ii|all|auc": {
+   "value": 1.0,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "secondary",
+   "ci": [
+    1.0,
+    1.0
+   ],
+   "n": 15406,
+   "n_pos": 59,
+   "top_features": [
+    [
+     "frac_rec_zero",
+     0.9759
+    ],
+    [
+     "frac_ts",
+     0.0206
+    ],
+    [
+     "gap_cv",
+     0.0032
+    ],
+    [
+     "seed",
+     0.0002
+    ],
+    [
+     "gap_median",
+     0.0
+    ],
+    [
+     "lpkts",
+     0.0
+    ]
+   ]
+  },
+  "probe|cf_gotham|caltest|ii|timing|auc": {
+   "value": 1.0,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "secondary",
+   "ci": [
+    1.0,
+    1.0
+   ],
+   "n": 15406,
+   "n_pos": 59,
+   "top_features": [
+    [
+     "frac_rec_zero",
+     0.9816
+    ],
+    [
+     "frac_ts",
+     0.0159
+    ],
+    [
+     "gap_cv",
+     0.0023
+    ],
+    [
+     "gap_std",
+     0.0001
+    ],
+    [
+     "gap_max",
+     0.0
+    ],
+    [
+     "gap_median",
+     0.0
+    ]
+   ]
+  },
+  "probe|cf_gotham|caltest|ii|scorer|auc": {
+   "value": 0.9969634655036649,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "secondary",
+   "ci": [
+    0.9935525026083455,
+    0.9995960123368298
+   ],
+   "n": 15406,
+   "n_pos": 59,
+   "top_features": [
+    [
+     "seed",
+     0.3552
+    ],
+    [
+     "ldur",
+     0.1847
+    ],
+    [
+     "startcv",
+     0.1505
+    ],
+    [
+     "lrbytes",
+     0.0871
+    ],
+    [
+     "lpkts",
+     0.0649
+    ],
+    [
+     "lobytes",
+     0.0598
+    ]
+   ]
+  },
+  "probe|cf_ton|train|i|all|auc": {
+   "value": 0.852040457644621,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "secondary",
+   "ci": [
+    0.8184633593109658,
+    0.8855080069455071
+   ],
+   "n": 5492,
+   "n_pos": 4717,
+   "top_features": [
+    [
+     "t_norm",
+     0.1288
+    ],
+    [
+     "dir",
+     0.1187
+    ],
+    [
+     "t_since_t0",
+     0.1152
+    ],
+    [
+     "rank_norm",
+     0.1053
+    ],
+    [
+     "type",
+     0.0921
+    ],
+    [
+     "lpkts",
+     0.0657
+    ]
+   ]
+  },
+  "probe|cf_ton|train|i|timing|auc": {
+   "value": 0.6494245248825457,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "secondary",
+   "ci": [
+    0.605483631195306,
+    0.6892191314656557
+   ],
+   "n": 5492,
+   "n_pos": 4717,
+   "top_features": [
+    [
+     "t_since_t0",
+     0.2319
+    ],
+    [
+     "t_norm",
+     0.2294
+    ],
+    [
+     "rank_norm",
+     0.1412
+    ],
+    [
+     "n_rec_probe",
+     0.0965
+    ],
+    [
+     "gap_max",
+     0.068
+    ],
+    [
+     "gap_cv",
+     0.0625
+    ]
+   ]
+  },
+  "probe|cf_ton|train|i|scorer|auc": {
+   "value": 0.8113792938376634,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "secondary",
+   "ci": [
+    0.7779273384357377,
+    0.8500789450287954
+   ],
+   "n": 5492,
+   "n_pos": 4717,
+   "top_features": [
+    [
+     "dir",
+     0.1396
+    ],
+    [
+     "type",
+     0.1293
+    ],
+    [
+     "startcv",
+     0.125
+    ],
+    [
+     "ldur",
+     0.1196
+    ],
+    [
+     "lpkts",
+     0.119
+    ],
+    [
+     "lnrec",
+     0.1071
+    ]
+   ]
+  },
+  "probe|cf_ton|train|ii|all|auc": {
+   "value": 0.977570794287903,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "secondary",
+   "ci": [
+    0.9645861845276328,
+    0.9869954599020084
+   ],
+   "n": 3137,
+   "n_pos": 123,
+   "top_features": [
+    [
+     "type",
+     0.2868
+    ],
+    [
+     "seed",
+     0.2393
+    ],
+    [
+     "rank_norm",
+     0.1016
+    ],
+    [
+     "t_since_t0",
+     0.0679
+    ],
+    [
+     "t_norm",
+     0.0613
+    ],
+    [
+     "ldur",
+     0.0547
+    ]
+   ]
+  },
+  "probe|cf_ton|train|ii|timing|auc": {
+   "value": 0.7544103128489812,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "secondary",
+   "ci": [
+    0.7124254676303353,
+    0.7959126876921006
+   ],
+   "n": 3137,
+   "n_pos": 123,
+   "top_features": [
+    [
+     "rank_norm",
+     0.2855
+    ],
+    [
+     "t_since_t0",
+     0.2361
+    ],
+    [
+     "t_norm",
+     0.2333
+    ],
+    [
+     "n_rec_probe",
+     0.0803
+    ],
+    [
+     "gap_max",
+     0.0458
+    ],
+    [
+     "gap_min",
+     0.037
+    ]
+   ]
+  },
+  "probe|cf_ton|train|ii|scorer|auc": {
+   "value": 0.9837115142883347,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "secondary",
+   "ci": [
+    0.9736691447292605,
+    0.9904339532880198
+   ],
+   "n": 3137,
+   "n_pos": 123,
+   "top_features": [
+    [
+     "type",
+     0.3562
+    ],
+    [
+     "seed",
+     0.2745
+    ],
+    [
+     "ldur",
+     0.0945
+    ],
+    [
+     "lobytes",
+     0.0538
+    ],
+    [
+     "lpkts",
+     0.0532
+    ],
+    [
+     "lrbytes",
+     0.0415
+    ]
+   ]
+  },
+  "probe|cf_ton|caltest|i|all|auc": {
+   "value": 0.8502593225388401,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "secondary",
+   "ci": [
+    0.8264783010731604,
+    0.8736494910675835
+   ],
+   "n": 12830,
+   "n_pos": 10817,
+   "top_features": [
+    [
+     "t_norm",
+     0.1662
+    ],
+    [
+     "t_since_t0",
+     0.1119
+    ],
+    [
+     "dir",
+     0.1023
+    ],
+    [
+     "lpkts",
+     0.0877
+    ],
+    [
+     "type",
+     0.083
+    ],
+    [
+     "rank_norm",
+     0.0761
+    ]
+   ]
+  },
+  "probe|cf_ton|caltest|i|timing|auc": {
+   "value": 0.6797235644193302,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "secondary",
+   "ci": [
+    0.6405011608158923,
+    0.7116112993400605
+   ],
+   "n": 12830,
+   "n_pos": 10817,
+   "top_features": [
+    [
+     "t_norm",
+     0.2556
+    ],
+    [
+     "t_since_t0",
+     0.2361
+    ],
+    [
+     "n_rec_probe",
+     0.1152
+    ],
+    [
+     "rank_norm",
+     0.0971
+    ],
+    [
+     "gap_cv",
+     0.0636
+    ],
+    [
+     "gap_max",
+     0.0613
+    ]
+   ]
+  },
+  "probe|cf_ton|caltest|i|scorer|auc": {
+   "value": 0.8221136202554341,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "secondary",
+   "ci": [
+    0.7937682118194415,
+    0.8495497065614112
+   ],
+   "n": 12830,
+   "n_pos": 10817,
+   "top_features": [
+    [
+     "lpkts",
+     0.1537
+    ],
+    [
+     "dir",
+     0.1445
+    ],
+    [
+     "type",
+     0.1155
+    ],
+    [
+     "ldur",
+     0.104
+    ],
+    [
+     "seed",
+     0.1026
+    ],
+    [
+     "startcv",
+     0.0847
+    ]
+   ]
+  },
+  "probe|cf_ton|caltest|ii|all|auc": {
+   "value": 0.9804979975622496,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "secondary",
+   "ci": [
+    0.9751084699181258,
+    0.9865114467249149
+   ],
+   "n": 5968,
+   "n_pos": 225,
+   "top_features": [
+    [
+     "type",
+     0.2397
+    ],
+    [
+     "seed",
+     0.1616
+    ],
+    [
+     "ldur",
+     0.1123
+    ],
+    [
+     "rank_norm",
+     0.0788
+    ],
+    [
+     "t_since_t0",
+     0.069
+    ],
+    [
+     "t_norm",
+     0.0664
+    ]
+   ]
+  },
+  "probe|cf_ton|caltest|ii|timing|auc": {
+   "value": 0.7807831756534526,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "secondary",
+   "ci": [
+    0.7508324111481276,
+    0.8164884552704672
+   ],
+   "n": 5968,
+   "n_pos": 225,
+   "top_features": [
+    [
+     "rank_norm",
+     0.2042
+    ],
+    [
+     "t_since_t0",
+     0.1939
+    ],
+    [
+     "t_norm",
+     0.1506
+    ],
+    [
+     "n_rec_probe",
+     0.1185
+    ],
+    [
+     "gap_median",
+     0.0727
+    ],
+    [
+     "gap_max",
+     0.0633
+    ]
+   ]
+  },
+  "probe|cf_ton|caltest|ii|scorer|auc": {
+   "value": 0.981948265521311,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "secondary",
+   "ci": [
+    0.9770654587315286,
+    0.9864518256574205
+   ],
+   "n": 5968,
+   "n_pos": 225,
+   "top_features": [
+    [
+     "type",
+     0.3006
+    ],
+    [
+     "seed",
+     0.1919
+    ],
+    [
+     "ldur",
+     0.1559
+    ],
+    [
+     "startcv",
+     0.0917
+    ],
+    [
+     "lnrec",
+     0.0554
+    ],
+    [
+     "lpkts",
+     0.0517
+    ]
+   ]
+  },
+  "reuse|cf_ton|train|incidents_per_used_episode": {
+   "value": 4.161735700197239,
+   "definition": "pooled incidents per used library episode (sum uses / sum used episodes)",
+   "status": "secondary",
+   "source": "interim/cf_ton/audit/reuse.parquet",
+   "max_per_episode": 28
+  },
+  "reuse|cf_ton|caltest|incidents_per_used_episode": {
+   "value": 7.014893617021277,
+   "definition": "pooled incidents per used library episode (sum uses / sum used episodes)",
+   "status": "secondary",
+   "source": "interim/cf_ton/audit/reuse.parquet",
+   "max_per_episode": 51
+  },
+  "reuse|cf_ton|caltest|incidents_per_background_record": {
+   "value": 31.093514132528238,
+   "definition": "mean incidents per background record (windows overlap)",
+   "status": "secondary",
+   "source": "interim/cf_ton/audit/background_reuse.json"
+  },
+  "reuse|cf_ton|train|incidents_per_background_record": {
+   "value": 22.41172632573627,
+   "definition": "mean incidents per background record (windows overlap)",
+   "status": "secondary",
+   "source": "interim/cf_ton/audit/background_reuse.json"
+  },
+  "reuse|cf_ton_h|train|incidents_per_used_episode": {
+   "value": 4.161735700197239,
+   "definition": "pooled incidents per used library episode (sum uses / sum used episodes)",
+   "status": "secondary",
+   "source": "interim/cf_ton_h/audit/reuse.parquet",
+   "max_per_episode": 28
+  },
+  "reuse|cf_ton_h|caltest|incidents_per_used_episode": {
+   "value": 7.014893617021277,
+   "definition": "pooled incidents per used library episode (sum uses / sum used episodes)",
+   "status": "secondary",
+   "source": "interim/cf_ton_h/audit/reuse.parquet",
+   "max_per_episode": 51
+  },
+  "reuse|cf_gotham|train|incidents_per_used_episode": {
+   "value": 28.076923076923077,
+   "definition": "pooled incidents per used library episode (sum uses / sum used episodes)",
+   "status": "secondary",
+   "source": "interim/cf_gotham/audit/reuse.parquet",
+   "max_per_episode": 71
+  },
+  "reuse|cf_gotham|caltest|incidents_per_used_episode": {
+   "value": 33.785714285714285,
+   "definition": "pooled incidents per used library episode (sum uses / sum used episodes)",
+   "status": "secondary",
+   "source": "interim/cf_gotham/audit/reuse.parquet",
+   "max_per_episode": 88
+  },
+  "reuse|cf_gotham|caltest|incidents_per_background_record": {
+   "value": 145.23979389615536,
+   "definition": "mean incidents per background record (windows overlap)",
+   "status": "secondary",
+   "source": "interim/cf_gotham/audit/background_reuse.json"
+  },
+  "reuse|cf_gotham|train|incidents_per_background_record": {
+   "value": 182.75534248801495,
+   "definition": "mean incidents per background record (windows overlap)",
+   "status": "secondary",
+   "source": "interim/cf_gotham/audit/background_reuse.json"
+  },
+  "reuse|cf_gotham_t|train|incidents_per_used_episode": {
+   "value": 28.076923076923077,
+   "definition": "pooled incidents per used library episode (sum uses / sum used episodes)",
+   "status": "secondary",
+   "source": "interim/cf_gotham_t/audit/reuse.parquet",
+   "max_per_episode": 71
+  },
+  "reuse|cf_gotham_t|caltest|incidents_per_used_episode": {
+   "value": 33.785714285714285,
+   "definition": "pooled incidents per used library episode (sum uses / sum used episodes)",
+   "status": "secondary",
+   "source": "interim/cf_gotham_t/audit/reuse.parquet",
+   "max_per_episode": 88
+  },
+  "leakage|tests": {
+   "value": "16 passed in 0.40s",
+   "definition": "pytest -q of the leakage test files (P2-A / P2-F)",
+   "status": "secondary",
+   "files": [
+    "tests/test_leakage_features.py",
+    "tests/test_leakage_ingest.py"
+   ]
+  },
+  "leakage|source_disjoint|cf_ton": {
+   "value": true,
+   "definition": "train/caltest library episode overlap == 0 (P2-E generator check)",
+   "status": "secondary"
+  },
+  "leakage|source_disjoint|cf_ton_h": {
+   "value": true,
+   "definition": "train/caltest library episode overlap == 0 (P2-E generator check)",
+   "status": "secondary"
+  },
+  "leakage|source_disjoint|cf_gotham": {
+   "value": true,
+   "definition": "train/caltest library episode overlap == 0 (P2-E generator check)",
+   "status": "secondary"
+  },
+  "leakage|source_disjoint|cf_gotham_t": {
+   "value": true,
+   "definition": "train/caltest library episode overlap == 0 (P2-E generator check)",
+   "status": "secondary"
+  },
+  "leakage|gotham_bank_case_record_overlap": {
+   "value": "mirai-infection 49,472/84,044 (59%), Merlin 30,018/46,033 (65%), mirai-dos 0/550, benign windows 10 and 0 flows",
+   "definition": "raw records of the Gotham-real windows that also occur in the CF-GOTHAM-T bank (train-pool bots as context; P2-E measurement, reported not removed)",
+   "status": "secondary",
+   "source": "notes/P2-E.md"
+  },
+  "probe|cf_gotham|train|i_attack|all|auc": {
+   "value": 0.9071784016636958,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "exploratory",
+   "ci": [
+    0.8705402229374423,
+    0.9371952450184963
+   ],
+   "n": 1882,
+   "n_pos": 1530,
+   "top_features": [
+    [
+     "t_since_t0",
+     0.125
+    ],
+    [
+     "rank_norm",
+     0.1004
+    ],
+    [
+     "lobytes",
+     0.0991
+    ],
+    [
+     "ldur",
+     0.0956
+    ],
+    [
+     "gap_std",
+     0.0834
+    ],
+    [
+     "t_norm",
+     0.0829
+    ]
+   ]
+  },
+  "probe|cf_gotham|train|i_attack|timing|auc": {
+   "value": 0.8200850415923945,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "exploratory",
+   "ci": [
+    0.7424428563522597,
+    0.8795912296771585
+   ],
+   "n": 1882,
+   "n_pos": 1530,
+   "top_features": [
+    [
+     "t_since_t0",
+     0.1535
+    ],
+    [
+     "rank_norm",
+     0.135
+    ],
+    [
+     "frac_ts",
+     0.1322
+    ],
+    [
+     "gap_std",
+     0.1189
+    ],
+    [
+     "t_norm",
+     0.1172
+    ],
+    [
+     "gap_max",
+     0.1058
+    ]
+   ]
+  },
+  "probe|cf_gotham|train|i_attack|scorer|auc": {
+   "value": 0.9217292409387997,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "exploratory",
+   "ci": [
+    0.8933083320922932,
+    0.9472217148593143
+   ],
+   "n": 1882,
+   "n_pos": 1530,
+   "top_features": [
+    [
+     "ldur",
+     0.3477
+    ],
+    [
+     "lobytes",
+     0.1474
+    ],
+    [
+     "startcv",
+     0.1084
+    ],
+    [
+     "seed",
+     0.0649
+    ],
+    [
+     "lrbytes",
+     0.0518
+    ],
+    [
+     "lpkts",
+     0.0498
+    ]
+   ]
+  },
+  "probe|cf_gotham|train|ii_typematched|all|auc": {
+   "value": 1.0,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "exploratory",
+   "ci": [
+    1.0,
+    1.0
+   ],
+   "n": 3474,
+   "n_pos": 56,
+   "top_features": [
+    [
+     "frac_rec_zero",
+     0.7301
+    ],
+    [
+     "frac_ts",
+     0.2678
+    ],
+    [
+     "gap_cv",
+     0.0013
+    ],
+    [
+     "seed",
+     0.0006
+    ],
+    [
+     "lrbytes",
+     0.0001
+    ],
+    [
+     "type",
+     0.0
+    ]
+   ]
+  },
+  "probe|cf_gotham|train|ii_typematched|timing|auc": {
+   "value": 1.0,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "exploratory",
+   "ci": [
+    1.0,
+    1.0
+   ],
+   "n": 3474,
+   "n_pos": 56,
+   "top_features": [
+    [
+     "frac_rec_zero",
+     0.7542
+    ],
+    [
+     "frac_ts",
+     0.2452
+    ],
+    [
+     "gap_cv",
+     0.0007
+    ],
+    [
+     "t_since_t0",
+     0.0
+    ],
+    [
+     "t_norm",
+     0.0
+    ],
+    [
+     "frac_rec_mean",
+     0.0
+    ]
+   ]
+  },
+  "probe|cf_gotham|train|ii_typematched|scorer|auc": {
+   "value": 0.9983595252027083,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "exploratory",
+   "ci": [
+    0.9956694688672388,
+    0.9999633503567877
+   ],
+   "n": 3474,
+   "n_pos": 56,
+   "top_features": [
+    [
+     "seed",
+     0.44
+    ],
+    [
+     "type",
+     0.1928
+    ],
+    [
+     "ldur",
+     0.1863
+    ],
+    [
+     "lobytes",
+     0.0512
+    ],
+    [
+     "lrbytes",
+     0.0409
+    ],
+    [
+     "lpkts",
+     0.0361
+    ]
+   ]
+  },
+  "probe|cf_gotham|caltest|i_attack|all|auc": {
+   "value": 0.989144522567171,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "exploratory",
+   "ci": [
+    0.9826477434900341,
+    0.9934369907896436
+   ],
+   "n": 3529,
+   "n_pos": 3039,
+   "top_features": [
+    [
+     "gap_mean",
+     0.1149
+    ],
+    [
+     "seed",
+     0.11
+    ],
+    [
+     "port",
+     0.0998
+    ],
+    [
+     "gap_std",
+     0.0955
+    ],
+    [
+     "rank_norm",
+     0.0762
+    ],
+    [
+     "fail",
+     0.0674
+    ]
+   ]
+  },
+  "probe|cf_gotham|caltest|i_attack|timing|auc": {
+   "value": 0.9183660038546514,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "exploratory",
+   "ci": [
+    0.8535329012963541,
+    0.9641703047549756
+   ],
+   "n": 3529,
+   "n_pos": 3039,
+   "top_features": [
+    [
+     "gap_std",
+     0.1727
+    ],
+    [
+     "gap_max",
+     0.1604
+    ],
+    [
+     "gap_mean",
+     0.1113
+    ],
+    [
+     "t_since_t0",
+     0.0941
+    ],
+    [
+     "frac_ts",
+     0.0878
+    ],
+    [
+     "rank_norm",
+     0.0834
+    ]
+   ]
+  },
+  "probe|cf_gotham|caltest|i_attack|scorer|auc": {
+   "value": 0.9860544217687075,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "exploratory",
+   "ci": [
+    0.9789626562579934,
+    0.9912295367536791
+   ],
+   "n": 3529,
+   "n_pos": 3039,
+   "top_features": [
+    [
+     "ldur",
+     0.284
+    ],
+    [
+     "lobytes",
+     0.1256
+    ],
+    [
+     "seed",
+     0.1191
+    ],
+    [
+     "type",
+     0.1058
+    ],
+    [
+     "fail",
+     0.0865
+    ],
+    [
+     "startcv",
+     0.075
+    ]
+   ]
+  },
+  "probe|cf_gotham|caltest|ii_typematched|all|auc": {
+   "value": 1.0,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "exploratory",
+   "ci": [
+    1.0,
+    1.0
+   ],
+   "n": 9371,
+   "n_pos": 59,
+   "top_features": [
+    [
+     "frac_rec_zero",
+     0.9559
+    ],
+    [
+     "frac_ts",
+     0.0373
+    ],
+    [
+     "gap_cv",
+     0.0063
+    ],
+    [
+     "startcv",
+     0.0005
+    ],
+    [
+     "seed",
+     0.0001
+    ],
+    [
+     "lrbytes",
+     0.0
+    ]
+   ]
+  },
+  "probe|cf_gotham|caltest|ii_typematched|timing|auc": {
+   "value": 1.0,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "exploratory",
+   "ci": [
+    1.0,
+    1.0
+   ],
+   "n": 9371,
+   "n_pos": 59,
+   "top_features": [
+    [
+     "frac_rec_zero",
+     0.9798
+    ],
+    [
+     "frac_ts",
+     0.017
+    ],
+    [
+     "gap_cv",
+     0.0033
+    ],
+    [
+     "frac_rec_mean",
+     0.0
+    ],
+    [
+     "t_since_t0",
+     0.0
+    ],
+    [
+     "t_norm",
+     0.0
+    ]
+   ]
+  },
+  "probe|cf_gotham|caltest|ii_typematched|scorer|auc": {
+   "value": 0.998350952297746,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "exploratory",
+   "ci": [
+    0.9961196619895263,
+    0.999746329950042
+   ],
+   "n": 9371,
+   "n_pos": 59,
+   "top_features": [
+    [
+     "seed",
+     0.3315
+    ],
+    [
+     "ldur",
+     0.1514
+    ],
+    [
+     "lobytes",
+     0.1368
+    ],
+    [
+     "startcv",
+     0.1168
+    ],
+    [
+     "lrbytes",
+     0.0799
+    ],
+    [
+     "lndports",
+     0.0786
+    ]
+   ]
+  },
+  "probe|cf_ton|train|i_attack|all|auc": {
+   "value": 0.8452598030098677,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "exploratory",
+   "ci": [
+    0.8065882883404183,
+    0.8839106295905882
+   ],
+   "n": 5369,
+   "n_pos": 4717,
+   "top_features": [
+    [
+     "dir",
+     0.145
+    ],
+    [
+     "t_norm",
+     0.1396
+    ],
+    [
+     "t_since_t0",
+     0.1313
+    ],
+    [
+     "rank_norm",
+     0.1219
+    ],
+    [
+     "seed",
+     0.0533
+    ],
+    [
+     "n_rec_probe",
+     0.0508
+    ]
+   ]
+  },
+  "probe|cf_ton|train|i_attack|timing|auc": {
+   "value": 0.6881193334122369,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "exploratory",
+   "ci": [
+    0.635341425350686,
+    0.7376790361230188
+   ],
+   "n": 5369,
+   "n_pos": 4717,
+   "top_features": [
+    [
+     "t_norm",
+     0.2242
+    ],
+    [
+     "t_since_t0",
+     0.223
+    ],
+    [
+     "rank_norm",
+     0.1405
+    ],
+    [
+     "n_rec_probe",
+     0.1353
+    ],
+    [
+     "gap_std",
+     0.0573
+    ],
+    [
+     "gap_max",
+     0.0551
+    ]
+   ]
+  },
+  "probe|cf_ton|train|i_attack|scorer|auc": {
+   "value": 0.7783002610320847,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "exploratory",
+   "ci": [
+    0.738400525701027,
+    0.8171654670410563
+   ],
+   "n": 5369,
+   "n_pos": 4717,
+   "top_features": [
+    [
+     "dir",
+     0.1956
+    ],
+    [
+     "ldur",
+     0.1417
+    ],
+    [
+     "startcv",
+     0.1417
+    ],
+    [
+     "lnrec",
+     0.1271
+    ],
+    [
+     "lpkts",
+     0.0999
+    ],
+    [
+     "seed",
+     0.0663
+    ]
+   ]
+  },
+  "probe|cf_ton|train|ii_typematched|all|auc": {
+   "value": 0.9791680394611743,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "exploratory",
+   "ci": [
+    0.968588958659993,
+    0.9877768538032893
+   ],
+   "n": 2714,
+   "n_pos": 123,
+   "top_features": [
+    [
+     "type",
+     0.2797
+    ],
+    [
+     "seed",
+     0.2517
+    ],
+    [
+     "rank_norm",
+     0.0987
+    ],
+    [
+     "t_since_t0",
+     0.0692
+    ],
+    [
+     "t_norm",
+     0.0655
+    ],
+    [
+     "ldur",
+     0.0561
+    ]
+   ]
+  },
+  "probe|cf_ton|train|ii_typematched|timing|auc": {
+   "value": 0.766039731026411,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "exploratory",
+   "ci": [
+    0.724320826182071,
+    0.8004359044791616
+   ],
+   "n": 2714,
+   "n_pos": 123,
+   "top_features": [
+    [
+     "rank_norm",
+     0.2767
+    ],
+    [
+     "t_since_t0",
+     0.2449
+    ],
+    [
+     "t_norm",
+     0.2319
+    ],
+    [
+     "n_rec_probe",
+     0.0778
+    ],
+    [
+     "gap_max",
+     0.0528
+    ],
+    [
+     "gap_min",
+     0.0413
+    ]
+   ]
+  },
+  "probe|cf_ton|train|ii_typematched|scorer|auc": {
+   "value": 0.9835092079211027,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "exploratory",
+   "ci": [
+    0.973713979189675,
+    0.9901901881520111
+   ],
+   "n": 2714,
+   "n_pos": 123,
+   "top_features": [
+    [
+     "type",
+     0.3512
+    ],
+    [
+     "seed",
+     0.3014
+    ],
+    [
+     "ldur",
+     0.0934
+    ],
+    [
+     "lobytes",
+     0.0545
+    ],
+    [
+     "lpkts",
+     0.0501
+    ],
+    [
+     "lrbytes",
+     0.0437
+    ]
+   ]
+  },
+  "probe|cf_ton|caltest|i_attack|all|auc": {
+   "value": 0.8192766988494166,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "exploratory",
+   "ci": [
+    0.7902556645765081,
+    0.8560314516228009
+   ],
+   "n": 12605,
+   "n_pos": 10817,
+   "top_features": [
+    [
+     "t_norm",
+     0.1721
+    ],
+    [
+     "dir",
+     0.1434
+    ],
+    [
+     "t_since_t0",
+     0.1211
+    ],
+    [
+     "seed",
+     0.1194
+    ],
+    [
+     "lpkts",
+     0.0884
+    ],
+    [
+     "rank_norm",
+     0.0756
+    ]
+   ]
+  },
+  "probe|cf_ton|caltest|i_attack|timing|auc": {
+   "value": 0.6434982562248214,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "exploratory",
+   "ci": [
+    0.6061973337232361,
+    0.6893196743604147
+   ],
+   "n": 12605,
+   "n_pos": 10817,
+   "top_features": [
+    [
+     "t_since_t0",
+     0.2654
+    ],
+    [
+     "t_norm",
+     0.2402
+    ],
+    [
+     "n_rec_probe",
+     0.1407
+    ],
+    [
+     "rank_norm",
+     0.1079
+    ],
+    [
+     "gap_cv",
+     0.0614
+    ],
+    [
+     "gap_zero",
+     0.0457
+    ]
+   ]
+  },
+  "probe|cf_ton|caltest|i_attack|scorer|auc": {
+   "value": 0.8006692951003671,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "exploratory",
+   "ci": [
+    0.7757274905250999,
+    0.828995469915358
+   ],
+   "n": 12605,
+   "n_pos": 10817,
+   "top_features": [
+    [
+     "dir",
+     0.2192
+    ],
+    [
+     "seed",
+     0.1492
+    ],
+    [
+     "lpkts",
+     0.1464
+    ],
+    [
+     "ldur",
+     0.1104
+    ],
+    [
+     "startcv",
+     0.0942
+    ],
+    [
+     "lnrec",
+     0.077
+    ]
+   ]
+  },
+  "probe|cf_ton|caltest|ii_typematched|all|auc": {
+   "value": 0.9567707231040564,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "exploratory",
+   "ci": [
+    0.9463660752192398,
+    0.9678584000878219
+   ],
+   "n": 2745,
+   "n_pos": 225,
+   "top_features": [
+    [
+     "seed",
+     0.2352
+    ],
+    [
+     "ldur",
+     0.1308
+    ],
+    [
+     "rank_norm",
+     0.0953
+    ],
+    [
+     "type",
+     0.0899
+    ],
+    [
+     "t_since_t0",
+     0.0863
+    ],
+    [
+     "t_norm",
+     0.0801
+    ]
+   ]
+  },
+  "probe|cf_ton|caltest|ii_typematched|timing|auc": {
+   "value": 0.8118077601410935,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "exploratory",
+   "ci": [
+    0.788661922158807,
+    0.8323661467771429
+   ],
+   "n": 2745,
+   "n_pos": 225,
+   "top_features": [
+    [
+     "t_since_t0",
+     0.1907
+    ],
+    [
+     "rank_norm",
+     0.1904
+    ],
+    [
+     "n_rec_probe",
+     0.1581
+    ],
+    [
+     "t_norm",
+     0.1528
+    ],
+    [
+     "gap_max",
+     0.0697
+    ],
+    [
+     "gap_cv",
+     0.0526
+    ]
+   ]
+  },
+  "probe|cf_ton|caltest|ii_typematched|scorer|auc": {
+   "value": 0.9565828924162257,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "exploratory",
+   "ci": [
+    0.946349763564698,
+    0.9668397408563695
+   ],
+   "n": 2745,
+   "n_pos": 225,
+   "top_features": [
+    [
+     "seed",
+     0.2985
+    ],
+    [
+     "ldur",
+     0.195
+    ],
+    [
+     "type",
+     0.1136
+    ],
+    [
+     "startcv",
+     0.1023
+    ],
+    [
+     "lnrec",
+     0.0628
+    ],
+    [
+     "lobytes",
+     0.0593
+    ]
+   ]
+  },
+  "descriptor|cf_ton|N_over_r_all": {
+   "value": 173.7077922077922,
+   "definition": "N_over_r_all of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_ton/S_TON.stat"
+  },
+  "descriptor|cf_ton_h|N_over_r_all": {
+   "value": 81.29411764705883,
+   "definition": "N_over_r_all of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_ton_h/S_TON_H.stat"
+  },
+  "descriptor|cf_gotham|N_over_r_all": {
+   "value": 87.06581986143188,
+   "definition": "N_over_r_all of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_gotham/S_GOT.stat"
+  },
+  "descriptor|iot23|N_over_r_all": {
+   "value": 36175.46153846154,
+   "definition": "N_over_r_all of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/iot23/S_CF.stat"
+  },
+  "descriptor|gotham_real|N_over_r_all": {
+   "value": 82.08333333333333,
+   "definition": "N_over_r_all of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/gotham_real/S_TON.stat"
+  },
+  "descriptor|cf_gotham_t|N_over_r_all": {
+   "value": 74.11111111111111,
+   "definition": "N_over_r_all of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "interim/cf_gotham_t/summary_07.json (no bank yet)"
+  },
+  "descriptor|cf_gotham_v2|n_incidents": {
+   "value": 200,
+   "definition": "n_incidents of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_gotham_v2/S_GOT2.stat"
+  },
+  "descriptor|cf_gotham_v2|N_median": {
+   "value": 240.5,
+   "definition": "N_median of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_gotham_v2/S_GOT2.stat"
+  },
+  "descriptor|cf_gotham_v2|N_over_r_pooled": {
+   "value": 85.85565819861432,
+   "definition": "N_over_r_pooled of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_gotham_v2/S_GOT2.stat"
+  },
+  "descriptor|cf_gotham_v2|N_over_r_all": {
+   "value": 87.0635103926097,
+   "definition": "N_over_r_all of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_gotham_v2/S_GOT2.stat"
+  },
+  "descriptor|cf_gotham_v2|N_over_r_median": {
+   "value": 68.75,
+   "definition": "N_over_r_median of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_gotham_v2/S_GOT2.stat"
+  },
+  "descriptor|cf_gotham_v2|r_CT": {
+   "value": 0.8185255198487713,
+   "definition": "r_CT of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_gotham_v2/S_GOT2.stat"
+  },
+  "descriptor|cf_gotham_v2|rho_T": {
+   "value": 0.3366771159874608,
+   "definition": "rho_T of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_gotham_v2/S_GOT2.stat"
+  },
+  "descriptor|cf_gotham_v2|ceiling": {
+   "value": 0.5429467084639499,
+   "definition": "ceiling of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_gotham_v2/S_GOT2.stat"
+  },
+  "descriptor|cf_gotham_v2|n_T": {
+   "value": 1595.0,
+   "definition": "n_T of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_gotham_v2/S_GOT2.stat"
+  },
+  "descriptor|cf_gotham_v2|n_T_obs": {
+   "value": 1058.0,
+   "definition": "n_T_obs of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_gotham_v2/S_GOT2.stat"
+  },
+  "descriptor|cf_gotham_v2|n_T_hid": {
+   "value": 537.0,
+   "definition": "n_T_hid of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_gotham_v2/S_GOT2.stat"
+  },
+  "descriptor|cf_gotham_v2|n_T_obs_in_C": {
+   "value": 866.0,
+   "definition": "n_T_obs_in_C of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_gotham_v2/S_GOT2.stat"
+  },
+  "descriptor|cf_gotham_v2|n_true": {
+   "value": 972.0,
+   "definition": "n_true of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_gotham_v2/S_GOT2.stat"
+  },
+  "descriptor|cf_gotham_v2|amb_share": {
+   "value": 0.17234107457856412,
+   "definition": "amb_share of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_gotham_v2/S_GOT2.stat"
+  },
+  "descriptor|cf_gotham_t_v2|n_incidents": {
+   "value": 150,
+   "definition": "n_incidents of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_gotham_t_v2/S_TON.stat"
+  },
+  "descriptor|cf_gotham_t_v2|N_median": {
+   "value": 156.0,
+   "definition": "N_median of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_gotham_t_v2/S_TON.stat"
+  },
+  "descriptor|cf_gotham_t_v2|N_over_r_pooled": {
+   "value": 73.80030030030031,
+   "definition": "N_over_r_pooled of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_gotham_t_v2/S_TON.stat"
+  },
+  "descriptor|cf_gotham_t_v2|N_over_r_all": {
+   "value": 74.10810810810811,
+   "definition": "N_over_r_all of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_gotham_t_v2/S_TON.stat"
+  },
+  "descriptor|cf_gotham_t_v2|N_over_r_median": {
+   "value": 52.0,
+   "definition": "N_over_r_median of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_gotham_t_v2/S_TON.stat"
+  },
+  "descriptor|cf_gotham_t_v2|r_CT": {
+   "value": 0.8571428571428571,
+   "definition": "r_CT of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_gotham_t_v2/S_TON.stat"
+  },
+  "descriptor|cf_gotham_t_v2|rho_T": {
+   "value": 0.3099467140319716,
+   "definition": "rho_T of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_gotham_t_v2/S_TON.stat"
+  },
+  "descriptor|cf_gotham_t_v2|ceiling": {
+   "value": 0.5914742451154529,
+   "definition": "ceiling of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_gotham_t_v2/S_TON.stat"
+  },
+  "descriptor|cf_gotham_t_v2|n_T": {
+   "value": 1126.0,
+   "definition": "n_T of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_gotham_t_v2/S_TON.stat"
+  },
+  "descriptor|cf_gotham_t_v2|n_T_obs": {
+   "value": 777.0,
+   "definition": "n_T_obs of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_gotham_t_v2/S_TON.stat"
+  },
+  "descriptor|cf_gotham_t_v2|n_T_hid": {
+   "value": 349.0,
+   "definition": "n_T_hid of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_gotham_t_v2/S_TON.stat"
+  },
+  "descriptor|cf_gotham_t_v2|n_T_obs_in_C": {
+   "value": 666.0,
+   "definition": "n_T_obs_in_C of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_gotham_t_v2/S_TON.stat"
+  },
+  "descriptor|cf_gotham_t_v2|n_true": {
+   "value": 739.0,
+   "definition": "n_true of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_gotham_t_v2/S_TON.stat"
+  },
+  "descriptor|cf_gotham_t_v2|amb_share": {
+   "value": 0.18654266958424506,
+   "definition": "amb_share of the cal/test pool (pooled over incidents)",
+   "status": "secondary",
+   "source": "losses/cf_gotham_t_v2/S_TON.stat"
+  },
+  "oracle|cf_gotham_v2|B1|fdr": {
+   "value": 0.9420620473662499,
+   "definition": "realised FDR = mean over test incidents of the strict per-incident FDP (AMB = false), mean over splits; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_gotham_v2/B1",
+   "split_mean50": 0.9446548234378795,
+   "split_sd50": 0.01422924089785208
+  },
+  "oracle|cf_gotham_v2|B1|fdr_lenient": {
+   "value": 0.9347983160471154,
+   "definition": "mean per-incident lenient FDP (AMB excluded), mean over splits; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_gotham_v2/B1",
+   "split_mean50": 0.9373130129944317,
+   "split_sd50": 0.014283001092310604
+  },
+  "oracle|cf_gotham_v2|B1|pooled_fdr": {
+   "value": 0.9853294091011999,
+   "definition": "pooled FDR = sum V / max(sum R, 1) over a split's test incidents (strict), mean over splits; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_gotham_v2/B1",
+   "split_mean50": 0.9852482300379318,
+   "split_sd50": 0.000994086125685856
+  },
+  "oracle|cf_gotham_v2|B1|recall_pooled": {
+   "value": 1.0,
+   "definition": "certified true links / true links in C (pooled); rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_gotham_v2/B1",
+   "split_mean50": 1.0,
+   "split_sd50": 0.0
+  },
+  "oracle|cf_gotham_v2|B1|str_mean": {
+   "value": 0.6331731016300204,
+   "definition": "STR = certified distinct transitions / |T*|, mean over test incidents with |T*| > 0; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_gotham_v2/B1",
+   "split_mean50": 0.6333898410413729,
+   "split_sd50": 0.02035454633843864
+  },
+  "oracle|cf_gotham_v2|B1|str_pooled": {
+   "value": 0.5429467084639499,
+   "definition": "STR pooled over a split's test incidents; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_gotham_v2/B1",
+   "split_mean50": 0.5429522644025561,
+   "split_sd50": 0.014949246905407762
+  },
+  "oracle|cf_gotham_v2|B1|cer_link_mean": {
+   "value": 0.6573745996273558,
+   "definition": "CER_link = certified true links / (|E*_link| + |T*_hid|), mean over incidents with a positive denominator; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_gotham_v2/B1",
+   "split_mean50": 0.6574749737635507,
+   "split_sd50": 0.019542991570715013
+  },
+  "oracle|cf_gotham_v2|B1|cer_link_pooled": {
+   "value": 0.5775401069518716,
+   "definition": "CER_link pooled over a split; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_gotham_v2/B1",
+   "split_mean50": 0.5778154101925291,
+   "split_sd50": 0.013086139063960563
+  },
+  "oracle|cf_gotham_v2|B1|ucr": {
+   "value": 0.08545770130556185,
+   "definition": "share of certified links with a decoy endpoint (pooled); rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_gotham_v2/B1",
+   "split_mean50": 0.08627060743849115,
+   "split_sd50": 0.010214495565986735
+  },
+  "oracle|cf_gotham_v2|B1|wrongful_benign": {
+   "value": 0.6666666666666666,
+   "definition": "P(any claim | benign-only incident); rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_gotham_v2/B1",
+   "split_mean50": 0.6972838827838826,
+   "split_sd50": 0.13823390718132905
+  },
+  "oracle|cf_gotham_v2|B1|n_claims": {
+   "value": 331.275,
+   "definition": "mean claims per test incident; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_gotham_v2/B1",
+   "split_mean50": 331.798,
+   "split_sd50": 26.60938395163846
+  },
+  "oracle|cf_gotham_v2|B1|bridge_recall": {
+   "value": 0.9906542056074766,
+   "definition": "certified bridges / bridges (pooled); rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_gotham_v2/B1",
+   "split_mean50": 0.9914467703880391,
+   "split_sd50": 0.009067326262063127
+  },
+  "oracle|cf_gotham_v2|B1|precision_pooled": {
+   "value": 0.014670590898800073,
+   "definition": "1 - pooled strict FDR",
+   "status": "secondary",
+   "source": "baselines/cf_gotham_v2/B1"
+  },
+  "oracle|cf_gotham_v2|B2|fdr": {
+   "value": 0.6652721306471306,
+   "definition": "realised FDR = mean over test incidents of the strict per-incident FDP (AMB = false), mean over splits; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_gotham_v2/B2",
+   "split_mean50": 0.6712427899877899,
+   "split_sd50": 0.031217310343114472
+  },
+  "oracle|cf_gotham_v2|B2|fdr_lenient": {
+   "value": 0.5665734126984127,
+   "definition": "mean per-incident lenient FDP (AMB excluded), mean over splits; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_gotham_v2/B2",
+   "split_mean50": 0.5679242063492064,
+   "split_sd50": 0.031164807583234196
+  },
+  "oracle|cf_gotham_v2|B2|pooled_fdr": {
+   "value": 0.8398058252427184,
+   "definition": "pooled FDR = sum V / max(sum R, 1) over a split's test incidents (strict), mean over splits; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_gotham_v2/B2",
+   "split_mean50": 0.8379196140768091,
+   "split_sd50": 0.019872245360096318
+  },
+  "oracle|cf_gotham_v2|B2|recall_pooled": {
+   "value": 0.13580246913580246,
+   "definition": "certified true links / true links in C (pooled); rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_gotham_v2/B2",
+   "split_mean50": 0.13704059691673792,
+   "split_sd50": 0.01347321245904798
+  },
+  "oracle|cf_gotham_v2|B2|str_mean": {
+   "value": 0.10704410743827848,
+   "definition": "STR = certified distinct transitions / |T*|, mean over test incidents with |T*| > 0; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_gotham_v2/B2",
+   "split_mean50": 0.1081316742207634,
+   "split_sd50": 0.017482504026360556
+  },
+  "oracle|cf_gotham_v2|B2|str_pooled": {
+   "value": 0.08275862068965517,
+   "definition": "STR pooled over a split's test incidents; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_gotham_v2/B2",
+   "split_mean50": 0.083627771762481,
+   "split_sd50": 0.008934990673337945
+  },
+  "oracle|cf_gotham_v2|B2|cer_link_mean": {
+   "value": 0.10459867190925051,
+   "definition": "CER_link = certified true links / (|E*_link| + |T*_hid|), mean over incidents with a positive denominator; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_gotham_v2/B2",
+   "split_mean50": 0.10565901711615623,
+   "split_sd50": 0.01751045681544548
+  },
+  "oracle|cf_gotham_v2|B2|cer_link_pooled": {
+   "value": 0.0784313725490196,
+   "definition": "CER_link pooled over a split; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_gotham_v2/B2",
+   "split_mean50": 0.07924458883434533,
+   "split_sd50": 0.008550395702227674
+  },
+  "oracle|cf_gotham_v2|B2|ucr": {
+   "value": 0.2803398058252427,
+   "definition": "share of certified links with a decoy endpoint (pooled); rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_gotham_v2/B2",
+   "split_mean50": 0.2812329983622525,
+   "split_sd50": 0.028267184789174397
+  },
+  "oracle|cf_gotham_v2|B2|wrongful_benign": {
+   "value": 0.2777777777777778,
+   "definition": "P(any claim | benign-only incident); rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_gotham_v2/B2",
+   "split_mean50": 0.3051358086358086,
+   "split_sd50": 0.12679884917946438
+  },
+  "oracle|cf_gotham_v2|B2|n_claims": {
+   "value": 4.12,
+   "definition": "mean claims per test incident; rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_gotham_v2/B2",
+   "split_mean50": 4.1368,
+   "split_sd50": 0.28365284905234106
+  },
+  "oracle|cf_gotham_v2|B2|bridge_recall": {
+   "value": 0.0,
+   "definition": "certified bridges / bridges (pooled); rule-only oracle on the whole cal/test pool (no level)",
+   "status": "secondary",
+   "source": "baselines/cf_gotham_v2/B2",
+   "split_mean50": 0.0,
+   "split_sd50": 0.0
+  },
+  "oracle|cf_gotham_v2|B2|precision_pooled": {
+   "value": 0.1601941747572816,
+   "definition": "1 - pooled strict FDR",
+   "status": "secondary",
+   "source": "baselines/cf_gotham_v2/B2"
+  },
+  "probe|cf_gotham_v2|train|i|all|auc": {
+   "value": 0.9297866205305652,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "secondary",
+   "ci": [
+    0.9005676323252723,
+    0.955262022144373
+   ],
+   "n": 1938,
+   "n_pos": 1530,
+   "top_features": [
+    [
+     "ldur",
+     0.1681
+    ],
+    [
+     "gap_max",
+     0.1197
+    ],
+    [
+     "t_since_t0",
+     0.1032
+    ],
+    [
+     "rank_norm",
+     0.0782
+    ],
+    [
+     "t_norm",
+     0.0624
+    ],
+    [
+     "frac_ts",
+     0.0605
+    ]
+   ]
+  },
+  "probe|cf_gotham_v2|train|i|timing|auc": {
+   "value": 0.8088123157759836,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "secondary",
+   "ci": [
+    0.745566577871758,
+    0.8720257031865666
+   ],
+   "n": 1938,
+   "n_pos": 1530,
+   "top_features": [
+    [
+     "gap_max",
+     0.1871
+    ],
+    [
+     "t_since_t0",
+     0.1691
+    ],
+    [
+     "t_norm",
+     0.1097
+    ],
+    [
+     "rank_norm",
+     0.1029
+    ],
+    [
+     "frac_ts",
+     0.0949
+    ],
+    [
+     "gap_min",
+     0.0723
+    ]
+   ]
+  },
+  "probe|cf_gotham_v2|train|i|scorer|auc": {
+   "value": 0.9331843521722415,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "secondary",
+   "ci": [
+    0.910190651253717,
+    0.9572862540044886
+   ],
+   "n": 1938,
+   "n_pos": 1530,
+   "top_features": [
+    [
+     "ldur",
+     0.3998
+    ],
+    [
+     "lobytes",
+     0.1232
+    ],
+    [
+     "port",
+     0.0893
+    ],
+    [
+     "startcv",
+     0.0762
+    ],
+    [
+     "lrbytes",
+     0.0638
+    ],
+    [
+     "svc",
+     0.0578
+    ]
+   ]
+  },
+  "probe|cf_gotham_v2|train|ii|all|auc": {
+   "value": 0.9980171962082599,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "secondary",
+   "ci": [
+    0.9939196868052174,
+    0.9999320548036804
+   ],
+   "n": 6054,
+   "n_pos": 56,
+   "top_features": [
+    [
+     "seed",
+     0.4485
+    ],
+    [
+     "ldur",
+     0.203
+    ],
+    [
+     "lpkts",
+     0.1934
+    ],
+    [
+     "t_since_t0",
+     0.0241
+    ],
+    [
+     "lrbytes",
+     0.0228
+    ],
+    [
+     "lobytes",
+     0.0191
+    ]
+   ]
+  },
+  "probe|cf_gotham_v2|train|ii|timing|auc": {
+   "value": 0.9338559281665317,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "secondary",
+   "ci": [
+    0.8991784274273342,
+    0.9621092851171918
+   ],
+   "n": 6054,
+   "n_pos": 56,
+   "top_features": [
+    [
+     "n_rec_probe",
+     0.1664
+    ],
+    [
+     "t_norm",
+     0.1571
+    ],
+    [
+     "t_since_t0",
+     0.1521
+    ],
+    [
+     "gap_mean",
+     0.096
+    ],
+    [
+     "rank_norm",
+     0.0934
+    ],
+    [
+     "frac_ts",
+     0.082
+    ]
+   ]
+  },
+  "probe|cf_gotham_v2|train|ii|scorer|auc": {
+   "value": 0.9974947006144905,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "secondary",
+   "ci": [
+    0.9918881911945855,
+    0.9999712431877972
+   ],
+   "n": 6054,
+   "n_pos": 56,
+   "top_features": [
+    [
+     "seed",
+     0.4313
+    ],
+    [
+     "ldur",
+     0.2703
+    ],
+    [
+     "lpkts",
+     0.1316
+    ],
+    [
+     "lrbytes",
+     0.0605
+    ],
+    [
+     "lobytes",
+     0.0512
+    ],
+    [
+     "type",
+     0.0206
+    ]
+   ]
+  },
+  "probe|cf_gotham_v2|train|i_attack|all|auc": {
+   "value": 0.8967078877005348,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "exploratory",
+   "ci": [
+    0.8583005526612615,
+    0.9317072503973763
+   ],
+   "n": 1882,
+   "n_pos": 1530,
+   "top_features": [
+    [
+     "ldur",
+     0.1067
+    ],
+    [
+     "t_since_t0",
+     0.1051
+    ],
+    [
+     "lobytes",
+     0.1023
+    ],
+    [
+     "gap_max",
+     0.0955
+    ],
+    [
+     "rank_norm",
+     0.0921
+    ],
+    [
+     "gap_std",
+     0.0751
+    ]
+   ]
+  },
+  "probe|cf_gotham_v2|train|i_attack|timing|auc": {
+   "value": 0.7619132501485443,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "exploratory",
+   "ci": [
+    0.6676269323685319,
+    0.8443813900909503
+   ],
+   "n": 1882,
+   "n_pos": 1530,
+   "top_features": [
+    [
+     "t_since_t0",
+     0.1579
+    ],
+    [
+     "gap_max",
+     0.1372
+    ],
+    [
+     "t_norm",
+     0.1307
+    ],
+    [
+     "rank_norm",
+     0.1185
+    ],
+    [
+     "gap_std",
+     0.1108
+    ],
+    [
+     "frac_ts",
+     0.1004
+    ]
+   ]
+  },
+  "probe|cf_gotham_v2|train|i_attack|scorer|auc": {
+   "value": 0.9218313651218063,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "exploratory",
+   "ci": [
+    0.8933441964852374,
+    0.9471036598920657
+   ],
+   "n": 1882,
+   "n_pos": 1530,
+   "top_features": [
+    [
+     "ldur",
+     0.3463
+    ],
+    [
+     "lobytes",
+     0.1488
+    ],
+    [
+     "startcv",
+     0.1089
+    ],
+    [
+     "seed",
+     0.0641
+    ],
+    [
+     "lrbytes",
+     0.0516
+    ],
+    [
+     "svc",
+     0.0486
+    ]
+   ]
+  },
+  "probe|cf_gotham_v2|train|ii_typematched|all|auc": {
+   "value": 0.9983595252027083,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "exploratory",
+   "ci": [
+    0.9958716305292356,
+    0.9998342955129879
+   ],
+   "n": 3474,
+   "n_pos": 56,
+   "top_features": [
+    [
+     "seed",
+     0.4626
+    ],
+    [
+     "type",
+     0.1466
+    ],
+    [
+     "ldur",
+     0.1396
+    ],
+    [
+     "lpkts",
+     0.0564
+    ],
+    [
+     "lobytes",
+     0.0313
+    ],
+    [
+     "t_since_t0",
+     0.0282
+    ]
+   ]
+  },
+  "probe|cf_gotham_v2|train|ii_typematched|timing|auc": {
+   "value": 0.934164193764106,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "exploratory",
+   "ci": [
+    0.8870406208460396,
+    0.9638734119060005
+   ],
+   "n": 3474,
+   "n_pos": 56,
+   "top_features": [
+    [
+     "gap_min",
+     0.1604
+    ],
+    [
+     "t_since_t0",
+     0.1412
+    ],
+    [
+     "n_rec_probe",
+     0.1397
+    ],
+    [
+     "t_norm",
+     0.1202
+    ],
+    [
+     "rank_norm",
+     0.0867
+    ],
+    [
+     "gap_median",
+     0.0842
+    ]
+   ]
+  },
+  "probe|cf_gotham_v2|train|ii_typematched|scorer|auc": {
+   "value": 0.9983072807824125,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "exploratory",
+   "ci": [
+    0.9956472463118855,
+    0.9999522639744326
+   ],
+   "n": 3474,
+   "n_pos": 56,
+   "top_features": [
+    [
+     "seed",
+     0.4371
+    ],
+    [
+     "type",
+     0.1934
+    ],
+    [
+     "ldur",
+     0.1903
+    ],
+    [
+     "lobytes",
+     0.0497
+    ],
+    [
+     "lpkts",
+     0.0395
+    ],
+    [
+     "lrbytes",
+     0.038
+    ]
+   ]
+  },
+  "probe|cf_gotham_t_v2|caltest|i|all|auc": {
+   "value": 0.9828231153787887,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "secondary",
+   "ci": [
+    0.9725598008911911,
+    0.9916466147873123
+   ],
+   "n": 2585,
+   "n_pos": 2093,
+   "top_features": [
+    [
+     "ldur",
+     0.1836
+    ],
+    [
+     "seed",
+     0.1632
+    ],
+    [
+     "port",
+     0.0949
+    ],
+    [
+     "lobytes",
+     0.0599
+    ],
+    [
+     "gap_max",
+     0.0557
+    ],
+    [
+     "rank_norm",
+     0.0476
+    ]
+   ]
+  },
+  "probe|cf_gotham_t_v2|caltest|i|timing|auc": {
+   "value": 0.8633501528517435,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "secondary",
+   "ci": [
+    0.809668134476242,
+    0.9072364523626347
+   ],
+   "n": 2585,
+   "n_pos": 2093,
+   "top_features": [
+    [
+     "t_norm",
+     0.1825
+    ],
+    [
+     "gap_max",
+     0.1576
+    ],
+    [
+     "t_since_t0",
+     0.1387
+    ],
+    [
+     "rank_norm",
+     0.0923
+    ],
+    [
+     "gap_mean",
+     0.0792
+    ],
+    [
+     "gap_min",
+     0.076
+    ]
+   ]
+  },
+  "probe|cf_gotham_t_v2|caltest|i|scorer|auc": {
+   "value": 0.9844837029354526,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "secondary",
+   "ci": [
+    0.9730449063711952,
+    0.9922854490007971
+   ],
+   "n": 2585,
+   "n_pos": 2093,
+   "top_features": [
+    [
+     "ldur",
+     0.3066
+    ],
+    [
+     "seed",
+     0.1854
+    ],
+    [
+     "port",
+     0.1149
+    ],
+    [
+     "lobytes",
+     0.0841
+    ],
+    [
+     "lnrec",
+     0.0756
+    ],
+    [
+     "startcv",
+     0.0748
+    ]
+   ]
+  },
+  "probe|cf_gotham_t_v2|caltest|ii|all|auc": {
+   "value": 0.9993566774635139,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "secondary",
+   "ci": [
+    0.9983187071288493,
+    0.9999236974453557
+   ],
+   "n": 10913,
+   "n_pos": 74,
+   "top_features": [
+    [
+     "seed",
+     0.302
+    ],
+    [
+     "lpkts",
+     0.1692
+    ],
+    [
+     "ldur",
+     0.1303
+    ],
+    [
+     "type",
+     0.1027
+    ],
+    [
+     "startcv",
+     0.0493
+    ],
+    [
+     "t_norm",
+     0.0442
+    ]
+   ]
+  },
+  "probe|cf_gotham_t_v2|caltest|ii|timing|auc": {
+   "value": 0.9423690227731191,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "secondary",
+   "ci": [
+    0.9210651457987056,
+    0.9640474747154152
+   ],
+   "n": 10913,
+   "n_pos": 74,
+   "top_features": [
+    [
+     "t_norm",
+     0.1612
+    ],
+    [
+     "n_rec_probe",
+     0.1513
+    ],
+    [
+     "frac_ts",
+     0.1272
+    ],
+    [
+     "rank_norm",
+     0.1099
+    ],
+    [
+     "t_since_t0",
+     0.1019
+    ],
+    [
+     "gap_min",
+     0.0773
+    ]
+   ]
+  },
+  "probe|cf_gotham_t_v2|caltest|ii|scorer|auc": {
+   "value": 0.9996060272838574,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "secondary",
+   "ci": [
+    0.9992382475925854,
+    0.9998437231780783
+   ],
+   "n": 10913,
+   "n_pos": 74,
+   "top_features": [
+    [
+     "seed",
+     0.3046
+    ],
+    [
+     "ldur",
+     0.2064
+    ],
+    [
+     "lpkts",
+     0.134
+    ],
+    [
+     "type",
+     0.1122
+    ],
+    [
+     "startcv",
+     0.0804
+    ],
+    [
+     "lobytes",
+     0.0743
+    ]
+   ]
+  },
+  "probe|cf_gotham_t_v2|caltest|i_attack|all|auc": {
+   "value": 0.9842205849070838,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "exploratory",
+   "ci": [
+    0.9734149193538905,
+    0.9923082356100552
+   ],
+   "n": 2511,
+   "n_pos": 2093,
+   "top_features": [
+    [
+     "seed",
+     0.2067
+    ],
+    [
+     "gap_max",
+     0.0955
+    ],
+    [
+     "lobytes",
+     0.0858
+    ],
+    [
+     "gap_std",
+     0.066
+    ],
+    [
+     "fail",
+     0.0609
+    ],
+    [
+     "rank_norm",
+     0.0493
+    ]
+   ]
+  },
+  "probe|cf_gotham_t_v2|caltest|i_attack|timing|auc": {
+   "value": 0.8533543115922979,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "exploratory",
+   "ci": [
+    0.7812498626881688,
+    0.9089449744960177
+   ],
+   "n": 2511,
+   "n_pos": 2093,
+   "top_features": [
+    [
+     "t_norm",
+     0.1979
+    ],
+    [
+     "t_since_t0",
+     0.1514
+    ],
+    [
+     "gap_std",
+     0.1144
+    ],
+    [
+     "gap_max",
+     0.1088
+    ],
+    [
+     "gap_mean",
+     0.0924
+    ],
+    [
+     "rank_norm",
+     0.0907
+    ]
+   ]
+  },
+  "probe|cf_gotham_t_v2|caltest|i_attack|scorer|auc": {
+   "value": 0.9851390028735566,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "exploratory",
+   "ci": [
+    0.973907604140814,
+    0.9936456476287344
+   ],
+   "n": 2511,
+   "n_pos": 2093,
+   "top_features": [
+    [
+     "seed",
+     0.2206
+    ],
+    [
+     "ldur",
+     0.157
+    ],
+    [
+     "startcv",
+     0.1245
+    ],
+    [
+     "port",
+     0.115
+    ],
+    [
+     "lnrec",
+     0.104
+    ],
+    [
+     "lobytes",
+     0.0913
+    ]
+   ]
+  },
+  "probe|cf_gotham_t_v2|caltest|ii_typematched|all|auc": {
+   "value": 0.9993772776508457,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "exploratory",
+   "ci": [
+    0.9983942812721036,
+    0.9998916436924045
+   ],
+   "n": 6237,
+   "n_pos": 74,
+   "top_features": [
+    [
+     "seed",
+     0.2821
+    ],
+    [
+     "type",
+     0.184
+    ],
+    [
+     "ldur",
+     0.11
+    ],
+    [
+     "lpkts",
+     0.083
+    ],
+    [
+     "lobytes",
+     0.0544
+    ],
+    [
+     "startcv",
+     0.0438
+    ]
+   ]
+  },
+  "probe|cf_gotham_t_v2|caltest|ii_typematched|timing|auc": {
+   "value": 0.9551354859646276,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "exploratory",
+   "ci": [
+    0.9307750851920147,
+    0.9763824676487057
+   ],
+   "n": 6237,
+   "n_pos": 74,
+   "top_features": [
+    [
+     "t_norm",
+     0.1528
+    ],
+    [
+     "gap_min",
+     0.1357
+    ],
+    [
+     "frac_ts",
+     0.1073
+    ],
+    [
+     "t_since_t0",
+     0.1013
+    ],
+    [
+     "gap_median",
+     0.0993
+    ],
+    [
+     "n_rec_probe",
+     0.0968
+    ]
+   ]
+  },
+  "probe|cf_gotham_t_v2|caltest|ii_typematched|scorer|auc": {
+   "value": 0.9992391385381812,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "exploratory",
+   "ci": [
+    0.9982737760410182,
+    0.9997849007938784
+   ],
+   "n": 6237,
+   "n_pos": 74,
+   "top_features": [
+    [
+     "seed",
+     0.2836
+    ],
+    [
+     "type",
+     0.2276
+    ],
+    [
+     "ldur",
+     0.1465
+    ],
+    [
+     "lpkts",
+     0.1006
+    ],
+    [
+     "lobytes",
+     0.0764
+    ],
+    [
+     "startcv",
+     0.0698
+    ]
+   ]
+  },
+  "probe|cf_gotham_v2|caltest|i|all|auc": {
+   "value": 0.9886203099835712,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "secondary",
+   "ci": [
+    0.9820414243979602,
+    0.9929102588639646
+   ],
+   "n": 3588,
+   "n_pos": 3039,
+   "top_features": [
+    [
+     "gap_mean",
+     0.2056
+    ],
+    [
+     "port",
+     0.1063
+    ],
+    [
+     "seed",
+     0.0985
+    ],
+    [
+     "rank_norm",
+     0.0787
+    ],
+    [
+     "type",
+     0.0649
+    ],
+    [
+     "ldur",
+     0.0569
+    ]
+   ]
+  },
+  "probe|cf_gotham_v2|caltest|i|timing|auc": {
+   "value": 0.8871620961501693,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "secondary",
+   "ci": [
+    0.8377588333775066,
+    0.9256955026672251
+   ],
+   "n": 3588,
+   "n_pos": 3039,
+   "top_features": [
+    [
+     "gap_mean",
+     0.2378
+    ],
+    [
+     "gap_max",
+     0.1402
+    ],
+    [
+     "t_since_t0",
+     0.0994
+    ],
+    [
+     "rank_norm",
+     0.0857
+    ],
+    [
+     "t_norm",
+     0.0822
+    ],
+    [
+     "gap_median",
+     0.0778
+    ]
+   ]
+  },
+  "probe|cf_gotham_v2|caltest|i|scorer|auc": {
+   "value": 0.9871797177074474,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "secondary",
+   "ci": [
+    0.9824002440881963,
+    0.9912859798808015
+   ],
+   "n": 3588,
+   "n_pos": 3039,
+   "top_features": [
+    [
+     "ldur",
+     0.2117
+    ],
+    [
+     "type",
+     0.1511
+    ],
+    [
+     "startcv",
+     0.1279
+    ],
+    [
+     "seed",
+     0.1091
+    ],
+    [
+     "lnrec",
+     0.0899
+    ],
+    [
+     "lrbytes",
+     0.0519
+    ]
+   ]
+  },
+  "probe|cf_gotham_v2|caltest|ii|all|auc": {
+   "value": 0.9975217372577647,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "secondary",
+   "ci": [
+    0.994473333129661,
+    0.9995734235983257
+   ],
+   "n": 15406,
+   "n_pos": 59,
+   "top_features": [
+    [
+     "seed",
+     0.3371
+    ],
+    [
+     "ldur",
+     0.1292
+    ],
+    [
+     "lrbytes",
+     0.0644
+    ],
+    [
+     "lpkts",
+     0.0521
+    ],
+    [
+     "type",
+     0.0482
+    ],
+    [
+     "startcv",
+     0.0434
+    ]
+   ]
+  },
+  "probe|cf_gotham_v2|caltest|ii|timing|auc": {
+   "value": 0.9892774273777352,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "secondary",
+   "ci": [
+    0.9775477826913508,
+    0.9971609505342217
+   ],
+   "n": 15406,
+   "n_pos": 59,
+   "top_features": [
+    [
+     "gap_cv",
+     0.1338
+    ],
+    [
+     "t_since_t0",
+     0.1243
+    ],
+    [
+     "gap_min",
+     0.1142
+    ],
+    [
+     "gap_median",
+     0.1136
+    ],
+    [
+     "gap_mean",
+     0.1073
+    ],
+    [
+     "gap_max",
+     0.102
+    ]
+   ]
+  },
+  "probe|cf_gotham_v2|caltest|ii|scorer|auc": {
+   "value": 0.9969634655036649,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "secondary",
+   "ci": [
+    0.9935525026083455,
+    0.9995960123368298
+   ],
+   "n": 15406,
+   "n_pos": 59,
+   "top_features": [
+    [
+     "seed",
+     0.3552
+    ],
+    [
+     "ldur",
+     0.1847
+    ],
+    [
+     "startcv",
+     0.1505
+    ],
+    [
+     "lrbytes",
+     0.0871
+    ],
+    [
+     "lpkts",
+     0.0649
+    ],
+    [
+     "lobytes",
+     0.0598
+    ]
+   ]
+  },
+  "probe|cf_gotham_v2|caltest|i_attack|all|auc": {
+   "value": 0.9883091242419969,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "exploratory",
+   "ci": [
+    0.981025591489731,
+    0.9932623914230233
+   ],
+   "n": 3529,
+   "n_pos": 3039,
+   "top_features": [
+    [
+     "gap_mean",
+     0.114
+    ],
+    [
+     "seed",
+     0.1102
+    ],
+    [
+     "port",
+     0.0872
+    ],
+    [
+     "rank_norm",
+     0.0791
+    ],
+    [
+     "gap_max",
+     0.078
+    ],
+    [
+     "fail",
+     0.0755
+    ]
+   ]
+  },
+  "probe|cf_gotham_v2|caltest|i_attack|timing|auc": {
+   "value": 0.8777578553632707,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "exploratory",
+   "ci": [
+    0.8127410250890108,
+    0.9261531617710403
+   ],
+   "n": 3529,
+   "n_pos": 3039,
+   "top_features": [
+    [
+     "gap_max",
+     0.1838
+    ],
+    [
+     "gap_mean",
+     0.1592
+    ],
+    [
+     "gap_std",
+     0.1482
+    ],
+    [
+     "t_since_t0",
+     0.1114
+    ],
+    [
+     "t_norm",
+     0.0906
+    ],
+    [
+     "rank_norm",
+     0.0878
+    ]
+   ]
+  },
+  "probe|cf_gotham_v2|caltest|i_attack|scorer|auc": {
+   "value": 0.9860671810678862,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "exploratory",
+   "ci": [
+    0.9789270181096061,
+    0.9912756188316483
+   ],
+   "n": 3529,
+   "n_pos": 3039,
+   "top_features": [
+    [
+     "ldur",
+     0.2832
+    ],
+    [
+     "lobytes",
+     0.1258
+    ],
+    [
+     "seed",
+     0.1194
+    ],
+    [
+     "type",
+     0.1046
+    ],
+    [
+     "fail",
+     0.0867
+    ],
+    [
+     "startcv",
+     0.0755
+    ]
+   ]
+  },
+  "probe|cf_gotham_v2|caltest|ii_typematched|all|auc": {
+   "value": 0.9971314578600967,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "exploratory",
+   "ci": [
+    0.9917572791825662,
+    0.9997933888030307
+   ],
+   "n": 9371,
+   "n_pos": 59,
+   "top_features": [
+    [
+     "seed",
+     0.3349
+    ],
+    [
+     "lobytes",
+     0.0898
+    ],
+    [
+     "lndports",
+     0.0826
+    ],
+    [
+     "ldur",
+     0.0784
+    ],
+    [
+     "gap_cv",
+     0.0497
+    ],
+    [
+     "gap_mean",
+     0.0452
+    ]
+   ]
+  },
+  "probe|cf_gotham_v2|caltest|ii_typematched|timing|auc": {
+   "value": 0.9907354825557692,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "exploratory",
+   "ci": [
+    0.9771339115465871,
+    0.999041072333546
+   ],
+   "n": 9371,
+   "n_pos": 59,
+   "top_features": [
+    [
+     "gap_cv",
+     0.2177
+    ],
+    [
+     "gap_mean",
+     0.1608
+    ],
+    [
+     "gap_min",
+     0.1073
+    ],
+    [
+     "gap_max",
+     0.1053
+    ],
+    [
+     "n_rec_probe",
+     0.0837
+    ],
+    [
+     "t_since_t0",
+     0.0822
+    ]
+   ]
+  },
+  "probe|cf_gotham_v2|caltest|ii_typematched|scorer|auc": {
+   "value": 0.998350952297746,
+   "definition": "pooled out-of-fold AUC of an incident-grouped 5-fold LightGBM probe; (i) campaign vs decoy unit, (ii) D3 look-alike vs native background unit, i_attack = campaign vs D1/D2 attack decoys only, ii_typematched = D3 vs background units of the same unit types; feature set in key (all = timing/position + the scorer's unit features); CI = incident-cluster bootstrap B=200",
+   "status": "exploratory",
+   "ci": [
+    0.9961196619895263,
+    0.999746329950042
+   ],
+   "n": 9371,
+   "n_pos": 59,
+   "top_features": [
+    [
+     "seed",
+     0.3315
+    ],
+    [
+     "ldur",
+     0.1514
+    ],
+    [
+     "lobytes",
+     0.1368
+    ],
+    [
+     "startcv",
+     0.1168
+    ],
+    [
+     "lrbytes",
+     0.0799
+    ],
+    [
+     "lndports",
+     0.0786
+    ]
+   ]
+  },
+  "reuse|cf_gotham_v2|train|incidents_per_used_episode": {
+   "value": 10.08974358974359,
+   "definition": "pooled incidents per used library episode (sum uses / sum used episodes)",
+   "status": "secondary",
+   "source": "interim/cf_gotham_v2/audit/reuse.parquet",
+   "max_per_episode": 32
+  },
+  "reuse|cf_gotham_v2|caltest|incidents_per_used_episode": {
+   "value": 33.785714285714285,
+   "definition": "pooled incidents per used library episode (sum uses / sum used episodes)",
+   "status": "secondary",
+   "source": "interim/cf_gotham_v2/audit/reuse.parquet",
+   "max_per_episode": 88
+  },
+  "reuse|cf_gotham_v2|caltest|incidents_per_background_record": {
+   "value": 145.23979389615536,
+   "definition": "mean incidents per background record (windows overlap)",
+   "status": "secondary",
+   "source": "interim/cf_gotham_v2/audit/background_reuse.json"
+  },
+  "reuse|cf_gotham_v2|train|incidents_per_background_record": {
+   "value": 72.92800845047535,
+   "definition": "mean incidents per background record (windows overlap)",
+   "status": "secondary",
+   "source": "interim/cf_gotham_v2/audit/background_reuse.json"
+  },
+  "reuse|cf_gotham_t_v2|train|incidents_per_used_episode": {
+   "value": 19.21917808219178,
+   "definition": "pooled incidents per used library episode (sum uses / sum used episodes)",
+   "status": "secondary",
+   "source": "interim/cf_gotham_t_v2/audit/reuse.parquet",
+   "max_per_episode": 47
+  },
+  "reuse|cf_gotham_t_v2|caltest|incidents_per_used_episode": {
+   "value": 0.0,
+   "definition": "pooled incidents per used library episode (sum uses / sum used episodes)",
+   "status": "secondary",
+   "source": "interim/cf_gotham_t_v2/audit/reuse.parquet",
+   "max_per_episode": 0
+  },
+  "reuse|cf_gotham_t_v2|train|incidents_per_background_record": {
+   "value": 109.82733403753961,
+   "definition": "mean incidents per background record (windows overlap)",
+   "status": "secondary",
+   "source": "interim/cf_gotham_t_v2/audit/background_reuse.json"
+  },
+  "leakage|source_disjoint|cf_gotham_v2": {
+   "value": true,
+   "definition": "train/caltest library episode overlap == 0 (P2-E generator check)",
+   "status": "secondary"
+  },
+  "leakage|source_disjoint|cf_gotham_t_v2": {
+   "value": true,
+   "definition": "train/caltest library episode overlap == 0 (P2-E generator check)",
+   "status": "secondary"
+  }
+ }
+}

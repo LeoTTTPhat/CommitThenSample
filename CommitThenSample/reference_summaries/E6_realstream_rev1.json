@@ -1,0 +1,154 @@
+{
+  "budget_one_round_ahead_s": 0.8,
+  "cores": {
+    "E": {
+      "lp_iot23_48-1_p10000": {
+        "incremental": {
+          "commit_s_max": 0.08602695900481194,
+          "commit_s_median": 0.07303416600916535,
+          "commit_s_p90": 0.08299067539628595,
+          "epochs": 5,
+          "loadavg_1min_after": 9.125,
+          "loadavg_1min_before": 6.34765625,
+          "scanning_host_zero_payload_units_per_epoch_median": 1521.0,
+          "share_over_budget": 0.0,
+          "units_per_epoch_median": 1739.0
+        },
+        "resort": {
+          "commit_s_max": 1.0248153749853373,
+          "commit_s_median": 0.9858872080221772,
+          "commit_s_p90": 1.0093277581967413,
+          "epochs": 5,
+          "loadavg_1min_after": 17.28955078125,
+          "loadavg_1min_before": 10.892578125,
+          "scanning_host_zero_payload_units_per_epoch_median": 1521.0,
+          "share_over_budget": 1.0,
+          "units_per_epoch_median": 1739.0
+        }
+      },
+      "lp_iot23_49-1_p10000": {
+        "incremental": {
+          "commit_s_max": 0.14434516697656363,
+          "commit_s_median": 0.135698416037485,
+          "commit_s_p90": 0.14161603378597648,
+          "epochs": 5,
+          "loadavg_1min_after": 5.86083984375,
+          "loadavg_1min_before": 4.171875,
+          "scanning_host_zero_payload_units_per_epoch_median": 6125.0,
+          "share_over_budget": 0.0,
+          "units_per_epoch_median": 6336.0
+        },
+        "resort": {
+          "commit_s_max": 3.2112012499710545,
+          "commit_s_median": 3.116001790971495,
+          "commit_s_p90": 3.1869317835895346,
+          "epochs": 5,
+          "loadavg_1min_after": 6.8544921875,
+          "loadavg_1min_before": 7.15478515625,
+          "scanning_host_zero_payload_units_per_epoch_median": 6125.0,
+          "share_over_budget": 1.0,
+          "units_per_epoch_median": 6336.0
+        }
+      },
+      "lp_iot23_7-1_p10000": {
+        "incremental": {
+          "commit_s_max": 0.1171694160439074,
+          "commit_s_median": 0.11360904201865196,
+          "commit_s_p90": 0.1158029496204108,
+          "epochs": 5,
+          "loadavg_1min_after": 11.3955078125,
+          "loadavg_1min_before": 14.9541015625,
+          "scanning_host_zero_payload_units_per_epoch_median": 4649.0,
+          "share_over_budget": 0.0,
+          "units_per_epoch_median": 4863.0
+        },
+        "resort": {
+          "commit_s_max": 2.5361765830311924,
+          "commit_s_median": 2.417415291070938,
+          "commit_s_p90": 2.5215563161764294,
+          "epochs": 5,
+          "loadavg_1min_after": 13.78515625,
+          "loadavg_1min_before": 10.828125,
+          "scanning_host_zero_payload_units_per_epoch_median": 4649.0,
+          "share_over_budget": 1.0,
+          "units_per_epoch_median": 4863.0
+        }
+      }
+    },
+    "P": {
+      "lp_iot23_48-1_p10000": {
+        "incremental": {
+          "commit_s_max": 0.018033500062301755,
+          "commit_s_median": 0.017393499962054193,
+          "commit_s_p90": 0.01791868363507092,
+          "epochs": 5,
+          "loadavg_1min_after": 4.52734375,
+          "loadavg_1min_before": 4.583984375,
+          "scanning_host_zero_payload_units_per_epoch_median": 1521.0,
+          "share_over_budget": 0.0,
+          "units_per_epoch_median": 1739.0
+        },
+        "resort": {
+          "commit_s_max": 0.2758829159429297,
+          "commit_s_median": 0.26974549994338304,
+          "commit_s_p90": 0.2751740495907143,
+          "epochs": 5,
+          "loadavg_1min_after": 4.47607421875,
+          "loadavg_1min_before": 4.32470703125,
+          "scanning_host_zero_payload_units_per_epoch_median": 1521.0,
+          "share_over_budget": 0.0,
+          "units_per_epoch_median": 1739.0
+        }
+      },
+      "lp_iot23_49-1_p10000": {
+        "incremental": {
+          "commit_s_max": 0.04386462504044175,
+          "commit_s_median": 0.03601054102182388,
+          "commit_s_p90": 0.041447858605533835,
+          "epochs": 5,
+          "loadavg_1min_after": 5.93603515625,
+          "loadavg_1min_before": 3.826171875,
+          "scanning_host_zero_payload_units_per_epoch_median": 6125.0,
+          "share_over_budget": 0.0,
+          "units_per_epoch_median": 6336.0
+        },
+        "resort": {
+          "commit_s_max": 0.9108629589900374,
+          "commit_s_median": 0.8816980000119656,
+          "commit_s_p90": 0.9013936254195869,
+          "epochs": 5,
+          "loadavg_1min_after": 4.80908203125,
+          "loadavg_1min_before": 5.6572265625,
+          "scanning_host_zero_payload_units_per_epoch_median": 6125.0,
+          "share_over_budget": 1.0,
+          "units_per_epoch_median": 6336.0
+        }
+      },
+      "lp_iot23_7-1_p10000": {
+        "incremental": {
+          "commit_s_max": 0.029534833040088415,
+          "commit_s_median": 0.02806300006341189,
+          "commit_s_p90": 0.02912871618755162,
+          "epochs": 5,
+          "loadavg_1min_after": 4.3623046875,
+          "loadavg_1min_before": 4.27734375,
+          "scanning_host_zero_payload_units_per_epoch_median": 4649.0,
+          "share_over_budget": 0.0,
+          "units_per_epoch_median": 4863.0
+        },
+        "resort": {
+          "commit_s_max": 0.6217789578950033,
+          "commit_s_median": 0.6002925840439275,
+          "commit_s_p90": 0.6213663415284827,
+          "epochs": 5,
+          "loadavg_1min_after": 4.36669921875,
+          "loadavg_1min_before": 4.1728515625,
+          "scanning_host_zero_payload_units_per_epoch_median": 4649.0,
+          "share_over_budget": 0.0,
+          "units_per_epoch_median": 4863.0
+        }
+      }
+    }
+  },
+  "definition": "Gateway.commit time per epoch on the real LP-IoT23 p = 1 % streams whose infected host scans continuously, epochs with a complete 120-epoch rolling window (e >= 120 of the first 125); resort = rolling statistics as reviewed (re-sort the window every epoch), incremental = rev1 (bit-identical output). P = performance core, E = efficiency core (taskpolicy -b); Python prototype, OMP 1 thread; budget = Delta_build = 0.8 s (one round ahead)."
+}

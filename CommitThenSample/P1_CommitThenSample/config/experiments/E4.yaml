@@ -1,0 +1,61 @@
+# E4: what the floor buys against evasion (DESIGN Sec. 6.1 row E4, Sec. 6.4; Prop. 4).
+# Owner: P1-F. Read by scripts/13_e4.py. Overrides config/defaults.yaml keys via ctsample.config.load_yaml.
+# Analytic (static pi), all LP streams, real incident sizes k from the data.
+experiment: E4
+priority: MUST
+analytic: true
+
+rho: 0.05                 # headline budget for the figure / summaries (DESIGN Sec. 6.4)
+gamma: 0.3
+seeds: [0, 1, 2]          # utility-model seeds (black-box surrogate uses a disjoint fold, seed 0)
+
+# Equal-budget policy set (DESIGN Sec. 6.1/6.2: equal-budget comparisons use the _bm variants).
+policies:
+  cts_single:  U6tau0.2_bm   # CtS single tier (default, CtS-AI); floor + utility channel
+  cts_size:    U1_bm         # size-only reference (B10)
+  cts_unif:    U0_bm         # uniform keyed (B8), floor-included
+  b3:          B3            # Time-Machine per-connection cut-off
+  b4:          B4            # deterministic top-k by P_mal
+  b6:          B6            # alert-triggered (zero-day variant: attack-family alerts disabled)
+  b8:          B8            # uniform keyed (closed form, = U0 budget)
+  b13:         B13           # top-k by P_mal + keyed reserve gamma
+
+# Capped two-tier analytic variant (Prop. 4(ii); analytic metrics only, no estimator).
+two_tier:
+  H_bytes: 1024
+  phi_t: 0.1
+  m_grid: [1, 3, 10]        # content packets per unit (padding worst case)
+
+# Alg. 7 mimicry attacker (DESIGN Sec. 6.4; src/ctsample/adversary/mimicry.py).
+mimicry:
+  pad_factors:   [1.0, 1.5, 2.0, 4.0, 8.0]      # payload padding
+  prefix_bytes:  [0, 1024, 4096]                 # prefix padding L in {0, H, 4H}
+  dports:        [orig, 80, 443, 8080, 1883, 53] # protocol-agnostic C&C only
+  iat_factors:   [1, 2, 4, 8]                    # IAT stretch
+  splits:        [1, 2, 4]                        # split into n units
+  prefix_mss: 1448          # bytes per prefix packet when recomputing the first-8 sizes
+  max_variants: 1080        # |M| <= 5*3*6*4*3
+  blackbox: true            # also run the black-box surrogate transfer (disjoint fold)
+
+# Flooding (DESIGN Sec. 6.1/6.4, Prop. 4(iv)): N junk payload units of benign-median size from the
+# attacker device in the incident epochs; three floor regimes.
+flooding:
+  N_grid: [0, 10, 100, 1000]
+  floors: [constant, equalised, flood_guard]     # constant phi0 vs per-epoch equalised vs the flood guard
+  Dmax_mult: 200
+
+# Time-to-evidence for a persistent C&C channel (Prop. 4(iii); IoT-23 heartbeats).
+tte:
+  quantiles: [0.5, 0.9, 0.95, 0.99]
+  phi0_ref: [0.015, 0.029]  # DESIGN Sec. 0.1 reference floors (k95 = 199, 102)
+
+# Streams: all LP streams at the headline p (10000 ppm = 1%) plus the other prevalences for the summary.
+streams:
+  lp_iot23_folds: [1-1, 3-1, 7-1, 34-1, 48-1, 49-1]
+  prevalences_ppm: [1000, 10000, 50000]
+  headline_ppm: 10000
+  include_edge: true
+  include_gotham: true
+
+figure:
+  headline_streams: [lp_iot23_34-1_p10000, lp_iot23_3-1_p10000, lp_iot23_49-1_p10000, lp_edge_p10000]

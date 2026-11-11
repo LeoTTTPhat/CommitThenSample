@@ -1,0 +1,20 @@
+# E1 -- validity (implementation check on ChainForge; IoT-23 P-WIN conditional on the dataset). Owner: P2-G.
+# DESIGN §6.1 E1, §6.2, §6.4; PREREG endpoints.primary_1_validity (CRC-BH cells; IoT-23 P-LOSO cells come from E11).
+exp: E1
+splits: 200                      # PREREG split seeds 0-199
+alphas: [0.05, 0.1, 0.2]         # 0.1 / 0.2 co-primary, 0.05 secondary
+datasets:                        # K / n_test from PREREG K_per_dataset, test_per_split
+  cf_ton:    {K: 150, n_test: 150}
+  cf_ton_h:  {K: 100, n_test: 100}
+  cf_gotham: {K: 100, n_test: 100}
+  iot23:     {K: 83, n_test: 83, protocol: P-WIN}   # window-level 50/50 random splits
+scorers: [stat, fuse_s0]         # fuse_s0 only where the fusion bank exists
+methods: [crc_bh, crc_bh_raw, crc_fdx020, crc_fdx030, ltt, crc_st, bh_ref, by_ref, bh_iid, bh_iid_pooled,
+          lr_a1avg, lr_a1avgb, lr_a2, lr_a2b, lr_a1, lr_a1b, b7, b8, chain_composite, chain_naive, chain_rt]
+bootstrap:
+  B: 1000
+  splits: 50
+  seed: 0
+  crc_all: true                  # CRC-BH x every dataset / scorer / alpha (primary cells + 0.05)
+  table_iv: {ds: cf_ton, alphas: [0.1, 0.2]}   # every method on CF-TON (Table IV intervals)
+  skip_if_no_claims: true        # a method with zero claims in all 200 splits has the degenerate CI [0, 0]

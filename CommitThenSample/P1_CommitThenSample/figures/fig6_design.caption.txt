@@ -1,0 +1,9 @@
+Fig. 6 facts (E7, analytic, rho=5%).
+(a) Frontier over gamma on 6 LP-IoT23 folds; floor phi0=gamma*rho*Sum_all/Sum_pay.
+    Floor-only detection rises with gamma while worst relative variance stays ~flat (floor-dominated at
+    rho=5%, share_at_floor 0.51->0.70); gamma=0.3 is the operating point (diminishing detection gains).
+    detect(k=50): [0.237, 0.419, 0.558, 0.745] at gamma=[0.1, 0.2, 0.3, 0.5].
+(b) g_mu(phi_t), CIC head share h=0.10: mu=1 maximised at phi_t*=1.00 (single tier), mu=3 interior, mu=10 at small phi_t.
+    worst g: mu=1 [0.008, 0.012, 0.014, 0.015], mu=10 [0.051, 0.039, 0.027, 0.015] over phi_t=[0.1, 0.3, 0.5, 1.0].
+(c) At phi0=0.015: cbar=66.7, UCS slack r+=291, capacity H=246 eligible units, ratio 1.182 (Cor. 1: log(80)/log(40)=1.188).
+Saved fig6_design.pdf.

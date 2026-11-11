@@ -1,0 +1,11 @@
+{
+  "cfg_hash": "2d347c8d782a",
+  "frontier_folds": 6,
+  "gamma_grid": [
+    0.1,
+    0.2,
+    0.3,
+    0.5
+  ],
+  "generated": "2026-10-19 00:01:35"
+}

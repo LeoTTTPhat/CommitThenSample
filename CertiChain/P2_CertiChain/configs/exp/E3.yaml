@@ -1,0 +1,21 @@
+# E3 -- PRE-REGISTERED PRIMARY ENDPOINT 2 (LLM). Owner: P2-G. PREREG endpoints.primary_2_llm, secondary list.
+exp: E3
+primary:
+  dataset: cf_ton_h
+  K: 100
+  n_test: 100
+  splits: 200
+  alphas: [0.1, 0.2]
+  stats: S_TON_H.stat
+  fusion: S_TON_H.fuse_s0
+  metric: cer_link_mean
+  placebos: [S_TON_H.fuse_perm_s0, S_TON_H.fuse_band_s0]
+  bootstrap: {B: 1000, splits: 50, seed: 0}
+  holm_level: 0.05
+secondary:
+  in_template: {dataset: cf_ton, K: 150, n_test: 150, stats: S_TON.stat, fusion: S_TON.fuse_s0,
+                placebos: [S_TON.fuse_perm_s0, S_TON.fuse_band_s0]}
+  metrics: [cer_link_mean, str_mean, str_pooled, cer_link_pooled, fdr, fdr_lenient, ccr_mean, maxchain_fdr]
+  seeds: [fuse_s1, fuse_s2, fuse_s3, fuse_s4]
+  strata: [unseen_type_pair, decoy_rich, content_rich]
+  kappa_variants: [fuse_s0_k005, fuse_s0_k020]   # P2-F 10_fit_fusion --kappa suffix; used only if the banks exist

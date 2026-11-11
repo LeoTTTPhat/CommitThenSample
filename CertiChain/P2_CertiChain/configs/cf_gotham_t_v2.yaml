@@ -1,0 +1,44 @@
+# CF-GOTHAM-T (DESIGN §5.1.3, §5.3) -- owner P2-E. Calibration bank for the Gotham-real case study:
+# 150 incidents built from the TRAIN pools only (victims .20.10/.18.15/.17.10, bots .17.10/.20.10, background
+# 01-14 18:40-19:43), so no case-study test victim/bot contributes; templates = the case-study session types.
+# split_role "caltest" (calibration role) with pool_of_split mapping it to the train pools.
+variant: cf_gotham_t_v2
+dataset: gotham
+seed_variant: cf_gotham_t            # same seeds as cf_gotham_t (v1) -> identical incidents up to the time shift
+splits: {caltest: 150}
+pool_of_split: {caltest: train}   # calibration bank built from the TRAIN pools only
+templates:
+  caltest: [T-MIRAI, T-MDOS, T-MERLIN]   # the case-study session types
+ip_plan: subnets              # every source /24 -> its own random 10.0.N.0/24; infra stays internal (as in Gotham)
+role_subnets:                 # role IPs are fresh hosts in the mapped subnet of the original infra host
+  SCANNER: 192.168.0.100
+  LOADER: 192.168.33.12
+  DLSRV: 192.168.33.13
+  CNC: 192.168.33.10
+  REPSRV: 192.168.33.11
+  C2: 192.168.34.10
+  USCANNER: 192.168.35.10
+  AMPPEER: 192.168.0.200
+  A: 192.168.0.100
+d1:                           # D1 = one attack ON a campaign victim by another (fresh) scanner
+  types: [mirai_bf, masscan]
+  binds: {server: A, victim: X}
+n_camp_p: [0.10, 0.55, 0.25, 0.10]
+decoy_rate: 2.0
+decoy_kind_p: {D1: 0.4, D2: 0.2, D3: 0.4}
+evidence_loss: 0.0
+victim_is_seed_p: 0.5
+# Gotham pools are 63-min halves of the benign capture (DESIGN §5.1.3 "40-min windows"; Alg. 7 "<= 63 min
+# available"): L = max(40 min, span + 15 min) + U(0, 10 min), capped at 63 min; templates resampled up to 5x,
+# then stages beyond the window are truncated (hidden, logged). D3 look-alikes come from 15-min tiles outside B.
+window: {min_s: 2400, margin_s: 900, extra_s: 600, max_s: 3780}
+max_template_resamples: 5
+ts_round: null                # Gotham keeps microsecond timestamps (ts_res 1e-6)
+W: 1800
+scope_rule: "alg1_step6:seed+N1+shared_external;F_infra=3;U_max=1000"
+# v2 (post-PREREG deviation, E15 artifact check; coordinator 19 Oct): v1 placed each spliced episode's first record
+# exactly on its nominal start (integer seconds for roots/decoys -> fractional-second probe AUC 1.00). v2 adds ONE U(0,1)
+# sub-second phase per campaign/decoy (separate BLAKE3-keyed stream; the incident RNG is untouched, so templates,
+# episodes, lags, placements and ids are identical to v1, and all intra-campaign lags are preserved exactly). Chosen on
+# TRAIN incidents by a KS test of unit-start fractional seconds, spliced vs native background (see notes/P2-E.md).
+time_shift: campaign_phase

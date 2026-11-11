@@ -1,0 +1,13 @@
+# P2 CertiChain -- base settings shared by the ingest scripts (owner: P2-A).
+# Every heavy job runs from the project root through memguard with --limit-gb 90 (DESIGN §8.1):
+#   .venv/bin/python memguard/memguard.py run --name p2_<job> --limit-gb 90 --workers 8 -- \
+#       .venv/bin/python -I -u P2_CertiChain/scripts/<script>.py ...
+memory:
+  limit_gb: 90                 # P2 budget; check_memory() (driver only) stops at 90% of it
+  default_workers: 8           # <= 8 pool processes; memguard halves MEMGUARD_WORKERS on restart
+  polars_threads_per_worker: 4 # POLARS_MAX_THREADS inside pool workers (8 x 4 = 32 cores max)
+  polars_threads_driver: 8
+ids:
+  rec_id_stride: 1000000000    # rec_id = source_code * stride + (line | flow index); unique per dataset
+outputs:
+  compression: zstd

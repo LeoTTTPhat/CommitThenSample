@@ -1,0 +1,74 @@
+{
+  "project": "P1_CommitThenSample",
+  "created_date": "2026-11-11",
+  "python": "3.12.12",
+  "source_root": "/Users/sonha/Documents/SonHa/IoTJ-SI26-Oct",
+  "platform": "macOS arm64",
+  "original_hardware": "Apple M3 Ultra, 512 GB unified memory",
+  "memory_limit_gb": 200,
+  "external_tools": [
+    "suricata",
+    "capinfos",
+    "editcap",
+    "tshark"
+  ],
+  "copy_method": "APFS copy-on-write file clones; independent regular files",
+  "contents": {
+    "P1_CommitThenSample/src": {
+      "files": 85,
+      "bytes": 845182
+    },
+    "P1_CommitThenSample/scripts": {
+      "files": 36,
+      "bytes": 559085
+    },
+    "P1_CommitThenSample/tests": {
+      "files": 36,
+      "bytes": 324319
+    },
+    "P1_CommitThenSample/config": {
+      "files": 15,
+      "bytes": 47528
+    },
+    "P1_CommitThenSample/figures": {
+      "files": 34,
+      "bytes": 889695
+    },
+    "P1_CommitThenSample/results": {
+      "files": 73437,
+      "bytes": 81279869499
+    },
+    "data/iot23": {
+      "files": 63,
+      "bytes": 55987165573
+    },
+    "data/gotham2025": {
+      "files": 209,
+      "bytes": 32102884328
+    },
+    "data/beacon": {
+      "files": 4,
+      "bytes": 1773090
+    },
+    "data/rules": {
+      "files": 83,
+      "bytes": 75636182
+    },
+    "data/ciciot2023/pcap/Benign": {
+      "files": 2,
+      "bytes": 4096002599
+    },
+    "data/ciciot2023/meta": {
+      "files": 52,
+      "bytes": 400722
+    },
+    "data/edgeiiot/Edge-IIoTset dataset/Attack traffic": {
+      "files": 28,
+      "bytes": 4876280703
+    },
+    "data/edgeiiot/Edge-IIoTset dataset/Normal traffic": {
+      "files": 20,
+      "bytes": 5067482499
+    }
+  }
+}

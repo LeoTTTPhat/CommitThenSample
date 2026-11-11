@@ -1,0 +1,20 @@
+# Gotham-real case-study incidents (DESIGN §5.1.3) -- owner P2-E; built by scripts/06_make_real_incidents.py.
+# Case metadata only (seed device + window + capture session). Times UTC. Real IPs/times are kept (no rewriting).
+# GT (gt.json) is built by P2-B's gt/gotham_episodes.py from the labels + reports.parquet, not here.
+# The two benign-only windows are attack-capture devices of the cal/test pool on a day they were not attacked
+# (label-based window inclusion, checked by 06: no malicious/unknown record touches the seed), paired with the
+# .17.15 incidents of the same sessions (wrongful-implication check).
+dataset: gotham
+scope_rule: "alg1_step6:seed+N1+shared_external;F_infra=3;U_max=1000"
+incidents:
+  - {id: mirai_infection_20_19, session: mirai-infection, seed: 192.168.20.19, window: ["2025-01-18 21:25:00", "2025-01-18 22:00:00"], kind: attack}
+  - {id: mirai_infection_18_10, session: mirai-infection, seed: 192.168.18.10, window: ["2025-01-18 21:25:00", "2025-01-18 22:00:00"], kind: attack}
+  - {id: mirai_infection_17_15, session: mirai-infection, seed: 192.168.17.15, window: ["2025-01-18 21:25:00", "2025-01-18 22:00:00"], kind: attack}
+  - {id: mirai_infection_18_17, session: mirai-infection, seed: 192.168.18.17, window: ["2025-01-18 21:25:00", "2025-01-18 22:00:00"], kind: attack}
+  - {id: mirai_infection_18_18, session: mirai-infection, seed: 192.168.18.18, window: ["2025-01-18 21:25:00", "2025-01-18 22:00:00"], kind: attack}
+  - {id: mirai_dos_17_15, session: mirai-dos, seed: 192.168.17.15, window: ["2025-01-25 18:45:00", "2025-01-25 19:30:00"], kind: attack}
+  - {id: merlin_17_15, session: merlin, seed: 192.168.17.15, window: ["2025-01-17 16:05:00", "2025-01-17 17:17:00"], kind: attack}
+  # devices present in these captures with benign traffic only (checked on labels by 06; .18.17 is absent from
+  # the merlin capture and .20.19 has only 78 records in mirai-dos, so the pairing below is the usable one)
+  - {id: benign_20_19_merlin, session: merlin, seed: 192.168.20.19, window: ["2025-01-17 16:05:00", "2025-01-17 16:45:00"], kind: benign_only}
+  - {id: benign_18_17_mirai_dos, session: mirai-dos, seed: 192.168.18.17, window: ["2025-01-25 18:45:00", "2025-01-25 19:25:00"], kind: benign_only}

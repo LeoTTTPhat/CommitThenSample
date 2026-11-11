@@ -1,0 +1,17 @@
+# E3 on the rev1 stream-recipe variant zq (review R3-M1(a), fix-list M5; helper P1-X-SV, 19 Oct 2026).
+# Deep-merged over E3.yaml (every setting identical: designs, MC, bootstrap, estimands, seeds, rho), overriding only
+# the streams and the output directory. Variant zq = the original LP-IoT23 recipe + the infected (seed) host's pure
+# zero-payload connections thinned with the stream's own payload keep probability q (config/streams.yaml
+# zero_payload_variants); models / calibration from results/models_zq/ (read from each design's calibration string).
+# Group in_domain_orig = the ORIGINAL streams re-run with the same code (control; must reproduce results/E3).
+#   .venv/bin/python memguard/memguard.py run --name p1_rev_sv_e3_zq --workers 12 -- \
+#       .venv/bin/python -I -u P1_CommitThenSample/scripts/12_e3.py --config config/experiments/E3_rev1_zq.yaml --workers 12
+#   .venv/bin/python -I -u P1_CommitThenSample/scripts/90_aggregate.py --exp E3 --rev rev1_zq
+base: E3.yaml
+out_dir: E3_rev1_zq
+groups_e3: [in_domain, in_domain_orig]
+streams_e3:
+  in_domain: [lp_iot23_1-1_p10000_zq, lp_iot23_3-1_p10000_zq, lp_iot23_7-1_p10000_zq, lp_iot23_34-1_p10000_zq,
+              lp_iot23_48-1_p10000_zq, lp_iot23_49-1_p10000_zq]
+  in_domain_orig: [lp_iot23_1-1_p10000, lp_iot23_3-1_p10000, lp_iot23_7-1_p10000, lp_iot23_34-1_p10000,
+                   lp_iot23_48-1_p10000, lp_iot23_49-1_p10000]

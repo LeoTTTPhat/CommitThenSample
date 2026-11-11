@@ -1,0 +1,83 @@
+# Stream recipes (DESIGN §5.2) at table level: units/f/labels of S1–S3 are reused, nothing is re-parsed.
+# Owner: P1-D. Read by ctsample.streams.recipe.load_config(); built by scripts/03b_build_streams.py.
+# Changing anything here changes the streams; rebuild with --force.
+version: 1
+T_seconds: 30
+lan_predicate: default          # units.flowtable.default_is_lan (RFC1918, link-local, CGNAT, multicast, ULA)
+rolling_window_epochs: 120      # features (DESIGN §3.4)
+
+prevalences: [0.001, 0.01, 0.05]
+seed_rule: "SeedSequence([code, round(p * 1e6)]); code = k (LP-IoT23 fold index), 50 (LP-Edge), 100 + k (training LP stream of scenario k)"
+
+background:
+  test:  {dataset: ciciot2023_benign, source: BenignTraffic1}     # 7.25 h = 870 epochs
+  train: {dataset: ciciot2023_benign, source: BenignTraffic}      # 9.26 h = 1111 epochs (calibration streams)
+
+lp_iot23:
+  window_epochs: 870            # 7.25 h
+  pre_seconds: 600              # window starts 10 min before the first malicious payload connection (conn log,
+                                # inventory first_mal_payload_ts_in_pcap_window), snapped DOWN to the source's
+                                # own epoch grid (unit boundaries kept); clipped at the capture start
+  stream_epoch0: 0              # foreground window placed at stream epoch 0 (background epoch 0)
+  # k = 1..6 in numeric scenario order. DEVIATION: DESIGN says 192.168.137.240 + k, but .245/.246 (and .240)
+  # are live CIC hosts, so the remap uses 192.168.137.(230 + k) (asserted unused in the background).
+  fold_order: [CTU-IoT-Malware-Capture-1-1, CTU-IoT-Malware-Capture-3-1, CTU-IoT-Malware-Capture-7-1,
+               CTU-IoT-Malware-Capture-34-1, CTU-IoT-Malware-Capture-48-1, CTU-IoT-Malware-Capture-49-1]
+  remap_ip: "192.168.137.{230+k}"     # the scenario's seed (infected) host IP
+  remap_mac_seed: "02:00:00:00:00:{k:02x}"   # its MAC
+  remap_mac_other: "02:00:00:00:{k:02x}:{j:02x}"   # every other foreground LAN MAC (router, ...), j = 1, 2, ...
+
+lp_edge:
+  dataset: edgeiiot
+  normal_sources: [Distance, Flame_Sensor, Heart_Rate, IR_Receiver, Modbus, Soil_Moisture, Sound_Sensor,
+                   Temperature_and_Humidity, Water_Level, phValue]
+  normal_first_epochs: 30       # first 15 min of each normal capture
+  normal_start_epoch: "80 * j"  # sensor j at j x 40 min
+  attack_sources: [Backdoor_attack, OS_Fingerprinting_attack, Password_attacks, Port_Scanning_attack,
+                   Ransomware_attack, SQL_injection_attack, Uploading_attack, Vulnerability_scanner_attack,
+                   XSS_attacks, MITM_ARP_spoofing_DNS_Attack]
+  attack_start_epoch: "10 + 90 * j"    # class j at 5 + 45 j min
+  attack_slot_epochs: 90        # DEVIATION (unspecified in DESIGN): each class keeps its first 45 min, so classes
+                                # do not overlap and the 19-h Password / 32-h Ransomware captures do not dominate
+                                # (every class's malicious activity starts in its capture's epoch 0)
+  remap_ip: {"192.168.0.170": "192.168.137.237", "192.168.0.128": "192.168.137.238"}   # attacker, victim
+  remap_mac: {"d8:f2:ca:8e:17:69": "02:00:00:00:e0:01", "dc:a6:32:fb:69:b5": "02:00:00:00:e0:02"}
+  code: 50
+
+training_lp:
+  # calibration streams: ONE per eligible scenario j = CIC training half + scenario j's LP window, exactly the
+  # test recipe (stream id trainlp_<j>_p<ppm>, seed SeedSequence([100 + k_j, ppm])). Fold k pools the streams of
+  # its training scenarios j != k (phi0, lambda_ref, Q~, V_ref pooled over their epochs); zero-shot pools all.
+  # (A single stream overlaying all training scenarios was rejected: 11 M scan units, sum_all/sum_pay = 2.2,
+  #  phi0(5%) = 0.033 -> the floor alone would spend ~66% of a one-scenario test stream's budget.)
+  code_base: 100
+
+lp_gotham:
+  # [SHOULD, gate G2 passed] background = Gotham benign session (78 per-device captures, 2.1 h), foreground =
+  # mirai-infection session (8 captures) at +30 min, natural prevalence and thinned to 1 %; `unknown` transit
+  # copies dropped (0 cross-capture duplicates remain); captures placed at the nearest whole stream epoch
+  # (<= 15 s shift); horizon = the benign session (the 2.6-h mirai session is clipped there); no remap.
+  enabled: true
+  prevalences: [null, 0.01]
+  mirai_start_epoch: 60
+  code: 60
+
+natural:
+  # supplement: each eligible IoT-23 scenario alone with its own benign units, over the same LP window
+  scenarios: lp_folds
+  window: lp
+
+zero_payload_variants:
+  # rev1 recipe sensitivity (review R3-M1(a), fix-list M5; P1-X-SV, 19 Oct 2026). NOT part of the original recipe:
+  # variant streams get the id suffix _<variant>, their own index results/streams/index_<variant>.json (never
+  # index.json) and models root results/models_<variant>/. On top of the original recipe, the PURE zero-payload
+  # connections (flow_uid without any payload unit: scans, failed handshakes, ICMP, L2) of the foreground seed
+  # (infected) host are kept independently with probability `keep` ('q' = the stream's own payload keep
+  # probability; a number = constant); uniforms from Generator(PCG64(SeedSequence(seed, spawn_key=(0,)))) in order of
+  # first appearance (the payload keep decisions are unchanged); every unit of a dropped connection is removed.
+  # Zero-payload segments of payload connections follow their connection. The integer stream id stays the base
+  # stream's (common random numbers in the Monte Carlo experiments).
+  # Model training sources (whole captures at natural prevalence, payload q = 1) follow the same rule:
+  # zq leaves them unchanged; z0 removes the pure zero-payload connections of each IoT-23 malware scenario's seed host.
+  zq: {keep: q, kinds: [lp_iot23, train_lp], prevalences: [0.01]}      # thin scans like payload connections
+  z0: {keep: 0.0, kinds: [lp_iot23, train_lp], prevalences: [0.01]}    # scan-free bound

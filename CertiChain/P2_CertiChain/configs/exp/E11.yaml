@@ -1,0 +1,15 @@
+# E11 -- real data: IoT-23 (P-LOSO primary, P-WIN, P-SHIFT) and the Gotham-real case study. Owner: P2-G.
+exp: E11
+iot23:
+  scorers: [stat, fuse_s0]
+  extra_sids: [S_CF2.stat, S_CF2.fuse_s0]   # corrected-scorer sensitivity (coordinator 19 Oct); S_CF stays primary
+  alphas: [0.1, 0.2]
+  loso_methods: [crc_bh, bh_iid]
+  fixed_baselines: [B2]
+  p_win: {K: 83, n_test: 83, splits: 200}
+  p_shift: {splits: 100, cal_fraction: 0.5, salt: 7}
+gotham:
+  calibration: {ds: cf_gotham_t, scorer_id: S_TON.stat}
+  test: {ds: gotham_real, scorer_id: S_TON.stat}
+  alphas: [0.1, 0.2]
+  record_overlap_reported: {mirai_infection: [49472, 84044], merlin: [30018, 46033], mirai_dos: [0, 550]}

@@ -1,0 +1,53 @@
+# E2 — validity of the error statements on real streams (DESIGN §6.1 E2; owner P1-E).
+# Deep-merged over config/defaults.yaml by ctsample.config.load_yaml(). Pre-registered settings only:
+# every value below is either a DESIGN §3.10/§6 default or a bookkeeping choice that cannot affect validity.
+name: E2
+
+stream_kinds:
+  # test streams from results/streams/index.json; LP streams are evaluated once per
+  # (fold, realised-prevalence bin): capped targets (q = 1) duplicate the lower target (experiments_core.distinct_streams)
+  main_kinds: [lp_iot23, lp_edge]
+  supplement_kinds: [natural, lp_gotham]
+
+rho: [0.01, 0.02, 0.05]
+
+arms:
+  # source = P1-D design file stem (seed 0; validity does not depend on the seed); grid_key = calibration key
+  static:   {source: U6tau0.2_s0, grid_key: U6tau0.2, arm: static}     # U5tau: expected-cost controller, no boost
+  adaptive: {source: U6tau0.2_s0, grid_key: U6tau0.2, arm: adaptive}   # U6tau: realised-cost controller + boost
+  size:     {source: U1, grid_key: U1, arm: static}                    # CtS-Size (B10), static
+
+reps_by:
+  lp_iot23_headline: 1000     # LP-IoT23 at rho = 5%
+  default: 500
+chunk: 100                    # rep-chunk size (fixed, independent of MEMGUARD_SCALE, so resumed runs reuse chunks)
+
+estimands:
+  min_eligible: 50            # DESIGN §5.4 evaluation rule (committed metadata only)
+  window: whole_stream
+  v_ref_epochs: 2880          # V_ref = training per-epoch V x 2880 (DESIGN §3.9)
+  v_ref_fallback: one_floor_hit   # bbar^2 / phi0 when the training fold has no hits for the query
+
+parts:
+  main:
+    kinds: [lp_iot23, lp_edge, natural, lp_gotham]
+    designs: [static, adaptive, size]
+  a11:                        # selective abort: 'compliant epochs only' vs X := 0 + UCS voiding (Prop. 2)
+    kinds: [lp_iot23, lp_edge]
+    rho: [0.05]
+    designs: [static, adaptive]
+    reps: 500
+    withhold: [void_unretained, void_retained, withhold_half, void_random]
+    compliant_only: true
+  reactor:                    # [SHOULD] population-adaptive stress test: C&C device silent 20 epochs after a retained hit
+    kinds: [lp_iot23]
+    rho: [0.05]
+    designs: [static, adaptive]
+    reps: 500
+    silence: 20
+    families: ["C&C"]
+  familywise:                 # report of |F| statements at alpha/|F| each (Bonferroni), family-wise check
+    kinds: [lp_iot23, lp_edge]
+    rho: [0.05]
+    designs: [static]
+    reps: 500

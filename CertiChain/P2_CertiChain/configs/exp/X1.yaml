@@ -1,0 +1,25 @@
+# X1 -- EXPLORATORY timing-artifact diagnosis and Gotham transfer diagnosis (coordinator request, 19 Oct 02:15).
+# Not pre-registered; all numbers carry status 'exploratory' (results/summary/X1_numbers.json).
+exp: X1
+probe:
+  datasets: [cf_ton, cf_gotham]
+  roles: [train, caltest]
+  lightgbm: {objective: binary, learning_rate: 0.05, num_leaves: 15, min_child_samples: 20,
+             feature_fraction: 0.9, bagging_fraction: 0.8, bagging_freq: 1, lambda_l2: 1.0, verbose: -1,
+             num_threads: 4, seed: 0, deterministic: true, force_row_wise: true}
+  rounds: 200
+  bootstrap_B: 100
+ablation:
+  scorer: S_TON
+  dataset: cf_ton
+  variants: [full, nolag, notiming]   # full = reproduction check of P2-F's S_TON
+  K: 150
+  n_test: 150
+  splits: 200
+  alphas: [0.1, 0.2]
+  bootstrap: {B: 1000, splits: 50, seed: 0}
+gotham:
+  in_domain_scorer: S_GOT
+  transfer_scorer: S_TON
+  bank_in_domain: [cf_gotham_t, S_GOT.stat]
+  alphas: [0.1, 0.2]

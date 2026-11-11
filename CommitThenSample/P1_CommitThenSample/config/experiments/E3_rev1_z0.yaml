@@ -1,0 +1,16 @@
+# E3 on the rev1 stream-recipe variant z0 = scan-free bound (review R3-M1(a), fix-list M5; helper P1-X-SV, 19 Oct 2026).
+# Deep-merged over E3.yaml (every setting identical), overriding only the streams and the output directory.
+# Variant z0 = the original LP-IoT23 recipe + EVERY pure zero-payload connection of the infected (seed) host removed
+# (config/streams.yaml zero_payload_variants); training LP streams likewise; model training sources: the pure
+# zero-payload connections of each IoT-23 malware scenario's seed host removed, models retrained (LightGBM settings
+# and seeds unchanged) and recalibrated in results/models_z0/. The same-code control of the original streams is
+# group in_domain_orig of E3_rev1_zq.
+#   .venv/bin/python memguard/memguard.py run --name p1_rev_sv_e3_z0 --workers 12 -- \
+#       .venv/bin/python -I -u P1_CommitThenSample/scripts/12_e3.py --config config/experiments/E3_rev1_z0.yaml --workers 12
+#   .venv/bin/python -I -u P1_CommitThenSample/scripts/90_aggregate.py --exp E3 --rev rev1_z0
+base: E3.yaml
+out_dir: E3_rev1_z0
+groups_e3: [in_domain]
+streams_e3:
+  in_domain: [lp_iot23_1-1_p10000_z0, lp_iot23_3-1_p10000_z0, lp_iot23_7-1_p10000_z0, lp_iot23_34-1_p10000_z0,
+              lp_iot23_48-1_p10000_z0, lp_iot23_49-1_p10000_z0]
